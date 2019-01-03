@@ -1,0 +1,6 @@
+time=2018-12-30T21:31:17.661+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`==>  Preparing: INSERT INTO role ( role_id,roleName,ctime,utime ) VALUES ( ?,?,?,? ) 
+time=2018-12-30T21:31:17.691+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`==> Parameters: 1079369334192627713(Long), 管理员(String), 1546176677641(Long), 1546176677641(Long)
+time=2018-12-30T21:31:17.703+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`<==    Updates: 1
+time=2018-12-30T21:32:44.927+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`==>  Preparing: INSERT INTO role ( role_id,roleName,ctime,utime ) VALUES ( ?,?,?,? ) 
+time=2018-12-30T21:32:44.953+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`==> Parameters: 1079369700229578754(Long), 管理员(String), 1546176764911(Long), 1546176764911(Long)
+time=2018-12-30T21:32:44.961+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`<==    Updates: 1

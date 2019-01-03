@@ -1,0 +1,12 @@
+time=2019-01-01T19:01:53.482+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`==>  Preparing: SELECT student_id AS studentId,user_name AS userName,class_id AS classId,college_id AS collegeId,mobile,gender,birthday,email,avatar,introduce,home_address AS homeAddress,current_city AS currentCity,status,pwd,ctime,utime FROM user WHERE student_id=? 
+time=2019-01-01T19:01:53.541+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`==> Parameters: 15207312(Long)
+time=2019-01-01T19:01:53.579+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`<==      Total: 1
+time=2019-01-01T19:01:53.596+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`==>  Preparing: SELECT operator_id AS operatorId,operator_name AS operatorName,operator_status AS operatorStatus,deleted,pwd,ctime,utime FROM operator WHERE operator_id=? 
+time=2019-01-01T19:01:53.597+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`==> Parameters: 15207312(Long)
+time=2019-01-01T19:01:53.603+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`<==      Total: 0
+time=2019-01-01T19:04:26.471+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`==>  Preparing: SELECT student_id AS studentId,user_name AS userName,class_id AS classId,college_id AS collegeId,mobile,gender,birthday,email,avatar,introduce,home_address AS homeAddress,current_city AS currentCity,status,pwd,ctime,utime FROM user WHERE student_id=? 
+time=2019-01-01T19:04:26.515+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`==> Parameters: 15207312(Long)
+time=2019-01-01T19:04:26.545+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`<==      Total: 1
+time=2019-01-01T19:04:26.562+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`==>  Preparing: SELECT operator_id AS operatorId,operator_name AS operatorName,operator_status AS operatorStatus,deleted,pwd,ctime,utime FROM operator WHERE operator_id=? 
+time=2019-01-01T19:04:26.563+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`==> Parameters: 15207312(Long)
+time=2019-01-01T19:04:26.565+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`<==      Total: 0
