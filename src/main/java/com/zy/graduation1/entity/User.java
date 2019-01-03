@@ -89,6 +89,13 @@ public class User extends SuperEntity<User> {
      */
     @TableField("current_city")
     private String currentCity;
+
+    /**
+     * 专业ID
+     */
+    @TableField("major_id")
+    private Long majorId;
+
     /**
      * 用户状态0-正常 1-冻结
      */
