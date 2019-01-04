@@ -1,0 +1,345 @@
+time=2019-01-02T22:00:31.619+0800`appName=graduation1`hostName=localhost`logLevel=INFO `msg=Starting Graduation1Application on DESKTOP-Q8HC681 with PID 11048 (F:\idea\graduation1\target\classes started by pcdn in F:\idea\graduation1)
+time=2019-01-02T22:00:31.639+0800`appName=graduation1`hostName=localhost`logLevel=INFO `msg=The following profiles are active: dev
+time=2019-01-02T22:00:32.624+0800`appName=graduation1`hostName=localhost`logLevel=INFO `msg=Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@5b03b9fe: startup date [Wed Jan 02 22:00:32 CST 2019]; root of context hierarchy
+time=2019-01-02T22:00:34.926+0800`appName=graduation1`hostName=localhost`logLevel=WARN `msg=No MyBatis mapper was found in '[com.zy.project.mapper]' package. Please check your configuration.
+time=2019-01-02T22:00:37.980+0800`appName=graduation1`hostName=localhost`logLevel=INFO `msg=Starting Graduation1Application on DESKTOP-Q8HC681 with PID 2620 (F:\idea\graduation1\target\classes started by pcdn in F:\idea\graduation1)
+time=2019-01-02T22:00:38.000+0800`appName=graduation1`hostName=localhost`logLevel=INFO `msg=The following profiles are active: dev
+time=2019-01-02T22:00:38.160+0800`appName=graduation1`hostName=localhost`logLevel=INFO `msg=Tomcat initialized with port(s): 8083 (http)
+time=2019-01-02T22:00:38.210+0800`appName=graduation1`hostName=localhost`logLevel=INFO `msg=Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@79da1ec0: startup date [Wed Jan 02 22:00:38 CST 2019]; root of context hierarchy
+time=2019-01-02T22:00:39.050+0800`appName=graduation1`hostName=localhost`logLevel=INFO `msg=Servlet dispatcherServlet mapped to [/]
+time=2019-01-02T22:00:39.060+0800`appName=graduation1`hostName=localhost`logLevel=INFO `msg=Mapping filter: 'characterEncodingFilter' to: [/*]
+time=2019-01-02T22:00:39.060+0800`appName=graduation1`hostName=localhost`logLevel=INFO `msg=Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+time=2019-01-02T22:00:39.060+0800`appName=graduation1`hostName=localhost`logLevel=INFO `msg=Mapping filter: 'httpPutFormContentFilter' to: [/*]
+time=2019-01-02T22:00:39.060+0800`appName=graduation1`hostName=localhost`logLevel=INFO `msg=Mapping filter: 'requestContextFilter' to: [/*]
+time=2019-01-02T22:00:39.630+0800`appName=graduation1`hostName=localhost`logLevel=WARN `msg=No MyBatis mapper was found in '[com.zy.project.mapper]' package. Please check your configuration.
+time=2019-01-02T22:00:39.787+0800`appName=graduation1`hostName=localhost`logLevel=INFO `msg=HikariPool-1 - Starting...
+time=2019-01-02T22:00:40.157+0800`appName=graduation1`hostName=localhost`logLevel=INFO `msg=HikariPool-1 - Start completed.
+time=2019-01-02T22:00:41.917+0800`appName=graduation1`hostName=localhost`logLevel=INFO `msg=Tomcat initialized with port(s): 8083 (http)
+time=2019-01-02T22:00:42.577+0800`appName=graduation1`hostName=localhost`logLevel=INFO `msg=Servlet dispatcherServlet mapped to [/]
+time=2019-01-02T22:00:42.587+0800`appName=graduation1`hostName=localhost`logLevel=INFO `msg=Mapping filter: 'characterEncodingFilter' to: [/*]
+time=2019-01-02T22:00:42.587+0800`appName=graduation1`hostName=localhost`logLevel=INFO `msg=Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+time=2019-01-02T22:00:42.587+0800`appName=graduation1`hostName=localhost`logLevel=INFO `msg=Mapping filter: 'httpPutFormContentFilter' to: [/*]
+time=2019-01-02T22:00:42.587+0800`appName=graduation1`hostName=localhost`logLevel=INFO `msg=Mapping filter: 'requestContextFilter' to: [/*]
+time=2019-01-02T22:00:43.410+0800`appName=graduation1`hostName=localhost`logLevel=INFO `msg=HikariPool-1 - Starting...
+time=2019-01-02T22:00:43.770+0800`appName=graduation1`hostName=localhost`logLevel=INFO `msg=HikariPool-1 - Start completed.
+time=2019-01-02T22:00:44.470+0800`appName=graduation1`hostName=localhost`logLevel=INFO `msg=Tomcat started on port(s): 8083 (http) with context path ''
+time=2019-01-02T22:00:44.480+0800`appName=graduation1`hostName=localhost`logLevel=INFO `msg=Started Graduation1Application in 15.03 seconds (JVM running for 21.208)
+time=2019-01-02T22:00:50.264+0800`appName=graduation1`hostName=localhost`logLevel=ERROR`msg=Failed to start connector [Connector[HTTP/1.1-8083]] org.apache.catalina.LifecycleException: Failed to start component [Connector[HTTP/1.1-8083]]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:167)
+	at org.apache.catalina.core.StandardService.addConnector(StandardService.java:225)
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.addPreviouslyRemovedConnectors(TomcatWebServer.java:256)
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.start(TomcatWebServer.java:198)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.startWebServer(ServletWebServerApplicationContext.java:300)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.finishRefresh(ServletWebServerApplicationContext.java:162)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:553)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:140)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:759)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:395)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:327)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1255)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1243)
+	at com.zy.graduation1.Graduation1Application.main(Graduation1Application.java:12)
+Caused by: org.apache.catalina.LifecycleException: Protocol handler start failed
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1020)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	... 13 more
+Caused by: java.net.BindException: Address already in use: bind
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Net.java:433)
+	at sun.nio.ch.Net.bind(Net.java:425)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:223)
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74)
+	at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:210)
+	at org.apache.tomcat.util.net.AbstractEndpoint.start(AbstractEndpoint.java:1150)
+	at org.apache.coyote.AbstractProtocol.start(AbstractProtocol.java:591)
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1018)
+	... 14 more
+
+time=2019-01-02T22:00:50.299+0800`appName=graduation1`hostName=localhost`logLevel=INFO `msg=
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+time=2019-01-02T22:00:50.307+0800`appName=graduation1`hostName=localhost`logLevel=ERROR`msg=
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The Tomcat connector configured to listen on port 8083 failed to start. The port may already be in use or the connector may be misconfigured.
+
+Action:
+
+Verify the connector's configuration, identify and stop any process that's listening on port 8083, or configure this application to listen on another port.
+
+time=2019-01-02T22:00:50.309+0800`appName=graduation1`hostName=localhost`logLevel=INFO `msg=Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@79da1ec0: startup date [Wed Jan 02 22:00:38 CST 2019]; root of context hierarchy
+time=2019-01-02T22:00:50.337+0800`appName=graduation1`hostName=localhost`logLevel=INFO `msg=HikariPool-1 - Shutdown initiated...
+time=2019-01-02T22:00:50.347+0800`appName=graduation1`hostName=localhost`logLevel=INFO `msg=HikariPool-1 - Shutdown completed.
+time=2019-01-02T22:00:52.487+0800`appName=graduation1`hostName=localhost`logLevel=INFO `msg=Starting without optional epoll library
+time=2019-01-02T22:00:52.491+0800`appName=graduation1`hostName=localhost`logLevel=INFO `msg=Starting without optional kqueue library
+time=2019-01-02T22:01:07.170+0800`appName=graduation1`hostName=localhost`logLevel=ERROR`msg=Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is com.zy.graduation1.exception.BizException: BizException:400004:管理员不存在] with root cause com.zy.graduation1.exception.BizException: BizException:400004:管理员不存在
+	at com.zy.graduation1.service.impl.UserSessionManageServiceImpl.login(UserSessionManageServiceImpl.java:60)
+	at com.zy.graduation1.service.impl.UserSessionManageServiceImpl.login(UserSessionManageServiceImpl.java:51)
+	at com.zy.graduation1.controller.SystemManageController.login(SystemManageController.java:35)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:209)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:136)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:102)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:877)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:783)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:991)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:925)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:974)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:877)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:661)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:851)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:109)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:496)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:803)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:790)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1468)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+time=2019-01-02T22:04:58.618+0800`appName=graduation1`hostName=localhost`logLevel=ERROR`msg=Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is com.zy.graduation1.exception.BizException: BizException:400004:管理员不存在] with root cause com.zy.graduation1.exception.BizException: BizException:400004:管理员不存在
+	at com.zy.graduation1.service.impl.UserSessionManageServiceImpl.login(UserSessionManageServiceImpl.java:60)
+	at com.zy.graduation1.service.impl.UserSessionManageServiceImpl.login(UserSessionManageServiceImpl.java:51)
+	at com.zy.graduation1.controller.SystemManageController.login(SystemManageController.java:35)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:209)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:136)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:102)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:877)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:783)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:991)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:925)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:974)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:877)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:661)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:851)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:109)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:496)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:803)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:790)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1468)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+time=2019-01-02T22:05:54.620+0800`appName=graduation1`hostName=localhost`logLevel=ERROR`msg=Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is com.zy.graduation1.exception.BizException: BizException:400004:管理员不存在] with root cause com.zy.graduation1.exception.BizException: BizException:400004:管理员不存在
+	at com.zy.graduation1.service.impl.UserSessionManageServiceImpl.login(UserSessionManageServiceImpl.java:60)
+	at com.zy.graduation1.service.impl.UserSessionManageServiceImpl.login(UserSessionManageServiceImpl.java:51)
+	at com.zy.graduation1.controller.SystemManageController.login(SystemManageController.java:35)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:209)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:136)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:102)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:877)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:783)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:991)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:925)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:974)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:877)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:661)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:851)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:109)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:496)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:803)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:790)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1468)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+time=2019-01-02T22:06:37.203+0800`appName=graduation1`hostName=localhost`logLevel=INFO `msg=Starting Graduation1Application on DESKTOP-Q8HC681 with PID 6816 (F:\idea\graduation1\target\classes started by pcdn in F:\idea\graduation1)
+time=2019-01-02T22:06:37.213+0800`appName=graduation1`hostName=localhost`logLevel=INFO `msg=The following profiles are active: dev
+time=2019-01-02T22:06:37.403+0800`appName=graduation1`hostName=localhost`logLevel=INFO `msg=Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@4de41af9: startup date [Wed Jan 02 22:06:37 CST 2019]; root of context hierarchy
+time=2019-01-02T22:06:38.767+0800`appName=graduation1`hostName=localhost`logLevel=WARN `msg=No MyBatis mapper was found in '[com.zy.project.mapper]' package. Please check your configuration.
+time=2019-01-02T22:06:40.715+0800`appName=graduation1`hostName=localhost`logLevel=INFO `msg=Tomcat initialized with port(s): 8083 (http)
+time=2019-01-02T22:06:41.303+0800`appName=graduation1`hostName=localhost`logLevel=INFO `msg=Servlet dispatcherServlet mapped to [/]
+time=2019-01-02T22:06:41.313+0800`appName=graduation1`hostName=localhost`logLevel=INFO `msg=Mapping filter: 'characterEncodingFilter' to: [/*]
+time=2019-01-02T22:06:41.313+0800`appName=graduation1`hostName=localhost`logLevel=INFO `msg=Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+time=2019-01-02T22:06:41.313+0800`appName=graduation1`hostName=localhost`logLevel=INFO `msg=Mapping filter: 'httpPutFormContentFilter' to: [/*]
+time=2019-01-02T22:06:41.313+0800`appName=graduation1`hostName=localhost`logLevel=INFO `msg=Mapping filter: 'requestContextFilter' to: [/*]
+time=2019-01-02T22:06:42.075+0800`appName=graduation1`hostName=localhost`logLevel=INFO `msg=HikariPool-1 - Starting...
+time=2019-01-02T22:06:42.371+0800`appName=graduation1`hostName=localhost`logLevel=INFO `msg=HikariPool-1 - Start completed.
+time=2019-01-02T22:06:46.609+0800`appName=graduation1`hostName=localhost`logLevel=INFO `msg=Tomcat started on port(s): 8083 (http) with context path ''
+time=2019-01-02T22:06:46.609+0800`appName=graduation1`hostName=localhost`logLevel=INFO `msg=Started Graduation1Application in 10.256 seconds (JVM running for 14.4)
+time=2019-01-02T22:07:07.185+0800`appName=graduation1`hostName=localhost`logLevel=INFO `msg=Starting without optional epoll library
+time=2019-01-02T22:07:07.190+0800`appName=graduation1`hostName=localhost`logLevel=INFO `msg=Starting without optional kqueue library
+time=2019-01-02T22:08:17.314+0800`appName=graduation1`hostName=localhost`logLevel=ERROR`msg=Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is com.zy.graduation1.exception.BizException: BizException:400004:管理员不存在] with root cause com.zy.graduation1.exception.BizException: BizException:400004:管理员不存在
+	at com.zy.graduation1.service.impl.UserSessionManageServiceImpl.login(UserSessionManageServiceImpl.java:60)
+	at com.zy.graduation1.service.impl.UserSessionManageServiceImpl.login(UserSessionManageServiceImpl.java:51)
+	at com.zy.graduation1.controller.SystemManageController.login(SystemManageController.java:35)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:209)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:136)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:102)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:877)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:783)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:991)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:925)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:974)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:877)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:661)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:851)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:109)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:496)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:803)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:790)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1468)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+time=2019-01-03T22:22:04.676+0800`appName=graduation1`hostName=localhost`logLevel=INFO `msg=Starting Graduation1Application on DESKTOP-Q8HC681 with PID 8632 (F:\idea\graduation1\target\classes started by pcdn in F:\idea\graduation1)
+time=2019-01-03T22:22:04.716+0800`appName=graduation1`hostName=localhost`logLevel=INFO `msg=The following profiles are active: dev
+time=2019-01-03T22:22:04.956+0800`appName=graduation1`hostName=localhost`logLevel=INFO `msg=Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@57cf54e1: startup date [Thu Jan 03 22:22:04 CST 2019]; root of context hierarchy
+time=2019-01-03T22:22:05.917+0800`appName=graduation1`hostName=localhost`logLevel=WARN `msg=No MyBatis mapper was found in '[com.zy.project.mapper]' package. Please check your configuration.
+time=2019-01-03T22:22:07.598+0800`appName=graduation1`hostName=localhost`logLevel=INFO `msg=Tomcat initialized with port(s): 8083 (http)
+time=2019-01-03T22:22:08.088+0800`appName=graduation1`hostName=localhost`logLevel=INFO `msg=Servlet dispatcherServlet mapped to [/]
+time=2019-01-03T22:22:08.098+0800`appName=graduation1`hostName=localhost`logLevel=INFO `msg=Mapping filter: 'characterEncodingFilter' to: [/*]
+time=2019-01-03T22:22:08.098+0800`appName=graduation1`hostName=localhost`logLevel=INFO `msg=Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+time=2019-01-03T22:22:08.098+0800`appName=graduation1`hostName=localhost`logLevel=INFO `msg=Mapping filter: 'httpPutFormContentFilter' to: [/*]
+time=2019-01-03T22:22:08.098+0800`appName=graduation1`hostName=localhost`logLevel=INFO `msg=Mapping filter: 'requestContextFilter' to: [/*]
+time=2019-01-03T22:22:08.746+0800`appName=graduation1`hostName=localhost`logLevel=INFO `msg=HikariPool-1 - Starting...
+time=2019-01-03T22:22:09.246+0800`appName=graduation1`hostName=localhost`logLevel=INFO `msg=HikariPool-1 - Start completed.
+time=2019-01-03T22:22:12.939+0800`appName=graduation1`hostName=localhost`logLevel=INFO `msg=Tomcat started on port(s): 8083 (http) with context path ''
+time=2019-01-03T22:22:12.949+0800`appName=graduation1`hostName=localhost`logLevel=INFO `msg=Started Graduation1Application in 9.023 seconds (JVM running for 13.239)

@@ -5,7 +5,6 @@ import com.baomidou.mybatisplus.annotation.TableField;
 import com.baomidou.mybatisplus.annotation.TableField;
 import com.baomidou.mybatisplus.annotation.TableId;
 import com.baomidou.mybatisplus.annotation.IdType;
-import com.baomidou.mybatisplus.annotation.TableName;
 import com.zy.graduation1.entity.SuperEntity;
 
 import com.baomidou.mybatisplus.annotation.Version;
@@ -22,41 +21,35 @@ import java.io.Serializable;
  * </p>
  *
  * @author zy
- * @since 2019-01-03
+ * @since 2019-01-04
  */
 @Data
 @EqualsAndHashCode(callSuper = true)
 @Accessors(chain = true)
-@TableName("origin_user_relation")
-public class OriginUserRelation extends SuperEntity<OriginUserRelation> {
+public class College extends SuperEntity<College> {
 
     private static final long serialVersionUID = 1L;
 
     /**
-     * 联系ID
+     * 学院ID
      */
-    @TableId(value = "relation_id", type = IdType.ID_WORKER)
-    private Long relationId;
+    @TableId(value = "college_id", type = IdType.ID_WORKER)
+    private Long collegeId;
     /**
-     * 用户ID
+     * 学院名称
      */
-    @TableField("student_id")
-    private Long studentId;
+    @TableField("college_name")
+    private String collegeName;
     /**
-     * 组织ID
+     * 管理员ID
      */
-    @TableField("origin_id")
-    private Long originId;
-    /**
-     * 状态0-正常 1-冻结
-     */
-    @TableField("status")
-    private Integer status;
+    @TableField("operator_id")
+    private Long operatorId;
 
 
     @Override
     protected Serializable pkVal() {
-        return this.relationId;
+        return this.collegeId;
     }
 
 }

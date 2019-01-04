@@ -50,4 +50,15 @@ public class UserServiceImpl extends ServiceImpl<UserMapper, User> implements Us
         return baseMapper.updateById(user) == 1;
     }
 
+    @Override
+    public Boolean saveOrUpdateUser(User user) {
+        return this.saveOrUpdateUser(user);
+    }
+
+    @Override
+    public Boolean deleteUser(Long studentId) {
+        QueryWrapper<User> query = new QueryWrapper<>();
+        query.eq("student_id", studentId);
+        return baseMapper.deleteById(studentId) == 1;
+    }
 }
