@@ -1,6 +1,7 @@
 package com.zy.graduation1.service.impl;
 
 import com.baomidou.mybatisplus.core.metadata.IPage;
+import com.baomidou.mybatisplus.core.toolkit.CollectionUtils;
 import com.google.common.collect.Lists;
 import com.google.common.collect.Maps;
 import com.zy.graduation1.common.MyPage;
@@ -11,7 +12,6 @@ import com.zy.graduation1.service.*;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import org.springframework.util.CollectionUtils;
 
 import java.util.List;
 import java.util.Map;
@@ -35,14 +35,22 @@ public class UserInfoManageManageServiceImpl implements UserInfoManageService {
     @Autowired
     private MajorService majorService;
 
+    @Autowired
+    private UserService userService;
+
     @Override
-    public MyPage<UserInfoDto> queryUserInfo(Long operatorId, Integer currentPage) {
+    public MyPage<UserInfoDto> queryUserInfo(Long operatorId, Integer currentPage, Long classId, Long majorId, Long collegeId) {
         Origin origin = originService.getOriginOperator(operatorId);
         if(null == origin) {
             return new MyPage<>();
         }
-        IPage<User> userPage = originUserRelationService.queryUserInfo(operatorId, currentPage);
-        List<User> users = userPage.getRecords();
+        List<OriginUserRelation> originUserRelations = originUserRelationService.queryUserInfo(origin.getOriginId());
+        if(CollectionUtils.isEmpty(originUserRelations)) {
+            return new MyPage<>();
+        }
+
+        List<Long> studentIds = originUserRelations.stream().map(OriginUserRelation::getStudentId).distinct().collect(Collectors.toList());
+        List<User> users = userService.listUser(studentIds, classId, majorId, collegeId, currentPage);
         if(CollectionUtils.isEmpty(users)) {
             return new MyPage<>();
         }
@@ -79,6 +87,6 @@ public class UserInfoManageManageServiceImpl implements UserInfoManageService {
             }
             userInfos.add(userInfoDto);
         }
-        return new MyPage<>(userPage.getTotal(), userInfos);
+        return new MyPage<>((long)userInfos.size(), userInfos);
     }
 }

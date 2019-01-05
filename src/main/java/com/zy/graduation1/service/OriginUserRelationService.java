@@ -5,6 +5,8 @@ import com.zy.graduation1.entity.OriginUserRelation;
 import com.baomidou.mybatisplus.extension.service.IService;
 import com.zy.graduation1.entity.User;
 
+import java.util.List;
+
 /**
  * <p>
  *  服务类
@@ -20,5 +22,5 @@ public interface OriginUserRelationService extends IService<OriginUserRelation> 
      * @param originId
      * @return
      */
-    IPage<User> queryUserInfo(Long originId, Integer currentPage);
+    List<OriginUserRelation> queryUserInfo(Long originId);
 }

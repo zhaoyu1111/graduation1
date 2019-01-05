@@ -4,6 +4,8 @@ import com.baomidou.mybatisplus.core.metadata.IPage;
 import com.zy.graduation1.entity.User;
 import com.baomidou.mybatisplus.extension.service.IService;
 
+import java.util.List;
+
 /**
  * <p>
  *  服务类
@@ -50,4 +52,11 @@ public interface UserService extends IService<User> {
      * @return
      */
     Boolean deleteUser(Long studentId);
+
+    /**
+     * 批量查询用户信息
+     * @param studentIds
+     * @return
+     */
+    List<User> listUser(List<Long> studentIds, Long classId, Long majorId, Long collegeId, Integer currentPage);
 }

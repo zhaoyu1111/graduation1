@@ -1,5 +1,7 @@
 package com.zy.graduation1.service;
 
+import com.baomidou.mybatisplus.core.metadata.IPage;
+import com.zy.graduation1.common.MyPage;
 import com.zy.graduation1.entity.Class;
 import com.baomidou.mybatisplus.extension.service.IService;
 
@@ -21,4 +23,28 @@ public interface ClassService extends IService<Class> {
      * @return
      */
     List<Class> listClassInfo(List<Long> classIds);
+
+    /**
+     * 删除班级
+     * @param classId
+     * @return
+     */
+    Boolean deleteClass(Long classId);
+
+    /**
+     * 新增或删除班级信息
+     * @param classs
+     * @return
+     */
+    Boolean saveOrUpdateClass(Class classs);
+
+    /**
+     * 查询班级信息
+     * @param classId
+     * @param majorId
+     * @param collegeId
+     * @param currentPage
+     * @return
+     */
+    IPage<Class> queryClassInfo(Long classId, Long majorId, Long collegeId, Integer currentPage);
 }

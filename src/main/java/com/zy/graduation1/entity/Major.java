@@ -46,6 +46,9 @@ public class Major extends SuperEntity<Major> {
     @TableField("operator_id")
     private Long operatorId;
 
+    @TableField("college_id")
+    private Long collegeId;
+
 
     @Override
     protected Serializable pkVal() {

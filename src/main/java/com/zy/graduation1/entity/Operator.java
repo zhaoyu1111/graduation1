@@ -54,6 +54,12 @@ public class Operator extends SuperEntity<Operator> {
     @TableField("origin_type")
     private Integer originType;
 
+    @TableField("mobile")
+    private String mobile;
+
+    @TableField("pwd")
+    private String pwd;
+
 
     @Override
     protected Serializable pkVal() {

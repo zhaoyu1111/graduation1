@@ -13,6 +13,7 @@ import com.zy.graduation1.utils.MD5Utils;
 import org.springframework.stereotype.Service;
 
 import javax.management.Query;
+import java.util.List;
 
 /**
  * <p>
@@ -60,5 +61,22 @@ public class UserServiceImpl extends ServiceImpl<UserMapper, User> implements Us
         QueryWrapper<User> query = new QueryWrapper<>();
         query.eq("student_id", studentId);
         return baseMapper.deleteById(studentId) == 1;
+    }
+
+    @Override
+    public List<User> listUser(List<Long> studentIds, Long classId, Long majorId, Long collegeId, Integer currentPage) {
+        QueryWrapper<User> query = new QueryWrapper<>();
+        query.in("student_id", studentIds);
+        if(null != classId) {
+            query.eq("class_id", classId);
+        }
+        if(null != majorId) {
+            query.eq("major_id", majorId);
+        }
+        if(null != collegeId) {
+            query.eq("college_id", collegeId);
+        }
+        Page<User> userPage = new Page<>(currentPage, 20);
+        return baseMapper.selectList(query);
     }
 }

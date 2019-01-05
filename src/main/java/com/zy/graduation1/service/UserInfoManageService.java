@@ -13,5 +13,5 @@ public interface UserInfoManageService {
      * @param operator
      * @return
      */
-    MyPage<UserInfoDto> queryUserInfo(Long operator, Integer currentPage);
+    MyPage<UserInfoDto> queryUserInfo(Long operator, Integer currentPage, Long classId, Long majorId, Long collegeId);
 }

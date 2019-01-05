@@ -3,6 +3,8 @@ package com.zy.graduation1.service;
 import com.zy.graduation1.entity.Operator;
 import com.baomidou.mybatisplus.extension.service.IService;
 
+import java.util.List;
+
 /**
  * <p>
  *  服务类
@@ -13,4 +15,10 @@ import com.baomidou.mybatisplus.extension.service.IService;
  */
 public interface OperatorService extends IService<Operator> {
 
+    /**
+     * 批量查询管理员信息
+     * @param operatorIds
+     * @return
+     */
+    List<Operator> getOperatorInfo(List<Long> operatorIds);
 }
