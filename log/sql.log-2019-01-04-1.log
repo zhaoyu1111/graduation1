@@ -1,0 +1,6 @@
+time=2019-01-04T22:04:35.474+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`==>  Preparing: SELECT student_id AS studentId,user_name AS userName,class_id AS classId,college_id AS collegeId,mobile,gender,birthday,email,avatar,introduce,home_address AS homeAddress,current_city AS currentCity,major_id AS majorId,status,pwd,ctime,utime FROM user WHERE student_id=? 
+time=2019-01-04T22:04:36.694+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`==> Parameters: 15207312(Long)
+time=2019-01-04T22:04:37.287+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`<==      Total: 1
+time=2019-01-04T22:04:38.854+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`==>  Preparing: SELECT operator_id AS operatorId,operator_name AS operatorName,operator_status AS operatorStatus,deleted,origin_type AS originType,ctime,utime FROM operator WHERE operator_id=? 
+time=2019-01-04T22:04:38.856+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`==> Parameters: 15207312(Long)
+time=2019-01-04T22:04:38.859+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`<==      Total: 0

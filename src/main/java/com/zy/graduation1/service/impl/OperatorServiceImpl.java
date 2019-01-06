@@ -30,4 +30,6 @@ public class OperatorServiceImpl extends ServiceImpl<OperatorMapper, Operator> i
         query.in("operator_id", operatorIds);
         return baseMapper.selectList(query);
     }
+
+
 }

@@ -1,6 +1,258 @@
-time=2019-01-04T22:04:35.474+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`==>  Preparing: SELECT student_id AS studentId,user_name AS userName,class_id AS classId,college_id AS collegeId,mobile,gender,birthday,email,avatar,introduce,home_address AS homeAddress,current_city AS currentCity,major_id AS majorId,status,pwd,ctime,utime FROM user WHERE student_id=? 
-time=2019-01-04T22:04:36.694+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`==> Parameters: 15207312(Long)
-time=2019-01-04T22:04:37.287+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`<==      Total: 1
-time=2019-01-04T22:04:38.854+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`==>  Preparing: SELECT operator_id AS operatorId,operator_name AS operatorName,operator_status AS operatorStatus,deleted,origin_type AS originType,ctime,utime FROM operator WHERE operator_id=? 
-time=2019-01-04T22:04:38.856+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`==> Parameters: 15207312(Long)
-time=2019-01-04T22:04:38.859+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`<==      Total: 0
+time=2019-01-06T09:40:39.714+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`==>  Preparing: SELECT operator_id AS operatorId,operator_name AS operatorName,operator_status AS operatorStatus,deleted,mobile,pwd,ctime,utime FROM operator WHERE operator_id=? 
+time=2019-01-06T09:40:39.781+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`==> Parameters: 15207312(Long)
+time=2019-01-06T09:40:39.850+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`<==      Total: 1
+time=2019-01-06T09:40:39.903+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`==>  Preparing: SELECT student_id AS studentId,token,ctime,utime FROM user_web_token WHERE student_id=? 
+time=2019-01-06T09:40:39.905+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`==> Parameters: 15207312(Long)
+time=2019-01-06T09:40:39.911+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`<==      Total: 1
+time=2019-01-06T09:40:40.048+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`==>  Preparing: UPDATE user_web_token SET token=?,utime=? WHERE student_id=? 
+time=2019-01-06T09:40:40.050+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`==> Parameters: cad3e670-7bbd-4508-a3d9-2096fbb30605(String), 1546738840047(Long), 15207312(Long)
+time=2019-01-06T09:40:40.062+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`<==    Updates: 1
+time=2019-01-06T09:40:44.689+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`==>  Preparing: SELECT operator_id AS operatorId,operator_name AS operatorName,operator_status AS operatorStatus,deleted,mobile,pwd,ctime,utime FROM operator WHERE operator_id=? 
+time=2019-01-06T09:40:47.706+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`==> Parameters: 15207312(Long)
+time=2019-01-06T09:40:47.727+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`<==      Total: 1
+time=2019-01-06T09:40:47.730+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`==>  Preparing: SELECT student_id AS studentId,token,ctime,utime FROM user_web_token WHERE student_id=? 
+time=2019-01-06T09:40:47.731+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`==> Parameters: 15207312(Long)
+time=2019-01-06T09:40:47.737+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`<==      Total: 1
+time=2019-01-06T09:40:47.874+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`==>  Preparing: UPDATE user_web_token SET token=?,utime=? WHERE student_id=? 
+time=2019-01-06T09:40:47.875+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`==> Parameters: b3a7a8f0-5741-41ee-81cf-c5000ddfddb2(String), 1546738847786(Long), 15207312(Long)
+time=2019-01-06T09:40:47.876+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`<==    Updates: 1
+time=2019-01-06T15:46:19.311+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`==>  Preparing: SELECT origin_id AS originId,origin_name AS originName,origin_type AS originType,origin_descript AS originDescript,members,status,address,operator_id AS operatorId,ctime,utime FROM origin WHERE operator_id = ? 
+time=2019-01-06T15:46:19.371+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`==> Parameters: 15207312(Long)
+time=2019-01-06T15:46:19.443+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`<==      Total: 1
+time=2019-01-06T15:46:19.624+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`==>  Preparing: SELECT relation_id AS relationId,student_id AS studentId,origin_id AS originId,status,ctime,utime FROM origin_user_relation WHERE origin_id = ? 
+time=2019-01-06T15:46:19.625+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`==> Parameters: 1(Long)
+time=2019-01-06T15:46:19.685+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`<==      Total: 1
+time=2019-01-06T15:47:00.584+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`==>  Preparing: SELECT origin_id AS originId,origin_name AS originName,origin_type AS originType,origin_descript AS originDescript,members,status,address,operator_id AS operatorId,ctime,utime FROM origin WHERE operator_id = ? 
+time=2019-01-06T15:47:00.585+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`==> Parameters: 15207312(Long)
+time=2019-01-06T15:47:00.588+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`<==      Total: 1
+time=2019-01-06T15:47:00.590+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`==>  Preparing: SELECT relation_id AS relationId,student_id AS studentId,origin_id AS originId,status,ctime,utime FROM origin_user_relation WHERE origin_id = ? 
+time=2019-01-06T15:47:00.591+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`==> Parameters: 1(Long)
+time=2019-01-06T15:47:00.593+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`<==      Total: 1
+time=2019-01-06T17:40:38.061+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`==>  Preparing: SELECT origin_id AS originId,origin_name AS originName,origin_type AS originType,origin_descript AS originDescript,members,status,address,operator_id AS operatorId,ctime,utime FROM origin WHERE operator_id = ? 
+time=2019-01-06T17:40:38.120+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`==> Parameters: null
+time=2019-01-06T17:40:38.171+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`<==      Total: 0
+time=2019-01-06T17:42:33.720+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`==>  Preparing: SELECT origin_id AS originId,origin_name AS originName,origin_type AS originType,origin_descript AS originDescript,members,status,address,operator_id AS operatorId,ctime,utime FROM origin WHERE operator_id = ? 
+time=2019-01-06T17:42:33.752+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`==> Parameters: null
+time=2019-01-06T17:42:33.770+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`<==      Total: 0
+time=2019-01-06T17:43:13.275+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`==>  Preparing: SELECT origin_id AS originId,origin_name AS originName,origin_type AS originType,origin_descript AS originDescript,members,status,address,operator_id AS operatorId,ctime,utime FROM origin WHERE operator_id = ? 
+time=2019-01-06T17:43:13.277+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`==> Parameters: null
+time=2019-01-06T17:43:13.280+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`<==      Total: 0
+time=2019-01-06T17:44:01.907+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`==>  Preparing: SELECT origin_id AS originId,origin_name AS originName,origin_type AS originType,origin_descript AS originDescript,members,status,address,operator_id AS operatorId,ctime,utime FROM origin WHERE operator_id = ? 
+time=2019-01-06T17:44:01.941+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`==> Parameters: null
+time=2019-01-06T17:44:01.963+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`<==      Total: 0
+time=2019-01-06T17:52:58.685+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`==>  Preparing: SELECT operator_id AS operatorId,operator_name AS operatorName,operator_status AS operatorStatus,deleted,mobile,pwd,ctime,utime FROM operator WHERE operator_id=? 
+time=2019-01-06T17:52:58.764+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`==> Parameters: 15207312(Long)
+time=2019-01-06T17:52:58.826+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`<==      Total: 1
+time=2019-01-06T17:52:58.845+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`==>  Preparing: SELECT student_id AS studentId,token,ctime,utime FROM user_web_token WHERE student_id=? 
+time=2019-01-06T17:52:58.846+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`==> Parameters: 15207312(Long)
+time=2019-01-06T17:52:58.851+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`<==      Total: 1
+time=2019-01-06T17:52:58.970+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`==>  Preparing: UPDATE user_web_token SET token=?,utime=? WHERE student_id=? 
+time=2019-01-06T17:52:58.972+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`==> Parameters: 9fe13f37-926e-442b-94cb-695d1435cd7b(String), 1546768378968(Long), 15207312(Long)
+time=2019-01-06T17:52:58.982+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`<==    Updates: 1
+time=2019-01-06T17:55:15.384+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`==>  Preparing: SELECT operator_id AS operatorId,operator_name AS operatorName,operator_status AS operatorStatus,deleted,mobile,pwd,ctime,utime FROM operator WHERE operator_id=? 
+time=2019-01-06T17:55:15.420+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`==> Parameters: 15207312(Long)
+time=2019-01-06T17:55:15.443+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`<==      Total: 1
+time=2019-01-06T17:55:15.456+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`==>  Preparing: SELECT student_id AS studentId,token,ctime,utime FROM user_web_token WHERE student_id=? 
+time=2019-01-06T17:55:15.457+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`==> Parameters: 15207312(Long)
+time=2019-01-06T17:55:15.459+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`<==      Total: 1
+time=2019-01-06T17:55:15.535+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`==>  Preparing: UPDATE user_web_token SET token=?,utime=? WHERE student_id=? 
+time=2019-01-06T17:55:15.536+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`==> Parameters: 75417580-80be-4bfa-a2b5-aba6b4eaee61(String), 1546768515534(Long), 15207312(Long)
+time=2019-01-06T17:55:15.538+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`<==    Updates: 1
+time=2019-01-06T17:56:28.773+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`==>  Preparing: SELECT operator_id AS operatorId,operator_name AS operatorName,operator_status AS operatorStatus,deleted,mobile,pwd,ctime,utime FROM operator WHERE operator_id=? 
+time=2019-01-06T17:56:28.813+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`==> Parameters: 15207312(Long)
+time=2019-01-06T17:56:28.840+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`<==      Total: 1
+time=2019-01-06T17:56:28.853+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`==>  Preparing: SELECT student_id AS studentId,token,ctime,utime FROM user_web_token WHERE student_id=? 
+time=2019-01-06T17:56:28.854+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`==> Parameters: 15207312(Long)
+time=2019-01-06T17:56:28.855+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`<==      Total: 1
+time=2019-01-06T17:56:28.933+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`==>  Preparing: UPDATE user_web_token SET token=?,utime=? WHERE student_id=? 
+time=2019-01-06T17:56:28.935+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`==> Parameters: 20aad317-4fbe-47f1-9516-af12727438ec(String), 1546768588931(Long), 15207312(Long)
+time=2019-01-06T17:56:28.939+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`<==    Updates: 1
+time=2019-01-06T17:56:35.475+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`==>  Preparing: SELECT operator_id AS operatorId,operator_name AS operatorName,operator_status AS operatorStatus,deleted,mobile,pwd,ctime,utime FROM operator WHERE operator_id=? 
+time=2019-01-06T17:56:35.476+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`==> Parameters: 15207312(Long)
+time=2019-01-06T17:56:35.478+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`<==      Total: 1
+time=2019-01-06T17:56:35.480+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`==>  Preparing: SELECT student_id AS studentId,token,ctime,utime FROM user_web_token WHERE student_id=? 
+time=2019-01-06T17:56:35.481+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`==> Parameters: 15207312(Long)
+time=2019-01-06T17:56:35.482+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`<==      Total: 1
+time=2019-01-06T17:56:35.489+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`==>  Preparing: UPDATE user_web_token SET token=?,utime=? WHERE student_id=? 
+time=2019-01-06T17:56:35.490+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`==> Parameters: b34b0101-d603-41b1-a8b7-abe72e82aad5(String), 1546768595488(Long), 15207312(Long)
+time=2019-01-06T17:56:35.493+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`<==    Updates: 1
+time=2019-01-06T17:58:20.448+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`==>  Preparing: SELECT operator_id AS operatorId,operator_name AS operatorName,operator_status AS operatorStatus,deleted,mobile,pwd,ctime,utime FROM operator WHERE operator_id=? 
+time=2019-01-06T17:58:20.484+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`==> Parameters: 15207312(Long)
+time=2019-01-06T17:58:20.510+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`<==      Total: 1
+time=2019-01-06T17:58:20.525+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`==>  Preparing: SELECT student_id AS studentId,token,ctime,utime FROM user_web_token WHERE student_id=? 
+time=2019-01-06T17:58:20.525+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`==> Parameters: 15207312(Long)
+time=2019-01-06T17:58:20.528+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`<==      Total: 1
+time=2019-01-06T17:58:20.614+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`==>  Preparing: UPDATE user_web_token SET token=?,utime=? WHERE student_id=? 
+time=2019-01-06T17:58:20.615+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`==> Parameters: cef5aa4f-4ee5-4275-a0b3-5fb967020ecf(String), 1546768700613(Long), 15207312(Long)
+time=2019-01-06T17:58:20.618+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`<==    Updates: 1
+time=2019-01-06T18:03:06.966+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`==>  Preparing: SELECT operator_id AS operatorId,operator_name AS operatorName,operator_status AS operatorStatus,deleted,mobile,pwd,ctime,utime FROM operator WHERE operator_id=? 
+time=2019-01-06T18:03:07.005+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`==> Parameters: null
+time=2019-01-06T18:03:07.031+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`<==      Total: 0
+time=2019-01-06T18:03:18.376+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`==>  Preparing: SELECT operator_id AS operatorId,operator_name AS operatorName,operator_status AS operatorStatus,deleted,mobile,pwd,ctime,utime FROM operator WHERE operator_id=? 
+time=2019-01-06T18:03:18.376+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`==> Parameters: null
+time=2019-01-06T18:03:18.378+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`<==      Total: 0
+time=2019-01-06T18:03:34.158+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`==>  Preparing: SELECT operator_id AS operatorId,operator_name AS operatorName,operator_status AS operatorStatus,deleted,mobile,pwd,ctime,utime FROM operator WHERE operator_id=? 
+time=2019-01-06T18:03:34.159+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`==> Parameters: null
+time=2019-01-06T18:03:34.161+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`<==      Total: 0
+time=2019-01-06T18:04:47.636+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`==>  Preparing: SELECT operator_id AS operatorId,operator_name AS operatorName,operator_status AS operatorStatus,deleted,mobile,pwd,ctime,utime FROM operator WHERE operator_id=? 
+time=2019-01-06T18:04:47.639+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`==> Parameters: null
+time=2019-01-06T18:04:47.643+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`<==      Total: 0
+time=2019-01-06T18:06:32.417+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`==>  Preparing: SELECT operator_id AS operatorId,operator_name AS operatorName,operator_status AS operatorStatus,deleted,mobile,pwd,ctime,utime FROM operator WHERE operator_id=? 
+time=2019-01-06T18:06:32.427+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`==> Parameters: null
+time=2019-01-06T18:06:32.427+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`<==      Total: 0
+time=2019-01-06T18:08:13.894+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`==>  Preparing: SELECT operator_id AS operatorId,operator_name AS operatorName,operator_status AS operatorStatus,deleted,mobile,pwd,ctime,utime FROM operator WHERE operator_id=? 
+time=2019-01-06T18:08:13.895+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`==> Parameters: null
+time=2019-01-06T18:08:13.897+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`<==      Total: 0
+time=2019-01-06T18:08:21.091+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`==>  Preparing: SELECT operator_id AS operatorId,operator_name AS operatorName,operator_status AS operatorStatus,deleted,mobile,pwd,ctime,utime FROM operator WHERE operator_id=? 
+time=2019-01-06T18:08:21.091+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`==> Parameters: null
+time=2019-01-06T18:08:21.093+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`<==      Total: 0
+time=2019-01-06T18:08:57.590+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`==>  Preparing: SELECT operator_id AS operatorId,operator_name AS operatorName,operator_status AS operatorStatus,deleted,mobile,pwd,ctime,utime FROM operator WHERE operator_id=? 
+time=2019-01-06T18:08:57.693+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`==> Parameters: null
+time=2019-01-06T18:08:57.754+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`<==      Total: 0
+time=2019-01-06T18:10:40.290+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`==>  Preparing: SELECT operator_id AS operatorId,operator_name AS operatorName,operator_status AS operatorStatus,deleted,mobile,pwd,ctime,utime FROM operator WHERE operator_id=? 
+time=2019-01-06T18:10:40.342+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`==> Parameters: null
+time=2019-01-06T18:10:40.344+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`<==      Total: 0
+time=2019-01-06T18:48:14.418+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`==>  Preparing: SELECT operator_id AS operatorId,operator_name AS operatorName,operator_status AS operatorStatus,deleted,mobile,pwd,ctime,utime FROM operator WHERE operator_id=? 
+time=2019-01-06T18:48:14.518+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`==> Parameters: 15207312(Long)
+time=2019-01-06T18:48:14.601+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`<==      Total: 1
+time=2019-01-06T18:48:14.647+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`==>  Preparing: SELECT student_id AS studentId,token,ctime,utime FROM user_web_token WHERE student_id=? 
+time=2019-01-06T18:48:14.649+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`==> Parameters: 15207312(Long)
+time=2019-01-06T18:48:14.655+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`<==      Total: 1
+time=2019-01-06T18:48:14.777+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`==>  Preparing: UPDATE user_web_token SET token=?,utime=? WHERE student_id=? 
+time=2019-01-06T18:48:14.780+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`==> Parameters: 3b1c25ca-6573-445b-b1ed-2e94119ff999(String), 1546771694776(Long), 15207312(Long)
+time=2019-01-06T18:48:14.791+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`<==    Updates: 1
+time=2019-01-06T18:55:01.757+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`==>  Preparing: SELECT operator_id AS operatorId,operator_name AS operatorName,operator_status AS operatorStatus,deleted,mobile,pwd,ctime,utime FROM operator WHERE operator_id=? 
+time=2019-01-06T18:55:01.757+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`==> Parameters: 15207312(Long)
+time=2019-01-06T18:55:01.767+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`<==      Total: 1
+time=2019-01-06T18:55:01.767+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`==>  Preparing: SELECT student_id AS studentId,token,ctime,utime FROM user_web_token WHERE student_id=? 
+time=2019-01-06T18:55:01.767+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`==> Parameters: 15207312(Long)
+time=2019-01-06T18:55:01.777+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`<==      Total: 1
+time=2019-01-06T18:55:01.777+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`==>  Preparing: UPDATE user_web_token SET token=?,utime=? WHERE student_id=? 
+time=2019-01-06T18:55:01.777+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`==> Parameters: 59cff1f4-29f3-45db-8929-ff8e86d4ec33(String), 1546772101777(Long), 15207312(Long)
+time=2019-01-06T18:55:01.787+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`<==    Updates: 1
+time=2019-01-06T18:55:19.888+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`==>  Preparing: SELECT operator_id AS operatorId,operator_name AS operatorName,operator_status AS operatorStatus,deleted,mobile,pwd,ctime,utime FROM operator WHERE operator_id=? 
+time=2019-01-06T18:55:19.898+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`==> Parameters: 15207312(Long)
+time=2019-01-06T18:55:19.898+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`<==      Total: 1
+time=2019-01-06T18:55:19.898+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`==>  Preparing: SELECT student_id AS studentId,token,ctime,utime FROM user_web_token WHERE student_id=? 
+time=2019-01-06T18:55:19.898+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`==> Parameters: 15207312(Long)
+time=2019-01-06T18:55:19.898+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`<==      Total: 1
+time=2019-01-06T18:55:19.908+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`==>  Preparing: UPDATE user_web_token SET token=?,utime=? WHERE student_id=? 
+time=2019-01-06T18:55:19.908+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`==> Parameters: b94c9a3d-6921-4fe0-82a7-bc01ebce0493(String), 1546772119908(Long), 15207312(Long)
+time=2019-01-06T18:55:19.908+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`<==    Updates: 1
+time=2019-01-06T18:57:06.255+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`==>  Preparing: SELECT operator_id AS operatorId,operator_name AS operatorName,operator_status AS operatorStatus,deleted,mobile,pwd,ctime,utime FROM operator WHERE operator_id=? 
+time=2019-01-06T18:57:06.295+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`==> Parameters: 15207312(Long)
+time=2019-01-06T18:57:06.328+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`<==      Total: 1
+time=2019-01-06T18:57:06.343+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`==>  Preparing: SELECT student_id AS studentId,token,ctime,utime FROM user_web_token WHERE student_id=? 
+time=2019-01-06T18:57:06.344+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`==> Parameters: 15207312(Long)
+time=2019-01-06T18:57:06.353+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`<==      Total: 1
+time=2019-01-06T18:57:06.428+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`==>  Preparing: UPDATE user_web_token SET token=?,utime=? WHERE student_id=? 
+time=2019-01-06T18:57:06.430+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`==> Parameters: c53cf89c-953c-4d3d-89d3-68a80dee4fbc(String), 1546772226427(Long), 15207312(Long)
+time=2019-01-06T18:57:06.432+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`<==    Updates: 1
+time=2019-01-06T19:03:15.537+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`==>  Preparing: SELECT operator_id AS operatorId,operator_name AS operatorName,operator_status AS operatorStatus,deleted,mobile,pwd,ctime,utime FROM operator WHERE operator_id=? 
+time=2019-01-06T19:03:15.577+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`==> Parameters: 15207312(Long)
+time=2019-01-06T19:03:15.617+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`<==      Total: 1
+time=2019-01-06T19:03:15.650+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`==>  Preparing: SELECT student_id AS studentId,token,ctime,utime FROM user_web_token WHERE student_id=? 
+time=2019-01-06T19:03:15.650+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`==> Parameters: 15207312(Long)
+time=2019-01-06T19:03:15.650+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`<==      Total: 1
+time=2019-01-06T19:03:15.740+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`==>  Preparing: UPDATE user_web_token SET token=?,utime=? WHERE student_id=? 
+time=2019-01-06T19:03:15.740+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`==> Parameters: a14c577f-ba55-4c1a-96fc-700fd15d828f(String), 1546772595740(Long), 15207312(Long)
+time=2019-01-06T19:03:15.740+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`<==    Updates: 1
+time=2019-01-06T19:05:13.488+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`==>  Preparing: SELECT operator_id AS operatorId,operator_name AS operatorName,operator_status AS operatorStatus,deleted,mobile,pwd,ctime,utime FROM operator WHERE operator_id=? 
+time=2019-01-06T19:05:13.568+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`==> Parameters: 15207312(Long)
+time=2019-01-06T19:05:13.598+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`<==      Total: 1
+time=2019-01-06T19:05:13.628+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`==>  Preparing: SELECT student_id AS studentId,token,ctime,utime FROM user_web_token WHERE student_id=? 
+time=2019-01-06T19:05:13.628+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`==> Parameters: 15207312(Long)
+time=2019-01-06T19:05:13.638+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`<==      Total: 1
+time=2019-01-06T19:05:13.728+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`==>  Preparing: UPDATE user_web_token SET token=?,utime=? WHERE student_id=? 
+time=2019-01-06T19:05:13.728+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`==> Parameters: 409e4f8f-24b8-403d-9488-8e4d391437bc(String), 1546772713728(Long), 15207312(Long)
+time=2019-01-06T19:05:13.738+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`<==    Updates: 1
+time=2019-01-06T19:06:14.934+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`==>  Preparing: SELECT operator_id AS operatorId,operator_name AS operatorName,operator_status AS operatorStatus,deleted,mobile,pwd,ctime,utime FROM operator WHERE operator_id=? 
+time=2019-01-06T19:06:14.934+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`==> Parameters: 15207312(Long)
+time=2019-01-06T19:06:14.944+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`<==      Total: 1
+time=2019-01-06T19:06:14.944+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`==>  Preparing: SELECT student_id AS studentId,token,ctime,utime FROM user_web_token WHERE student_id=? 
+time=2019-01-06T19:06:14.944+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`==> Parameters: 15207312(Long)
+time=2019-01-06T19:06:14.944+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`<==      Total: 1
+time=2019-01-06T19:06:14.954+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`==>  Preparing: UPDATE user_web_token SET token=?,utime=? WHERE student_id=? 
+time=2019-01-06T19:06:14.954+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`==> Parameters: 3a732cec-142a-42fc-ad43-345974b4d2c0(String), 1546772774944(Long), 15207312(Long)
+time=2019-01-06T19:06:14.954+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`<==    Updates: 1
+time=2019-01-06T19:10:26.964+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`==>  Preparing: SELECT operator_id AS operatorId,operator_name AS operatorName,operator_status AS operatorStatus,deleted,mobile,pwd,ctime,utime FROM operator WHERE operator_id=? 
+time=2019-01-06T19:10:27.034+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`==> Parameters: 15207312(Long)
+time=2019-01-06T19:10:27.074+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`<==      Total: 1
+time=2019-01-06T19:10:27.094+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`==>  Preparing: SELECT student_id AS studentId,token,ctime,utime FROM user_web_token WHERE student_id=? 
+time=2019-01-06T19:10:27.094+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`==> Parameters: 15207312(Long)
+time=2019-01-06T19:10:27.094+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`<==      Total: 1
+time=2019-01-06T19:10:27.234+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`==>  Preparing: UPDATE user_web_token SET token=?,utime=? WHERE student_id=? 
+time=2019-01-06T19:10:27.234+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`==> Parameters: e00f29d4-4ece-4187-ab3c-c2f21893048d(String), 1546773027234(Long), 15207312(Long)
+time=2019-01-06T19:10:27.244+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`<==    Updates: 1
+time=2019-01-06T19:11:19.128+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`==>  Preparing: SELECT operator_id AS operatorId,operator_name AS operatorName,operator_status AS operatorStatus,deleted,mobile,pwd,ctime,utime FROM operator WHERE operator_id=? 
+time=2019-01-06T19:11:19.128+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`==> Parameters: 15207312(Long)
+time=2019-01-06T19:11:19.128+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`<==      Total: 1
+time=2019-01-06T19:11:19.138+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`==>  Preparing: SELECT student_id AS studentId,token,ctime,utime FROM user_web_token WHERE student_id=? 
+time=2019-01-06T19:11:19.138+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`==> Parameters: 15207312(Long)
+time=2019-01-06T19:11:19.138+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`<==      Total: 1
+time=2019-01-06T19:11:19.138+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`==>  Preparing: UPDATE user_web_token SET token=?,utime=? WHERE student_id=? 
+time=2019-01-06T19:11:19.138+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`==> Parameters: 36a61f2f-a847-4d5d-a3ef-57c6499a9288(String), 1546773079138(Long), 15207312(Long)
+time=2019-01-06T19:11:19.148+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`<==    Updates: 1
+time=2019-01-06T19:18:48.244+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`==>  Preparing: SELECT operator_id AS operatorId,operator_name AS operatorName,operator_status AS operatorStatus,deleted,mobile,pwd,ctime,utime FROM operator WHERE operator_id=? 
+time=2019-01-06T19:18:48.244+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`==> Parameters: 15207312(Long)
+time=2019-01-06T19:18:48.274+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`<==      Total: 1
+time=2019-01-06T19:18:48.284+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`==>  Preparing: SELECT student_id AS studentId,token,ctime,utime FROM user_web_token WHERE student_id=? 
+time=2019-01-06T19:18:48.284+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`==> Parameters: 15207312(Long)
+time=2019-01-06T19:18:48.294+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`<==      Total: 1
+time=2019-01-06T19:19:27.898+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`==>  Preparing: UPDATE user_web_token SET token=?,utime=? WHERE student_id=? 
+time=2019-01-06T19:19:27.898+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`==> Parameters: 24e4c41c-e06e-4a23-a432-bbe10758c963(String), 1546773567884(Long), 15207312(Long)
+time=2019-01-06T19:19:27.908+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`<==    Updates: 1
+time=2019-01-06T19:26:45.405+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`==>  Preparing: SELECT operator_id AS operatorId,operator_name AS operatorName,operator_status AS operatorStatus,deleted,mobile,pwd,ctime,utime FROM operator WHERE operator_id=? 
+time=2019-01-06T19:26:45.455+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`==> Parameters: 15207312(Long)
+time=2019-01-06T19:26:45.485+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`<==      Total: 1
+time=2019-01-06T19:26:45.505+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`==>  Preparing: SELECT student_id AS studentId,token,ctime,utime FROM user_web_token WHERE student_id=? 
+time=2019-01-06T19:26:45.505+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`==> Parameters: 15207312(Long)
+time=2019-01-06T19:26:45.515+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`<==      Total: 1
+time=2019-01-06T19:26:52.360+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`==>  Preparing: UPDATE user_web_token SET token=?,utime=? WHERE student_id=? 
+time=2019-01-06T19:26:52.370+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`==> Parameters: 5c550bbb-3a2a-4863-ab7c-b7f52af9920f(String), 1546774012350(Long), 15207312(Long)
+time=2019-01-06T19:26:52.380+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`<==    Updates: 1
+time=2019-01-06T19:31:19.127+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`==>  Preparing: SELECT operator_id AS operatorId,operator_name AS operatorName,operator_status AS operatorStatus,deleted,mobile,pwd,ctime,utime FROM operator WHERE operator_id=? 
+time=2019-01-06T19:31:19.167+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`==> Parameters: 15207312(Long)
+time=2019-01-06T19:31:19.197+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`<==      Total: 1
+time=2019-01-06T19:31:19.207+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`==>  Preparing: SELECT student_id AS studentId,token,ctime,utime FROM user_web_token WHERE student_id=? 
+time=2019-01-06T19:31:19.207+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`==> Parameters: 15207312(Long)
+time=2019-01-06T19:31:19.217+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`<==      Total: 1
+time=2019-01-06T19:31:23.912+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`==>  Preparing: UPDATE user_web_token SET token=?,utime=? WHERE student_id=? 
+time=2019-01-06T19:31:23.922+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`==> Parameters: 63a8f3b3-64a0-4469-b0cb-618cb61c405b(String), 1546774283902(Long), 15207312(Long)
+time=2019-01-06T19:31:23.932+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`<==    Updates: 1
+time=2019-01-06T19:32:49.908+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`==>  Preparing: SELECT operator_id AS operatorId,operator_name AS operatorName,operator_status AS operatorStatus,deleted,mobile,pwd,ctime,utime FROM operator WHERE operator_id=? 
+time=2019-01-06T19:32:49.918+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`==> Parameters: 15207312(Long)
+time=2019-01-06T19:32:49.918+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`<==      Total: 1
+time=2019-01-06T19:32:49.928+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`==>  Preparing: SELECT student_id AS studentId,token,ctime,utime FROM user_web_token WHERE student_id=? 
+time=2019-01-06T19:32:49.928+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`==> Parameters: 15207312(Long)
+time=2019-01-06T19:32:49.928+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`<==      Total: 1
+time=2019-01-06T19:32:53.276+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`==>  Preparing: UPDATE user_web_token SET token=?,utime=? WHERE student_id=? 
+time=2019-01-06T19:32:53.276+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`==> Parameters: 22f35304-2865-4f84-8027-6135598c1264(String), 1546774373256(Long), 15207312(Long)
+time=2019-01-06T19:32:53.286+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`<==    Updates: 1
+time=2019-01-06T19:34:54.227+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`==>  Preparing: SELECT operator_id AS operatorId,operator_name AS operatorName,operator_status AS operatorStatus,deleted,mobile,pwd,ctime,utime FROM operator WHERE operator_id=? 
+time=2019-01-06T19:34:54.267+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`==> Parameters: 15207312(Long)
+time=2019-01-06T19:34:54.287+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`<==      Total: 1
+time=2019-01-06T19:34:54.307+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`==>  Preparing: SELECT student_id AS studentId,token,ctime,utime FROM user_web_token WHERE student_id=? 
+time=2019-01-06T19:34:54.307+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`==> Parameters: 15207312(Long)
+time=2019-01-06T19:34:54.307+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`<==      Total: 1
+time=2019-01-06T19:34:58.397+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`==>  Preparing: UPDATE user_web_token SET token=?,utime=? WHERE student_id=? 
+time=2019-01-06T19:34:58.407+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`==> Parameters: d42159bc-5972-4d66-9de8-00b8a720cd79(String), 1546774498387(Long), 15207312(Long)
+time=2019-01-06T19:34:58.417+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`<==    Updates: 1
+time=2019-01-06T19:37:17.902+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`==>  Preparing: SELECT operator_id AS operatorId,operator_name AS operatorName,operator_status AS operatorStatus,deleted,mobile,pwd,ctime,utime FROM operator WHERE operator_id=? 
+time=2019-01-06T19:37:17.942+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`==> Parameters: 15207312(Long)
+time=2019-01-06T19:37:17.972+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`<==      Total: 1
+time=2019-01-06T19:37:17.992+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`==>  Preparing: SELECT student_id AS studentId,token,ctime,utime FROM user_web_token WHERE student_id=? 
+time=2019-01-06T19:37:18.002+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`==> Parameters: 15207312(Long)
+time=2019-01-06T19:37:18.002+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`<==      Total: 1
+time=2019-01-06T19:37:20.283+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`==>  Preparing: UPDATE user_web_token SET token=?,utime=? WHERE student_id=? 
+time=2019-01-06T19:37:20.283+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`==> Parameters: 80993b1a-f46b-4861-adbe-e5a6f8218c9d(String), 1546774640283(Long), 15207312(Long)
+time=2019-01-06T19:37:20.283+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`<==    Updates: 1
+time=2019-01-06T19:39:17.584+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`==>  Preparing: SELECT operator_id AS operatorId,operator_name AS operatorName,operator_status AS operatorStatus,deleted,mobile,pwd,ctime,utime FROM operator WHERE operator_id=? 
+time=2019-01-06T19:39:17.664+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`==> Parameters: 15207312(Long)
+time=2019-01-06T19:39:17.714+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`<==      Total: 1
+time=2019-01-06T19:39:17.744+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`==>  Preparing: SELECT student_id AS studentId,token,ctime,utime FROM user_web_token WHERE student_id=? 
+time=2019-01-06T19:39:17.744+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`==> Parameters: 15207312(Long)
+time=2019-01-06T19:39:17.754+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`<==      Total: 1
+time=2019-01-06T19:39:19.740+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`==>  Preparing: UPDATE user_web_token SET token=?,utime=? WHERE student_id=? 
+time=2019-01-06T19:39:19.740+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`==> Parameters: ed490639-9e08-4220-ac1e-002038d511b3(String), 1546774759730(Long), 15207312(Long)
+time=2019-01-06T19:39:19.750+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`<==    Updates: 1

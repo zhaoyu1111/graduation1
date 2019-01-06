@@ -27,6 +27,7 @@ public class SuccessAdvice implements ResponseBodyAdvice<Object> {
             if(body instanceof String) {
                 return JSON.toJSONString(result);
             }
+            return result;
         }
         return body;
     }

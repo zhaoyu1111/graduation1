@@ -5,7 +5,7 @@ public enum SystemCode {
     NEED_LOGIN("2001", "未登录"),
     SUCCESS("2000", "成功"),
     ACCOUNT_ERROR("2002", "账户异常"),
-    NEED_AUTH("2003", "需要授权"),
+    NEED_AUTH("2003", "授权不足"),
     PARAM_ERROR("2004", "参数异常"),
     SERVER_ERROR("2005", "服务器异常"),
     ;

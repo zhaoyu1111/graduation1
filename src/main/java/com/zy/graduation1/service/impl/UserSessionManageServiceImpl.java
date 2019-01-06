@@ -6,6 +6,7 @@ import com.zy.graduation1.entity.Operator;
 import com.zy.graduation1.entity.User;
 import com.zy.graduation1.entity.UserWebToken;
 import com.zy.graduation1.enums.SystemTypeStatue;
+import com.zy.graduation1.enums.YesOrNoEnum;
 import com.zy.graduation1.exception.BizErrorCode;
 import com.zy.graduation1.exception.BizException;
 import com.zy.graduation1.service.OperatorService;
@@ -37,47 +38,39 @@ public class UserSessionManageServiceImpl implements UserSessionManageService {
     private OperatorService operatorService;
 
     @Override
-    public SessionDto login(Long account, String pwd, SystemTypeStatue typeStatue) {
-        User user = userService.getUserInfo(account);
-        if(null == user) {
-            throw new BizException(BizErrorCode.ACCOUNT_NOT_EXIST);
+    public SessionDto webLogin(Long operatorId, String pwd) {
+        Operator operator = operatorService.selectById(operatorId);
+        if(null == operator) {
+            throw new BizException(BizErrorCode.OPERATOR_NOT_EXIST);
         }
-        if(1 == user.getStatus()) {
-            throw new BizException(BizErrorCode.ACCOUNT_FROZEN);
-        }
-        if(!(user.getPwd().equals(MD5Utils.encode(pwd)))) {
+        if(!validatePwd(pwd, operator.getPwd())) {
             throw new BizException(BizErrorCode.PASSWORD_ERROR);
         }
-        return login(account, typeStatue);
+        if(0 == operator.getOperatorStatus() || YesOrNoEnum.YES.getCode().equals(operator.getDeleted())) {
+            throw new BizException(BizErrorCode.ACCOUNT_FROZEN);
+        }
+        String token = userWebTokenService.getToken(operatorId);
+        if(StringUtils.isNotEmpty(token)) {
+            redisTemplate.delete(CachePrefix.USER_LOGIN_WEB_TOKEN.getPrefix() + token);
+        }
+        token = UUID.randomUUID().toString();
+        UserWebToken webToken = new UserWebToken().setStudentId(operatorId).setToken(token);
+        userWebTokenService.insertOrUpdate(webToken);
+        redisTemplate.opsForValue().set(CachePrefix.USER_LOGIN_WEB_TOKEN.getPrefix() + token, operatorId,
+                CachePrefix.USER_LOGIN_WEB_TOKEN.getTimeout(), TimeUnit.SECONDS);
+        redisTemplate.opsForValue().set("test", 1, CachePrefix.USER_LOGIN_WEB_TOKEN.getTimeout(), TimeUnit.SECONDS);
+        System.out.println(CachePrefix.USER_LOGIN_WEB_TOKEN.getPrefix());
+        System.out.println(CachePrefix.USER_LOGIN_WEB_TOKEN.getTimeout());
+        System.out.println(redisTemplate.opsForValue().get(CachePrefix.USER_LOGIN_WEB_TOKEN.getPrefix() + token));
+        return new SessionDto(operatorId, token);
     }
 
-    private SessionDto login(Long account, SystemTypeStatue typeStatue) {
-        String token = "";
-        switch (typeStatue) {
-            case WEB:
-                Operator operator = operatorService.selectById(account);
-                if(null == operator) {
-                    throw new BizException(BizErrorCode.OPERATOR_NOT_EXIST);
-                }
+    @Override
+    public SessionDto protalLogin(Long account, String pwd, SystemTypeStatue typeStatue) {
+        return null;
+    }
 
-                if(1 == operator.getDeleted()) {
-                    throw new BizException(BizErrorCode.ACCOUNT_FROZEN);
-                }
-                token = userWebTokenService.getToken(account);
-                if(StringUtils.isNotEmpty(token)) {
-                    redisTemplate.delete(CachePrefix.USER_LOGIN_WEB_TOKEN.getPrefix() + token);
-                }
-                token = UUID.randomUUID().toString();
-                UserWebToken webToken = new UserWebToken().setStudentId(account).setToken(token);
-                userWebTokenService.insertOrUpdate(webToken);
-                redisTemplate.opsForValue().set(CachePrefix.USER_LOGIN_WEB_TOKEN.getPrefix() + token, account,
-                        CachePrefix.USER_LOGIN_WEB_TOKEN.getTimeout(), TimeUnit.SECONDS);
-                break;
-            case PROTAL:
-                break;
-            default:
-                break;
-        }
-        return new SessionDto(account, token);
+    private Boolean validatePwd(String pwd, String savePwd) {
+        return MD5Utils.encode(pwd).equals(savePwd);
     }
 }

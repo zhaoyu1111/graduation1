@@ -51,9 +51,6 @@ public class Operator extends SuperEntity<Operator> {
     @TableLogic
     private Integer deleted;
 
-    @TableField("origin_type")
-    private Integer originType;
-
     @TableField("mobile")
     private String mobile;
 

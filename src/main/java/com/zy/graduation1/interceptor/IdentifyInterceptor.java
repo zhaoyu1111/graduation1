@@ -17,7 +17,7 @@ public class IdentifyInterceptor extends HandlerInterceptorAdapter {
 
     @Override
     public boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object handler) throws Exception {
-        String token = request.getHeader("Header");
+        String token = request.getHeader("token");
         RequestUser.User currentUser =  identify(token);
         if(null == currentUser) {
             return true;

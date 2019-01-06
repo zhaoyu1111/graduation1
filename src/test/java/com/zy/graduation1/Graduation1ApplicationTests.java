@@ -1,5 +1,6 @@
 package com.zy.graduation1;
 
+import com.zy.graduation1.common.CachePrefix;
 import com.zy.graduation1.utils.MD5Utils;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -23,7 +24,8 @@ public class Graduation1ApplicationTests {
 
     @Test
     public void redis(){
-        System.out.println(MD5Utils.encode("123456"));
+        System.out.println(redisTemplate.opsForValue().get(CachePrefix.USER_LOGIN_WEB_TOKEN + "ed490639-9e08-4220-ac1e-002038d511b3"));
+        System.out.println(redisTemplate.opsForValue().get("test"));
     }
 
 }
