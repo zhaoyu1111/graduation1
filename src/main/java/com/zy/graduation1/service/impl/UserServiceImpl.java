@@ -64,7 +64,7 @@ public class UserServiceImpl extends ServiceImpl<UserMapper, User> implements Us
     }
 
     @Override
-    public List<User> listUser(List<Long> studentIds, Long classId, Long majorId, Long collegeId, Integer currentPage) {
+    public List<User> listUser(List<Long> studentIds, Long classId, Long majorId, Long collegeId) {
         QueryWrapper<User> query = new QueryWrapper<>();
         query.in("student_id", studentIds);
         if(null != classId) {
@@ -76,7 +76,6 @@ public class UserServiceImpl extends ServiceImpl<UserMapper, User> implements Us
         if(null != collegeId) {
             query.eq("college_id", collegeId);
         }
-        Page<User> userPage = new Page<>(currentPage, 20);
         return baseMapper.selectList(query);
     }
 }

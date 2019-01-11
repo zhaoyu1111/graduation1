@@ -22,5 +22,5 @@ public interface OriginUserRelationService extends IService<OriginUserRelation> 
      * @param originId
      * @return
      */
-    List<OriginUserRelation> queryUserInfo(Long originId);
+    IPage<OriginUserRelation> queryUserInfo(Long originId, Integer currentPage);
 }

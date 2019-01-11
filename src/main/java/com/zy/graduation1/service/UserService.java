@@ -58,5 +58,5 @@ public interface UserService extends IService<User> {
      * @param studentIds
      * @return
      */
-    List<User> listUser(List<Long> studentIds, Long classId, Long majorId, Long collegeId, Integer currentPage);
+    List<User> listUser(List<Long> studentIds, Long classId, Long majorId, Long collegeId);
 }

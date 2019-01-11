@@ -59,9 +59,7 @@
         //登录函数
         function login(){
             var username = $(" input[ name='username' ] ").val();
-            alert(username);
             var password = $(" input[ name='password' ] ").val();
-            alert(password);
             $.ajax({
                 url:"/web/system/webLogin",
                 data:{"account":username,"pwd":password},
@@ -69,8 +67,7 @@
                 dataType:"json",
                 success:function(data){
                     if(data.code == 2000){
-                        alert(data.token);
-                        sessionStorage.setItem("token", data.data.token + "");
+                        sessionStorage.setItem("token", data.data.token);
                         window.location = "html/index.html";
                     }else{
                         layer.msg(data.message);

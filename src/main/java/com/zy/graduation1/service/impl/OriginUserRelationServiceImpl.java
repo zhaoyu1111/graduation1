@@ -2,6 +2,7 @@ package com.zy.graduation1.service.impl;
 
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.baomidou.mybatisplus.core.metadata.IPage;
+import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.zy.graduation1.entity.OriginUserRelation;
 import com.zy.graduation1.entity.User;
 import com.zy.graduation1.mapper.OriginUserRelationMapper;
@@ -23,9 +24,10 @@ import java.util.List;
 public class OriginUserRelationServiceImpl extends ServiceImpl<OriginUserRelationMapper, OriginUserRelation> implements OriginUserRelationService {
 
     @Override
-    public List<OriginUserRelation> queryUserInfo(Long originId) {
+    public IPage<OriginUserRelation> queryUserInfo(Long originId, Integer currentPage) {
         QueryWrapper query = new QueryWrapper();
         query.eq("origin_id", originId);
-        return baseMapper.selectList(query);
+        Page<OriginUserRelation> page = new Page<>(currentPage, 20);
+        return baseMapper.selectPage(page, query);
     }
 }

@@ -33,7 +33,7 @@ public class IdentifyInterceptor extends HandlerInterceptorAdapter {
     }
 
     private RequestUser.User identify(String token) {
-        Object obj = redisTemplate.opsForValue().get(CachePrefix.USER_LOGIN_WEB_TOKEN + token);
+        Object obj = redisTemplate.opsForValue().get(CachePrefix.USER_LOGIN_WEB_TOKEN.getPrefix() + token);
         if(null == obj) {
             return null;
         }

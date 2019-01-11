@@ -44,13 +44,14 @@ public class UserInfoManageManageServiceImpl implements UserInfoManageService {
         if(null == origin) {
             return new MyPage<>();
         }
-        List<OriginUserRelation> originUserRelations = originUserRelationService.queryUserInfo(origin.getOriginId());
+        IPage<OriginUserRelation> originUserRelationPage = originUserRelationService.queryUserInfo(origin.getOriginId(), currentPage);
+        List<OriginUserRelation> originUserRelations = originUserRelationPage.getRecords();
         if(CollectionUtils.isEmpty(originUserRelations)) {
             return new MyPage<>();
         }
 
         List<Long> studentIds = originUserRelations.stream().map(OriginUserRelation::getStudentId).distinct().collect(Collectors.toList());
-        List<User> users = userService.listUser(studentIds, classId, majorId, collegeId, currentPage);
+        List<User> users = userService.listUser(studentIds, classId, majorId, collegeId);
         if(CollectionUtils.isEmpty(users)) {
             return new MyPage<>();
         }

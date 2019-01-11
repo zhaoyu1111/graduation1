@@ -2,10 +2,12 @@ package com.zy.graduation1.controller;
 
 import com.zy.graduation1.common.Anonymous;
 import com.zy.graduation1.common.MyPage;
+import com.zy.graduation1.common.RequestUser;
 import com.zy.graduation1.dto.user.UserInfoDto;
 import com.zy.graduation1.service.UserInfoManageService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
@@ -16,7 +18,7 @@ public class UserInfoController {
     private UserInfoManageService userInfoManageService;
 
     @RequestMapping("/queryUserInfo")
-    public MyPage<UserInfoDto> queryUserInfo(Long operator, Integer currentPage, Long classId, Long majorId, Long collegeId) {
-        return userInfoManageService.queryUserInfo(operator, currentPage, classId, majorId, collegeId);
+    public MyPage<UserInfoDto> queryUserInfo(@RequestParam(defaultValue = "1") Integer currentPage, Long classId, Long majorId, Long collegeId) {
+        return userInfoManageService.queryUserInfo(RequestUser.getCurrentUser(), currentPage, classId, majorId, collegeId);
     }
 }
