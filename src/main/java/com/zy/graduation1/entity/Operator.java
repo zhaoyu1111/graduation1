@@ -57,6 +57,9 @@ public class Operator extends SuperEntity<Operator> {
     @TableField("pwd")
     private String pwd;
 
+    @TableField("role_type")
+    private Integer roleType;
+
 
     @Override
     protected Serializable pkVal() {

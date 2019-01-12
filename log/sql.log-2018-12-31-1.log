@@ -1,9 +1,0 @@
-time=2018-12-31T18:29:49.318+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`==>  Preparing: SELECT id AS id,name,gender,class_name AS className,ctime,utime FROM uc_test WHERE gender = ? 
-time=2018-12-31T18:29:49.367+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`==> Parameters: 1(Integer)
-time=2018-12-31T18:29:49.425+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`<==      Total: 7
-time=2018-12-31T18:36:18.582+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`==>  Preparing: SELECT id AS id,name,gender,class_name AS className,ctime,utime FROM uc_test WHERE gender = ? 
-time=2018-12-31T18:36:18.614+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`==> Parameters: 1(Integer)
-time=2018-12-31T18:36:18.644+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`<==      Total: 7
-time=2018-12-31T18:52:59.750+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`==>  Preparing: SELECT id AS id,name,gender,class_name AS className,ctime,utime FROM uc_test WHERE gender = ? 
-time=2018-12-31T18:52:59.784+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`==> Parameters: 1(Integer)
-time=2018-12-31T18:52:59.831+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`<==      Total: 7

@@ -1,0 +1,189 @@
+time=2019-01-11T21:02:17.910+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`==>  Preparing: SELECT operator_id AS operatorId,operator_name AS operatorName,operator_status AS operatorStatus,deleted,mobile,pwd,ctime,utime FROM operator WHERE operator_id=? 
+time=2019-01-11T21:02:17.954+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`==> Parameters: 15207312(Long)
+time=2019-01-11T21:02:18.019+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`<==      Total: 1
+time=2019-01-11T21:02:18.037+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`==>  Preparing: SELECT student_id AS studentId,token,ctime,utime FROM user_web_token WHERE student_id=? 
+time=2019-01-11T21:02:18.038+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`==> Parameters: 15207312(Long)
+time=2019-01-11T21:02:18.044+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`<==      Total: 1
+time=2019-01-11T21:02:18.140+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`==>  Preparing: UPDATE user_web_token SET token=?,utime=? WHERE student_id=? 
+time=2019-01-11T21:02:18.141+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`==> Parameters: d7cb1e97-d80b-4d91-909a-91821f67df55(String), 1547211738139(Long), 15207312(Long)
+time=2019-01-11T21:02:18.150+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`<==    Updates: 1
+time=2019-01-11T21:02:19.210+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`==>  Preparing: SELECT origin_id AS originId,origin_name AS originName,origin_type AS originType,origin_descript AS originDescript,members,status,address,operator_id AS operatorId,ctime,utime FROM origin WHERE operator_id = ? 
+time=2019-01-11T21:02:19.211+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`==> Parameters: 15207312(Long)
+time=2019-01-11T21:02:19.218+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`<==      Total: 1
+time=2019-01-11T21:02:19.320+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`==>  Preparing: SELECT COUNT(1) FROM origin_user_relation WHERE origin_id = ? 
+time=2019-01-11T21:02:19.321+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`==> Parameters: 1(Long)
+time=2019-01-11T21:02:19.329+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`==>  Preparing: SELECT relation_id AS relationId,student_id AS studentId,origin_id AS originId,status,ctime,utime FROM origin_user_relation WHERE origin_id = ? LIMIT 0,20 
+time=2019-01-11T21:02:19.330+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`==> Parameters: 1(Long)
+time=2019-01-11T21:02:19.334+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`<==      Total: 1
+time=2019-01-11T21:02:19.350+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`==>  Preparing: SELECT student_id AS studentId,user_name AS userName,class_id AS classId,college_id AS collegeId,mobile,gender,birthday,email,avatar,introduce,home_address AS homeAddress,current_city AS currentCity,major_id AS majorId,status,pwd,ctime,utime FROM user WHERE student_id IN (?) 
+time=2019-01-11T21:02:19.351+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`==> Parameters: 15207312(Long)
+time=2019-01-11T21:02:19.355+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`<==      Total: 1
+time=2019-01-11T21:02:19.367+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`==>  Preparing: SELECT class_id AS classId,college_id AS collegeId,major_id AS majorId,operator_id AS operatorId,head_master AS headMaster,counselor,class_name AS className,ctime,utime FROM class WHERE class_id IN (?) 
+time=2019-01-11T21:02:19.367+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`==> Parameters: 152073(Long)
+time=2019-01-11T21:02:19.370+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`<==      Total: 0
+time=2019-01-11T21:02:19.398+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`==>  Preparing: SELECT major_id AS majorId,major_name AS majorName,operator_id AS operatorId,college_id AS collegeId,ctime,utime FROM major WHERE major_id = ? 
+time=2019-01-11T21:02:19.401+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`==> Parameters: [null](ArrayList)
+time=2019-01-11T21:02:19.405+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`<==      Total: 0
+time=2019-01-11T21:02:19.417+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`==>  Preparing: SELECT college_id AS collegeId,college_name AS collegeName,operator_id AS operatorId,ctime,utime FROM college WHERE college_id IN (?) 
+time=2019-01-11T21:02:19.418+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`==> Parameters: 20(Long)
+time=2019-01-11T21:02:19.420+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`<==      Total: 0
+time=2019-01-11T21:25:09.871+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`==>  Preparing: SELECT origin_id AS originId,origin_name AS originName,origin_type AS originType,origin_descript AS originDescript,members,status,address,operator_id AS operatorId,ctime,utime FROM origin WHERE operator_id = ? 
+time=2019-01-11T21:25:09.891+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`==> Parameters: 15207312(Long)
+time=2019-01-11T21:25:09.951+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`<==      Total: 1
+time=2019-01-11T21:25:18.457+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`==>  Preparing: SELECT COUNT(1) FROM origin_user_relation WHERE origin_id = ? 
+time=2019-01-11T21:25:18.457+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`==> Parameters: 1(Long)
+time=2019-01-11T21:25:18.467+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`==>  Preparing: SELECT relation_id AS relationId,student_id AS studentId,origin_id AS originId,status,ctime,utime FROM origin_user_relation WHERE origin_id = ? LIMIT 0,20 
+time=2019-01-11T21:25:18.477+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`==> Parameters: 1(Long)
+time=2019-01-11T21:25:18.477+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`<==      Total: 1
+time=2019-01-11T21:25:59.459+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`==>  Preparing: SELECT student_id AS studentId,user_name AS userName,class_id AS classId,college_id AS collegeId,mobile,gender,birthday,email,avatar,introduce,home_address AS homeAddress,current_city AS currentCity,major_id AS majorId,status,pwd,ctime,utime FROM user WHERE student_id IN (?) 
+time=2019-01-11T21:25:59.459+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`==> Parameters: 15207312(Long)
+time=2019-01-11T21:25:59.479+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`<==      Total: 1
+time=2019-01-11T21:26:41.188+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`==>  Preparing: SELECT class_id AS classId,college_id AS collegeId,major_id AS majorId,operator_id AS operatorId,head_master AS headMaster,counselor,class_name AS className,ctime,utime FROM class WHERE class_id IN (?) 
+time=2019-01-11T21:26:41.188+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`==> Parameters: 152073(Long)
+time=2019-01-11T21:26:41.188+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`<==      Total: 0
+time=2019-01-11T21:27:04.976+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`==>  Preparing: SELECT major_id AS majorId,major_name AS majorName,operator_id AS operatorId,college_id AS collegeId,ctime,utime FROM major WHERE major_id = ? 
+time=2019-01-11T21:27:04.986+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`==> Parameters: [null](ArrayList)
+time=2019-01-11T21:27:04.996+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`<==      Total: 0
+time=2019-01-11T21:27:13.247+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`==>  Preparing: SELECT college_id AS collegeId,college_name AS collegeName,operator_id AS operatorId,ctime,utime FROM college WHERE college_id IN (?) 
+time=2019-01-11T21:27:13.247+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`==> Parameters: 20(Long)
+time=2019-01-11T21:27:13.257+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`<==      Total: 0
+time=2019-01-11T21:27:44.386+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`==>  Preparing: SELECT origin_id AS originId,origin_name AS originName,origin_type AS originType,origin_descript AS originDescript,members,status,address,operator_id AS operatorId,ctime,utime FROM origin WHERE operator_id = ? 
+time=2019-01-11T21:27:44.386+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`==> Parameters: 15207312(Long)
+time=2019-01-11T21:27:44.396+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`<==      Total: 1
+time=2019-01-11T21:27:44.396+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`==>  Preparing: SELECT COUNT(1) FROM origin_user_relation WHERE origin_id = ? 
+time=2019-01-11T21:27:44.396+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`==> Parameters: 1(Long)
+time=2019-01-11T21:27:44.396+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`==>  Preparing: SELECT relation_id AS relationId,student_id AS studentId,origin_id AS originId,status,ctime,utime FROM origin_user_relation WHERE origin_id = ? LIMIT 0,20 
+time=2019-01-11T21:27:44.396+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`==> Parameters: 1(Long)
+time=2019-01-11T21:27:44.406+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`<==      Total: 1
+time=2019-01-11T21:27:44.406+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`==>  Preparing: SELECT student_id AS studentId,user_name AS userName,class_id AS classId,college_id AS collegeId,mobile,gender,birthday,email,avatar,introduce,home_address AS homeAddress,current_city AS currentCity,major_id AS majorId,status,pwd,ctime,utime FROM user WHERE student_id IN (?) 
+time=2019-01-11T21:27:44.406+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`==> Parameters: 15207312(Long)
+time=2019-01-11T21:27:44.406+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`<==      Total: 1
+time=2019-01-11T21:27:44.416+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`==>  Preparing: SELECT class_id AS classId,college_id AS collegeId,major_id AS majorId,operator_id AS operatorId,head_master AS headMaster,counselor,class_name AS className,ctime,utime FROM class WHERE class_id IN (?) 
+time=2019-01-11T21:27:44.416+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`==> Parameters: 152073(Long)
+time=2019-01-11T21:27:44.416+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`<==      Total: 0
+time=2019-01-11T21:27:44.416+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`==>  Preparing: SELECT major_id AS majorId,major_name AS majorName,operator_id AS operatorId,college_id AS collegeId,ctime,utime FROM major WHERE major_id = ? 
+time=2019-01-11T21:27:44.416+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`==> Parameters: [null](ArrayList)
+time=2019-01-11T21:27:44.416+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`<==      Total: 0
+time=2019-01-11T21:27:44.416+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`==>  Preparing: SELECT college_id AS collegeId,college_name AS collegeName,operator_id AS operatorId,ctime,utime FROM college WHERE college_id IN (?) 
+time=2019-01-11T21:27:44.416+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`==> Parameters: 20(Long)
+time=2019-01-11T21:27:44.416+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`<==      Total: 0
+time=2019-01-11T21:31:32.777+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`==>  Preparing: SELECT origin_id AS originId,origin_name AS originName,origin_type AS originType,origin_descript AS originDescript,members,status,address,operator_id AS operatorId,ctime,utime FROM origin WHERE operator_id = ? 
+time=2019-01-11T21:31:32.837+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`==> Parameters: 15207312(Long)
+time=2019-01-11T21:31:32.857+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`<==      Total: 1
+time=2019-01-11T21:31:32.927+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`==>  Preparing: SELECT COUNT(1) FROM origin_user_relation WHERE origin_id = ? 
+time=2019-01-11T21:31:32.927+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`==> Parameters: 1(Long)
+time=2019-01-11T21:31:32.937+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`==>  Preparing: SELECT relation_id AS relationId,student_id AS studentId,origin_id AS originId,status,ctime,utime FROM origin_user_relation WHERE origin_id = ? LIMIT 0,20 
+time=2019-01-11T21:31:32.937+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`==> Parameters: 1(Long)
+time=2019-01-11T21:31:32.937+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`<==      Total: 1
+time=2019-01-11T21:31:32.947+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`==>  Preparing: SELECT student_id AS studentId,user_name AS userName,class_id AS classId,college_id AS collegeId,mobile,gender,birthday,email,avatar,introduce,home_address AS homeAddress,current_city AS currentCity,major_id AS majorId,status,pwd,ctime,utime FROM user WHERE student_id IN (?) 
+time=2019-01-11T21:31:32.947+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`==> Parameters: 15207312(Long)
+time=2019-01-11T21:31:32.957+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`<==      Total: 1
+time=2019-01-11T21:31:32.957+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`==>  Preparing: SELECT class_id AS classId,college_id AS collegeId,major_id AS majorId,operator_id AS operatorId,head_master AS headMaster,counselor,class_name AS className,ctime,utime FROM class WHERE class_id IN (?) 
+time=2019-01-11T21:31:32.957+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`==> Parameters: 152073(Long)
+time=2019-01-11T21:31:32.967+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`<==      Total: 1
+time=2019-01-11T21:31:32.987+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`==>  Preparing: SELECT major_id AS majorId,major_name AS majorName,operator_id AS operatorId,college_id AS collegeId,ctime,utime FROM major WHERE major_id = ? 
+time=2019-01-11T21:31:32.987+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`==> Parameters: [null](ArrayList)
+time=2019-01-11T21:31:32.987+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`<==      Total: 0
+time=2019-01-11T21:31:32.997+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`==>  Preparing: SELECT college_id AS collegeId,college_name AS collegeName,operator_id AS operatorId,ctime,utime FROM college WHERE college_id IN (?) 
+time=2019-01-11T21:31:32.997+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`==> Parameters: 20(Long)
+time=2019-01-11T21:31:32.997+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`<==      Total: 1
+time=2019-01-11T21:32:04.994+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`==>  Preparing: SELECT origin_id AS originId,origin_name AS originName,origin_type AS originType,origin_descript AS originDescript,members,status,address,operator_id AS operatorId,ctime,utime FROM origin WHERE operator_id = ? 
+time=2019-01-11T21:32:04.994+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`==> Parameters: 15207312(Long)
+time=2019-01-11T21:32:04.994+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`<==      Total: 1
+time=2019-01-11T21:32:04.994+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`==>  Preparing: SELECT COUNT(1) FROM origin_user_relation WHERE origin_id = ? 
+time=2019-01-11T21:32:04.994+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`==> Parameters: 1(Long)
+time=2019-01-11T21:32:04.994+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`==>  Preparing: SELECT relation_id AS relationId,student_id AS studentId,origin_id AS originId,status,ctime,utime FROM origin_user_relation WHERE origin_id = ? LIMIT 0,20 
+time=2019-01-11T21:32:04.994+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`==> Parameters: 1(Long)
+time=2019-01-11T21:32:05.004+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`<==      Total: 1
+time=2019-01-11T21:32:05.004+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`==>  Preparing: SELECT student_id AS studentId,user_name AS userName,class_id AS classId,college_id AS collegeId,mobile,gender,birthday,email,avatar,introduce,home_address AS homeAddress,current_city AS currentCity,major_id AS majorId,status,pwd,ctime,utime FROM user WHERE student_id IN (?) 
+time=2019-01-11T21:32:05.004+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`==> Parameters: 15207312(Long)
+time=2019-01-11T21:32:05.004+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`<==      Total: 1
+time=2019-01-11T21:32:05.004+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`==>  Preparing: SELECT class_id AS classId,college_id AS collegeId,major_id AS majorId,operator_id AS operatorId,head_master AS headMaster,counselor,class_name AS className,ctime,utime FROM class WHERE class_id IN (?) 
+time=2019-01-11T21:32:05.004+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`==> Parameters: 152073(Long)
+time=2019-01-11T21:32:05.014+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`<==      Total: 1
+time=2019-01-11T21:32:05.014+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`==>  Preparing: SELECT major_id AS majorId,major_name AS majorName,operator_id AS operatorId,college_id AS collegeId,ctime,utime FROM major WHERE major_id = ? 
+time=2019-01-11T21:32:05.014+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`==> Parameters: [null](ArrayList)
+time=2019-01-11T21:32:05.014+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`<==      Total: 0
+time=2019-01-11T21:32:05.014+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`==>  Preparing: SELECT college_id AS collegeId,college_name AS collegeName,operator_id AS operatorId,ctime,utime FROM college WHERE college_id IN (?) 
+time=2019-01-11T21:32:05.014+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`==> Parameters: 20(Long)
+time=2019-01-11T21:32:05.014+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`<==      Total: 1
+time=2019-01-11T21:34:39.595+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`==>  Preparing: SELECT origin_id AS originId,origin_name AS originName,origin_type AS originType,origin_descript AS originDescript,members,status,address,operator_id AS operatorId,ctime,utime FROM origin WHERE operator_id = ? 
+time=2019-01-11T21:34:39.625+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`==> Parameters: 15207312(Long)
+time=2019-01-11T21:34:39.645+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`<==      Total: 1
+time=2019-01-11T21:34:39.705+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`==>  Preparing: SELECT COUNT(1) FROM origin_user_relation WHERE origin_id = ? 
+time=2019-01-11T21:34:39.705+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`==> Parameters: 1(Long)
+time=2019-01-11T21:34:39.715+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`==>  Preparing: SELECT relation_id AS relationId,student_id AS studentId,origin_id AS originId,status,ctime,utime FROM origin_user_relation WHERE origin_id = ? LIMIT 0,20 
+time=2019-01-11T21:34:39.715+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`==> Parameters: 1(Long)
+time=2019-01-11T21:34:39.715+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`<==      Total: 1
+time=2019-01-11T21:34:39.725+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`==>  Preparing: SELECT student_id AS studentId,user_name AS userName,class_id AS classId,college_id AS collegeId,mobile,gender,birthday,email,avatar,introduce,home_address AS homeAddress,current_city AS currentCity,major_id AS majorId,status,pwd,ctime,utime FROM user WHERE student_id IN (?) 
+time=2019-01-11T21:34:39.725+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`==> Parameters: 15207312(Long)
+time=2019-01-11T21:34:39.725+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`<==      Total: 1
+time=2019-01-11T21:34:39.735+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`==>  Preparing: SELECT class_id AS classId,college_id AS collegeId,major_id AS majorId,operator_id AS operatorId,head_master AS headMaster,counselor,class_name AS className,ctime,utime FROM class WHERE class_id IN (?) 
+time=2019-01-11T21:34:39.735+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`==> Parameters: 152073(Long)
+time=2019-01-11T21:34:39.735+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`<==      Total: 1
+time=2019-01-11T21:34:39.755+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`==>  Preparing: SELECT major_id AS majorId,major_name AS majorName,operator_id AS operatorId,college_id AS collegeId,ctime,utime FROM major WHERE major_id = ? 
+time=2019-01-11T21:34:39.765+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`==> Parameters: [null](ArrayList)
+time=2019-01-11T21:34:39.765+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`<==      Total: 0
+time=2019-01-11T21:34:39.775+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`==>  Preparing: SELECT college_id AS collegeId,college_name AS collegeName,operator_id AS operatorId,ctime,utime FROM college WHERE college_id IN (?) 
+time=2019-01-11T21:34:39.775+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`==> Parameters: 20(Long)
+time=2019-01-11T21:34:39.775+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`<==      Total: 1
+time=2019-01-11T21:37:03.505+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`==>  Preparing: SELECT origin_id AS originId,origin_name AS originName,origin_type AS originType,origin_descript AS originDescript,members,status,address,operator_id AS operatorId,ctime,utime FROM origin WHERE operator_id = ? 
+time=2019-01-11T21:37:03.538+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`==> Parameters: 15207312(Long)
+time=2019-01-11T21:37:03.559+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`<==      Total: 1
+time=2019-01-11T21:37:03.621+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`==>  Preparing: SELECT COUNT(1) FROM origin_user_relation WHERE origin_id = ? 
+time=2019-01-11T21:37:03.622+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`==> Parameters: 1(Long)
+time=2019-01-11T21:37:03.627+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`==>  Preparing: SELECT relation_id AS relationId,student_id AS studentId,origin_id AS originId,status,ctime,utime FROM origin_user_relation WHERE origin_id = ? LIMIT 0,20 
+time=2019-01-11T21:37:03.628+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`==> Parameters: 1(Long)
+time=2019-01-11T21:37:03.631+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`<==      Total: 1
+time=2019-01-11T21:37:03.644+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`==>  Preparing: SELECT student_id AS studentId,user_name AS userName,class_id AS classId,college_id AS collegeId,mobile,gender,birthday,email,avatar,introduce,home_address AS homeAddress,current_city AS currentCity,major_id AS majorId,status,pwd,ctime,utime FROM user WHERE student_id IN (?) 
+time=2019-01-11T21:37:03.645+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`==> Parameters: 15207312(Long)
+time=2019-01-11T21:37:03.647+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`<==      Total: 1
+time=2019-01-11T21:37:03.650+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`==>  Preparing: SELECT class_id AS classId,college_id AS collegeId,major_id AS majorId,operator_id AS operatorId,head_master AS headMaster,counselor,class_name AS className,ctime,utime FROM class WHERE class_id IN (?) 
+time=2019-01-11T21:37:03.650+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`==> Parameters: 152073(Long)
+time=2019-01-11T21:37:03.650+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`<==      Total: 1
+time=2019-01-11T21:37:03.680+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`==>  Preparing: SELECT major_id AS majorId,major_name AS majorName,operator_id AS operatorId,college_id AS collegeId,ctime,utime FROM major WHERE major_id = ? 
+time=2019-01-11T21:37:03.680+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`==> Parameters: [null](ArrayList)
+time=2019-01-11T21:37:03.680+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`<==      Total: 0
+time=2019-01-11T21:37:03.690+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`==>  Preparing: SELECT college_id AS collegeId,college_name AS collegeName,operator_id AS operatorId,ctime,utime FROM college WHERE college_id IN (?) 
+time=2019-01-11T21:37:03.690+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`==> Parameters: 20(Long)
+time=2019-01-11T21:37:03.690+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`<==      Total: 1
+time=2019-01-11T21:57:03.693+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`==>  Preparing: SELECT origin_id AS originId,origin_name AS originName,origin_type AS originType,origin_descript AS originDescript,members,status,address,operator_id AS operatorId,ctime,utime FROM origin WHERE operator_id = ? 
+time=2019-01-11T21:57:03.732+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`==> Parameters: 15207312(Long)
+time=2019-01-11T21:57:03.789+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`<==      Total: 1
+time=2019-01-11T21:57:03.887+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`==>  Preparing: SELECT COUNT(1) FROM origin_user_relation WHERE origin_id = ? 
+time=2019-01-11T21:57:03.888+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`==> Parameters: 1(Long)
+time=2019-01-11T21:57:03.897+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`==>  Preparing: SELECT relation_id AS relationId,student_id AS studentId,origin_id AS originId,status,ctime,utime FROM origin_user_relation WHERE origin_id = ? LIMIT 0,20 
+time=2019-01-11T21:57:03.898+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`==> Parameters: 1(Long)
+time=2019-01-11T21:57:03.902+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`<==      Total: 1
+time=2019-01-11T21:57:03.919+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`==>  Preparing: SELECT student_id AS studentId,user_name AS userName,class_id AS classId,college_id AS collegeId,mobile,gender,birthday,email,avatar,introduce,home_address AS homeAddress,current_city AS currentCity,major_id AS majorId,status,pwd,ctime,utime FROM user WHERE student_id IN (?) 
+time=2019-01-11T21:57:03.919+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`==> Parameters: 15207312(Long)
+time=2019-01-11T21:57:03.926+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`<==      Total: 1
+time=2019-01-11T21:57:03.937+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`==>  Preparing: SELECT class_id AS classId,college_id AS collegeId,major_id AS majorId,operator_id AS operatorId,head_master AS headMaster,counselor,class_name AS className,ctime,utime FROM class WHERE class_id IN (?) 
+time=2019-01-11T21:57:03.938+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`==> Parameters: 152073(Long)
+time=2019-01-11T21:57:03.941+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`<==      Total: 1
+time=2019-01-11T21:57:03.975+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`==>  Preparing: SELECT major_id AS majorId,major_name AS majorName,operator_id AS operatorId,college_id AS collegeId,ctime,utime FROM major WHERE major_id = ? 
+time=2019-01-11T21:57:03.977+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`==> Parameters: [null](ArrayList)
+time=2019-01-11T21:57:03.980+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`<==      Total: 0
+time=2019-01-11T21:57:03.995+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`==>  Preparing: SELECT college_id AS collegeId,college_name AS collegeName,operator_id AS operatorId,ctime,utime FROM college WHERE college_id IN (?) 
+time=2019-01-11T21:57:03.996+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`==> Parameters: 20(Long)
+time=2019-01-11T21:57:03.999+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`<==      Total: 1
+time=2019-01-11T22:21:08.424+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`==>  Preparing: SELECT origin_id AS originId,origin_name AS originName,origin_type AS originType,origin_descript AS originDescript,members,status,address,operator_id AS operatorId,ctime,utime FROM origin WHERE operator_id = ? 
+time=2019-01-11T22:21:08.503+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`==> Parameters: 15207312(Long)
+time=2019-01-11T22:21:08.586+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`<==      Total: 1
+time=2019-01-11T22:21:08.670+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`==>  Preparing: SELECT COUNT(1) FROM origin_user_relation WHERE origin_id = ? 
+time=2019-01-11T22:21:08.670+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`==> Parameters: 1(Long)
+time=2019-01-11T22:21:08.680+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`==>  Preparing: SELECT relation_id AS relationId,student_id AS studentId,origin_id AS originId,status,ctime,utime FROM origin_user_relation WHERE origin_id = ? LIMIT 0,20 
+time=2019-01-11T22:21:08.680+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`==> Parameters: 1(Long)
+time=2019-01-11T22:21:08.680+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`<==      Total: 1
+time=2019-01-11T22:21:08.710+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`==>  Preparing: SELECT student_id AS studentId,user_name AS userName,class_id AS classId,college_id AS collegeId,mobile,gender,birthday,email,avatar,introduce,home_address AS homeAddress,current_city AS currentCity,major_id AS majorId,status,pwd,ctime,utime FROM user WHERE student_id IN (?) 
+time=2019-01-11T22:21:08.710+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`==> Parameters: 15207312(Long)
+time=2019-01-11T22:21:08.710+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`<==      Total: 1
+time=2019-01-11T22:21:08.730+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`==>  Preparing: SELECT class_id AS classId,college_id AS collegeId,major_id AS majorId,operator_id AS operatorId,head_master AS headMaster,counselor,class_name AS className,ctime,utime FROM class WHERE class_id IN (?) 
+time=2019-01-11T22:21:08.730+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`==> Parameters: 152073(Long)
+time=2019-01-11T22:21:08.745+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`<==      Total: 1
+time=2019-01-11T22:21:08.787+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`==>  Preparing: SELECT major_id AS majorId,major_name AS majorName,operator_id AS operatorId,college_id AS collegeId,ctime,utime FROM major WHERE major_id = ? 
+time=2019-01-11T22:21:08.790+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`==> Parameters: [null](ArrayList)
+time=2019-01-11T22:21:08.797+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`<==      Total: 0
+time=2019-01-11T22:21:08.817+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`==>  Preparing: SELECT college_id AS collegeId,college_name AS collegeName,operator_id AS operatorId,ctime,utime FROM college WHERE college_id IN (?) 
+time=2019-01-11T22:21:08.818+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`==> Parameters: 20(Long)
+time=2019-01-11T22:21:08.822+0800`appName=graduation1`hostName=localhost`logLevel=DEBUG`<==      Total: 1

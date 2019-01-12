@@ -2,6 +2,7 @@ package com.zy.graduation1.controller;
 
 import com.zy.graduation1.common.Anonymous;
 import com.zy.graduation1.dto.user.SessionDto;
+import com.zy.graduation1.entity.Role;
 import com.zy.graduation1.service.RoleService;
 import com.zy.graduation1.service.UserSessionManageService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -10,6 +11,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import javax.validation.constraints.NotNull;
+import java.util.List;
 
 @Validated
 @RestController
@@ -31,6 +33,12 @@ public class SystemManageController {
                         @NotNull(message = "请输入管理员联系方式") String mobile,
                         @NotNull(message = "请输入管理员密码") String pwd) {
         roleService.addRole(roleName);
+    }
+
+    @Anonymous
+    @RequestMapping("/listRole")
+    public List<Role> listRole(String roleName, Integer status) {
+        return roleService.listRole(roleName, status);
     }
 
     @Anonymous

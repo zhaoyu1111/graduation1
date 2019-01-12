@@ -1,5 +1,6 @@
 package com.zy.graduation1.service.impl;
 
+import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.baomidou.mybatisplus.core.metadata.IPage;
 import com.baomidou.mybatisplus.core.toolkit.CollectionUtils;
 import com.google.common.collect.Lists;
@@ -8,6 +9,8 @@ import com.zy.graduation1.common.MyPage;
 import com.zy.graduation1.dto.user.UserInfoDto;
 import com.zy.graduation1.entity.*;
 import com.zy.graduation1.entity.Class;
+import com.zy.graduation1.exception.BizErrorCode;
+import com.zy.graduation1.exception.BizException;
 import com.zy.graduation1.service.*;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -37,6 +40,12 @@ public class UserInfoManageManageServiceImpl implements UserInfoManageService {
 
     @Autowired
     private UserService userService;
+
+    @Autowired
+    private RoleMenuRelationService roleMenuRelationService;
+
+    @Autowired
+    private MenuService menuService;
 
     @Override
     public MyPage<UserInfoDto> queryUserInfo(Long operatorId, Integer currentPage, Long classId, Long majorId, Long collegeId) {
@@ -75,7 +84,7 @@ public class UserInfoManageManageServiceImpl implements UserInfoManageService {
             UserInfoDto userInfoDto = new UserInfoDto();
             BeanUtils.copyProperties(user, userInfoDto);
             Class classs = classMap.get(user.getClassId());
-            if(null != classes) {
+            if(null != classs) {
                 userInfoDto.setClassName(classs.getClassName());
             }
             Major major = majorMap.get(user.getMajorId());
@@ -89,5 +98,16 @@ public class UserInfoManageManageServiceImpl implements UserInfoManageService {
             userInfos.add(userInfoDto);
         }
         return new MyPage<>((long)userInfos.size(), userInfos);
+    }
+
+    @Override
+    public List<Menu> listMenu(Long roleId) {
+        List<RoleMenuRelation> roleMenus = roleMenuRelationService.listRoleMenu(roleId);
+        if(CollectionUtils.isEmpty(roleMenus)) {
+            return null;
+        }
+        List<Long> menuIds = roleMenus.stream().map(RoleMenuRelation::getMenuId).distinct().collect(Collectors.toList());
+        List<Menu> menus = menuService.listMenu(menuIds);
+        return menus;
     }
 }
