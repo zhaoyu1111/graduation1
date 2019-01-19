@@ -8,6 +8,7 @@ import com.zy.graduation1.mapper.OperatorMapper;
 import com.zy.graduation1.service.OperatorService;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import com.zy.graduation1.utils.MD5Utils;
+import org.apache.commons.lang3.StringUtils;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -31,5 +32,10 @@ public class OperatorServiceImpl extends ServiceImpl<OperatorMapper, Operator> i
         return baseMapper.selectList(query);
     }
 
-
+    @Override
+    public Operator getOperatorInfo(String operatorName) {
+        QueryWrapper<Operator> query = new QueryWrapper<>();
+        query.eq("operator_name", operatorName);
+        return baseMapper.selectOne(query);
+    }
 }

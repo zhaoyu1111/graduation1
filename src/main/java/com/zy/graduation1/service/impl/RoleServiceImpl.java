@@ -39,4 +39,16 @@ public class RoleServiceImpl extends ServiceImpl<RoleMapper, Role> implements Ro
         }
         return baseMapper.selectList(query);
     }
+
+    @Override
+    public void updateRole(Role role) {
+        this.updateById(role);
+    }
+
+    @Override
+    public List<Role> listRole(List<Long> roleIds) {
+        QueryWrapper<Role> query = new QueryWrapper<>();
+        query.in("role_id", roleIds);
+        return baseMapper.selectList(query);
+    }
 }

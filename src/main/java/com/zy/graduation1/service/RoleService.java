@@ -29,4 +29,17 @@ public interface RoleService extends IService<Role> {
      * @return
      */
     List<Role> listRole(String roleName, Integer status);
+
+    /**
+     * 更新或新增角色，当roleId为null时新增
+     * @param role
+     */
+    void updateRole(Role role);
+
+    /**
+     * 批量查詢角色信息
+     * @param roleIds
+     * @return
+     */
+    List<Role> listRole(List<Long> roleIds);
 }

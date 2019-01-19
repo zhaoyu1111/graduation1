@@ -21,4 +21,11 @@ public interface OperatorService extends IService<Operator> {
      * @return
      */
     List<Operator> getOperatorInfo(List<Long> operatorIds);
+
+    /**
+     * 通过管理员名称查询管理员信息（不支持模糊查询）
+     * @param operatorName
+     * @return
+     */
+    Operator getOperatorInfo(String operatorName);
 }
