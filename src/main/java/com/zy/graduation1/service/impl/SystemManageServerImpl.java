@@ -118,10 +118,14 @@ public class SystemManageServerImpl implements SystemManageService {
 
     @Override
     public MyPage<OperatorRoleDto> queryOperatorRoleRelation(Long roleId, String operatorName, Integer currentPage) {
-        Operator operator = operatorService.getOperatorInfo(operatorName);
         Long operatorId = null;
-        if(null != operator) {
-            operatorId = operator.getOperatorId();
+        if(StringUtils.isNotEmpty(operatorName)) {
+            Operator operator = operatorService.getOperatorInfo(operatorName);
+            if(null != operator) {
+                operatorId = operator.getOperatorId();
+            }else {
+                return new MyPage<>();
+            }
         }
         IPage<OperatorRoleRelation> relationPage = operatorRoleRelationService.queryOperatorRole(operatorId, roleId, currentPage);
         List<OperatorRoleRelation> relations = relationPage.getRecords();
@@ -149,7 +153,7 @@ public class SystemManageServerImpl implements SystemManageService {
             OperatorRoleDto operatorRoleDto = new OperatorRoleDto();
             BeanUtils.copyProperties(relation, operatorRoleDto);
             operatorRoleDto.setOperatorName(operatorNameMap.get(relation.getOperatorId()));
-            operatorRoleDto.setRoleName(operatorNameMap.get(relation.getRoleId()));
+            operatorRoleDto.setRoleName(roleNameMap.get(relation.getRoleId()));
             operatorRoleDtos.add(operatorRoleDto);
         }
         return new MyPage<>(relationPage.getTotal(), operatorRoleDtos);

@@ -14,6 +14,8 @@ import com.zy.graduation1.entity.Class;
 import com.zy.graduation1.entity.College;
 import com.zy.graduation1.entity.Major;
 import com.zy.graduation1.entity.Operator;
+import com.zy.graduation1.exception.BizErrorCode;
+import com.zy.graduation1.exception.BizException;
 import com.zy.graduation1.service.*;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -24,7 +26,7 @@ import java.util.Map;
 import java.util.stream.Collectors;
 
 @Service
-public class OriginManageServiceInfo implements OriginManageService {
+public class OriginManageServiceImpl implements OriginManageService {
 
     @Autowired
     private CollegeService collegeService;
@@ -143,5 +145,46 @@ public class OriginManageServiceInfo implements OriginManageService {
             collegeInfos.add(collegeDto);
         }
         return new MyPage<>(collegePage.getTotal(), collegeInfos);
+    }
+
+    @Override
+    public void saveCollege(Long collegeId, String collegeName, String operatorName) {
+        Operator operator = operatorService.getOperatorInfo(operatorName);
+        if(null == operator) {
+            throw new BizException(BizErrorCode.ACCOUNT_NOT_EXIST);
+        }
+
+        College college = collegeService.selectById(collegeId);
+        if(null != college) {
+            throw new BizException(BizErrorCode.ORIGIN_EXIST);
+        }
+        collegeService.saveCollege(collegeId, collegeName, operator.getOperatorId());
+    }
+
+    @Override
+    public void updateCollege(Long collegeId, String collegeName, String operatorName) {
+        Operator operator = operatorService.getOperatorInfo(operatorName);
+        if(null == operator) {
+            throw new BizException(BizErrorCode.ACCOUNT_NOT_EXIST);
+        }
+
+        College college = collegeService.selectById(collegeId);
+        if(null == college) {
+            throw new BizException(BizErrorCode.ORIGIN_NOT_EXIST);
+        }
+        collegeService.updateCollege(collegeId, collegeName, operator.getOperatorId());
+    }
+
+    private Long validateCollege(Long collegeId, String operatorName) {
+        Operator operator = operatorService.getOperatorInfo(operatorName);
+        if(null == operator) {
+            throw new BizException(BizErrorCode.ACCOUNT_NOT_EXIST);
+        }
+
+        College college = collegeService.selectById(collegeId);
+        if(null != college) {
+            throw new BizException(BizErrorCode.ORIGIN_EXIST);
+        }
+        return operator.getOperatorId();
     }
 }

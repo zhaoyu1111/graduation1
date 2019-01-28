@@ -18,6 +18,7 @@ layui.use(['element','form','jquery','laydate','table', 'laytpl'],function(){
     table.render({
         elem: '#mytable'
         ,url: "/web/system/listRole"
+        ,toolbar: true
         ,cols: [[
             {type:'checkbox'}
             ,{field:'roleId', title: 'ID', sort: true}
@@ -41,7 +42,7 @@ layui.use(['element','form','jquery','laydate','table', 'laytpl'],function(){
     });
 
     //监听工具条
-    table.on('tool(operation)', function(obj){ //注：tool是工具条事件名，test是table原始容器的属性 lay-filter="对应的值"
+    table.on('tool(role)', function(obj){ //注：tool是工具条事件名，test是table原始容器的属性 lay-filter="对应的值"
         var data = obj.data; //获得当前行数据
         var layEvent = obj.event; //获得 lay-event 对应的值（也可以是表头的 event 参数对应的值）
         var tr = obj.tr; //获得当前行 tr 的DOM对象
@@ -78,7 +79,7 @@ layui.use(['element','form','jquery','laydate','table', 'laytpl'],function(){
         } else if(layEvent === 'edit'){ //编辑
             //do something
             //$("#roleName").attr("value", 1);
-            x_content_edit("编辑", $("#addrole").html(), data);
+            x_content_edit("编辑", $('#addrole').html(), data);
             //同步更新缓存对应的值
             obj.update({
                 roleName: data.roleName
@@ -103,17 +104,17 @@ layui.use(['element','form','jquery','laydate','table', 'laytpl'],function(){
             btn: ['确认', '取消'],//弹出层按钮
             content:$("#addrole").html(),
             success: function (layero, index) {
-                form.val("addoredit", {
-                    "roleName": ""
-                });
+
             },
-            //url:"/web/system/addRole"
             yes: function (index, layero) {//点击“确认”按钮后触发的事件
                 var role = {};
                 //var body = layer.getChildFrame('body', index);
                 var form = $("#addUserForm").serializeArray();//获取指定id的表单
+                alert(form);
                 $.each(form, function () {
                     role[this.name] = this.value;
+                    alert(this.name);
+                    alert(this.value);
                 });
                 //data = JSON.stringify(data);
                 //var content = {'role': data};
@@ -143,6 +144,8 @@ layui.use(['element','form','jquery','laydate','table', 'laytpl'],function(){
         form.render();
 
     });
+
+
 
     function x_content_edit(title, url, data) {
         if (title == null || title == '') {

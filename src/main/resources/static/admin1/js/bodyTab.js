@@ -37,7 +37,6 @@ layui.define(["element","jquery"],function(exports){
             	alert(data.message);
 			}
             navs = root;
-            console.log(navs);
         }
 	});
     //显示左侧菜单

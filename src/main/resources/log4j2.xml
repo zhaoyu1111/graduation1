@@ -2,7 +2,7 @@
 <Configuration status="WARN" monitorInterval="30">
     <Properties>
 
-        <Property name="AppName">graduation1</Property>
+        <Property name="AppName">graduation</Property>
         <Property name="HostName">localhost</Property>
         <Property name="GwsLogFile">log/gws.log</Property>
         <Property name="SqlLogFile">log/sql.log</Property>

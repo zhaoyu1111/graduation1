@@ -208,17 +208,17 @@ layui.define(['laytpl', 'laypage', 'layer', 'form'], function(exports){
 
     //请求参数的自定义格式
     options.request = $.extend({
-      pageName: 'page'
+      pageName: 'currentPage'
       ,limitName: 'limit'
     }, options.request)
     
     //响应数据的自定义格式
     options.response = $.extend({
       statusName: 'code'
-      ,statusCode: 0
-      ,msgName: 'msg'
+      ,statusCode: '2000'
+      ,msgName: 'message'
       ,dataName: 'data'
-      ,countName: 'count'
+      ,countName: 'total'
     }, options.response);
     
     //如果 page 传入 laypage 对象

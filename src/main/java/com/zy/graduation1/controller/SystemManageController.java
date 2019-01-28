@@ -206,7 +206,8 @@ public class SystemManageController {
 
     @Anonymous
     @RequestMapping("/queryOperatorRoleRelation")
-    public MyPage<OperatorRoleDto> queryOperatorRoleRelation(Long roleId, String operatorName, Integer currentPage) {
+    public MyPage<OperatorRoleDto> queryOperatorRoleRelation(Long roleId, String operatorName,
+                                                             @RequestParam(defaultValue = "1") Integer currentPage) {
         return systemManageService.queryOperatorRoleRelation(roleId, operatorName, currentPage);
     }
 

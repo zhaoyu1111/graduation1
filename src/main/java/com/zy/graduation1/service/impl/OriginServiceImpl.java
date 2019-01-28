@@ -1,6 +1,7 @@
 package com.zy.graduation1.service.impl;
 
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
+import com.zy.graduation1.common.MyPage;
 import com.zy.graduation1.entity.Origin;
 import com.zy.graduation1.mapper.OriginMapper;
 import com.zy.graduation1.service.OriginService;
@@ -27,5 +28,10 @@ public class OriginServiceImpl extends ServiceImpl<OriginMapper, Origin> impleme
         query.eq("operator_id", operatorId);
         List<Origin> origins = baseMapper.selectList(query);
         return CollectionUtils.isEmpty(origins) ? null : origins.get(0);
+    }
+
+    @Override
+    public MyPage<Origin> queryOrigin(String originName, String address, Integer originType) {
+        return null;
     }
 }

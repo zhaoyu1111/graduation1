@@ -1,5 +1,7 @@
 package com.zy.graduation1.service;
 
+import com.baomidou.mybatisplus.core.metadata.IPage;
+import com.zy.graduation1.common.MyPage;
 import com.zy.graduation1.entity.Origin;
 import com.baomidou.mybatisplus.extension.service.IService;
 
@@ -19,4 +21,14 @@ public interface OriginService extends IService<Origin> {
      * @return
      */
     Origin getOriginOperator(Long operatorId);
+
+    /**
+     * 分页查询组织信息
+     * @param originName
+     * @param address
+     * @param originType
+     * @return
+     */
+    MyPage<Origin> queryOrigin(String originName, String address, Integer originType);
+
 }

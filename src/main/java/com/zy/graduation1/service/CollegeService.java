@@ -37,16 +37,20 @@ public interface CollegeService extends IService<College> {
     List<College> listCollegeName();
 
     /**
-     * 删除学院
+     * 增加学院(当collegeId为空时表示增加)
      * @param collegeId
+     * @param collegeName
+     * @param operatorId
      * @return
      */
-    Boolean deleteCollege(Long collegeId);
+    Boolean saveCollege(Long collegeId, String collegeName, Long operatorId);
 
     /**
-     * 增加或修改学院(当collegeId为空时表示增加)
-     * @param college
+     * 更新学院信息
+     * @param collegeId
+     * @param collegeName
+     * @param operatorId
      * @return
      */
-    Boolean saveOrUppdateCollege(College college);
+    Boolean updateCollege(Long collegeId, String collegeName, Long operatorId);
 }

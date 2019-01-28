@@ -45,14 +45,16 @@ public class CollegeServiceImpl extends ServiceImpl<CollegeMapper, College> impl
     }
 
     @Override
-    public Boolean deleteCollege(Long collegeId) {
-        QueryWrapper<College> query = new QueryWrapper<>();
-        query.eq("college_id", collegeId);
-        return baseMapper.deleteById(collegeId) == 1;
+    public Boolean saveCollege(Long collegeId, String collegeName, Long operatorId) {
+        College college = new College();
+        college.setCollegeId(collegeId).setCollegeName(collegeName).setOperatorId(operatorId);
+        return baseMapper.insert(college) == 1;
     }
 
     @Override
-    public Boolean saveOrUppdateCollege(College college) {
-        return this.insertOrUpdate(college);
+    public Boolean updateCollege(Long collegeId, String collegeName, Long operatorId) {
+        College college = new College();
+        college.setCollegeId(collegeId).setCollegeName(collegeName).setOperatorId(operatorId);
+        return baseMapper.updateById(college) == 1;
     }
 }
