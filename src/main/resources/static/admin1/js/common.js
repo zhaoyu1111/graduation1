@@ -12,3 +12,12 @@ function createTime(v) {
     var str = y + "-" + m + "-" + d + " " + h + ":" + M;
     return str;
 }
+
+$(function () {
+    $.ajaxSetup({
+        type: 'post',
+        headers: {
+            token: sessionStorage.getItem('token')
+        }
+    })
+})

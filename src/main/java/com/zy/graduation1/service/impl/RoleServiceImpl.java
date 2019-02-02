@@ -41,8 +41,8 @@ public class RoleServiceImpl extends ServiceImpl<RoleMapper, Role> implements Ro
     }
 
     @Override
-    public void updateRole(Role role) {
-        this.updateById(role);
+    public void saveOrUpdateRole(Role role) {
+        this.insertOrUpdate(role);
     }
 
     @Override

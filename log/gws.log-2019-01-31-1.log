@@ -1,0 +1,257 @@
+time=2019-01-31T13:09:51.382+0800`appName=graduation`hostName=localhost`logLevel=INFO `msg=Starting Graduation1Application on DESKTOP-Q8HC681 with PID 5980 (F:\idea\graduation1\target\classes started by pcdn in F:\idea\graduation1)
+time=2019-01-31T13:09:51.428+0800`appName=graduation`hostName=localhost`logLevel=INFO `msg=The following profiles are active: dev
+time=2019-01-31T13:09:51.694+0800`appName=graduation`hostName=localhost`logLevel=INFO `msg=Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@2fea7088: startup date [Thu Jan 31 13:09:51 CST 2019]; root of context hierarchy
+time=2019-01-31T13:09:53.604+0800`appName=graduation`hostName=localhost`logLevel=WARN `msg=No MyBatis mapper was found in '[com.zy.project.mapper]' package. Please check your configuration.
+time=2019-01-31T13:09:55.649+0800`appName=graduation`hostName=localhost`logLevel=INFO `msg=Tomcat initialized with port(s): 8083 (http)
+time=2019-01-31T13:09:56.298+0800`appName=graduation`hostName=localhost`logLevel=INFO `msg=Servlet dispatcherServlet mapped to [/]
+time=2019-01-31T13:09:56.314+0800`appName=graduation`hostName=localhost`logLevel=INFO `msg=Mapping filter: 'characterEncodingFilter' to: [/*]
+time=2019-01-31T13:09:56.314+0800`appName=graduation`hostName=localhost`logLevel=INFO `msg=Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+time=2019-01-31T13:09:56.314+0800`appName=graduation`hostName=localhost`logLevel=INFO `msg=Mapping filter: 'httpPutFormContentFilter' to: [/*]
+time=2019-01-31T13:09:56.314+0800`appName=graduation`hostName=localhost`logLevel=INFO `msg=Mapping filter: 'requestContextFilter' to: [/*]
+time=2019-01-31T13:09:57.364+0800`appName=graduation`hostName=localhost`logLevel=INFO `msg=HikariPool-1 - Starting...
+time=2019-01-31T13:09:57.707+0800`appName=graduation`hostName=localhost`logLevel=INFO `msg=HikariPool-1 - Start completed.
+time=2019-01-31T13:10:02.632+0800`appName=graduation`hostName=localhost`logLevel=INFO `msg=Tomcat started on port(s): 8083 (http) with context path ''
+time=2019-01-31T13:10:02.647+0800`appName=graduation`hostName=localhost`logLevel=INFO `msg=Started Graduation1Application in 12.17 seconds (JVM running for 17.763)
+time=2019-01-31T13:10:11.290+0800`appName=graduation`hostName=localhost`logLevel=INFO `msg=Starting without optional epoll library
+time=2019-01-31T13:10:11.297+0800`appName=graduation`hostName=localhost`logLevel=INFO `msg=Starting without optional kqueue library
+time=2019-01-31T13:12:07.510+0800`appName=graduation`hostName=localhost`logLevel=INFO `msg=Starting Graduation1Application on DESKTOP-Q8HC681 with PID 8360 (F:\idea\graduation1\target\classes started by pcdn in F:\idea\graduation1)
+time=2019-01-31T13:12:07.526+0800`appName=graduation`hostName=localhost`logLevel=INFO `msg=The following profiles are active: dev
+time=2019-01-31T13:12:07.713+0800`appName=graduation`hostName=localhost`logLevel=INFO `msg=Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@3a62c01e: startup date [Thu Jan 31 13:12:07 CST 2019]; root of context hierarchy
+time=2019-01-31T13:12:09.214+0800`appName=graduation`hostName=localhost`logLevel=WARN `msg=No MyBatis mapper was found in '[com.zy.project.mapper]' package. Please check your configuration.
+time=2019-01-31T13:12:10.900+0800`appName=graduation`hostName=localhost`logLevel=INFO `msg=Tomcat initialized with port(s): 8083 (http)
+time=2019-01-31T13:12:11.497+0800`appName=graduation`hostName=localhost`logLevel=INFO `msg=Servlet dispatcherServlet mapped to [/]
+time=2019-01-31T13:12:11.497+0800`appName=graduation`hostName=localhost`logLevel=INFO `msg=Mapping filter: 'characterEncodingFilter' to: [/*]
+time=2019-01-31T13:12:11.497+0800`appName=graduation`hostName=localhost`logLevel=INFO `msg=Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+time=2019-01-31T13:12:11.497+0800`appName=graduation`hostName=localhost`logLevel=INFO `msg=Mapping filter: 'httpPutFormContentFilter' to: [/*]
+time=2019-01-31T13:12:11.497+0800`appName=graduation`hostName=localhost`logLevel=INFO `msg=Mapping filter: 'requestContextFilter' to: [/*]
+time=2019-01-31T13:12:12.199+0800`appName=graduation`hostName=localhost`logLevel=INFO `msg=HikariPool-1 - Starting...
+time=2019-01-31T13:12:12.480+0800`appName=graduation`hostName=localhost`logLevel=INFO `msg=HikariPool-1 - Start completed.
+time=2019-01-31T13:12:17.028+0800`appName=graduation`hostName=localhost`logLevel=INFO `msg=Tomcat started on port(s): 8083 (http) with context path ''
+time=2019-01-31T13:12:17.028+0800`appName=graduation`hostName=localhost`logLevel=INFO `msg=Started Graduation1Application in 10.291 seconds (JVM running for 13.91)
+time=2019-01-31T13:12:24.886+0800`appName=graduation`hostName=localhost`logLevel=INFO `msg=Starting without optional epoll library
+time=2019-01-31T13:12:24.890+0800`appName=graduation`hostName=localhost`logLevel=INFO `msg=Starting without optional kqueue library
+time=2019-01-31T13:16:05.733+0800`appName=graduation`hostName=localhost`logLevel=INFO `msg=Starting Graduation1Application on DESKTOP-Q8HC681 with PID 6196 (F:\idea\graduation1\target\classes started by pcdn in F:\idea\graduation1)
+time=2019-01-31T13:16:05.748+0800`appName=graduation`hostName=localhost`logLevel=INFO `msg=The following profiles are active: dev
+time=2019-01-31T13:16:05.905+0800`appName=graduation`hostName=localhost`logLevel=INFO `msg=Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@5bfa8cc5: startup date [Thu Jan 31 13:16:05 CST 2019]; root of context hierarchy
+time=2019-01-31T13:16:06.855+0800`appName=graduation`hostName=localhost`logLevel=WARN `msg=No MyBatis mapper was found in '[com.zy.project.mapper]' package. Please check your configuration.
+time=2019-01-31T13:16:08.388+0800`appName=graduation`hostName=localhost`logLevel=INFO `msg=Tomcat initialized with port(s): 8083 (http)
+time=2019-01-31T13:16:08.841+0800`appName=graduation`hostName=localhost`logLevel=INFO `msg=Servlet dispatcherServlet mapped to [/]
+time=2019-01-31T13:16:08.857+0800`appName=graduation`hostName=localhost`logLevel=INFO `msg=Mapping filter: 'characterEncodingFilter' to: [/*]
+time=2019-01-31T13:16:08.857+0800`appName=graduation`hostName=localhost`logLevel=INFO `msg=Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+time=2019-01-31T13:16:08.857+0800`appName=graduation`hostName=localhost`logLevel=INFO `msg=Mapping filter: 'httpPutFormContentFilter' to: [/*]
+time=2019-01-31T13:16:08.857+0800`appName=graduation`hostName=localhost`logLevel=INFO `msg=Mapping filter: 'requestContextFilter' to: [/*]
+time=2019-01-31T13:16:09.536+0800`appName=graduation`hostName=localhost`logLevel=INFO `msg=HikariPool-1 - Starting...
+time=2019-01-31T13:16:09.786+0800`appName=graduation`hostName=localhost`logLevel=INFO `msg=HikariPool-1 - Start completed.
+time=2019-01-31T13:16:13.881+0800`appName=graduation`hostName=localhost`logLevel=INFO `msg=Tomcat started on port(s): 8083 (http) with context path ''
+time=2019-01-31T13:16:13.881+0800`appName=graduation`hostName=localhost`logLevel=INFO `msg=Started Graduation1Application in 8.773 seconds (JVM running for 11.712)
+time=2019-01-31T13:16:23.515+0800`appName=graduation`hostName=localhost`logLevel=INFO `msg=Starting without optional epoll library
+time=2019-01-31T13:16:23.519+0800`appName=graduation`hostName=localhost`logLevel=INFO `msg=Starting without optional kqueue library
+time=2019-01-31T13:21:13.470+0800`appName=graduation`hostName=localhost`logLevel=INFO `msg=Starting Graduation1Application on DESKTOP-Q8HC681 with PID 1880 (F:\idea\graduation1\target\classes started by pcdn in F:\idea\graduation1)
+time=2019-01-31T13:21:13.470+0800`appName=graduation`hostName=localhost`logLevel=INFO `msg=The following profiles are active: dev
+time=2019-01-31T13:21:13.641+0800`appName=graduation`hostName=localhost`logLevel=INFO `msg=Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@2c88b9fc: startup date [Thu Jan 31 13:21:13 CST 2019]; root of context hierarchy
+time=2019-01-31T13:21:14.707+0800`appName=graduation`hostName=localhost`logLevel=WARN `msg=No MyBatis mapper was found in '[com.zy.project.mapper]' package. Please check your configuration.
+time=2019-01-31T13:21:16.270+0800`appName=graduation`hostName=localhost`logLevel=INFO `msg=Tomcat initialized with port(s): 8083 (http)
+time=2019-01-31T13:21:16.725+0800`appName=graduation`hostName=localhost`logLevel=INFO `msg=Servlet dispatcherServlet mapped to [/]
+time=2019-01-31T13:21:16.725+0800`appName=graduation`hostName=localhost`logLevel=INFO `msg=Mapping filter: 'characterEncodingFilter' to: [/*]
+time=2019-01-31T13:21:16.725+0800`appName=graduation`hostName=localhost`logLevel=INFO `msg=Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+time=2019-01-31T13:21:16.725+0800`appName=graduation`hostName=localhost`logLevel=INFO `msg=Mapping filter: 'httpPutFormContentFilter' to: [/*]
+time=2019-01-31T13:21:16.725+0800`appName=graduation`hostName=localhost`logLevel=INFO `msg=Mapping filter: 'requestContextFilter' to: [/*]
+time=2019-01-31T13:21:17.339+0800`appName=graduation`hostName=localhost`logLevel=INFO `msg=HikariPool-1 - Starting...
+time=2019-01-31T13:21:17.604+0800`appName=graduation`hostName=localhost`logLevel=INFO `msg=HikariPool-1 - Start completed.
+time=2019-01-31T13:21:22.028+0800`appName=graduation`hostName=localhost`logLevel=INFO `msg=Tomcat started on port(s): 8083 (http) with context path ''
+time=2019-01-31T13:21:22.028+0800`appName=graduation`hostName=localhost`logLevel=INFO `msg=Started Graduation1Application in 9.248 seconds (JVM running for 12.364)
+time=2019-01-31T13:21:22.626+0800`appName=graduation`hostName=localhost`logLevel=INFO `msg=Starting without optional epoll library
+time=2019-01-31T13:21:22.661+0800`appName=graduation`hostName=localhost`logLevel=INFO `msg=Starting without optional kqueue library
+time=2019-01-31T13:24:06.754+0800`appName=graduation`hostName=localhost`logLevel=INFO `msg=Starting Graduation1Application on DESKTOP-Q8HC681 with PID 7700 (F:\idea\graduation1\target\classes started by pcdn in F:\idea\graduation1)
+time=2019-01-31T13:24:06.785+0800`appName=graduation`hostName=localhost`logLevel=INFO `msg=The following profiles are active: dev
+time=2019-01-31T13:24:06.973+0800`appName=graduation`hostName=localhost`logLevel=INFO `msg=Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@36546a22: startup date [Thu Jan 31 13:24:06 CST 2019]; root of context hierarchy
+time=2019-01-31T13:24:08.106+0800`appName=graduation`hostName=localhost`logLevel=WARN `msg=No MyBatis mapper was found in '[com.zy.project.mapper]' package. Please check your configuration.
+time=2019-01-31T13:24:09.937+0800`appName=graduation`hostName=localhost`logLevel=INFO `msg=Tomcat initialized with port(s): 8083 (http)
+time=2019-01-31T13:24:10.579+0800`appName=graduation`hostName=localhost`logLevel=INFO `msg=Servlet dispatcherServlet mapped to [/]
+time=2019-01-31T13:24:10.594+0800`appName=graduation`hostName=localhost`logLevel=INFO `msg=Mapping filter: 'characterEncodingFilter' to: [/*]
+time=2019-01-31T13:24:10.594+0800`appName=graduation`hostName=localhost`logLevel=INFO `msg=Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+time=2019-01-31T13:24:10.594+0800`appName=graduation`hostName=localhost`logLevel=INFO `msg=Mapping filter: 'httpPutFormContentFilter' to: [/*]
+time=2019-01-31T13:24:10.594+0800`appName=graduation`hostName=localhost`logLevel=INFO `msg=Mapping filter: 'requestContextFilter' to: [/*]
+time=2019-01-31T13:24:11.943+0800`appName=graduation`hostName=localhost`logLevel=INFO `msg=HikariPool-1 - Starting...
+time=2019-01-31T13:24:12.853+0800`appName=graduation`hostName=localhost`logLevel=INFO `msg=HikariPool-1 - Start completed.
+time=2019-01-31T13:24:19.399+0800`appName=graduation`hostName=localhost`logLevel=INFO `msg=Tomcat started on port(s): 8083 (http) with context path ''
+time=2019-01-31T13:24:19.415+0800`appName=graduation`hostName=localhost`logLevel=INFO `msg=Started Graduation1Application in 13.311 seconds (JVM running for 16.486)
+time=2019-01-31T13:24:25.854+0800`appName=graduation`hostName=localhost`logLevel=INFO `msg=Starting without optional epoll library
+time=2019-01-31T13:24:25.859+0800`appName=graduation`hostName=localhost`logLevel=INFO `msg=Starting without optional kqueue library
+time=2019-01-31T14:17:18.863+0800`appName=graduation`hostName=localhost`logLevel=WARN `msg=HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=16m38s922ms919µs715ns).
+time=2019-01-31T14:23:57.585+0800`appName=graduation`hostName=localhost`logLevel=INFO `msg=Starting Graduation1Application on DESKTOP-Q8HC681 with PID 8060 (F:\idea\graduation1\target\classes started by pcdn in F:\idea\graduation1)
+time=2019-01-31T14:23:57.613+0800`appName=graduation`hostName=localhost`logLevel=INFO `msg=The following profiles are active: dev
+time=2019-01-31T14:23:57.805+0800`appName=graduation`hostName=localhost`logLevel=INFO `msg=Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@40499e4f: startup date [Thu Jan 31 14:23:57 CST 2019]; root of context hierarchy
+time=2019-01-31T14:23:59.425+0800`appName=graduation`hostName=localhost`logLevel=WARN `msg=No MyBatis mapper was found in '[com.zy.project.mapper]' package. Please check your configuration.
+time=2019-01-31T14:24:01.388+0800`appName=graduation`hostName=localhost`logLevel=INFO `msg=Tomcat initialized with port(s): 8083 (http)
+time=2019-01-31T14:24:02.121+0800`appName=graduation`hostName=localhost`logLevel=INFO `msg=Servlet dispatcherServlet mapped to [/]
+time=2019-01-31T14:24:02.133+0800`appName=graduation`hostName=localhost`logLevel=INFO `msg=Mapping filter: 'characterEncodingFilter' to: [/*]
+time=2019-01-31T14:24:02.134+0800`appName=graduation`hostName=localhost`logLevel=INFO `msg=Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+time=2019-01-31T14:24:02.134+0800`appName=graduation`hostName=localhost`logLevel=INFO `msg=Mapping filter: 'httpPutFormContentFilter' to: [/*]
+time=2019-01-31T14:24:02.134+0800`appName=graduation`hostName=localhost`logLevel=INFO `msg=Mapping filter: 'requestContextFilter' to: [/*]
+time=2019-01-31T14:24:02.967+0800`appName=graduation`hostName=localhost`logLevel=INFO `msg=HikariPool-1 - Starting...
+time=2019-01-31T14:24:03.271+0800`appName=graduation`hostName=localhost`logLevel=INFO `msg=HikariPool-1 - Start completed.
+time=2019-01-31T14:24:08.543+0800`appName=graduation`hostName=localhost`logLevel=INFO `msg=Tomcat started on port(s): 8083 (http) with context path ''
+time=2019-01-31T14:24:08.557+0800`appName=graduation`hostName=localhost`logLevel=INFO `msg=Started Graduation1Application in 11.754 seconds (JVM running for 15.347)
+time=2019-01-31T14:24:08.964+0800`appName=graduation`hostName=localhost`logLevel=INFO `msg=Starting without optional epoll library
+time=2019-01-31T14:24:08.968+0800`appName=graduation`hostName=localhost`logLevel=INFO `msg=Starting without optional kqueue library
+time=2019-01-31T14:27:43.805+0800`appName=graduation`hostName=localhost`logLevel=INFO `msg=Starting Graduation1Application on DESKTOP-Q8HC681 with PID 11956 (F:\idea\graduation1\target\classes started by pcdn in F:\idea\graduation1)
+time=2019-01-31T14:27:43.821+0800`appName=graduation`hostName=localhost`logLevel=INFO `msg=The following profiles are active: dev
+time=2019-01-31T14:27:44.024+0800`appName=graduation`hostName=localhost`logLevel=INFO `msg=Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@3dddefd8: startup date [Thu Jan 31 14:27:44 CST 2019]; root of context hierarchy
+time=2019-01-31T14:27:45.522+0800`appName=graduation`hostName=localhost`logLevel=WARN `msg=No MyBatis mapper was found in '[com.zy.project.mapper]' package. Please check your configuration.
+time=2019-01-31T14:27:47.166+0800`appName=graduation`hostName=localhost`logLevel=INFO `msg=Tomcat initialized with port(s): 8083 (http)
+time=2019-01-31T14:27:47.681+0800`appName=graduation`hostName=localhost`logLevel=INFO `msg=Servlet dispatcherServlet mapped to [/]
+time=2019-01-31T14:27:47.697+0800`appName=graduation`hostName=localhost`logLevel=INFO `msg=Mapping filter: 'characterEncodingFilter' to: [/*]
+time=2019-01-31T14:27:47.697+0800`appName=graduation`hostName=localhost`logLevel=INFO `msg=Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+time=2019-01-31T14:27:47.697+0800`appName=graduation`hostName=localhost`logLevel=INFO `msg=Mapping filter: 'httpPutFormContentFilter' to: [/*]
+time=2019-01-31T14:27:47.697+0800`appName=graduation`hostName=localhost`logLevel=INFO `msg=Mapping filter: 'requestContextFilter' to: [/*]
+time=2019-01-31T14:27:48.348+0800`appName=graduation`hostName=localhost`logLevel=INFO `msg=HikariPool-1 - Starting...
+time=2019-01-31T14:27:48.616+0800`appName=graduation`hostName=localhost`logLevel=INFO `msg=HikariPool-1 - Start completed.
+time=2019-01-31T14:27:52.909+0800`appName=graduation`hostName=localhost`logLevel=INFO `msg=Tomcat started on port(s): 8083 (http) with context path ''
+time=2019-01-31T14:27:52.924+0800`appName=graduation`hostName=localhost`logLevel=INFO `msg=Started Graduation1Application in 9.875 seconds (JVM running for 13.154)
+time=2019-01-31T14:28:23.942+0800`appName=graduation`hostName=localhost`logLevel=INFO `msg=Starting without optional epoll library
+time=2019-01-31T14:28:23.948+0800`appName=graduation`hostName=localhost`logLevel=INFO `msg=Starting without optional kqueue library
+time=2019-01-31T14:36:40.561+0800`appName=graduation`hostName=localhost`logLevel=INFO `msg=Starting Graduation1Application on DESKTOP-Q8HC681 with PID 1652 (F:\idea\graduation1\target\classes started by pcdn in F:\idea\graduation1)
+time=2019-01-31T14:36:40.573+0800`appName=graduation`hostName=localhost`logLevel=INFO `msg=The following profiles are active: dev
+time=2019-01-31T14:36:40.786+0800`appName=graduation`hostName=localhost`logLevel=INFO `msg=Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@4264b240: startup date [Thu Jan 31 14:36:40 CST 2019]; root of context hierarchy
+time=2019-01-31T14:36:42.521+0800`appName=graduation`hostName=localhost`logLevel=WARN `msg=No MyBatis mapper was found in '[com.zy.project.mapper]' package. Please check your configuration.
+time=2019-01-31T14:36:44.490+0800`appName=graduation`hostName=localhost`logLevel=INFO `msg=Tomcat initialized with port(s): 8083 (http)
+time=2019-01-31T14:36:45.123+0800`appName=graduation`hostName=localhost`logLevel=INFO `msg=Servlet dispatcherServlet mapped to [/]
+time=2019-01-31T14:36:45.133+0800`appName=graduation`hostName=localhost`logLevel=INFO `msg=Mapping filter: 'characterEncodingFilter' to: [/*]
+time=2019-01-31T14:36:45.133+0800`appName=graduation`hostName=localhost`logLevel=INFO `msg=Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+time=2019-01-31T14:36:45.134+0800`appName=graduation`hostName=localhost`logLevel=INFO `msg=Mapping filter: 'httpPutFormContentFilter' to: [/*]
+time=2019-01-31T14:36:45.134+0800`appName=graduation`hostName=localhost`logLevel=INFO `msg=Mapping filter: 'requestContextFilter' to: [/*]
+time=2019-01-31T14:36:45.861+0800`appName=graduation`hostName=localhost`logLevel=INFO `msg=HikariPool-1 - Starting...
+time=2019-01-31T14:36:46.165+0800`appName=graduation`hostName=localhost`logLevel=INFO `msg=HikariPool-1 - Start completed.
+time=2019-01-31T14:36:51.219+0800`appName=graduation`hostName=localhost`logLevel=INFO `msg=Tomcat started on port(s): 8083 (http) with context path ''
+time=2019-01-31T14:36:51.229+0800`appName=graduation`hostName=localhost`logLevel=INFO `msg=Started Graduation1Application in 11.509 seconds (JVM running for 15.652)
+time=2019-01-31T14:37:24.673+0800`appName=graduation`hostName=localhost`logLevel=INFO `msg=Starting without optional epoll library
+time=2019-01-31T14:37:24.681+0800`appName=graduation`hostName=localhost`logLevel=INFO `msg=Starting without optional kqueue library
+time=2019-01-31T14:54:27.682+0800`appName=graduation`hostName=localhost`logLevel=INFO `msg=Starting Graduation1Application on DESKTOP-Q8HC681 with PID 11472 (F:\idea\graduation1\target\classes started by pcdn in F:\idea\graduation1)
+time=2019-01-31T14:54:27.688+0800`appName=graduation`hostName=localhost`logLevel=INFO `msg=The following profiles are active: dev
+time=2019-01-31T14:54:27.860+0800`appName=graduation`hostName=localhost`logLevel=INFO `msg=Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@2b43529a: startup date [Thu Jan 31 14:54:27 CST 2019]; root of context hierarchy
+time=2019-01-31T14:54:29.419+0800`appName=graduation`hostName=localhost`logLevel=WARN `msg=No MyBatis mapper was found in '[com.zy.project.mapper]' package. Please check your configuration.
+time=2019-01-31T14:54:31.171+0800`appName=graduation`hostName=localhost`logLevel=INFO `msg=Tomcat initialized with port(s): 8083 (http)
+time=2019-01-31T14:54:31.672+0800`appName=graduation`hostName=localhost`logLevel=INFO `msg=Servlet dispatcherServlet mapped to [/]
+time=2019-01-31T14:54:31.687+0800`appName=graduation`hostName=localhost`logLevel=INFO `msg=Mapping filter: 'characterEncodingFilter' to: [/*]
+time=2019-01-31T14:54:31.687+0800`appName=graduation`hostName=localhost`logLevel=INFO `msg=Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+time=2019-01-31T14:54:31.687+0800`appName=graduation`hostName=localhost`logLevel=INFO `msg=Mapping filter: 'httpPutFormContentFilter' to: [/*]
+time=2019-01-31T14:54:31.687+0800`appName=graduation`hostName=localhost`logLevel=INFO `msg=Mapping filter: 'requestContextFilter' to: [/*]
+time=2019-01-31T14:54:32.331+0800`appName=graduation`hostName=localhost`logLevel=INFO `msg=HikariPool-1 - Starting...
+time=2019-01-31T14:54:32.613+0800`appName=graduation`hostName=localhost`logLevel=INFO `msg=HikariPool-1 - Start completed.
+time=2019-01-31T14:54:37.516+0800`appName=graduation`hostName=localhost`logLevel=INFO `msg=Tomcat started on port(s): 8083 (http) with context path ''
+time=2019-01-31T14:54:37.525+0800`appName=graduation`hostName=localhost`logLevel=INFO `msg=Started Graduation1Application in 10.627 seconds (JVM running for 14.619)
+time=2019-01-31T14:54:38.953+0800`appName=graduation`hostName=localhost`logLevel=INFO `msg=Starting without optional epoll library
+time=2019-01-31T14:54:38.961+0800`appName=graduation`hostName=localhost`logLevel=INFO `msg=Starting without optional kqueue library
+time=2019-01-31T15:08:20.808+0800`appName=graduation`hostName=localhost`logLevel=INFO `msg=Starting Graduation1Application on DESKTOP-Q8HC681 with PID 9460 (F:\idea\graduation1\target\classes started by pcdn in F:\idea\graduation1)
+time=2019-01-31T15:08:20.824+0800`appName=graduation`hostName=localhost`logLevel=INFO `msg=The following profiles are active: dev
+time=2019-01-31T15:08:21.011+0800`appName=graduation`hostName=localhost`logLevel=INFO `msg=Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@75f5fd58: startup date [Thu Jan 31 15:08:20 CST 2019]; root of context hierarchy
+time=2019-01-31T15:08:22.560+0800`appName=graduation`hostName=localhost`logLevel=WARN `msg=No MyBatis mapper was found in '[com.zy.project.mapper]' package. Please check your configuration.
+time=2019-01-31T15:08:24.391+0800`appName=graduation`hostName=localhost`logLevel=INFO `msg=Tomcat initialized with port(s): 8083 (http)
+time=2019-01-31T15:08:24.875+0800`appName=graduation`hostName=localhost`logLevel=INFO `msg=Servlet dispatcherServlet mapped to [/]
+time=2019-01-31T15:08:24.891+0800`appName=graduation`hostName=localhost`logLevel=INFO `msg=Mapping filter: 'characterEncodingFilter' to: [/*]
+time=2019-01-31T15:08:24.891+0800`appName=graduation`hostName=localhost`logLevel=INFO `msg=Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+time=2019-01-31T15:08:24.891+0800`appName=graduation`hostName=localhost`logLevel=INFO `msg=Mapping filter: 'httpPutFormContentFilter' to: [/*]
+time=2019-01-31T15:08:24.891+0800`appName=graduation`hostName=localhost`logLevel=INFO `msg=Mapping filter: 'requestContextFilter' to: [/*]
+time=2019-01-31T15:08:25.519+0800`appName=graduation`hostName=localhost`logLevel=INFO `msg=HikariPool-1 - Starting...
+time=2019-01-31T15:08:25.800+0800`appName=graduation`hostName=localhost`logLevel=INFO `msg=HikariPool-1 - Start completed.
+time=2019-01-31T15:08:30.416+0800`appName=graduation`hostName=localhost`logLevel=INFO `msg=Tomcat started on port(s): 8083 (http) with context path ''
+time=2019-01-31T15:08:30.425+0800`appName=graduation`hostName=localhost`logLevel=INFO `msg=Started Graduation1Application in 10.318 seconds (JVM running for 13.659)
+time=2019-01-31T15:08:31.578+0800`appName=graduation`hostName=localhost`logLevel=INFO `msg=Starting without optional epoll library
+time=2019-01-31T15:08:31.581+0800`appName=graduation`hostName=localhost`logLevel=INFO `msg=Starting without optional kqueue library
+time=2019-01-31T15:17:28.808+0800`appName=graduation`hostName=localhost`logLevel=INFO `msg=Starting Graduation1Application on DESKTOP-Q8HC681 with PID 10076 (F:\idea\graduation1\target\classes started by pcdn in F:\idea\graduation1)
+time=2019-01-31T15:17:28.819+0800`appName=graduation`hostName=localhost`logLevel=INFO `msg=The following profiles are active: dev
+time=2019-01-31T15:17:29.004+0800`appName=graduation`hostName=localhost`logLevel=INFO `msg=Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@19fb8826: startup date [Thu Jan 31 15:17:28 CST 2019]; root of context hierarchy
+time=2019-01-31T15:17:30.590+0800`appName=graduation`hostName=localhost`logLevel=WARN `msg=No MyBatis mapper was found in '[com.zy.project.mapper]' package. Please check your configuration.
+time=2019-01-31T15:17:32.485+0800`appName=graduation`hostName=localhost`logLevel=INFO `msg=Tomcat initialized with port(s): 8083 (http)
+time=2019-01-31T15:17:33.042+0800`appName=graduation`hostName=localhost`logLevel=INFO `msg=Servlet dispatcherServlet mapped to [/]
+time=2019-01-31T15:17:33.052+0800`appName=graduation`hostName=localhost`logLevel=INFO `msg=Mapping filter: 'characterEncodingFilter' to: [/*]
+time=2019-01-31T15:17:33.053+0800`appName=graduation`hostName=localhost`logLevel=INFO `msg=Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+time=2019-01-31T15:17:33.053+0800`appName=graduation`hostName=localhost`logLevel=INFO `msg=Mapping filter: 'httpPutFormContentFilter' to: [/*]
+time=2019-01-31T15:17:33.053+0800`appName=graduation`hostName=localhost`logLevel=INFO `msg=Mapping filter: 'requestContextFilter' to: [/*]
+time=2019-01-31T15:17:33.887+0800`appName=graduation`hostName=localhost`logLevel=INFO `msg=HikariPool-1 - Starting...
+time=2019-01-31T15:17:34.178+0800`appName=graduation`hostName=localhost`logLevel=INFO `msg=HikariPool-1 - Start completed.
+time=2019-01-31T15:17:39.149+0800`appName=graduation`hostName=localhost`logLevel=INFO `msg=Tomcat started on port(s): 8083 (http) with context path ''
+time=2019-01-31T15:17:39.159+0800`appName=graduation`hostName=localhost`logLevel=INFO `msg=Started Graduation1Application in 11.161 seconds (JVM running for 14.646)
+time=2019-01-31T15:17:40.692+0800`appName=graduation`hostName=localhost`logLevel=INFO `msg=Starting without optional epoll library
+time=2019-01-31T15:17:40.698+0800`appName=graduation`hostName=localhost`logLevel=INFO `msg=Starting without optional kqueue library
+time=2019-01-31T15:21:36.965+0800`appName=graduation`hostName=localhost`logLevel=INFO `msg=Starting Graduation1Application on DESKTOP-Q8HC681 with PID 10124 (F:\idea\graduation1\target\classes started by pcdn in F:\idea\graduation1)
+time=2019-01-31T15:21:36.988+0800`appName=graduation`hostName=localhost`logLevel=INFO `msg=The following profiles are active: dev
+time=2019-01-31T15:21:37.202+0800`appName=graduation`hostName=localhost`logLevel=INFO `msg=Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@7894f09b: startup date [Thu Jan 31 15:21:37 CST 2019]; root of context hierarchy
+time=2019-01-31T15:21:38.368+0800`appName=graduation`hostName=localhost`logLevel=WARN `msg=No MyBatis mapper was found in '[com.zy.project.mapper]' package. Please check your configuration.
+time=2019-01-31T15:21:40.117+0800`appName=graduation`hostName=localhost`logLevel=INFO `msg=Tomcat initialized with port(s): 8083 (http)
+time=2019-01-31T15:21:40.658+0800`appName=graduation`hostName=localhost`logLevel=INFO `msg=Servlet dispatcherServlet mapped to [/]
+time=2019-01-31T15:21:40.667+0800`appName=graduation`hostName=localhost`logLevel=INFO `msg=Mapping filter: 'characterEncodingFilter' to: [/*]
+time=2019-01-31T15:21:40.668+0800`appName=graduation`hostName=localhost`logLevel=INFO `msg=Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+time=2019-01-31T15:21:40.668+0800`appName=graduation`hostName=localhost`logLevel=INFO `msg=Mapping filter: 'httpPutFormContentFilter' to: [/*]
+time=2019-01-31T15:21:40.668+0800`appName=graduation`hostName=localhost`logLevel=INFO `msg=Mapping filter: 'requestContextFilter' to: [/*]
+time=2019-01-31T15:21:41.371+0800`appName=graduation`hostName=localhost`logLevel=INFO `msg=HikariPool-1 - Starting...
+time=2019-01-31T15:21:41.664+0800`appName=graduation`hostName=localhost`logLevel=INFO `msg=HikariPool-1 - Start completed.
+time=2019-01-31T15:21:46.314+0800`appName=graduation`hostName=localhost`logLevel=INFO `msg=Tomcat started on port(s): 8083 (http) with context path ''
+time=2019-01-31T15:21:46.323+0800`appName=graduation`hostName=localhost`logLevel=INFO `msg=Started Graduation1Application in 10.041 seconds (JVM running for 13.707)
+time=2019-01-31T15:22:01.186+0800`appName=graduation`hostName=localhost`logLevel=INFO `msg=Starting without optional epoll library
+time=2019-01-31T15:22:01.191+0800`appName=graduation`hostName=localhost`logLevel=INFO `msg=Starting without optional kqueue library
+time=2019-01-31T15:24:48.048+0800`appName=graduation`hostName=localhost`logLevel=INFO `msg=Starting Graduation1Application on DESKTOP-Q8HC681 with PID 11556 (F:\idea\graduation1\target\classes started by pcdn in F:\idea\graduation1)
+time=2019-01-31T15:24:48.073+0800`appName=graduation`hostName=localhost`logLevel=INFO `msg=The following profiles are active: dev
+time=2019-01-31T15:24:48.256+0800`appName=graduation`hostName=localhost`logLevel=INFO `msg=Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@51e8e6e6: startup date [Thu Jan 31 15:24:48 CST 2019]; root of context hierarchy
+time=2019-01-31T15:24:49.331+0800`appName=graduation`hostName=localhost`logLevel=WARN `msg=No MyBatis mapper was found in '[com.zy.project.mapper]' package. Please check your configuration.
+time=2019-01-31T15:24:51.108+0800`appName=graduation`hostName=localhost`logLevel=INFO `msg=Tomcat initialized with port(s): 8083 (http)
+time=2019-01-31T15:24:51.639+0800`appName=graduation`hostName=localhost`logLevel=INFO `msg=Servlet dispatcherServlet mapped to [/]
+time=2019-01-31T15:24:51.648+0800`appName=graduation`hostName=localhost`logLevel=INFO `msg=Mapping filter: 'characterEncodingFilter' to: [/*]
+time=2019-01-31T15:24:51.649+0800`appName=graduation`hostName=localhost`logLevel=INFO `msg=Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+time=2019-01-31T15:24:51.649+0800`appName=graduation`hostName=localhost`logLevel=INFO `msg=Mapping filter: 'httpPutFormContentFilter' to: [/*]
+time=2019-01-31T15:24:51.649+0800`appName=graduation`hostName=localhost`logLevel=INFO `msg=Mapping filter: 'requestContextFilter' to: [/*]
+time=2019-01-31T15:24:52.360+0800`appName=graduation`hostName=localhost`logLevel=INFO `msg=HikariPool-1 - Starting...
+time=2019-01-31T15:24:52.667+0800`appName=graduation`hostName=localhost`logLevel=INFO `msg=HikariPool-1 - Start completed.
+time=2019-01-31T15:24:57.856+0800`appName=graduation`hostName=localhost`logLevel=INFO `msg=Tomcat started on port(s): 8083 (http) with context path ''
+time=2019-01-31T15:24:57.865+0800`appName=graduation`hostName=localhost`logLevel=INFO `msg=Started Graduation1Application in 10.484 seconds (JVM running for 14.1)
+time=2019-01-31T15:25:23.333+0800`appName=graduation`hostName=localhost`logLevel=INFO `msg=Starting without optional epoll library
+time=2019-01-31T15:25:23.337+0800`appName=graduation`hostName=localhost`logLevel=INFO `msg=Starting without optional kqueue library
+time=2019-01-31T15:26:45.688+0800`appName=graduation`hostName=localhost`logLevel=INFO `msg=Starting Graduation1Application on DESKTOP-Q8HC681 with PID 8916 (F:\idea\graduation1\target\classes started by pcdn in F:\idea\graduation1)
+time=2019-01-31T15:26:45.712+0800`appName=graduation`hostName=localhost`logLevel=INFO `msg=The following profiles are active: dev
+time=2019-01-31T15:26:45.892+0800`appName=graduation`hostName=localhost`logLevel=INFO `msg=Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@192d74fb: startup date [Thu Jan 31 15:26:45 CST 2019]; root of context hierarchy
+time=2019-01-31T15:26:46.967+0800`appName=graduation`hostName=localhost`logLevel=WARN `msg=No MyBatis mapper was found in '[com.zy.project.mapper]' package. Please check your configuration.
+time=2019-01-31T15:26:48.731+0800`appName=graduation`hostName=localhost`logLevel=INFO `msg=Tomcat initialized with port(s): 8083 (http)
+time=2019-01-31T15:26:49.254+0800`appName=graduation`hostName=localhost`logLevel=INFO `msg=Servlet dispatcherServlet mapped to [/]
+time=2019-01-31T15:26:49.263+0800`appName=graduation`hostName=localhost`logLevel=INFO `msg=Mapping filter: 'characterEncodingFilter' to: [/*]
+time=2019-01-31T15:26:49.263+0800`appName=graduation`hostName=localhost`logLevel=INFO `msg=Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+time=2019-01-31T15:26:49.263+0800`appName=graduation`hostName=localhost`logLevel=INFO `msg=Mapping filter: 'httpPutFormContentFilter' to: [/*]
+time=2019-01-31T15:26:49.263+0800`appName=graduation`hostName=localhost`logLevel=INFO `msg=Mapping filter: 'requestContextFilter' to: [/*]
+time=2019-01-31T15:26:49.911+0800`appName=graduation`hostName=localhost`logLevel=INFO `msg=HikariPool-1 - Starting...
+time=2019-01-31T15:26:50.192+0800`appName=graduation`hostName=localhost`logLevel=INFO `msg=HikariPool-1 - Start completed.
+time=2019-01-31T15:26:54.759+0800`appName=graduation`hostName=localhost`logLevel=INFO `msg=Tomcat started on port(s): 8083 (http) with context path ''
+time=2019-01-31T15:26:54.771+0800`appName=graduation`hostName=localhost`logLevel=INFO `msg=Started Graduation1Application in 9.748 seconds (JVM running for 13.075)
+time=2019-01-31T15:27:12.793+0800`appName=graduation`hostName=localhost`logLevel=INFO `msg=Starting without optional epoll library
+time=2019-01-31T15:27:12.797+0800`appName=graduation`hostName=localhost`logLevel=INFO `msg=Starting without optional kqueue library
+time=2019-01-31T15:30:11.334+0800`appName=graduation`hostName=localhost`logLevel=INFO `msg=Starting Graduation1Application on DESKTOP-Q8HC681 with PID 12184 (F:\idea\graduation1\target\classes started by pcdn in F:\idea\graduation1)
+time=2019-01-31T15:30:11.349+0800`appName=graduation`hostName=localhost`logLevel=INFO `msg=The following profiles are active: dev
+time=2019-01-31T15:30:11.521+0800`appName=graduation`hostName=localhost`logLevel=INFO `msg=Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@1c9f0a20: startup date [Thu Jan 31 15:30:11 CST 2019]; root of context hierarchy
+time=2019-01-31T15:30:12.527+0800`appName=graduation`hostName=localhost`logLevel=WARN `msg=No MyBatis mapper was found in '[com.zy.project.mapper]' package. Please check your configuration.
+time=2019-01-31T15:30:14.184+0800`appName=graduation`hostName=localhost`logLevel=INFO `msg=Tomcat initialized with port(s): 8083 (http)
+time=2019-01-31T15:30:14.669+0800`appName=graduation`hostName=localhost`logLevel=INFO `msg=Servlet dispatcherServlet mapped to [/]
+time=2019-01-31T15:30:14.669+0800`appName=graduation`hostName=localhost`logLevel=INFO `msg=Mapping filter: 'characterEncodingFilter' to: [/*]
+time=2019-01-31T15:30:14.684+0800`appName=graduation`hostName=localhost`logLevel=INFO `msg=Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+time=2019-01-31T15:30:14.684+0800`appName=graduation`hostName=localhost`logLevel=INFO `msg=Mapping filter: 'httpPutFormContentFilter' to: [/*]
+time=2019-01-31T15:30:14.684+0800`appName=graduation`hostName=localhost`logLevel=INFO `msg=Mapping filter: 'requestContextFilter' to: [/*]
+time=2019-01-31T15:30:15.298+0800`appName=graduation`hostName=localhost`logLevel=INFO `msg=HikariPool-1 - Starting...
+time=2019-01-31T15:30:15.567+0800`appName=graduation`hostName=localhost`logLevel=INFO `msg=HikariPool-1 - Start completed.
+time=2019-01-31T15:30:19.802+0800`appName=graduation`hostName=localhost`logLevel=INFO `msg=Tomcat started on port(s): 8083 (http) with context path ''
+time=2019-01-31T15:30:19.818+0800`appName=graduation`hostName=localhost`logLevel=INFO `msg=Started Graduation1Application in 9.166 seconds (JVM running for 12.726)
+time=2019-01-31T15:30:22.542+0800`appName=graduation`hostName=localhost`logLevel=INFO `msg=Starting without optional epoll library
+time=2019-01-31T15:30:22.550+0800`appName=graduation`hostName=localhost`logLevel=INFO `msg=Starting without optional kqueue library
+time=2019-01-31T15:34:25.994+0800`appName=graduation`hostName=localhost`logLevel=INFO `msg=Starting Graduation1Application on DESKTOP-Q8HC681 with PID 3976 (F:\idea\graduation1\target\classes started by pcdn in F:\idea\graduation1)
+time=2019-01-31T15:34:26.010+0800`appName=graduation`hostName=localhost`logLevel=INFO `msg=The following profiles are active: dev
+time=2019-01-31T15:34:26.197+0800`appName=graduation`hostName=localhost`logLevel=INFO `msg=Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@3dddefd8: startup date [Thu Jan 31 15:34:26 CST 2019]; root of context hierarchy
+time=2019-01-31T15:34:27.209+0800`appName=graduation`hostName=localhost`logLevel=WARN `msg=No MyBatis mapper was found in '[com.zy.project.mapper]' package. Please check your configuration.
+time=2019-01-31T15:34:28.946+0800`appName=graduation`hostName=localhost`logLevel=INFO `msg=Tomcat initialized with port(s): 8083 (http)
+time=2019-01-31T15:34:29.600+0800`appName=graduation`hostName=localhost`logLevel=INFO `msg=Servlet dispatcherServlet mapped to [/]
+time=2019-01-31T15:34:29.603+0800`appName=graduation`hostName=localhost`logLevel=INFO `msg=Mapping filter: 'characterEncodingFilter' to: [/*]
+time=2019-01-31T15:34:29.603+0800`appName=graduation`hostName=localhost`logLevel=INFO `msg=Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+time=2019-01-31T15:34:29.603+0800`appName=graduation`hostName=localhost`logLevel=INFO `msg=Mapping filter: 'httpPutFormContentFilter' to: [/*]
+time=2019-01-31T15:34:29.603+0800`appName=graduation`hostName=localhost`logLevel=INFO `msg=Mapping filter: 'requestContextFilter' to: [/*]
+time=2019-01-31T15:34:30.077+0800`appName=graduation`hostName=localhost`logLevel=INFO `msg=HikariPool-1 - Starting...
+time=2019-01-31T15:34:30.343+0800`appName=graduation`hostName=localhost`logLevel=INFO `msg=HikariPool-1 - Start completed.
+time=2019-01-31T15:34:34.451+0800`appName=graduation`hostName=localhost`logLevel=INFO `msg=Tomcat started on port(s): 8083 (http) with context path ''
+time=2019-01-31T15:34:34.451+0800`appName=graduation`hostName=localhost`logLevel=INFO `msg=Started Graduation1Application in 9.137 seconds (JVM running for 12.308)
+time=2019-01-31T15:34:43.125+0800`appName=graduation`hostName=localhost`logLevel=INFO `msg=Starting without optional epoll library
+time=2019-01-31T15:34:43.131+0800`appName=graduation`hostName=localhost`logLevel=INFO `msg=Starting without optional kqueue library

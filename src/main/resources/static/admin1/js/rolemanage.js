@@ -47,22 +47,7 @@ layui.use(['element','form','jquery','laydate','table', 'laytpl'],function(){
         var layEvent = obj.event; //获得 lay-event 对应的值（也可以是表头的 event 参数对应的值）
         var tr = obj.tr; //获得当前行 tr 的DOM对象
 
-        if(layEvent === 'set'){ //查看
-            //弹出一个tab层，用于设置用户组的人员和用户组的角色
-            layer.tab({
-                area: ['800px', '600px'],
-                tab: [{
-                    title: '设置角色成员',
-                    content: '内容1'
-                },{
-                    title: '设置角色用户组',
-                    content: '内容2'
-                },{
-                    title: '角色赋权',
-                    content: '内容3'
-                }]
-            });
-        } else if(layEvent === 'del'){ //删除
+        if(layEvent === 'del'){ //删除
             layer.confirm('真的删除行么', function(index){
                 //向服务端发送删除指令
                 $.post("/web/system/deleteRole", {"roleId" : data.roleId}, function (res) {

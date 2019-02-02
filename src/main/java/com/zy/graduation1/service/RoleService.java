@@ -34,7 +34,7 @@ public interface RoleService extends IService<Role> {
      * 更新或新增角色，当roleId为null时新增
      * @param role
      */
-    void updateRole(Role role);
+    void saveOrUpdateRole(Role role);
 
     /**
      * 批量查詢角色信息

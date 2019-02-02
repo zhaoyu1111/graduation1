@@ -44,16 +44,6 @@ public class SystemManageController {
     private OperatorRoleRelationService operatorRoleRelationService;
 
     /**
-     * 添加角色
-     * @param roleName
-     */
-    @Anonymous
-    @RequestMapping("/addRole")
-    public void addRole(@NotNull(message = "请输入管理员名称") String roleName) {
-        roleService.addRole(roleName);
-    }
-
-    /**
      * 查询角色列表
      * @param roleName
      * @param status
@@ -61,8 +51,8 @@ public class SystemManageController {
      */
     @Anonymous
     @RequestMapping("/listRole")
-    public List<RoleDto> listRole(String roleName, Integer status) {
-        List<Role> roles = roleService.listRole(roleName, status);
+    public List<RoleDto> listRole(String roleName, Integer deleted) {
+        List<Role> roles = roleService.listRole(roleName, deleted);
         List<RoleDto> roleDtos = Lists.newArrayList();
         for (Role role : roles) {
             RoleDto roleDto = new RoleDto();
@@ -86,17 +76,17 @@ public class SystemManageController {
     }
 
     /**
-     * 更新角色
+     * 新增或更新角色
      * @param
      */
     @Anonymous
-    @RequestMapping("/updateRole")
-    public void updateRole(@NotNull(message = "请选择要修改的角色") Long roleId,
+    @RequestMapping("/saveOrUpdateRole")
+    public void updateRole(Long roleId,
                            @NotNull(message = "请输入角色名称") String roleName,
                            @NotNull(message = "请选择角色状态") Integer deleted) {
         Role role = new Role();
         role.setRoleId(roleId).setRoleName(roleName).setDeleted(deleted);
-        roleService.updateRole(role);
+        roleService.saveOrUpdateRole(role);
     }
 
     /**
