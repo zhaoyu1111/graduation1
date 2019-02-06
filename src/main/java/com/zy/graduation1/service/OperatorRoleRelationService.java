@@ -29,4 +29,24 @@ public interface OperatorRoleRelationService extends IService<OperatorRoleRelati
      * @return
      */
     OperatorRoleRelation getOperatorRoleRelation(Long operatorId, Long roleId);
+
+    /**
+     * 新增或更新管理员角色联系
+     * @param operatorId
+     * @param roleId
+     */
+    void saveOrUpdateOperatorRole(Long operatorId, Long roleId);
+
+    /**
+     * 获取管理员角色信息
+     * @param operatorId
+     * @return
+     */
+    OperatorRoleRelation getOperatorRole(Long operatorId);
+
+    /**
+     * 删除管理员角色联系
+     * @param operatorId
+     */
+    void deleteOperatorRole(Long operatorId);
 }

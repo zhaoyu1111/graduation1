@@ -9,6 +9,13 @@ layui.use(['layer', 'table', 'form', 'jquery'], function () {
             url: '/web/system/listRole',
             toolbar: '#operator',
             height: 460,
+            response: {
+                statusName: 'code'
+                , statusCode: '2000'
+                , msgName: 'message'
+                , dataName: 'data'
+                , countName: 'total'
+            },
             cols: [[
                 {type:'checkbox'}
                 ,{field:'roleId', title: 'ID', sort: true}
@@ -47,11 +54,6 @@ layui.use(['layer', 'table', 'form', 'jquery'], function () {
         });
 
         function edit(data, title){
-            if(data == null) {
-                $("#roleName").val("");
-            }else {
-                $("#roleName").val(data.roleName);
-            }
 
             layer.open({
                 type:1,
@@ -67,6 +69,7 @@ layui.use(['layer', 'table', 'form', 'jquery'], function () {
                         $("input[name=deleted][value='1']").attr("checked", data.deleted == 1 ? true : false);
                         form.render();
                     }else {
+                        $("input:radio").removeAttr("checked");
                         form.render();
                     }
                 },

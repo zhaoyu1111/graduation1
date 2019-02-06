@@ -43,15 +43,18 @@ public class SystemManageController {
     @Autowired
     private OperatorRoleRelationService operatorRoleRelationService;
 
+    @Autowired
+    private OperatorService operatorService;
+
     /**
      * 查询角色列表
      * @param roleName
-     * @param status
+     * @param deleted
      * @return
      */
     @Anonymous
     @RequestMapping("/listRole")
-    public List<RoleDto> listRole(String roleName, Integer deleted) {
+    public MyPage<RoleDto> listRole(String roleName, Integer deleted) {
         List<Role> roles = roleService.listRole(roleName, deleted);
         List<RoleDto> roleDtos = Lists.newArrayList();
         for (Role role : roles) {
@@ -59,7 +62,7 @@ public class SystemManageController {
             BeanUtils.copyProperties(role, roleDto);
             roleDtos.add(roleDto);
         }
-        return roleDtos;
+        return new MyPage<>((long)roleDtos.size(), roleDtos);
     }
 
     /**
@@ -205,5 +208,29 @@ public class SystemManageController {
     @RequestMapping("/saveOrUpdateOperatorRole")
     public void saveOrUpdateOperatorRole(Long relationId, String operatorName, Long roleId) {
         systemManageService.saveOrUpdateOperatorRole(relationId, operatorName, roleId);
+    }
+
+    @Anonymous
+    @RequestMapping("/queryOperator")
+    public MyPage<OperatorDto> queryOperator(String operatorName, Long roleId, Long operatorId,
+                                             @RequestParam(defaultValue = "1") Integer currentPage) {
+        return systemManageService.queryOperator(operatorName, roleId, operatorId, currentPage);
+    }
+
+    @Anonymous
+    @RequestMapping("/saveOrUpdateOperator")
+    public void saveOrUpdateOperator(@NotNull(message = "请输入管理员名称") String operatorName,
+                                     @NotNull(message = "请选择管理员角色") Long roleId,
+                                     @NotNull(message = "请输入管理员ID") Long operatorId,
+                                     @NotNull(message = "请输入管理员电话") String mobile,
+                                     @RequestParam(defaultValue = "1") Integer deleted) {
+        systemManageService.saveOrUpdateOperator(operatorName, roleId, operatorId, mobile, deleted);
+    }
+
+    @Anonymous
+    @RequestMapping("/deleteOperator")
+    public void deleteOperator(@NotNull(message = "请选择要删除的管理员") Long operatorId) {
+        operatorService.deleteOperator(operatorId);
+        operatorRoleRelationService.deleteOperatorRole(operatorId);
     }
 }

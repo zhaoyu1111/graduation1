@@ -57,8 +57,8 @@ public class Operator extends SuperEntity<Operator> {
     @TableField("pwd")
     private String pwd;
 
-    @TableField("role_type")
-    private Integer roleType;
+    @TableField("role_id")
+    private Long roleId;
 
 
     @Override

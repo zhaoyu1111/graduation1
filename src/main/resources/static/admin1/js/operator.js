@@ -4,22 +4,31 @@ layui.use(['layer', 'table', 'form', 'jquery'], function () {
         $ = layui.jquery,
         form = layui.form;
 
+    $.post('/web/system/listRole', null, function (rec) {//得到数据提交到后端进行更新
+        if (rec.code === "2000") {
+            $("#select").append("<option value=''>请选择</option>");
+            $.each(rec.data.list, function(index, item) {
+                $('#select').append("<option value='" + item.roleId + "'>" + item.roleName + "</option>");
+            });
+        }
+    }, 'json');
+    form.render("select");
+
     var tableIns = table.render({
-        elem: '#operatorRole',
-        url: '/web/system/queryOperatorRoleRelation',
-        toolbar: '#operator',
+        elem: '#mytable',
+        url: '/web/system/queryOperator',
+        toolbar: '#tool_user',
         height: 460,
-        page: true,
         cols: [[
             {type:'checkbox'}
-            ,{field:'relationId', title: 'ID'}
             ,{field:'operatorName', title: '管理员名称'}
             ,{field:'operatorId', title: '管理员ID'}
             ,{field:'roleName', title: '角色名称'}
             ,{field:'roleId', title: '角色ID'}
+            ,{field:'mobile', title: '手机号'}
             ,{field:'ctime',  title: '创建时间',
                 templet: function (data) {
-                    return createTime(data.ctime);
+                    return createDate(data.ctime);
                 }}
             ,{field:'deleted', title: '状态',
                 templet:function (data) {
@@ -40,7 +49,7 @@ layui.use(['layer', 'table', 'form', 'jquery'], function () {
         if(layEven === 'edit') {
             edit(data, '编辑');
         } else if(layEven === 'del') {
-            delRole(data, data.roleId);
+            del_operator(data, data.operatorId);
         }
     });
 
@@ -57,20 +66,24 @@ layui.use(['layer', 'table', 'form', 'jquery'], function () {
             skin:"myclass",
             area:["30%"],
             btn: ['确认', '取消'],//弹出层按钮
-            content:$("#addOperatorRole").html(),
+            content:$("#add_operator").html(),
             success: function (layero, index) {
                 if(data != null) {
-                    layero.find("#roleName").val(data.roleName);
+                    layero.find("#operatorId").val(data.operatorId);
+                    layero.find("#operatorId").attr("disabled", true);
+                    layero.find("#operatorName").val(data.operatorName);
+                    layero.find("#mobile").val(data.mobile);
                     $("input[name=deleted][value='0']").attr("checked", data.deleted == 0 ? true : false);
                     $("input[name=deleted][value='1']").attr("checked", data.deleted == 1 ? true : false);
+                    layero.find("option[value='"+data.roleId+"']").prop("selected",true);
                     form.render();
                 }else {
+                    $("input:radio").removeAttr("checked");
                     form.render();
                 }
             },
             yes: function (index, layero) {
                 var operatorRole = {};
-                //var form = $("#addUserForm").serializeArray();//获取指定id的表单
                 $(layero).find("input").each(function() {
                     if(this.name === "deleted"){
                         var val=$("input[checked]").val();
@@ -79,10 +92,8 @@ layui.use(['layer', 'table', 'form', 'jquery'], function () {
                     }
                     operatorRole[this.name] = this.value;
                 });
-                if(data != null) {
-                    operatorRole["roleId"] = data.roleId;
-                }
-                $.post('/web/system/saveOrUpdateOperatorRole', operatorRole, function (rec) {//得到数据提交到后端进行更新
+                operatorRole["roleId"] = $(layero).find("select").val();
+                $.post('/web/system/saveOrUpdateOperator', operatorRole, function (rec) {//得到数据提交到后端进行更新
                     if (rec.code === "2000") {
                         layer.msg(rec.message);
                         reload(null, null);
@@ -96,12 +107,12 @@ layui.use(['layer', 'table', 'form', 'jquery'], function () {
         });
     }
 
-    function delRole(obj,id) {
+    function del_operator(obj,id) {
         if(null!=id){
             layer.confirm('您确定要删除吗？', {
                 btn: ['确认','返回'] //按钮
             }, function(){
-                $.post("/web/system/deleteRole",{"roleId" : id},function(data){
+                $.post("/web/system/deleteOperator",{"operatorId" : id},function(data){
                     if (data.code == "2000") {
                         layer.alert(data.message,{icon: 6}, function(){
                             layer.closeAll();
@@ -133,10 +144,10 @@ layui.use(['layer', 'table', 'form', 'jquery'], function () {
         reload(null, null);
     });
 
-    function reload(roleName, deleted) {
+    function reload(operatorName, deleted) {
         tableIns.reload({
             where: {
-                roleName: roleName,
+                operatorName: operatorName,
                 deleted: deleted
             }
         });

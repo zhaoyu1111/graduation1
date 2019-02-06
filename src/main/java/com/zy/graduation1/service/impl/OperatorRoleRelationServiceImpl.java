@@ -40,4 +40,34 @@ public class OperatorRoleRelationServiceImpl extends ServiceImpl<OperatorRoleRel
         query.eq("role_id", roleId);
         return baseMapper.selectOne(query);
     }
+
+    @Override
+    public void saveOrUpdateOperatorRole(Long operatorId, Long roleId) {
+        OperatorRoleRelation operator = this.getOperatorRole(operatorId);
+        if(null != operator) {
+            operator.setRoleId(roleId);
+            baseMapper.updateById(operator);
+            return ;
+        }else {
+            OperatorRoleRelation operatorRoleRelation = new OperatorRoleRelation();
+            operatorRoleRelation.setOperatorId(operatorId).setRoleId(roleId);
+            baseMapper.insert(operatorRoleRelation);
+        }
+    }
+
+    @Override
+    public OperatorRoleRelation getOperatorRole(Long operatorId) {
+        QueryWrapper<OperatorRoleRelation> query = new QueryWrapper<>();
+        query.eq("operator_id", operatorId);
+        return baseMapper.selectOne(query);
+    }
+
+    @Override
+    public void deleteOperatorRole(Long operatorId) {
+        OperatorRoleRelation relation = this.getOperatorRole(operatorId);
+        if(null == relation) {
+            return ;
+        }
+        baseMapper.deleteById(relation.getRelationId());
+    }
 }

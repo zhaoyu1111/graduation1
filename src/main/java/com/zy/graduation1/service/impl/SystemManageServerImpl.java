@@ -7,6 +7,7 @@ import com.google.common.collect.Lists;
 import com.google.common.collect.Maps;
 import com.zy.graduation1.common.MyPage;
 import com.zy.graduation1.common.SystemCode;
+import com.zy.graduation1.dto.user.OperatorDto;
 import com.zy.graduation1.dto.user.OperatorRoleDto;
 import com.zy.graduation1.dto.user.RoleMenuRelationDto;
 import com.zy.graduation1.entity.*;
@@ -181,5 +182,42 @@ public class SystemManageServerImpl implements SystemManageService {
             }
         }
         operatorRoleRelationService.insertOrUpdate(operatorRoleRelation);
+    }
+
+    @Override
+    public MyPage<OperatorDto> queryOperator(String operatorName, Long roleId, Long operatorId, Integer currentPage) {
+        IPage<Operator> operatorPage = operatorService.queryOperator(operatorName, roleId, operatorId, currentPage);
+        List<Operator> operators = operatorPage.getRecords();
+        if(CollectionUtils.isEmpty(operators)) {
+            return new MyPage<>();
+        }
+
+        List<Long> roleIds = operators.stream().map(Operator::getRoleId).collect(Collectors.toList());
+        List<Role> roles = roleService.listRole(roleIds);
+        Map<Long, String> roleMap = Maps.newHashMap();
+        roles.forEach(role -> {
+            roleMap.put(role.getRoleId(), role.getRoleName());
+        });
+
+        List<OperatorDto> operatorDtos = Lists.newArrayList();
+        for (Operator operator : operators) {
+            OperatorDto operatorDto = new OperatorDto();
+            BeanUtils.copyProperties(operator, operatorDto);
+            operatorDto.setRoleName(roleMap.get(operator.getRoleId()));
+            operatorDtos.add(operatorDto);
+        }
+        return new MyPage<>(operatorPage.getTotal(), operatorDtos);
+    }
+
+    @Override
+    public void saveOrUpdateOperator(String operatorName, Long roleId, Long operatorId, String mobile, Integer deleted) {
+        Operator operator = operatorService.getOperator(operatorId);
+        if(null == operator) {
+            operatorService.saveOperator(operatorName, roleId, operatorId, mobile, deleted);
+
+        }else {
+            operatorService.updateOperator(operatorName, roleId, operatorId, mobile, deleted);
+        }
+        operatorRoleRelationService.saveOrUpdateOperatorRole(operatorId, roleId);
     }
 }

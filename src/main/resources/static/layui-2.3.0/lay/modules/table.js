@@ -430,11 +430,11 @@ layui.define(['laytpl', 'laypage', 'layer', 'form'], function(exports){
             that.renderForm();
             that.layMain.html('<div class="'+ NONE +'">'+ (res[response.msgName] || '返回的数据状态异常') +'</div>');
           } else {
-            that.renderData(res, curr, res[response.countName]), sort();
+            that.renderData(res, curr, res.data.total), sort();
             options.time = (new Date().getTime() - that.startTime) + ' ms'; //耗时（接口请求+视图渲染）
           }
           loadIndex && layer.close(loadIndex);
-          typeof options.done === 'function' && options.done(res, curr, res[response.countName]);
+          typeof options.done === 'function' && options.done(res, curr, res.data.total);
         }
         ,error: function(e, m){
           that.layMain.html('<div class="'+ NONE +'">数据接口请求异常</div>');
@@ -447,10 +447,10 @@ layui.define(['laytpl', 'laypage', 'layer', 'form'], function(exports){
       ,startLimit = curr*options.limit - options.limit
       
       res[response.dataName] = options.data.concat().splice(startLimit, options.limit);
-      res[response.countName] = options.data.length;
+      res.data.total = options.data.length;
 
       that.renderData(res, curr, options.data.length), sort();
-      typeof options.done === 'function' && options.done(res, curr, res[response.countName]);
+      typeof options.done === 'function' && options.done(res, curr, res.data.total);
     }
   };
   
@@ -494,7 +494,7 @@ layui.define(['laytpl', 'laypage', 'layer', 'form'], function(exports){
   Class.prototype.renderData = function(res, curr, count, sort){
     var that = this
     ,options = that.config
-    ,data = res[options.response.dataName] || []
+    ,data = res.data.list || []
     ,trs = []
     ,trs_fixed = []
     ,trs_fixed_r = []

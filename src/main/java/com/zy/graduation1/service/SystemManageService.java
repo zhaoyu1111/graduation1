@@ -1,6 +1,7 @@
 package com.zy.graduation1.service;
 
 import com.zy.graduation1.common.MyPage;
+import com.zy.graduation1.dto.user.OperatorDto;
 import com.zy.graduation1.dto.user.OperatorRoleDto;
 import com.zy.graduation1.dto.user.RoleMenuRelationDto;
 import com.zy.graduation1.entity.OperatorRoleRelation;
@@ -48,4 +49,24 @@ public interface SystemManageService {
      * @param roleId
      */
     void saveOrUpdateOperatorRole(Long relationId, String operatorName, Long roleId);
+
+    /**
+     * 分页查询管理员信息
+     * @param operatorName
+     * @param roleId
+     * @param currentPage
+     * @return
+     */
+    MyPage<OperatorDto> queryOperator(String operatorName, Long roleId, Long operatorId, Integer currentPage);
+
+    /**
+     * 新增或更新管理员信息
+     * @param operatorName
+     * @param roleId
+     * @param operatorId
+     * @param mobile
+     * @param deleted
+     */
+    void saveOrUpdateOperator(String operatorName, Long roleId, Long operatorId,
+                              String mobile, Integer deleted);
 }

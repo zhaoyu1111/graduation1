@@ -4,19 +4,33 @@ layui.use(['layer', 'table', 'form', 'jquery'], function () {
         $ = layui.jquery,
         form = layui.form;
 
-    var tableIns = table.render({
-        elem: '#operatorRole',
-        url: '/web/system/queryOperatorRoleRelation',
-        toolbar: '#operator',
+    $.post('/web/system/listRole', null, function (rec) {//得到数据提交到后端进行更新
+        if (rec.code === "2000") {
+            $("#select").append("<option value=''>请选择</option>");
+            $.each(rec.data.list, function(index, item) {
+                $('#select').append("<option value='" + item.roleId + "'>" + item.roleName + "</option>");
+            });
+        } else {
+            /*$("#select").append(new Option("暂无数据", ""));*/
+        }
+    }, 'json');
+    form.render("select");
+
+    table.render({
+        elem: '#mytable',
+        url: '',
+        toolbar: '#toolUser',
         height: 460,
-        page: true,
         cols: [[
-            {type:'checkbox'}
-            ,{field:'relationId', title: 'ID'}
-            ,{field:'operatorName', title: '管理员名称'}
-            ,{field:'operatorId', title: '管理员ID'}
-            ,{field:'roleName', title: '角色名称'}
-            ,{field:'roleId', title: '角色ID'}
+            {field:'studentId', title: '学号'}
+            ,{field:'userName', title: '用户名称'}
+            ,{field:'gender', title: '性别'}
+            ,{field:'mobile', title: '手机号'}
+            ,{field:'email', title: '邮箱'}
+            ,{field:'classId', title: '班级ID'}
+            ,{field:'className', title: '班级名称'}
+            ,{field:'collegeId', title: '学院ID'}
+            ,{field:'collegeName', title: '学院名称'}
             ,{field:'ctime',  title: '创建时间',
                 templet: function (data) {
                     return createTime(data.ctime);
@@ -38,7 +52,7 @@ layui.use(['layer', 'table', 'form', 'jquery'], function () {
         var layEven = obj.event;
 
         if(layEven === 'edit') {
-            edit(data, '编辑');
+            edit(data, '查看详情');
         } else if(layEven === 'del') {
             delRole(data, data.roleId);
         }
@@ -57,7 +71,7 @@ layui.use(['layer', 'table', 'form', 'jquery'], function () {
             skin:"myclass",
             area:["30%"],
             btn: ['确认', '取消'],//弹出层按钮
-            content:$("#addOperatorRole").html(),
+            content:$("#addrole").html(),
             success: function (layero, index) {
                 if(data != null) {
                     layero.find("#roleName").val(data.roleName);
@@ -65,24 +79,25 @@ layui.use(['layer', 'table', 'form', 'jquery'], function () {
                     $("input[name=deleted][value='1']").attr("checked", data.deleted == 1 ? true : false);
                     form.render();
                 }else {
+                    $("input:radio").removeAttr("checked");
                     form.render();
                 }
             },
             yes: function (index, layero) {
-                var operatorRole = {};
+                var role = {};
                 //var form = $("#addUserForm").serializeArray();//获取指定id的表单
                 $(layero).find("input").each(function() {
                     if(this.name === "deleted"){
                         var val=$("input[checked]").val();
-                        operatorRole[this.name] = val;
+                        role[this.name] = val;
                         return true;
                     }
-                    operatorRole[this.name] = this.value;
+                    role[this.name] = this.value;
                 });
                 if(data != null) {
-                    operatorRole["roleId"] = data.roleId;
+                    role["roleId"] = data.roleId;
                 }
-                $.post('/web/system/saveOrUpdateOperatorRole', operatorRole, function (rec) {//得到数据提交到后端进行更新
+                $.post('/web/system/saveOrUpdateRole', role, function (rec) {//得到数据提交到后端进行更新
                     if (rec.code === "2000") {
                         layer.msg(rec.message);
                         reload(null, null);
