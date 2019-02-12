@@ -47,6 +47,9 @@ public class UserInfoManageManageServiceImpl implements UserInfoManageService {
     @Autowired
     private MenuService menuService;
 
+    @Autowired
+    private OperatorRoleRelationService operatorRoleRelationService;
+
     @Override
     public MyPage<UserInfoDto> queryUserInfo(Long operatorId, Integer currentPage, Long classId, Long majorId, Long collegeId) {
         Origin origin = originService.getOriginOperator(operatorId);
@@ -101,8 +104,12 @@ public class UserInfoManageManageServiceImpl implements UserInfoManageService {
     }
 
     @Override
-    public List<Menu> listMenu(Long roleId) {
-        List<RoleMenuRelation> roleMenus = roleMenuRelationService.listRoleMenu(roleId);
+    public List<Menu> listMenu(Long operatorId) {
+        OperatorRoleRelation relation = operatorRoleRelationService.getOperatorRole(operatorId);
+        if(null == relation) {
+            throw new BizException(BizErrorCode.OPERATOR_NOT_ROLE);
+        }
+        List<RoleMenuRelation> roleMenus = roleMenuRelationService.listRoleMenu(relation.getRoleId());
         if(CollectionUtils.isEmpty(roleMenus)) {
             return null;
         }

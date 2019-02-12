@@ -4,11 +4,11 @@ layui.use(['layer', 'table', 'form', 'jquery'], function () {
         $ = layui.jquery,
         form = layui.form;
 
-    $.post('/web/system/listRole', null, function (rec) {//得到数据提交到后端进行更新
+    $.post('/web/system/getParentMenu', null, function (rec) {//得到数据提交到后端进行更新
         if (rec.code === "2000") {
-            $("#select").append("<option value=''>请选择</option>");
-            $.each(rec.data.list, function(index, item) {
-                $('#select').append("<option value='" + item.roleId + "'>" + item.roleName + "</option>");
+            $("select[name=parent-menu]").append("<option value=''>请选择</option>");
+            $.each(rec.data, function(index, item) {
+                $('select[name=parent-menu]').append("<option value='" + item.menuId + "'>" + item.title + "</option>");
             });
         }
     }, 'json');
@@ -16,23 +16,23 @@ layui.use(['layer', 'table', 'form', 'jquery'], function () {
 
     var tableIns = table.render({
         elem: '#mytable',
-        url: '/web/system/queryOperator',
-        toolbar: '#tool_user',
+        url: '/web/system/queryMenu',
+        toolbar: '#tool_menu',
         height: 460,
         cols: [[
             {type:'checkbox'}
-            ,{field:'operatorName', title: '管理员名称'}
-            ,{field:'operatorId', title: '管理员ID'}
-            ,{field:'roleName', title: '角色名称'}
-            ,{field:'roleId', title: '角色ID'}
-            ,{field:'mobile', title: '手机号'}
+            ,{field:'menuId', title: '菜单ID'}
+            ,{field:'title', title: '菜单标题'}
+            ,{field:'href', title: '菜单url'}
+            ,{field:'icon', title: 'icon'}
+            ,{field:'parentId', title: '父菜单'}
             ,{field:'ctime',  title: '创建时间',
                 templet: function (data) {
                     return createDate(data.ctime);
                 }}
-            ,{field:'deleted', title: '状态',
+            ,{field:'status', title: '状态',
                 templet:function (data) {
-                    if(data.deleted == 0) {
+                    if(data.status == 0) {
                         return "正常";
                     }else {
                         return "冻结";
@@ -40,22 +40,17 @@ layui.use(['layer', 'table', 'form', 'jquery'], function () {
                 }}
             ,{fixed: 'right',title:"操作",align:'center', toolbar: '#barDemo'}
         ]],
-        done: function (res, curr, couunt) {
-            $('.layui-table-box').find("[data-field = 'roleId']").css('display', 'none');
-        },
         page: true
     });
 
-    table.on('tool(role)', function (obj) {
+    table.on('tool(menu)', function (obj) {
         var data = obj.data;
         var layEven = obj.event;
 
         if(layEven === 'edit') {
             edit(data, '编辑');
         } else if(layEven === 'del') {
-            del_operator(data, data.operatorId);
-        } else if(layEven === 'detail') {
-            detail(data);
+            del_menu(data, data.menuId);
         }
     });
 
@@ -72,19 +67,24 @@ layui.use(['layer', 'table', 'form', 'jquery'], function () {
             skin:"myclass",
             area:["30%"],
             btn: ['确认', '取消'],//弹出层按钮
-            content:$("#add_operator").html(),
+            content:$("#add_menu").html(),
             success: function (layero, index) {
                 if(data != null) {
-                    layero.find("#operatorId").val(data.operatorId);
+                    layero.find("#title").val(data.title);
                     layero.find("#operatorId").attr("disabled", true);
-                    layero.find("#operatorName").val(data.operatorName);
-                    layero.find("#mobile").val(data.mobile);
-                    $("input[name=deleted][value='0']").attr("checked", data.deleted == 0 ? true : false);
-                    $("input[name=deleted][value='1']").attr("checked", data.deleted == 1 ? true : false);
-                    layero.find("option[value='"+data.roleId+"']").prop("selected",true);
+                    layero.find("#href").val(data.href);
+                    layero.find("#icon").val(data.icon);
+                    $("input[name=deleted][value='0']").attr("checked", data.status == 0 ? true : false);
+                    $("input[name=deleted][value='1']").attr("checked", data.status == 1 ? true : false);
+                    if(data.parentId == 0) {
+                        layero.find("select").prop("disabled", true);
+                    }else {
+                        layero.find("option[value='"+data.parentId+"']").prop("selected",true);
+                    }
                     form.render();
                 }else {
                     $("input:radio").removeAttr("checked");
+                    $("#select").append("<option value='0'>根目录</option>");
                     form.render();
                 }
             },
@@ -98,8 +98,11 @@ layui.use(['layer', 'table', 'form', 'jquery'], function () {
                     }
                     operatorRole[this.name] = this.value;
                 });
-                operatorRole["roleId"] = $(layero).find("select").val();
-                $.post('/web/system/saveOrUpdateOperator', operatorRole, function (rec) {//得到数据提交到后端进行更新
+                operatorRole["parentId"] = $(layero).find("select").val();
+                if(data != null) {
+                    operatorRole['menuId'] = data.menuId;
+                }
+                $.post('/web/system/saveOrUpdateMenu', operatorRole, function (rec) {//得到数据提交到后端进行更新
                     if (rec.code === "2000") {
                         layer.msg(rec.message);
                         reload(null, null);
@@ -113,12 +116,12 @@ layui.use(['layer', 'table', 'form', 'jquery'], function () {
         });
     }
 
-    function del_operator(obj,id) {
+    function del_menu(obj,id) {
         if(null!=id){
             layer.confirm('您确定要删除吗？', {
                 btn: ['确认','返回'] //按钮
             }, function(){
-                $.post("/web/system/deleteOperator",{"operatorId" : id},function(data){
+                $.post("/web/system/deleteMenu",{"menuId" : id},function(data){
                     if (data.code == "2000") {
                         layer.alert(data.message,{icon: 6}, function(){
                             layer.closeAll();
@@ -134,32 +137,15 @@ layui.use(['layer', 'table', 'form', 'jquery'], function () {
         }
     }
 
-    function detail(data) {
-        layer.open({
-            type:1,
-            title:title,
-            skin:"myclass",
-            area:["30%"],
-            btn: ['确认', '取消'],//弹出层按钮
-            content:$("#add_operator").html(),
-            success: function (layero, index) {
-
-            },
-            yes: function (index, layero) {
-
-            }
-        });
-    }
-
     $(document).on('click', '#add', function () {
         edit(null, "新增角色");
         form.render();
     });
 
     $(document).on('click', '#search',  function () {
-        var operator_name = $('#accountname').val();
-        var deleted = $("#status").val();
-        reload(operator_name, deleted);
+        var menu_title = $('#menu_title').val();
+        var parent_id = $("#parentId").val();
+        reload(menu_title, parent_id);
         form.render();
     });
 
@@ -167,11 +153,11 @@ layui.use(['layer', 'table', 'form', 'jquery'], function () {
         reload(null, null);
     });
 
-    function reload(operatorName, deleted) {
+    function reload(menu_title, parent_id) {
         tableIns.reload({
             where: {
-                operatorName: operatorName,
-                deleted: deleted
+                title: menu_title,
+                parentId: parent_id
             }
         });
     }

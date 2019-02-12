@@ -4,6 +4,8 @@ layui.use(['layer', 'table', 'form', 'jquery'], function () {
         $ = layui.jquery,
         form = layui.form;
 
+    var menu;
+
         var tableIns = table.render({
             elem: '#mytable',
             url: '/web/system/listRole',
@@ -45,6 +47,8 @@ layui.use(['layer', 'table', 'form', 'jquery'], function () {
                 edit(data, '编辑');
             } else if(layEven === 'del') {
                 delRole(data, data.roleId);
+            } else if(layEven === 'resource_allocation') {
+                resource_allocation('权限分配');
             }
         });
 
@@ -120,6 +124,60 @@ layui.use(['layer', 'table', 'form', 'jquery'], function () {
                 layer.closeAll();
             });
         }
+    }
+
+    /*var menu;
+    $.ajaxSettings.async = false;
+    $.post('/web/system/getAllMenu', null, function (res) {
+        if(res.code === '2000') {
+            menu = res.data;
+            console.log(menu);
+        }
+    });
+    var xtree1 = new layuiXtree({
+        elem: 'xtree1'   //(必填) 放置xtree的容器，样式参照 .xtree_contianer
+        , form: form     //(必填) layui 的 from
+        , data: menu     //(必填) json数据
+    });
+    xtree1.render();*/
+
+
+    function resource_allocation(title) {
+        var menu;
+        $.ajaxSettings.async = false;
+        $.post('/web/system/getAllMenu', null, function (res) {
+            if(res.code === '2000') {
+                menu = res.data;
+                console.log(menu);
+            }
+        });
+        var xtree1;
+        layer.open({
+            type: 1,
+            title: title,
+            skin: "myclass",
+            area: ["30%"],
+            btn: ['确认', '取消'],//弹出层按钮
+            content: $("#add_resource").html(),
+            success: function (layero, index) {
+
+                xtree1 = new layuiXtree({
+                    elem: 'xtree1'   //(必填) 放置xtree的容器，样式参照 .xtree_contianer
+                    , form: form     //(必填) layui 的 from
+                    , data: menu     //(必填) json数据
+                });
+                xtree1.render();
+
+            },
+            yes: function (layero, index) {
+                var oCks = xtree1.GetChecked(); //这是方法
+                alert(oCks.length);
+                for (var i = 0; i < oCks.length; i++) {
+                    alert(oCks[i].value);
+                }
+                layer.close(index);
+            }
+        });
     }
 
     $(document).on('click', '#add', function () {

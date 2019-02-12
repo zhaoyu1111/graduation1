@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="../../layui-2.3.0/css/layui.css">
+    <script type="text/javascript" src="../../layui-2.3.0/layui.js"></script>
+    <script type="text/javascript" src="../../layui-2.3.0/lay/modules/layui-xtree.js"></script>
+</head>
+<body>
+
+<form class="layui-form" id="resource">
+    <div id="xtree1" style="height: 400px; overflow: auto;" class="xtree_contianer"></div>
+    <script type="text/javascript">
+
+        //一套json数据下面会使用，同时供你参考
+        var json = [
+            {
+                title: "节点1", value: "jd1", data: [
+                    { title: "节点1.1", checked: true, disabled: true, value: "jd1.1", data: [] }
+                    , { title: "节点1.2", value: "jd1.2", checked: true, data: [] }
+                    , { title: "节点1.3", value: "jd1.3", disabled: true, data: [] }
+                    , { title: "节点1.4", value: "jd1.4", data: [] }
+                ]
+            }
+            , {
+                title: "节点2", value: "jd2", data: [
+                    { title: "节点2.1", value: "jd2.1", data: [] }
+                    , { title: "节点2.2", value: "jd2.2", data: [] }
+                    , { title: "节点2.3", value: "jd2.3", data: [] }
+                    , { title: "节点2.4", value: "jd2.4", data: [] }
+                ]
+            }
+            , { title: "节点3", value: "jd3", data: [] }
+            , { title: "节点4", value: "jd4", data: [] }
+        ];
+
+        //********************
+        //      正式开始
+        //********************
+
+        //layui 的 form 模块是必须的
+        layui.use(['form'], function () {
+            var form = layui.form;
+
+            //1、最基础的用法 - 直接绑定json
+            var xtree1 = new layuiXtree({
+                elem: 'xtree1'   //(必填) 放置xtree的容器，样式参照 .xtree_contianer
+                , form: form     //(必填) layui 的 from
+                , data: json     //(必填) json数据
+            });
+        });
+    </script>
+</form>
+</body>
+
+</html>

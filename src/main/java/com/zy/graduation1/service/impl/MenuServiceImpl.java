@@ -4,6 +4,7 @@ import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.baomidou.mybatisplus.core.metadata.IPage;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.zy.graduation1.common.MyPage;
+import com.zy.graduation1.dto.user.MenuTree;
 import com.zy.graduation1.entity.Menu;
 import com.zy.graduation1.mapper.MenuMapper;
 import com.zy.graduation1.service.MenuService;
@@ -32,11 +33,14 @@ public class MenuServiceImpl extends ServiceImpl<MenuMapper, Menu> implements Me
     }
 
     @Override
-    public IPage<Menu> queryMenu(String title, Integer currentPage) {
+    public IPage<Menu> queryMenu(String title, Long parentId, Integer currentPage) {
         Page<Menu> page = new Page<>(currentPage, 10);
         QueryWrapper<Menu> query = new QueryWrapper<>();
         if(StringUtils.isNotEmpty(title)){
             query.like("title", title);
+        }
+        if(null != parentId) {
+            query.eq("parent_id", parentId);
         }
         return baseMapper.selectPage(page, query);
     }
@@ -47,12 +51,24 @@ public class MenuServiceImpl extends ServiceImpl<MenuMapper, Menu> implements Me
     }
 
     @Override
-    public void saveOrUpdateMenu(Long menuId, String title, String href, String icon, Long parentId) {
+    public void saveOrUpdateMenu(Long menuId, String title, String href, String icon, Long parentId, Integer status) {
         Menu menu = new Menu();
-        menu.setTitle(title).setHref(href).setIcon(icon).setParentId(parentId);
+        menu.setTitle(title).setHref(href).setIcon(icon).setParentId(parentId).setStatus(status);
         if(null != menuId) {
             menu.setMenuId(menuId);
         }
         this.insertOrUpdate(menu);
+    }
+
+    @Override
+    public List<Menu> getParentMenu() {
+        QueryWrapper<Menu> query = new QueryWrapper<>();
+        query.eq("parent_id", 0);
+        return baseMapper.selectList(query);
+    }
+
+    @Override
+    public List<Menu> getAllMenu() {
+        return baseMapper.selectList(new QueryWrapper<>());
     }
 }

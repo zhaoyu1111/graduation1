@@ -1,10 +1,9 @@
-var areaData = address;
+//var areaData = address;
 var $form;
 var form;
 var $;
-layui.config({
-	base : "../../js/"
-}).use(['form','layer','upload','laydate'],function(){
+var laydate;
+layui.use(['form','layer','upload','laydate'],function(){
 	form = layui.form();
 	var layer = parent.layer === undefined ? layui.layer : parent.layer;
 		$ = layui.jquery;
@@ -57,8 +56,8 @@ layui.config({
         var count = d[1];
         var index = d[2];
         if (count > 0) {
-            loadCity(areaData[index].mallCityList);
-            citys = areaData[index].mallCityList
+            /*loadCity(areaData[index].mallCityList);
+            citys = areaData[index].mallCityList*/
         } else {
             $form.find('select[name=city]').attr("disabled","disabled");
         }
@@ -137,9 +136,9 @@ layui.config({
 //加载省数据
 function loadProvince() {
     var proHtml = '';
-    for (var i = 0; i < areaData.length; i++) {
+    /*for (var i = 0; i < areaData.length; i++) {
         proHtml += '<option value="' + areaData[i].provinceCode + '_' + areaData[i].mallCityList.length + '_' + i + '">' + areaData[i].provinceName + '</option>';
-    }
+    }*/
     //初始化省数据
     $form.find('select[name=province]').append(proHtml);
     form.render();
@@ -151,7 +150,7 @@ function loadProvince() {
         var count = d[1];
         var index = d[2];
         if (count > 0) {
-            loadCity(areaData[index].mallCityList);
+            //loadCity(areaData[index].mallCityList);
         } else {
             $form.find('select[name=city]').attr("disabled","disabled");
         }

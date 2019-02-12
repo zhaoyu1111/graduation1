@@ -12,10 +12,7 @@ import com.zy.graduation1.service.*;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.validation.annotation.Validated;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import javax.validation.constraints.NotNull;
 import java.util.List;
@@ -108,10 +105,10 @@ public class SystemManageController {
      * @param currentPage
      * @return
      */
-    @Anonymous
     @RequestMapping("/queryMenu")
-    public MyPage<MenuDto> queryMenu(String title,@RequestParam(defaultValue = "1") Integer currentPage) {
-        IPage<Menu> menuPage = menuService.queryMenu(title, currentPage);
+    public MyPage<MenuDto> queryMenu(String title, Long parentId,
+                                     @RequestParam(defaultValue = "1") Integer currentPage) {
+        IPage<Menu> menuPage = menuService.queryMenu(title, parentId, currentPage);
         List<Menu> menus = menuPage.getRecords();
         if(CollectionUtils.isEmpty(menus)) {
             return new MyPage<>();
@@ -125,13 +122,60 @@ public class SystemManageController {
         return new MyPage<>(menuPage.getTotal(), menuDtos);
     }
 
+    @Anonymous
+    @RequestMapping("getAllMenu")
+    public List<MenuTree> getAllMenu() {
+        List<Menu> menus = menuService.getAllMenu();
+        if(CollectionUtils.isEmpty(menus)) {
+            return null;
+        }
+        List<MenuTree> menuTrees = Lists.newArrayList();
+        for (Menu menu : menus) {
+            Boolean isBreak = true;
+            MenuTree menuTree = new MenuTree();
+            BeanUtils.copyProperties(menu, menuTree);
+            menuTree.setValue(menu.getMenuId());
+            if(menu.getParentId() == 0) {
+                menuTrees.add(menuTree);
+                continue;
+            }
+            for (MenuTree tree : menuTrees) {
+                if(menu.getParentId().equals(tree.getValue())) {
+                    tree.getData().add(menuTree);
+                    isBreak = false;
+                    break;
+                }
+            }
+
+            for (Menu menu1 : menus) {
+                if(menu.getParentId().equals(menu1.getMenuId()) && isBreak) {
+                    BeanUtils.copyProperties(menu1, menuTree);
+                    menuTree.setValue(menu1.getMenuId());
+                    MenuTree menuTree1 = new MenuTree();
+                    BeanUtils.copyProperties(menu, menuTree1);
+                    menuTree1.setValue(menu.getMenuId());
+                    menuTree.getData().add(menuTree1);
+                    menuTrees.add(menuTree);
+                    break;
+                }
+            }
+        }
+        return menuTrees;
+    }
+
+    @Anonymous
+    @RequestMapping("/getParentMenu")
+    public List<Menu> getParentMenu() {
+        return menuService.getParentMenu();
+    }
+
     /**
      * 刪除菜單信息
      * @param menuId
      */
     @Anonymous
     @RequestMapping("/deleteMenu")
-    public void deleteMenu(Long menuId) {
+    public void deleteMenu(@NotNull(message = "请选择菜单") Long menuId) {
         menuService.deleteMenu(menuId);
     }
 
@@ -149,8 +193,9 @@ public class SystemManageController {
                                  @NotNull(message = "请输入标题") String title,
                                  @NotNull(message = "请输入前端页面地址") String href,
                                  @NotNull(message = "请输入图标") String icon,
-                                 @NotNull(message = "请选择目录类型") Long parentId) {
-        menuService.saveOrUpdateMenu(menuId, title, href, icon, parentId);
+                                 @NotNull(message = "请选择目录类型") Long parentId,
+                                 @NotNull(message = "请选择菜单状态") Integer deleted) {
+        menuService.saveOrUpdateMenu(menuId, title, href, icon, parentId, deleted);
     }
 
     /**

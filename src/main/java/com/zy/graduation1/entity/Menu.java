@@ -32,7 +32,7 @@ public class Menu extends SuperEntity<Menu> {
     /**
      * 菜单ID
      */
-    @TableId(value = "menu_id", type = IdType.ID_WORKER)
+    @TableId(value = "menu_id", type = IdType.AUTO)
     private Long menuId;
     /**
      * 菜单名称

@@ -25,9 +25,8 @@ public class UserInfoController {
         return userInfoManageService.queryUserInfo(RequestUser.getCurrentUser(), currentPage, classId, majorId, collegeId);
     }
 
-    @Anonymous
     @RequestMapping("/listMenu")
     public List<Menu> listMenu() {
-        return userInfoManageService.listMenu(1L);
+        return userInfoManageService.listMenu(RequestUser.getCurrentUser());
     }
 }
