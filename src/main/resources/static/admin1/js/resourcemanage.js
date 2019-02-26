@@ -7,6 +7,7 @@ layui.use(['layer', 'table', 'form', 'jquery'], function () {
     $.post('/web/system/getParentMenu', null, function (rec) {//得到数据提交到后端进行更新
         if (rec.code === "2000") {
             $("select[name=parent-menu]").append("<option value=''>请选择</option>");
+            $("#select").append("<option value='0'>根目录</option>");
             $.each(rec.data, function(index, item) {
                 $('select[name=parent-menu]').append("<option value='" + item.menuId + "'>" + item.title + "</option>");
             });
@@ -61,6 +62,7 @@ layui.use(['layer', 'table', 'form', 'jquery'], function () {
 
     function edit(data, title){
 
+        form.render('select');
         layer.open({
             type:1,
             title:title,
@@ -76,15 +78,16 @@ layui.use(['layer', 'table', 'form', 'jquery'], function () {
                     layero.find("#icon").val(data.icon);
                     $("input[name=deleted][value='0']").attr("checked", data.status == 0 ? true : false);
                     $("input[name=deleted][value='1']").attr("checked", data.status == 1 ? true : false);
+                    layero.find("option[value='"+data.parentId+"']").prop("selected",true);
                     if(data.parentId == 0) {
                         layero.find("select").prop("disabled", true);
-                    }else {
+                    }/*else {
                         layero.find("option[value='"+data.parentId+"']").prop("selected",true);
-                    }
+                    }*/
                     form.render();
                 }else {
                     $("input:radio").removeAttr("checked");
-                    $("#select").append("<option value='0'>根目录</option>");
+
                     form.render();
                 }
             },

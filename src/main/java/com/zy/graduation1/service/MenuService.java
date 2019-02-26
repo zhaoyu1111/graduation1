@@ -58,4 +58,11 @@ public interface MenuService extends IService<Menu> {
      * @return
      */
     List<Menu> getAllMenu();
+
+    /**
+     * 通过角色ID获取菜单
+     * @param roleId
+     * @return
+     */
+    List<Menu> getMenuByRoleId(Long roleId);
 }

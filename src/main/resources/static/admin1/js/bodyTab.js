@@ -21,16 +21,20 @@ layui.define(["element","jquery"],function(exports){
             var menus = data.data;
             if(data.code == 2000 && menus != null) {
             	var root = new Array();
+            	var index = 0;
             	for(var i = 0; i < menus.length; i++) {
             		if(menus[i].parentId == 0) {
             			root.push(menus[i]);
-            			root[i].children = new Array();
+            			root[index].children = new Array();
 					}
             		for(var j = 0; j < menus.length; j++) {
             			if(menus[i].menuId == menus[j].parentId) {
-            				root[i].children.push(menus[j]);
+            				root[index].children.push(menus[j]);
             			}
             		}
+            		if(menus[i].parentId == 0) {
+            			index++;
+					}
 				}
 			}
 			else {

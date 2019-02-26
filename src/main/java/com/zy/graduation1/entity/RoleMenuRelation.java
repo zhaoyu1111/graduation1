@@ -35,7 +35,7 @@ public class RoleMenuRelation extends SuperEntity<RoleMenuRelation> {
     /**
      * 联系ID
      */
-    @TableId(value = "relation_id", type = IdType.ID_WORKER)
+    @TableId(value = "relation_id", type = IdType.AUTO)
     private Long relationId;
     /**
      * 角色ID

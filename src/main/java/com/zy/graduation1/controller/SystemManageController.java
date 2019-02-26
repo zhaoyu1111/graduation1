@@ -8,6 +8,7 @@ import com.zy.graduation1.common.MyPage;
 import com.zy.graduation1.dto.user.*;
 import com.zy.graduation1.entity.Menu;
 import com.zy.graduation1.entity.Role;
+import com.zy.graduation1.entity.RoleMenuRelation;
 import com.zy.graduation1.service.*;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -15,6 +16,7 @@ import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
 
 import javax.validation.constraints.NotNull;
+import java.util.Arrays;
 import java.util.List;
 
 @Validated
@@ -49,7 +51,6 @@ public class SystemManageController {
      * @param deleted
      * @return
      */
-    @Anonymous
     @RequestMapping("/listRole")
     public MyPage<RoleDto> listRole(String roleName, Integer deleted) {
         List<Role> roles = roleService.listRole(roleName, deleted);
@@ -79,7 +80,6 @@ public class SystemManageController {
      * 新增或更新角色
      * @param
      */
-    @Anonymous
     @RequestMapping("/saveOrUpdateRole")
     public void updateRole(Long roleId,
                            @NotNull(message = "请输入角色名称") String roleName,
@@ -93,7 +93,6 @@ public class SystemManageController {
      * 删除角色
      * @param roleId
      */
-    @Anonymous
     @RequestMapping("/deleteRole")
     public void deleteRole(Long roleId) {
         roleService.deleteById(roleId);
@@ -102,13 +101,13 @@ public class SystemManageController {
     /**
      * 查詢菜單信息
      * @param title
-     * @param currentPage
+     * @param page
      * @return
      */
     @RequestMapping("/queryMenu")
     public MyPage<MenuDto> queryMenu(String title, Long parentId,
-                                     @RequestParam(defaultValue = "1") Integer currentPage) {
-        IPage<Menu> menuPage = menuService.queryMenu(title, parentId, currentPage);
+                                     @RequestParam(defaultValue = "1") Integer page) {
+        IPage<Menu> menuPage = menuService.queryMenu(title, parentId, page);
         List<Menu> menus = menuPage.getRecords();
         if(CollectionUtils.isEmpty(menus)) {
             return new MyPage<>();
@@ -122,15 +121,15 @@ public class SystemManageController {
         return new MyPage<>(menuPage.getTotal(), menuDtos);
     }
 
-    @Anonymous
     @RequestMapping("getAllMenu")
-    public List<MenuTree> getAllMenu() {
+    public List<MenuTree> getAllMenu(@NotNull(message = "请选择角色") Long roleId) {
         List<Menu> menus = menuService.getAllMenu();
         if(CollectionUtils.isEmpty(menus)) {
             return null;
         }
         List<MenuTree> menuTrees = Lists.newArrayList();
         for (Menu menu : menus) {
+
             Boolean isBreak = true;
             MenuTree menuTree = new MenuTree();
             BeanUtils.copyProperties(menu, menuTree);
@@ -163,7 +162,17 @@ public class SystemManageController {
         return menuTrees;
     }
 
-    @Anonymous
+    @RequestMapping("getResourceByRoleId")
+    public List<RoleMenuRelation> getResourceByRoleId(Long roleId) {
+        return roleMenuRelationService.listRoleMenu(roleId);
+    }
+
+    @PostMapping("editResource")
+    public void editResource(@NotNull(message = "请选择角色") Long roleId,
+                             @RequestParam(value="resources[]") Long[] resources) {
+        roleMenuRelationService.editResources(roleId, Arrays.asList(resources));
+    }
+
     @RequestMapping("/getParentMenu")
     public List<Menu> getParentMenu() {
         return menuService.getParentMenu();
@@ -173,7 +182,6 @@ public class SystemManageController {
      * 刪除菜單信息
      * @param menuId
      */
-    @Anonymous
     @RequestMapping("/deleteMenu")
     public void deleteMenu(@NotNull(message = "请选择菜单") Long menuId) {
         menuService.deleteMenu(menuId);
@@ -187,7 +195,6 @@ public class SystemManageController {
      * @param icon
      * @param parentId
      */
-    @Anonymous
     @RequestMapping("/saveOrUpdateMenu")
     public void saveOrUpdateMenu(Long menuId,
                                  @NotNull(message = "请输入标题") String title,
@@ -205,7 +212,6 @@ public class SystemManageController {
      * @param currentPage
      * @return
      */
-    @Anonymous
     @RequestMapping("/queryRoleMenu")
     public MyPage<RoleMenuRelationDto> queryRoleMenu(Long roleId, Long menuId,
                                                      @RequestParam(defaultValue = "1") Integer currentPage) {
@@ -218,7 +224,6 @@ public class SystemManageController {
      * @param roleId
      * @param menuId
      */
-    @Anonymous
     @RequestMapping("/saveOrUpdateRoleMenu")
     public void addRoleMenu(Long relationId,
                             @NotNull(message = "请选择角色") Long roleId,
@@ -230,39 +235,33 @@ public class SystemManageController {
      * 刪除角色菜單
      * @param relationId
      */
-    @Anonymous
     @RequestMapping("/deleteRoleMenu")
     public void deleteRoleMenu(@NotNull(message = "请选择角色菜单联系记录") Long relationId) {
         roleMenuRelationService.deleteRoleMenu(relationId);
     }
 
-    @Anonymous
     @RequestMapping("/deleteOperatorRole")
     public void deleteOperatorRole(@NotNull(message = "记录不能为空") Long relationId) {
         operatorRoleRelationService.deleteById(relationId);
     }
 
-    @Anonymous
     @RequestMapping("/queryOperatorRoleRelation")
     public MyPage<OperatorRoleDto> queryOperatorRoleRelation(Long roleId, String operatorName,
                                                              @RequestParam(defaultValue = "1") Integer currentPage) {
         return systemManageService.queryOperatorRoleRelation(roleId, operatorName, currentPage);
     }
 
-    @Anonymous
     @RequestMapping("/saveOrUpdateOperatorRole")
     public void saveOrUpdateOperatorRole(Long relationId, String operatorName, Long roleId) {
         systemManageService.saveOrUpdateOperatorRole(relationId, operatorName, roleId);
     }
 
-    @Anonymous
     @RequestMapping("/queryOperator")
     public MyPage<OperatorDto> queryOperator(String operatorName, Long roleId, Long operatorId,
                                              @RequestParam(defaultValue = "1") Integer currentPage) {
         return systemManageService.queryOperator(operatorName, roleId, operatorId, currentPage);
     }
 
-    @Anonymous
     @RequestMapping("/saveOrUpdateOperator")
     public void saveOrUpdateOperator(@NotNull(message = "请输入管理员名称") String operatorName,
                                      @NotNull(message = "请选择管理员角色") Long roleId,
@@ -272,7 +271,6 @@ public class SystemManageController {
         systemManageService.saveOrUpdateOperator(operatorName, roleId, operatorId, mobile, deleted);
     }
 
-    @Anonymous
     @RequestMapping("/deleteOperator")
     public void deleteOperator(@NotNull(message = "请选择要删除的管理员") Long operatorId) {
         operatorService.deleteOperator(operatorId);

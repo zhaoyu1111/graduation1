@@ -34,7 +34,7 @@ public class Recruit extends SuperEntity<Recruit> {
     /**
      * 招聘ID
      */
-    @TableId(value = "recurit_id", type = IdType.ID_WORKER)
+    @TableId(value = "recurit_id", type = IdType.AUTO)
     private Long recuritId;
     /**
      * 标题

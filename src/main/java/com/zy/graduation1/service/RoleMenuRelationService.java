@@ -53,4 +53,10 @@ public interface RoleMenuRelationService extends IService<RoleMenuRelation> {
      * @return
      */
     RoleMenuRelation getRoleMenuRelation(Long roleId, Long menuId);
+
+    /**
+     * 编辑角色权限
+     * @param resourceIds
+     */
+    void editResources(Long roleId, List<Long> resourceIds);
 }

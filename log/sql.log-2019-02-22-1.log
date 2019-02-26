@@ -1,0 +1,773 @@
+time=2019-02-22T16:42:50.203+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==>  Preparing: SELECT operator_id AS operatorId,operator_name AS operatorName,operator_status AS operatorStatus,deleted,mobile,pwd,role_id AS roleId,ctime,utime FROM operator WHERE operator_id=? 
+time=2019-02-22T16:42:50.281+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==> Parameters: 15207312(Long)
+time=2019-02-22T16:42:50.346+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`<==      Total: 1
+time=2019-02-22T16:42:50.402+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==>  Preparing: SELECT student_id AS studentId,token,ctime,utime FROM user_web_token WHERE student_id=? 
+time=2019-02-22T16:42:50.403+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==> Parameters: 15207312(Long)
+time=2019-02-22T16:42:50.412+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`<==      Total: 1
+time=2019-02-22T16:42:50.522+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==>  Preparing: UPDATE user_web_token SET token=?,utime=? WHERE student_id=? 
+time=2019-02-22T16:42:50.523+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==> Parameters: fe15756b-e71f-4ef7-a31d-df175ca842af(String), 1550824970519(Long), 15207312(Long)
+time=2019-02-22T16:42:50.533+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`<==    Updates: 1
+time=2019-02-22T16:42:51.218+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==>  Preparing: SELECT relation_id AS relationId,operator_id AS operatorId,role_id AS roleId,deleted,ctime,utime FROM operator_role_relation WHERE operator_id = ? 
+time=2019-02-22T16:42:51.219+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==> Parameters: 15207312(Long)
+time=2019-02-22T16:42:51.224+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`<==      Total: 1
+time=2019-02-22T16:42:51.239+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==>  Preparing: SELECT relation_id AS relationId,role_id AS roleId,menu_id AS menuId,status,ctime,utime FROM role_menu_relation WHERE role_id = ? 
+time=2019-02-22T16:42:51.240+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==> Parameters: 1(Long)
+time=2019-02-22T16:42:51.250+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`<==      Total: 13
+time=2019-02-22T16:42:51.272+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==>  Preparing: SELECT menu_id AS menuId,title,href,icon,status,parent_id,ctime,utime FROM menu WHERE menu_id IN (?,?,?,?,?,?,?,?,?,?,?,?,?) 
+time=2019-02-22T16:42:51.275+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==> Parameters: 1(Long), 7(Long), 8(Long), 2(Long), 3(Long), 5(Long), 13(Long), 14(Long), 15(Long), 16(Long), 17(Long), 18(Long), 19(Long)
+time=2019-02-22T16:42:51.285+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`<==      Total: 13
+time=2019-02-22T16:42:51.696+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==>  Preparing: SELECT COUNT(1) FROM recruit_unit WHERE 1 = 1 
+time=2019-02-22T16:42:51.697+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==> Parameters: 
+time=2019-02-22T16:42:51.706+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==>  Preparing: SELECT unit_id AS unitId,unit_name AS unitName,industry,property,scale,unit_web AS unitWeb,contractor,mobile,status,deleted,ctime,utime FROM recruit_unit WHERE 1=1 ORDER BY ctime DESC LIMIT 0,20 
+time=2019-02-22T16:42:51.706+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==> Parameters: 
+time=2019-02-22T16:42:51.710+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`<==      Total: 1
+time=2019-02-22T16:45:26.751+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==>  Preparing: SELECT relation_id AS relationId,operator_id AS operatorId,role_id AS roleId,deleted,ctime,utime FROM operator_role_relation WHERE operator_id = ? 
+time=2019-02-22T16:45:26.789+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==> Parameters: 15207312(Long)
+time=2019-02-22T16:45:26.815+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`<==      Total: 1
+time=2019-02-22T16:45:26.829+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==>  Preparing: SELECT relation_id AS relationId,role_id AS roleId,menu_id AS menuId,status,ctime,utime FROM role_menu_relation WHERE role_id = ? 
+time=2019-02-22T16:45:26.829+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==> Parameters: 1(Long)
+time=2019-02-22T16:45:26.836+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`<==      Total: 13
+time=2019-02-22T16:45:26.853+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==>  Preparing: SELECT menu_id AS menuId,title,href,icon,status,parent_id,ctime,utime FROM menu WHERE menu_id IN (?,?,?,?,?,?,?,?,?,?,?,?,?) 
+time=2019-02-22T16:45:26.856+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==> Parameters: 1(Long), 7(Long), 8(Long), 2(Long), 3(Long), 5(Long), 13(Long), 14(Long), 15(Long), 16(Long), 17(Long), 18(Long), 19(Long)
+time=2019-02-22T16:45:26.865+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`<==      Total: 13
+time=2019-02-22T16:45:27.347+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==>  Preparing: SELECT COUNT(1) FROM recruit_unit WHERE 1 = 1 
+time=2019-02-22T16:45:27.348+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==> Parameters: 
+time=2019-02-22T16:45:27.355+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==>  Preparing: SELECT unit_id AS unitId,unit_name AS unitName,industry,property,scale,unit_web AS unitWeb,contractor,mobile,status,deleted,ctime,utime FROM recruit_unit WHERE 1=1 ORDER BY ctime DESC LIMIT 0,20 
+time=2019-02-22T16:45:27.355+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==> Parameters: 
+time=2019-02-22T16:45:27.359+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`<==      Total: 1
+time=2019-02-22T16:48:04.295+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==>  Preparing: SELECT relation_id AS relationId,operator_id AS operatorId,role_id AS roleId,deleted,ctime,utime FROM operator_role_relation WHERE operator_id = ? 
+time=2019-02-22T16:48:04.328+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==> Parameters: 15207312(Long)
+time=2019-02-22T16:48:04.352+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`<==      Total: 1
+time=2019-02-22T16:48:04.365+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==>  Preparing: SELECT relation_id AS relationId,role_id AS roleId,menu_id AS menuId,status,ctime,utime FROM role_menu_relation WHERE role_id = ? 
+time=2019-02-22T16:48:04.366+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==> Parameters: 1(Long)
+time=2019-02-22T16:48:04.373+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`<==      Total: 13
+time=2019-02-22T16:48:04.390+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==>  Preparing: SELECT menu_id AS menuId,title,href,icon,status,parent_id,ctime,utime FROM menu WHERE menu_id IN (?,?,?,?,?,?,?,?,?,?,?,?,?) 
+time=2019-02-22T16:48:04.393+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==> Parameters: 1(Long), 7(Long), 8(Long), 2(Long), 3(Long), 5(Long), 13(Long), 14(Long), 15(Long), 16(Long), 17(Long), 18(Long), 19(Long)
+time=2019-02-22T16:48:04.402+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`<==      Total: 13
+time=2019-02-22T16:48:04.923+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==>  Preparing: SELECT COUNT(1) FROM recruit_unit WHERE 1 = 1 
+time=2019-02-22T16:48:04.924+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==> Parameters: 
+time=2019-02-22T16:48:04.930+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==>  Preparing: SELECT unit_id AS unitId,unit_name AS unitName,industry,property,scale,unit_web AS unitWeb,contractor,mobile,status,deleted,ctime,utime FROM recruit_unit WHERE 1=1 ORDER BY ctime DESC LIMIT 0,20 
+time=2019-02-22T16:48:04.931+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==> Parameters: 
+time=2019-02-22T16:48:04.934+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`<==      Total: 1
+time=2019-02-22T16:48:10.649+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==>  Preparing: SELECT relation_id AS relationId,operator_id AS operatorId,role_id AS roleId,deleted,ctime,utime FROM operator_role_relation WHERE operator_id = ? 
+time=2019-02-22T16:48:10.651+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==> Parameters: 15207312(Long)
+time=2019-02-22T16:48:10.653+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`<==      Total: 1
+time=2019-02-22T16:48:10.655+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==>  Preparing: SELECT relation_id AS relationId,role_id AS roleId,menu_id AS menuId,status,ctime,utime FROM role_menu_relation WHERE role_id = ? 
+time=2019-02-22T16:48:10.656+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==> Parameters: 1(Long)
+time=2019-02-22T16:48:10.666+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`<==      Total: 13
+time=2019-02-22T16:48:10.670+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==>  Preparing: SELECT menu_id AS menuId,title,href,icon,status,parent_id,ctime,utime FROM menu WHERE menu_id IN (?,?,?,?,?,?,?,?,?,?,?,?,?) 
+time=2019-02-22T16:48:10.671+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==> Parameters: 1(Long), 7(Long), 8(Long), 2(Long), 3(Long), 5(Long), 13(Long), 14(Long), 15(Long), 16(Long), 17(Long), 18(Long), 19(Long)
+time=2019-02-22T16:48:10.678+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`<==      Total: 13
+time=2019-02-22T16:48:11.011+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==>  Preparing: SELECT COUNT(1) FROM recruit_unit WHERE 1 = 1 
+time=2019-02-22T16:48:11.013+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==> Parameters: 
+time=2019-02-22T16:48:11.018+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==>  Preparing: SELECT unit_id AS unitId,unit_name AS unitName,industry,property,scale,unit_web AS unitWeb,contractor,mobile,status,deleted,ctime,utime FROM recruit_unit WHERE 1=1 ORDER BY ctime DESC LIMIT 0,20 
+time=2019-02-22T16:48:11.018+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==> Parameters: 
+time=2019-02-22T16:48:11.023+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`<==      Total: 1
+time=2019-02-22T16:48:51.313+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==>  Preparing: SELECT relation_id AS relationId,operator_id AS operatorId,role_id AS roleId,deleted,ctime,utime FROM operator_role_relation WHERE operator_id = ? 
+time=2019-02-22T16:48:51.348+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==> Parameters: 15207312(Long)
+time=2019-02-22T16:48:51.374+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`<==      Total: 1
+time=2019-02-22T16:48:51.388+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==>  Preparing: SELECT relation_id AS relationId,role_id AS roleId,menu_id AS menuId,status,ctime,utime FROM role_menu_relation WHERE role_id = ? 
+time=2019-02-22T16:48:51.388+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==> Parameters: 1(Long)
+time=2019-02-22T16:48:51.395+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`<==      Total: 13
+time=2019-02-22T16:48:51.413+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==>  Preparing: SELECT menu_id AS menuId,title,href,icon,status,parent_id,ctime,utime FROM menu WHERE menu_id IN (?,?,?,?,?,?,?,?,?,?,?,?,?) 
+time=2019-02-22T16:48:51.416+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==> Parameters: 1(Long), 7(Long), 8(Long), 2(Long), 3(Long), 5(Long), 13(Long), 14(Long), 15(Long), 16(Long), 17(Long), 18(Long), 19(Long)
+time=2019-02-22T16:48:51.423+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`<==      Total: 13
+time=2019-02-22T16:48:51.915+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==>  Preparing: SELECT COUNT(1) FROM recruit_unit WHERE 1 = 1 
+time=2019-02-22T16:48:51.916+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==> Parameters: 
+time=2019-02-22T16:48:51.921+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==>  Preparing: SELECT unit_id AS unitId,unit_name AS unitName,industry,property,scale,unit_web AS unitWeb,contractor,mobile,status,deleted,ctime,utime FROM recruit_unit WHERE 1=1 ORDER BY ctime DESC LIMIT 0,20 
+time=2019-02-22T16:48:51.922+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==> Parameters: 
+time=2019-02-22T16:48:51.926+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`<==      Total: 1
+time=2019-02-22T16:56:28.003+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==>  Preparing: SELECT relation_id AS relationId,operator_id AS operatorId,role_id AS roleId,deleted,ctime,utime FROM operator_role_relation WHERE operator_id = ? 
+time=2019-02-22T16:56:28.038+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==> Parameters: 15207312(Long)
+time=2019-02-22T16:56:28.066+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`<==      Total: 1
+time=2019-02-22T16:56:28.081+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==>  Preparing: SELECT relation_id AS relationId,role_id AS roleId,menu_id AS menuId,status,ctime,utime FROM role_menu_relation WHERE role_id = ? 
+time=2019-02-22T16:56:28.082+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==> Parameters: 1(Long)
+time=2019-02-22T16:56:28.089+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`<==      Total: 13
+time=2019-02-22T16:56:28.109+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==>  Preparing: SELECT menu_id AS menuId,title,href,icon,status,parent_id,ctime,utime FROM menu WHERE menu_id IN (?,?,?,?,?,?,?,?,?,?,?,?,?) 
+time=2019-02-22T16:56:28.111+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==> Parameters: 1(Long), 7(Long), 8(Long), 2(Long), 3(Long), 5(Long), 13(Long), 14(Long), 15(Long), 16(Long), 17(Long), 18(Long), 19(Long)
+time=2019-02-22T16:56:28.120+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`<==      Total: 13
+time=2019-02-22T16:56:28.606+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==>  Preparing: SELECT COUNT(1) FROM recruit_unit WHERE 1 = 1 
+time=2019-02-22T16:56:28.607+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==> Parameters: 
+time=2019-02-22T16:56:28.612+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==>  Preparing: SELECT unit_id AS unitId,unit_name AS unitName,industry,property,scale,unit_web AS unitWeb,contractor,mobile,status,deleted,ctime,utime FROM recruit_unit WHERE 1=1 ORDER BY ctime DESC LIMIT 0,20 
+time=2019-02-22T16:56:28.613+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==> Parameters: 
+time=2019-02-22T16:56:28.616+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`<==      Total: 1
+time=2019-02-22T16:56:57.290+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==>  Preparing: SELECT operator_id AS operatorId,operator_name AS operatorName,operator_status AS operatorStatus,deleted,mobile,pwd,role_id AS roleId,ctime,utime FROM operator WHERE operator_id=? 
+time=2019-02-22T16:56:57.291+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==> Parameters: 15207312(Long)
+time=2019-02-22T16:56:57.296+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`<==      Total: 1
+time=2019-02-22T16:56:57.310+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==>  Preparing: SELECT student_id AS studentId,token,ctime,utime FROM user_web_token WHERE student_id=? 
+time=2019-02-22T16:56:57.310+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==> Parameters: 15207312(Long)
+time=2019-02-22T16:56:57.316+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`<==      Total: 1
+time=2019-02-22T16:56:57.354+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==>  Preparing: UPDATE user_web_token SET token=?,utime=? WHERE student_id=? 
+time=2019-02-22T16:56:57.355+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==> Parameters: 0974e0da-3547-4fa7-aebb-4cf7c1e3a94d(String), 1550825817351(Long), 15207312(Long)
+time=2019-02-22T16:56:57.361+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`<==    Updates: 1
+time=2019-02-22T16:56:57.837+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==>  Preparing: SELECT relation_id AS relationId,operator_id AS operatorId,role_id AS roleId,deleted,ctime,utime FROM operator_role_relation WHERE operator_id = ? 
+time=2019-02-22T16:56:57.838+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==> Parameters: 15207312(Long)
+time=2019-02-22T16:56:57.841+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`<==      Total: 1
+time=2019-02-22T16:56:57.857+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==>  Preparing: SELECT relation_id AS relationId,role_id AS roleId,menu_id AS menuId,status,ctime,utime FROM role_menu_relation WHERE role_id = ? 
+time=2019-02-22T16:56:57.857+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==> Parameters: 1(Long)
+time=2019-02-22T16:56:57.863+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`<==      Total: 13
+time=2019-02-22T16:56:57.868+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==>  Preparing: SELECT menu_id AS menuId,title,href,icon,status,parent_id,ctime,utime FROM menu WHERE menu_id IN (?,?,?,?,?,?,?,?,?,?,?,?,?) 
+time=2019-02-22T16:56:57.870+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==> Parameters: 1(Long), 7(Long), 8(Long), 2(Long), 3(Long), 5(Long), 13(Long), 14(Long), 15(Long), 16(Long), 17(Long), 18(Long), 19(Long)
+time=2019-02-22T16:56:57.877+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`<==      Total: 13
+time=2019-02-22T16:57:04.308+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==>  Preparing: SELECT COUNT(1) FROM recruit_unit WHERE 1 = 1 
+time=2019-02-22T16:57:04.308+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==> Parameters: 
+time=2019-02-22T16:57:04.312+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==>  Preparing: SELECT unit_id AS unitId,unit_name AS unitName,industry,property,scale,unit_web AS unitWeb,contractor,mobile,status,deleted,ctime,utime FROM recruit_unit WHERE 1=1 ORDER BY ctime DESC LIMIT 0,20 
+time=2019-02-22T16:57:04.313+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==> Parameters: 
+time=2019-02-22T16:57:04.317+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`<==      Total: 1
+time=2019-02-22T16:57:21.648+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==>  Preparing: SELECT relation_id AS relationId,operator_id AS operatorId,role_id AS roleId,deleted,ctime,utime FROM operator_role_relation WHERE operator_id = ? 
+time=2019-02-22T16:57:21.648+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==> Parameters: 15207312(Long)
+time=2019-02-22T16:57:21.651+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`<==      Total: 1
+time=2019-02-22T16:57:21.653+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==>  Preparing: SELECT relation_id AS relationId,role_id AS roleId,menu_id AS menuId,status,ctime,utime FROM role_menu_relation WHERE role_id = ? 
+time=2019-02-22T16:57:21.654+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==> Parameters: 1(Long)
+time=2019-02-22T16:57:21.659+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`<==      Total: 13
+time=2019-02-22T16:57:21.663+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==>  Preparing: SELECT menu_id AS menuId,title,href,icon,status,parent_id,ctime,utime FROM menu WHERE menu_id IN (?,?,?,?,?,?,?,?,?,?,?,?,?) 
+time=2019-02-22T16:57:21.665+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==> Parameters: 1(Long), 7(Long), 8(Long), 2(Long), 3(Long), 5(Long), 13(Long), 14(Long), 15(Long), 16(Long), 17(Long), 18(Long), 19(Long)
+time=2019-02-22T16:57:21.670+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`<==      Total: 13
+time=2019-02-22T16:57:22.370+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==>  Preparing: SELECT COUNT(1) FROM recruit_unit WHERE 1 = 1 
+time=2019-02-22T16:57:22.371+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==> Parameters: 
+time=2019-02-22T16:57:22.376+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==>  Preparing: SELECT unit_id AS unitId,unit_name AS unitName,industry,property,scale,unit_web AS unitWeb,contractor,mobile,status,deleted,ctime,utime FROM recruit_unit WHERE 1=1 ORDER BY ctime DESC LIMIT 0,20 
+time=2019-02-22T16:57:22.377+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==> Parameters: 
+time=2019-02-22T16:57:22.383+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`<==      Total: 1
+time=2019-02-22T16:58:45.439+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==>  Preparing: SELECT relation_id AS relationId,operator_id AS operatorId,role_id AS roleId,deleted,ctime,utime FROM operator_role_relation WHERE operator_id = ? 
+time=2019-02-22T16:58:45.474+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==> Parameters: 15207312(Long)
+time=2019-02-22T16:58:45.501+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`<==      Total: 1
+time=2019-02-22T16:58:45.516+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==>  Preparing: SELECT relation_id AS relationId,role_id AS roleId,menu_id AS menuId,status,ctime,utime FROM role_menu_relation WHERE role_id = ? 
+time=2019-02-22T16:58:45.517+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==> Parameters: 1(Long)
+time=2019-02-22T16:58:45.523+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`<==      Total: 13
+time=2019-02-22T16:58:45.591+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==>  Preparing: SELECT menu_id AS menuId,title,href,icon,status,parent_id,ctime,utime FROM menu WHERE menu_id IN (?,?,?,?,?,?,?,?,?,?,?,?,?) 
+time=2019-02-22T16:58:45.594+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==> Parameters: 1(Long), 7(Long), 8(Long), 2(Long), 3(Long), 5(Long), 13(Long), 14(Long), 15(Long), 16(Long), 17(Long), 18(Long), 19(Long)
+time=2019-02-22T16:58:45.602+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`<==      Total: 13
+time=2019-02-22T16:58:46.122+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==>  Preparing: SELECT COUNT(1) FROM recruit_unit WHERE 1 = 1 
+time=2019-02-22T16:58:46.123+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==> Parameters: 
+time=2019-02-22T16:58:46.129+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==>  Preparing: SELECT unit_id AS unitId,unit_name AS unitName,industry,property,scale,unit_web AS unitWeb,contractor,mobile,status,deleted,ctime,utime FROM recruit_unit WHERE 1=1 ORDER BY ctime DESC LIMIT 0,20 
+time=2019-02-22T16:58:46.130+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==> Parameters: 
+time=2019-02-22T16:58:46.133+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`<==      Total: 1
+time=2019-02-22T17:01:45.457+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==>  Preparing: SELECT relation_id AS relationId,operator_id AS operatorId,role_id AS roleId,deleted,ctime,utime FROM operator_role_relation WHERE operator_id = ? 
+time=2019-02-22T17:01:45.495+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==> Parameters: 15207312(Long)
+time=2019-02-22T17:01:45.521+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`<==      Total: 1
+time=2019-02-22T17:01:45.536+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==>  Preparing: SELECT relation_id AS relationId,role_id AS roleId,menu_id AS menuId,status,ctime,utime FROM role_menu_relation WHERE role_id = ? 
+time=2019-02-22T17:01:45.537+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==> Parameters: 1(Long)
+time=2019-02-22T17:01:45.547+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`<==      Total: 13
+time=2019-02-22T17:01:45.570+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==>  Preparing: SELECT menu_id AS menuId,title,href,icon,status,parent_id,ctime,utime FROM menu WHERE menu_id IN (?,?,?,?,?,?,?,?,?,?,?,?,?) 
+time=2019-02-22T17:01:45.573+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==> Parameters: 1(Long), 7(Long), 8(Long), 2(Long), 3(Long), 5(Long), 13(Long), 14(Long), 15(Long), 16(Long), 17(Long), 18(Long), 19(Long)
+time=2019-02-22T17:01:45.583+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`<==      Total: 13
+time=2019-02-22T17:01:46.894+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==>  Preparing: SELECT COUNT(1) FROM recruit_unit WHERE 1 = 1 
+time=2019-02-22T17:01:46.895+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==> Parameters: 
+time=2019-02-22T17:01:46.902+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==>  Preparing: SELECT unit_id AS unitId,unit_name AS unitName,industry,property,scale,unit_web AS unitWeb,contractor,mobile,status,deleted,ctime,utime FROM recruit_unit WHERE 1=1 ORDER BY ctime DESC LIMIT 0,20 
+time=2019-02-22T17:01:46.902+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==> Parameters: 
+time=2019-02-22T17:01:46.906+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`<==      Total: 1
+time=2019-02-22T17:11:50.871+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==>  Preparing: SELECT relation_id AS relationId,operator_id AS operatorId,role_id AS roleId,deleted,ctime,utime FROM operator_role_relation WHERE operator_id = ? 
+time=2019-02-22T17:11:50.904+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==> Parameters: 15207312(Long)
+time=2019-02-22T17:11:50.932+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`<==      Total: 1
+time=2019-02-22T17:11:50.946+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==>  Preparing: SELECT relation_id AS relationId,role_id AS roleId,menu_id AS menuId,status,ctime,utime FROM role_menu_relation WHERE role_id = ? 
+time=2019-02-22T17:11:50.946+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==> Parameters: 1(Long)
+time=2019-02-22T17:11:50.954+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`<==      Total: 13
+time=2019-02-22T17:11:50.973+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==>  Preparing: SELECT menu_id AS menuId,title,href,icon,status,parent_id,ctime,utime FROM menu WHERE menu_id IN (?,?,?,?,?,?,?,?,?,?,?,?,?) 
+time=2019-02-22T17:11:50.975+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==> Parameters: 1(Long), 7(Long), 8(Long), 2(Long), 3(Long), 5(Long), 13(Long), 14(Long), 15(Long), 16(Long), 17(Long), 18(Long), 19(Long)
+time=2019-02-22T17:11:50.982+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`<==      Total: 13
+time=2019-02-22T17:11:51.548+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==>  Preparing: SELECT COUNT(1) FROM recruit_unit WHERE 1 = 1 
+time=2019-02-22T17:11:51.549+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==> Parameters: 
+time=2019-02-22T17:11:51.555+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==>  Preparing: SELECT unit_id AS unitId,unit_name AS unitName,industry,property,scale,unit_web AS unitWeb,contractor,mobile,status,deleted,ctime,utime FROM recruit_unit WHERE 1=1 ORDER BY ctime DESC LIMIT 0,20 
+time=2019-02-22T17:11:51.555+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==> Parameters: 
+time=2019-02-22T17:11:51.559+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`<==      Total: 1
+time=2019-02-22T17:14:09.409+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==>  Preparing: SELECT relation_id AS relationId,operator_id AS operatorId,role_id AS roleId,deleted,ctime,utime FROM operator_role_relation WHERE operator_id = ? 
+time=2019-02-22T17:14:09.449+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==> Parameters: 15207312(Long)
+time=2019-02-22T17:14:09.473+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`<==      Total: 1
+time=2019-02-22T17:14:09.488+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==>  Preparing: SELECT relation_id AS relationId,role_id AS roleId,menu_id AS menuId,status,ctime,utime FROM role_menu_relation WHERE role_id = ? 
+time=2019-02-22T17:14:09.490+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==> Parameters: 1(Long)
+time=2019-02-22T17:14:09.497+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`<==      Total: 13
+time=2019-02-22T17:14:09.519+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==>  Preparing: SELECT menu_id AS menuId,title,href,icon,status,parent_id,ctime,utime FROM menu WHERE menu_id IN (?,?,?,?,?,?,?,?,?,?,?,?,?) 
+time=2019-02-22T17:14:09.521+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==> Parameters: 1(Long), 7(Long), 8(Long), 2(Long), 3(Long), 5(Long), 13(Long), 14(Long), 15(Long), 16(Long), 17(Long), 18(Long), 19(Long)
+time=2019-02-22T17:14:09.530+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`<==      Total: 13
+time=2019-02-22T17:14:10.223+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==>  Preparing: SELECT COUNT(1) FROM recruit_unit WHERE 1 = 1 
+time=2019-02-22T17:14:10.223+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==> Parameters: 
+time=2019-02-22T17:14:10.231+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==>  Preparing: SELECT unit_id AS unitId,unit_name AS unitName,industry,property,scale,unit_web AS unitWeb,contractor,mobile,status,deleted,ctime,utime FROM recruit_unit WHERE 1=1 ORDER BY ctime DESC LIMIT 0,20 
+time=2019-02-22T17:14:10.231+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==> Parameters: 
+time=2019-02-22T17:14:10.237+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`<==      Total: 1
+time=2019-02-22T17:17:04.009+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==>  Preparing: SELECT relation_id AS relationId,operator_id AS operatorId,role_id AS roleId,deleted,ctime,utime FROM operator_role_relation WHERE operator_id = ? 
+time=2019-02-22T17:17:04.042+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==> Parameters: 15207312(Long)
+time=2019-02-22T17:17:04.069+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`<==      Total: 1
+time=2019-02-22T17:17:04.084+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==>  Preparing: SELECT relation_id AS relationId,role_id AS roleId,menu_id AS menuId,status,ctime,utime FROM role_menu_relation WHERE role_id = ? 
+time=2019-02-22T17:17:04.085+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==> Parameters: 1(Long)
+time=2019-02-22T17:17:04.092+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`<==      Total: 13
+time=2019-02-22T17:17:04.110+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==>  Preparing: SELECT menu_id AS menuId,title,href,icon,status,parent_id,ctime,utime FROM menu WHERE menu_id IN (?,?,?,?,?,?,?,?,?,?,?,?,?) 
+time=2019-02-22T17:17:04.112+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==> Parameters: 1(Long), 7(Long), 8(Long), 2(Long), 3(Long), 5(Long), 13(Long), 14(Long), 15(Long), 16(Long), 17(Long), 18(Long), 19(Long)
+time=2019-02-22T17:17:04.120+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`<==      Total: 13
+time=2019-02-22T17:17:04.672+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==>  Preparing: SELECT COUNT(1) FROM recruit_unit WHERE 1 = 1 
+time=2019-02-22T17:17:04.672+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==> Parameters: 
+time=2019-02-22T17:17:04.679+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==>  Preparing: SELECT unit_id AS unitId,unit_name AS unitName,industry,property,scale,unit_web AS unitWeb,contractor,mobile,status,deleted,ctime,utime FROM recruit_unit WHERE 1=1 ORDER BY ctime DESC LIMIT 0,20 
+time=2019-02-22T17:17:04.679+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==> Parameters: 
+time=2019-02-22T17:17:04.683+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`<==      Total: 1
+time=2019-02-22T17:21:21.726+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==>  Preparing: SELECT relation_id AS relationId,operator_id AS operatorId,role_id AS roleId,deleted,ctime,utime FROM operator_role_relation WHERE operator_id = ? 
+time=2019-02-22T17:21:21.770+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==> Parameters: 15207312(Long)
+time=2019-02-22T17:21:21.803+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`<==      Total: 1
+time=2019-02-22T17:21:21.821+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==>  Preparing: SELECT relation_id AS relationId,role_id AS roleId,menu_id AS menuId,status,ctime,utime FROM role_menu_relation WHERE role_id = ? 
+time=2019-02-22T17:21:21.822+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==> Parameters: 1(Long)
+time=2019-02-22T17:21:21.831+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`<==      Total: 13
+time=2019-02-22T17:21:21.854+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==>  Preparing: SELECT menu_id AS menuId,title,href,icon,status,parent_id,ctime,utime FROM menu WHERE menu_id IN (?,?,?,?,?,?,?,?,?,?,?,?,?) 
+time=2019-02-22T17:21:21.856+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==> Parameters: 1(Long), 7(Long), 8(Long), 2(Long), 3(Long), 5(Long), 13(Long), 14(Long), 15(Long), 16(Long), 17(Long), 18(Long), 19(Long)
+time=2019-02-22T17:21:21.865+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`<==      Total: 13
+time=2019-02-22T17:21:22.800+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==>  Preparing: SELECT COUNT(1) FROM recruit_unit WHERE 1 = 1 
+time=2019-02-22T17:21:22.801+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==> Parameters: 
+time=2019-02-22T17:21:22.808+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==>  Preparing: SELECT unit_id AS unitId,unit_name AS unitName,industry,property,scale,unit_web AS unitWeb,contractor,mobile,status,deleted,ctime,utime FROM recruit_unit WHERE 1=1 ORDER BY ctime DESC LIMIT 0,20 
+time=2019-02-22T17:21:22.809+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==> Parameters: 
+time=2019-02-22T17:21:22.813+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`<==      Total: 1
+time=2019-02-22T17:22:33.294+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==>  Preparing: SELECT relation_id AS relationId,operator_id AS operatorId,role_id AS roleId,deleted,ctime,utime FROM operator_role_relation WHERE operator_id = ? 
+time=2019-02-22T17:22:33.384+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==> Parameters: 15207312(Long)
+time=2019-02-22T17:22:33.409+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`<==      Total: 1
+time=2019-02-22T17:22:33.422+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==>  Preparing: SELECT relation_id AS relationId,role_id AS roleId,menu_id AS menuId,status,ctime,utime FROM role_menu_relation WHERE role_id = ? 
+time=2019-02-22T17:22:33.422+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==> Parameters: 1(Long)
+time=2019-02-22T17:22:33.429+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`<==      Total: 13
+time=2019-02-22T17:22:33.447+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==>  Preparing: SELECT menu_id AS menuId,title,href,icon,status,parent_id,ctime,utime FROM menu WHERE menu_id IN (?,?,?,?,?,?,?,?,?,?,?,?,?) 
+time=2019-02-22T17:22:33.448+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==> Parameters: 1(Long), 7(Long), 8(Long), 2(Long), 3(Long), 5(Long), 13(Long), 14(Long), 15(Long), 16(Long), 17(Long), 18(Long), 19(Long)
+time=2019-02-22T17:22:33.457+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`<==      Total: 13
+time=2019-02-22T17:22:33.942+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==>  Preparing: SELECT COUNT(1) FROM recruit_unit WHERE 1 = 1 
+time=2019-02-22T17:22:33.943+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==> Parameters: 
+time=2019-02-22T17:22:33.951+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==>  Preparing: SELECT unit_id AS unitId,unit_name AS unitName,industry,property,scale,unit_web AS unitWeb,contractor,mobile,status,deleted,ctime,utime FROM recruit_unit WHERE 1=1 ORDER BY ctime DESC LIMIT 0,20 
+time=2019-02-22T17:22:33.952+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==> Parameters: 
+time=2019-02-22T17:22:33.955+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`<==      Total: 1
+time=2019-02-22T17:30:19.854+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==>  Preparing: SELECT relation_id AS relationId,operator_id AS operatorId,role_id AS roleId,deleted,ctime,utime FROM operator_role_relation WHERE operator_id = ? 
+time=2019-02-22T17:30:19.856+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==> Parameters: 15207312(Long)
+time=2019-02-22T17:30:19.859+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`<==      Total: 1
+time=2019-02-22T17:30:19.862+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==>  Preparing: SELECT relation_id AS relationId,role_id AS roleId,menu_id AS menuId,status,ctime,utime FROM role_menu_relation WHERE role_id = ? 
+time=2019-02-22T17:30:19.863+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==> Parameters: 1(Long)
+time=2019-02-22T17:30:19.868+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`<==      Total: 13
+time=2019-02-22T17:30:19.872+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==>  Preparing: SELECT menu_id AS menuId,title,href,icon,status,parent_id,ctime,utime FROM menu WHERE menu_id IN (?,?,?,?,?,?,?,?,?,?,?,?,?) 
+time=2019-02-22T17:30:19.873+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==> Parameters: 1(Long), 7(Long), 8(Long), 2(Long), 3(Long), 5(Long), 13(Long), 14(Long), 15(Long), 16(Long), 17(Long), 18(Long), 19(Long)
+time=2019-02-22T17:30:19.880+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`<==      Total: 13
+time=2019-02-22T17:30:20.183+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==>  Preparing: SELECT COUNT(1) FROM recruit_unit WHERE 1 = 1 
+time=2019-02-22T17:30:20.183+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==> Parameters: 
+time=2019-02-22T17:30:20.190+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==>  Preparing: SELECT unit_id AS unitId,unit_name AS unitName,industry,property,scale,unit_web AS unitWeb,contractor,mobile,status,deleted,ctime,utime FROM recruit_unit WHERE 1=1 ORDER BY ctime DESC LIMIT 0,20 
+time=2019-02-22T17:30:20.193+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==> Parameters: 
+time=2019-02-22T17:30:20.196+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`<==      Total: 1
+time=2019-02-22T17:38:43.173+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==>  Preparing: SELECT relation_id AS relationId,operator_id AS operatorId,role_id AS roleId,deleted,ctime,utime FROM operator_role_relation WHERE operator_id = ? 
+time=2019-02-22T17:38:43.210+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==> Parameters: 15207312(Long)
+time=2019-02-22T17:38:43.237+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`<==      Total: 1
+time=2019-02-22T17:38:43.251+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==>  Preparing: SELECT relation_id AS relationId,role_id AS roleId,menu_id AS menuId,status,ctime,utime FROM role_menu_relation WHERE role_id = ? 
+time=2019-02-22T17:38:43.251+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==> Parameters: 1(Long)
+time=2019-02-22T17:38:43.258+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`<==      Total: 13
+time=2019-02-22T17:38:43.277+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==>  Preparing: SELECT menu_id AS menuId,title,href,icon,status,parent_id,ctime,utime FROM menu WHERE menu_id IN (?,?,?,?,?,?,?,?,?,?,?,?,?) 
+time=2019-02-22T17:38:43.279+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==> Parameters: 1(Long), 7(Long), 8(Long), 2(Long), 3(Long), 5(Long), 13(Long), 14(Long), 15(Long), 16(Long), 17(Long), 18(Long), 19(Long)
+time=2019-02-22T17:38:43.287+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`<==      Total: 13
+time=2019-02-22T17:38:44.170+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==>  Preparing: SELECT COUNT(1) FROM recruit_unit WHERE 1 = 1 
+time=2019-02-22T17:38:44.171+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==> Parameters: 
+time=2019-02-22T17:38:44.178+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==>  Preparing: SELECT unit_id AS unitId,unit_name AS unitName,industry,property,scale,unit_web AS unitWeb,contractor,mobile,status,deleted,ctime,utime FROM recruit_unit WHERE 1=1 ORDER BY ctime DESC LIMIT 0,20 
+time=2019-02-22T17:38:44.179+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==> Parameters: 
+time=2019-02-22T17:38:44.183+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`<==      Total: 1
+time=2019-02-22T17:38:56.868+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==>  Preparing: SELECT relation_id AS relationId,operator_id AS operatorId,role_id AS roleId,deleted,ctime,utime FROM operator_role_relation WHERE operator_id = ? 
+time=2019-02-22T17:38:56.869+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==> Parameters: 15207312(Long)
+time=2019-02-22T17:38:56.872+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`<==      Total: 1
+time=2019-02-22T17:38:56.875+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==>  Preparing: SELECT relation_id AS relationId,role_id AS roleId,menu_id AS menuId,status,ctime,utime FROM role_menu_relation WHERE role_id = ? 
+time=2019-02-22T17:38:56.876+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==> Parameters: 1(Long)
+time=2019-02-22T17:38:56.883+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`<==      Total: 13
+time=2019-02-22T17:38:56.888+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==>  Preparing: SELECT menu_id AS menuId,title,href,icon,status,parent_id,ctime,utime FROM menu WHERE menu_id IN (?,?,?,?,?,?,?,?,?,?,?,?,?) 
+time=2019-02-22T17:38:56.890+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==> Parameters: 1(Long), 7(Long), 8(Long), 2(Long), 3(Long), 5(Long), 13(Long), 14(Long), 15(Long), 16(Long), 17(Long), 18(Long), 19(Long)
+time=2019-02-22T17:38:56.899+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`<==      Total: 13
+time=2019-02-22T17:39:01.639+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==>  Preparing: SELECT COUNT(1) FROM recruit_unit WHERE 1 = 1 
+time=2019-02-22T17:39:01.640+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==> Parameters: 
+time=2019-02-22T17:39:01.645+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==>  Preparing: SELECT unit_id AS unitId,unit_name AS unitName,industry,property,scale,unit_web AS unitWeb,contractor,mobile,status,deleted,ctime,utime FROM recruit_unit WHERE 1=1 ORDER BY ctime DESC LIMIT 0,20 
+time=2019-02-22T17:39:01.646+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==> Parameters: 
+time=2019-02-22T17:39:01.650+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`<==      Total: 1
+time=2019-02-22T17:40:31.708+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==>  Preparing: SELECT relation_id AS relationId,operator_id AS operatorId,role_id AS roleId,deleted,ctime,utime FROM operator_role_relation WHERE operator_id = ? 
+time=2019-02-22T17:40:31.742+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==> Parameters: 15207312(Long)
+time=2019-02-22T17:40:31.766+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`<==      Total: 1
+time=2019-02-22T17:40:31.779+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==>  Preparing: SELECT relation_id AS relationId,role_id AS roleId,menu_id AS menuId,status,ctime,utime FROM role_menu_relation WHERE role_id = ? 
+time=2019-02-22T17:40:31.779+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==> Parameters: 1(Long)
+time=2019-02-22T17:40:31.787+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`<==      Total: 13
+time=2019-02-22T17:40:31.806+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==>  Preparing: SELECT menu_id AS menuId,title,href,icon,status,parent_id,ctime,utime FROM menu WHERE menu_id IN (?,?,?,?,?,?,?,?,?,?,?,?,?) 
+time=2019-02-22T17:40:31.808+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==> Parameters: 1(Long), 7(Long), 8(Long), 2(Long), 3(Long), 5(Long), 13(Long), 14(Long), 15(Long), 16(Long), 17(Long), 18(Long), 19(Long)
+time=2019-02-22T17:40:31.818+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`<==      Total: 13
+time=2019-02-22T17:40:32.305+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==>  Preparing: SELECT COUNT(1) FROM recruit_unit WHERE 1 = 1 
+time=2019-02-22T17:40:32.306+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==> Parameters: 
+time=2019-02-22T17:40:32.312+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==>  Preparing: SELECT unit_id AS unitId,unit_name AS unitName,industry,property,scale,unit_web AS unitWeb,contractor,mobile,status,deleted,ctime,utime FROM recruit_unit WHERE 1=1 ORDER BY ctime DESC LIMIT 0,20 
+time=2019-02-22T17:40:32.313+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==> Parameters: 
+time=2019-02-22T17:40:32.316+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`<==      Total: 1
+time=2019-02-22T17:41:13.961+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==>  Preparing: SELECT role_id AS roleId,role_name AS roleName,remark,deleted,ctime,utime FROM role 
+time=2019-02-22T17:41:13.961+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==> Parameters: 
+time=2019-02-22T17:41:13.965+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==>  Preparing: SELECT COUNT(1) FROM operator 
+time=2019-02-22T17:41:13.966+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==> Parameters: 
+time=2019-02-22T17:41:13.971+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==>  Preparing: SELECT operator_id AS operatorId,operator_name AS operatorName,operator_status AS operatorStatus,deleted,mobile,pwd,role_id AS roleId,ctime,utime FROM operator LIMIT 0,10 
+time=2019-02-22T17:41:13.971+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==> Parameters: 
+time=2019-02-22T17:41:13.972+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`<==      Total: 5
+time=2019-02-22T17:41:13.975+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`<==      Total: 2
+time=2019-02-22T17:41:13.978+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==>  Preparing: SELECT role_id AS roleId,role_name AS roleName,remark,deleted,ctime,utime FROM role WHERE role_id IN (?,?) 
+time=2019-02-22T17:41:13.980+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==> Parameters: 17(Long), 1(Long)
+time=2019-02-22T17:41:13.989+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`<==      Total: 2
+time=2019-02-22T17:43:29.298+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==>  Preparing: SELECT relation_id AS relationId,operator_id AS operatorId,role_id AS roleId,deleted,ctime,utime FROM operator_role_relation WHERE operator_id = ? 
+time=2019-02-22T17:43:29.332+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==> Parameters: 15207312(Long)
+time=2019-02-22T17:43:29.358+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`<==      Total: 1
+time=2019-02-22T17:43:29.372+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==>  Preparing: SELECT relation_id AS relationId,role_id AS roleId,menu_id AS menuId,status,ctime,utime FROM role_menu_relation WHERE role_id = ? 
+time=2019-02-22T17:43:29.373+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==> Parameters: 1(Long)
+time=2019-02-22T17:43:29.380+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`<==      Total: 13
+time=2019-02-22T17:43:29.397+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==>  Preparing: SELECT menu_id AS menuId,title,href,icon,status,parent_id,ctime,utime FROM menu WHERE menu_id IN (?,?,?,?,?,?,?,?,?,?,?,?,?) 
+time=2019-02-22T17:43:29.400+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==> Parameters: 1(Long), 7(Long), 8(Long), 2(Long), 3(Long), 5(Long), 13(Long), 14(Long), 15(Long), 16(Long), 17(Long), 18(Long), 19(Long)
+time=2019-02-22T17:43:29.407+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`<==      Total: 13
+time=2019-02-22T17:43:29.972+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==>  Preparing: SELECT COUNT(1) FROM recruit_unit WHERE 1 = 1 
+time=2019-02-22T17:43:29.973+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==> Parameters: 
+time=2019-02-22T17:43:29.980+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==>  Preparing: SELECT unit_id AS unitId,unit_name AS unitName,industry,property,scale,unit_web AS unitWeb,contractor,mobile,status,deleted,ctime,utime FROM recruit_unit WHERE 1=1 ORDER BY ctime DESC LIMIT 0,20 
+time=2019-02-22T17:43:29.981+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==> Parameters: 
+time=2019-02-22T17:43:29.985+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`<==      Total: 1
+time=2019-02-22T17:43:30.086+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==>  Preparing: SELECT COUNT(1) FROM operator 
+time=2019-02-22T17:43:30.087+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==> Parameters: 
+time=2019-02-22T17:43:30.090+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==>  Preparing: SELECT operator_id AS operatorId,operator_name AS operatorName,operator_status AS operatorStatus,deleted,mobile,pwd,role_id AS roleId,ctime,utime FROM operator LIMIT 0,10 
+time=2019-02-22T17:43:30.092+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==> Parameters: 
+time=2019-02-22T17:43:30.095+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==>  Preparing: SELECT role_id AS roleId,role_name AS roleName,remark,deleted,ctime,utime FROM role 
+time=2019-02-22T17:43:30.095+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`<==      Total: 2
+time=2019-02-22T17:43:30.095+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==> Parameters: 
+time=2019-02-22T17:43:30.098+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==>  Preparing: SELECT role_id AS roleId,role_name AS roleName,remark,deleted,ctime,utime FROM role WHERE role_id IN (?,?) 
+time=2019-02-22T17:43:30.099+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`<==      Total: 5
+time=2019-02-22T17:43:30.100+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==> Parameters: 17(Long), 1(Long)
+time=2019-02-22T17:43:30.103+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`<==      Total: 2
+time=2019-02-22T17:43:39.893+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==>  Preparing: SELECT relation_id AS relationId,operator_id AS operatorId,role_id AS roleId,deleted,ctime,utime FROM operator_role_relation WHERE operator_id = ? 
+time=2019-02-22T17:43:39.894+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==> Parameters: 15207312(Long)
+time=2019-02-22T17:43:39.897+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`<==      Total: 1
+time=2019-02-22T17:43:39.899+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==>  Preparing: SELECT relation_id AS relationId,role_id AS roleId,menu_id AS menuId,status,ctime,utime FROM role_menu_relation WHERE role_id = ? 
+time=2019-02-22T17:43:39.900+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==> Parameters: 1(Long)
+time=2019-02-22T17:43:39.906+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`<==      Total: 13
+time=2019-02-22T17:43:39.910+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==>  Preparing: SELECT menu_id AS menuId,title,href,icon,status,parent_id,ctime,utime FROM menu WHERE menu_id IN (?,?,?,?,?,?,?,?,?,?,?,?,?) 
+time=2019-02-22T17:43:39.912+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==> Parameters: 1(Long), 7(Long), 8(Long), 2(Long), 3(Long), 5(Long), 13(Long), 14(Long), 15(Long), 16(Long), 17(Long), 18(Long), 19(Long)
+time=2019-02-22T17:43:39.919+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`<==      Total: 13
+time=2019-02-22T17:43:42.265+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==>  Preparing: SELECT COUNT(1) FROM recruit_unit WHERE 1 = 1 
+time=2019-02-22T17:43:42.266+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==> Parameters: 
+time=2019-02-22T17:43:42.269+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==>  Preparing: SELECT unit_id AS unitId,unit_name AS unitName,industry,property,scale,unit_web AS unitWeb,contractor,mobile,status,deleted,ctime,utime FROM recruit_unit WHERE 1=1 ORDER BY ctime DESC LIMIT 0,20 
+time=2019-02-22T17:43:42.269+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==> Parameters: 
+time=2019-02-22T17:43:42.273+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`<==      Total: 1
+time=2019-02-22T21:04:55.234+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==>  Preparing: SELECT operator_id AS operatorId,operator_name AS operatorName,operator_status AS operatorStatus,deleted,mobile,pwd,role_id AS roleId,ctime,utime FROM operator WHERE operator_id=? 
+time=2019-02-22T21:04:55.306+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==> Parameters: 15207312(Long)
+time=2019-02-22T21:04:55.372+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`<==      Total: 1
+time=2019-02-22T21:04:55.428+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==>  Preparing: SELECT student_id AS studentId,token,ctime,utime FROM user_web_token WHERE student_id=? 
+time=2019-02-22T21:04:55.429+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==> Parameters: 15207312(Long)
+time=2019-02-22T21:04:55.434+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`<==      Total: 1
+time=2019-02-22T21:04:55.531+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==>  Preparing: UPDATE user_web_token SET token=?,utime=? WHERE student_id=? 
+time=2019-02-22T21:04:55.532+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==> Parameters: f9436027-6e93-42e1-8430-e3d7bc55c0eb(String), 1550840695530(Long), 15207312(Long)
+time=2019-02-22T21:04:55.540+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`<==    Updates: 1
+time=2019-02-22T21:04:56.241+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==>  Preparing: SELECT relation_id AS relationId,operator_id AS operatorId,role_id AS roleId,deleted,ctime,utime FROM operator_role_relation WHERE operator_id = ? 
+time=2019-02-22T21:04:56.242+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==> Parameters: 15207312(Long)
+time=2019-02-22T21:04:56.247+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`<==      Total: 1
+time=2019-02-22T21:04:56.259+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==>  Preparing: SELECT relation_id AS relationId,role_id AS roleId,menu_id AS menuId,status,ctime,utime FROM role_menu_relation WHERE role_id = ? 
+time=2019-02-22T21:04:56.260+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==> Parameters: 1(Long)
+time=2019-02-22T21:04:56.269+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`<==      Total: 13
+time=2019-02-22T21:04:56.289+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==>  Preparing: SELECT menu_id AS menuId,title,href,icon,status,parent_id,ctime,utime FROM menu WHERE menu_id IN (?,?,?,?,?,?,?,?,?,?,?,?,?) 
+time=2019-02-22T21:04:56.291+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==> Parameters: 1(Long), 7(Long), 8(Long), 2(Long), 3(Long), 5(Long), 13(Long), 14(Long), 15(Long), 16(Long), 17(Long), 18(Long), 19(Long)
+time=2019-02-22T21:04:56.299+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`<==      Total: 13
+time=2019-02-22T21:04:56.679+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==>  Preparing: SELECT COUNT(1) FROM recruit_unit WHERE 1 = 1 
+time=2019-02-22T21:04:56.680+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==> Parameters: 
+time=2019-02-22T21:04:56.689+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==>  Preparing: SELECT unit_id AS unitId,unit_name AS unitName,industry,property,scale,unit_web AS unitWeb,contractor,mobile,status,deleted,ctime,utime FROM recruit_unit WHERE 1=1 ORDER BY ctime DESC LIMIT 0,20 
+time=2019-02-22T21:04:56.689+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==> Parameters: 
+time=2019-02-22T21:04:56.693+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`<==      Total: 1
+time=2019-02-22T21:26:47.727+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==>  Preparing: SELECT relation_id AS relationId,operator_id AS operatorId,role_id AS roleId,deleted,ctime,utime FROM operator_role_relation WHERE operator_id = ? 
+time=2019-02-22T21:26:47.761+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==> Parameters: 15207312(Long)
+time=2019-02-22T21:26:47.789+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`<==      Total: 1
+time=2019-02-22T21:26:47.804+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==>  Preparing: SELECT relation_id AS relationId,role_id AS roleId,menu_id AS menuId,status,ctime,utime FROM role_menu_relation WHERE role_id = ? 
+time=2019-02-22T21:26:47.804+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==> Parameters: 1(Long)
+time=2019-02-22T21:26:47.811+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`<==      Total: 13
+time=2019-02-22T21:26:47.830+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==>  Preparing: SELECT menu_id AS menuId,title,href,icon,status,parent_id,ctime,utime FROM menu WHERE menu_id IN (?,?,?,?,?,?,?,?,?,?,?,?,?) 
+time=2019-02-22T21:26:47.832+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==> Parameters: 1(Long), 7(Long), 8(Long), 2(Long), 3(Long), 5(Long), 13(Long), 14(Long), 15(Long), 16(Long), 17(Long), 18(Long), 19(Long)
+time=2019-02-22T21:26:47.840+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`<==      Total: 13
+time=2019-02-22T21:26:48.438+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==>  Preparing: SELECT COUNT(1) FROM recruit_unit WHERE 1 = 1 
+time=2019-02-22T21:26:48.439+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==> Parameters: 
+time=2019-02-22T21:26:48.445+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==>  Preparing: SELECT unit_id AS unitId,unit_name AS unitName,industry,property,scale,unit_web AS unitWeb,contractor,mobile,direct,company_phone AS companyPhone,status,deleted,ctime,utime FROM recruit_unit WHERE 1=1 ORDER BY ctime DESC LIMIT 0,20 
+time=2019-02-22T21:26:48.445+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==> Parameters: 
+time=2019-02-22T21:26:48.449+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`<==      Total: 1
+time=2019-02-22T21:29:07.026+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==>  Preparing: SELECT relation_id AS relationId,operator_id AS operatorId,role_id AS roleId,deleted,ctime,utime FROM operator_role_relation WHERE operator_id = ? 
+time=2019-02-22T21:29:07.059+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==> Parameters: 15207312(Long)
+time=2019-02-22T21:29:07.083+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`<==      Total: 1
+time=2019-02-22T21:29:07.097+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==>  Preparing: SELECT relation_id AS relationId,role_id AS roleId,menu_id AS menuId,status,ctime,utime FROM role_menu_relation WHERE role_id = ? 
+time=2019-02-22T21:29:07.097+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==> Parameters: 1(Long)
+time=2019-02-22T21:29:07.104+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`<==      Total: 13
+time=2019-02-22T21:29:07.121+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==>  Preparing: SELECT menu_id AS menuId,title,href,icon,status,parent_id,ctime,utime FROM menu WHERE menu_id IN (?,?,?,?,?,?,?,?,?,?,?,?,?) 
+time=2019-02-22T21:29:07.123+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==> Parameters: 1(Long), 7(Long), 8(Long), 2(Long), 3(Long), 5(Long), 13(Long), 14(Long), 15(Long), 16(Long), 17(Long), 18(Long), 19(Long)
+time=2019-02-22T21:29:07.131+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`<==      Total: 13
+time=2019-02-22T21:29:07.617+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==>  Preparing: SELECT COUNT(1) FROM recruit_unit WHERE 1 = 1 
+time=2019-02-22T21:29:07.617+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==> Parameters: 
+time=2019-02-22T21:29:07.623+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==>  Preparing: SELECT unit_id AS unitId,unit_name AS unitName,industry,property,scale,unit_web AS unitWeb,contractor,mobile,direct,company_phone AS companyPhone,status,deleted,ctime,utime FROM recruit_unit WHERE 1=1 ORDER BY ctime DESC LIMIT 0,20 
+time=2019-02-22T21:29:07.624+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==> Parameters: 
+time=2019-02-22T21:29:07.628+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`<==      Total: 1
+time=2019-02-22T21:30:11.973+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==>  Preparing: SELECT relation_id AS relationId,operator_id AS operatorId,role_id AS roleId,deleted,ctime,utime FROM operator_role_relation WHERE operator_id = ? 
+time=2019-02-22T21:30:12.007+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==> Parameters: 15207312(Long)
+time=2019-02-22T21:30:12.036+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`<==      Total: 1
+time=2019-02-22T21:30:12.048+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==>  Preparing: SELECT relation_id AS relationId,role_id AS roleId,menu_id AS menuId,status,ctime,utime FROM role_menu_relation WHERE role_id = ? 
+time=2019-02-22T21:30:12.049+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==> Parameters: 1(Long)
+time=2019-02-22T21:30:12.055+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`<==      Total: 13
+time=2019-02-22T21:30:12.073+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==>  Preparing: SELECT menu_id AS menuId,title,href,icon,status,parent_id,ctime,utime FROM menu WHERE menu_id IN (?,?,?,?,?,?,?,?,?,?,?,?,?) 
+time=2019-02-22T21:30:12.075+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==> Parameters: 1(Long), 7(Long), 8(Long), 2(Long), 3(Long), 5(Long), 13(Long), 14(Long), 15(Long), 16(Long), 17(Long), 18(Long), 19(Long)
+time=2019-02-22T21:30:12.082+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`<==      Total: 13
+time=2019-02-22T21:30:12.585+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==>  Preparing: SELECT COUNT(1) FROM recruit_unit WHERE 1 = 1 
+time=2019-02-22T21:30:12.586+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==> Parameters: 
+time=2019-02-22T21:30:12.592+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==>  Preparing: SELECT unit_id AS unitId,unit_name AS unitName,industry,property,scale,unit_web AS unitWeb,contractor,mobile,direct,company_phone AS companyPhone,status,deleted,ctime,utime FROM recruit_unit WHERE 1=1 ORDER BY ctime DESC LIMIT 0,20 
+time=2019-02-22T21:30:12.592+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==> Parameters: 
+time=2019-02-22T21:30:12.596+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`<==      Total: 1
+time=2019-02-22T21:30:20.914+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==>  Preparing: SELECT role_id AS roleId,role_name AS roleName,remark,deleted,ctime,utime FROM role 
+time=2019-02-22T21:30:20.915+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==> Parameters: 
+time=2019-02-22T21:30:20.922+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==>  Preparing: SELECT COUNT(1) FROM operator 
+time=2019-02-22T21:30:20.923+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==> Parameters: 
+time=2019-02-22T21:30:20.925+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`<==      Total: 5
+time=2019-02-22T21:30:20.927+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==>  Preparing: SELECT operator_id AS operatorId,operator_name AS operatorName,operator_status AS operatorStatus,deleted,mobile,pwd,role_id AS roleId,ctime,utime FROM operator LIMIT 0,10 
+time=2019-02-22T21:30:20.928+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==> Parameters: 
+time=2019-02-22T21:30:20.931+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`<==      Total: 2
+time=2019-02-22T21:30:20.934+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==>  Preparing: SELECT role_id AS roleId,role_name AS roleName,remark,deleted,ctime,utime FROM role WHERE role_id IN (?,?) 
+time=2019-02-22T21:30:20.936+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==> Parameters: 17(Long), 1(Long)
+time=2019-02-22T21:30:20.939+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`<==      Total: 2
+time=2019-02-22T21:30:24.119+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==>  Preparing: SELECT role_id AS roleId,role_name AS roleName,remark,deleted,ctime,utime FROM role 
+time=2019-02-22T21:30:24.119+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==> Parameters: 
+time=2019-02-22T21:30:24.123+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`<==      Total: 5
+time=2019-02-22T21:30:36.340+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==>  Preparing: SELECT role_id AS roleId,role_name AS roleName,remark,deleted,ctime,utime FROM role 
+time=2019-02-22T21:30:36.341+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==> Parameters: 
+time=2019-02-22T21:30:36.350+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`<==      Total: 5
+time=2019-02-22T21:30:38.303+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==>  Preparing: SELECT menu_id AS menuId,title,href,icon,status,parent_id,ctime,utime FROM menu WHERE parent_id = ? 
+time=2019-02-22T21:30:38.303+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==> Parameters: 0(Integer)
+time=2019-02-22T21:30:38.310+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`<==      Total: 5
+time=2019-02-22T21:30:38.329+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==>  Preparing: SELECT COUNT(1) FROM menu 
+time=2019-02-22T21:30:38.330+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==> Parameters: 
+time=2019-02-22T21:30:38.333+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==>  Preparing: SELECT menu_id AS menuId,title,href,icon,status,parent_id,ctime,utime FROM menu LIMIT 0,10 
+time=2019-02-22T21:30:38.334+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==> Parameters: 
+time=2019-02-22T21:30:38.338+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`<==      Total: 10
+time=2019-02-22T21:30:54.003+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==>  Preparing: SELECT operator_id AS operatorId,operator_name AS operatorName,operator_status AS operatorStatus,deleted,mobile,pwd,role_id AS roleId,ctime,utime FROM operator WHERE operator_id=? 
+time=2019-02-22T21:30:54.004+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==> Parameters: 15207312(Long)
+time=2019-02-22T21:30:54.007+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`<==      Total: 1
+time=2019-02-22T21:30:54.022+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==>  Preparing: SELECT student_id AS studentId,token,ctime,utime FROM user_web_token WHERE student_id=? 
+time=2019-02-22T21:30:54.023+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==> Parameters: 15207312(Long)
+time=2019-02-22T21:30:54.027+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`<==      Total: 1
+time=2019-02-22T21:30:54.069+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==>  Preparing: UPDATE user_web_token SET token=?,utime=? WHERE student_id=? 
+time=2019-02-22T21:30:54.070+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==> Parameters: 5ff99dff-cf37-4336-8c4c-b9ed5c9cbc9a(String), 1550842254068(Long), 15207312(Long)
+time=2019-02-22T21:30:54.073+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`<==    Updates: 1
+time=2019-02-22T21:30:54.383+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==>  Preparing: SELECT relation_id AS relationId,operator_id AS operatorId,role_id AS roleId,deleted,ctime,utime FROM operator_role_relation WHERE operator_id = ? 
+time=2019-02-22T21:30:54.384+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==> Parameters: 15207312(Long)
+time=2019-02-22T21:30:54.386+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`<==      Total: 1
+time=2019-02-22T21:30:54.389+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==>  Preparing: SELECT relation_id AS relationId,role_id AS roleId,menu_id AS menuId,status,ctime,utime FROM role_menu_relation WHERE role_id = ? 
+time=2019-02-22T21:30:54.390+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==> Parameters: 1(Long)
+time=2019-02-22T21:30:54.396+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`<==      Total: 13
+time=2019-02-22T21:30:54.400+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==>  Preparing: SELECT menu_id AS menuId,title,href,icon,status,parent_id,ctime,utime FROM menu WHERE menu_id IN (?,?,?,?,?,?,?,?,?,?,?,?,?) 
+time=2019-02-22T21:30:54.402+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==> Parameters: 1(Long), 7(Long), 8(Long), 2(Long), 3(Long), 5(Long), 13(Long), 14(Long), 15(Long), 16(Long), 17(Long), 18(Long), 19(Long)
+time=2019-02-22T21:30:54.408+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`<==      Total: 13
+time=2019-02-22T21:30:59.837+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==>  Preparing: SELECT role_id AS roleId,role_name AS roleName,remark,deleted,ctime,utime FROM role 
+time=2019-02-22T21:30:59.838+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==> Parameters: 
+time=2019-02-22T21:30:59.841+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`<==      Total: 5
+time=2019-02-22T21:31:21.685+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==>  Preparing: SELECT menu_id AS menuId,title,href,icon,status,parent_id,ctime,utime FROM menu WHERE parent_id = ? 
+time=2019-02-22T21:31:21.686+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==> Parameters: 0(Integer)
+time=2019-02-22T21:31:21.689+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`<==      Total: 5
+time=2019-02-22T21:31:21.723+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==>  Preparing: SELECT COUNT(1) FROM menu 
+time=2019-02-22T21:31:21.723+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==> Parameters: 
+time=2019-02-22T21:31:21.726+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==>  Preparing: SELECT menu_id AS menuId,title,href,icon,status,parent_id,ctime,utime FROM menu LIMIT 0,10 
+time=2019-02-22T21:31:21.727+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==> Parameters: 
+time=2019-02-22T21:31:21.732+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`<==      Total: 10
+time=2019-02-22T21:34:08.414+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==>  Preparing: SELECT COUNT(1) FROM recruit_unit WHERE 1 = 1 
+time=2019-02-22T21:34:08.415+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==> Parameters: 
+time=2019-02-22T21:34:08.418+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==>  Preparing: SELECT unit_id AS unitId,unit_name AS unitName,industry,property,scale,unit_web AS unitWeb,contractor,mobile,direct,company_phone AS companyPhone,status,deleted,ctime,utime FROM recruit_unit WHERE 1=1 ORDER BY ctime DESC LIMIT 0,20 
+time=2019-02-22T21:34:08.419+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==> Parameters: 
+time=2019-02-22T21:34:08.423+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`<==      Total: 1
+time=2019-02-22T21:35:22.768+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==>  Preparing: SELECT operator_id AS operatorId,operator_name AS operatorName,operator_status AS operatorStatus,deleted,mobile,pwd,role_id AS roleId,ctime,utime FROM operator WHERE operator_id=? 
+time=2019-02-22T21:35:22.768+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==> Parameters: 15207312(Long)
+time=2019-02-22T21:35:22.779+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`<==      Total: 1
+time=2019-02-22T21:35:22.782+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==>  Preparing: SELECT student_id AS studentId,token,ctime,utime FROM user_web_token WHERE student_id=? 
+time=2019-02-22T21:35:22.782+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==> Parameters: 15207312(Long)
+time=2019-02-22T21:35:22.784+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`<==      Total: 1
+time=2019-02-22T21:35:22.800+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==>  Preparing: UPDATE user_web_token SET token=?,utime=? WHERE student_id=? 
+time=2019-02-22T21:35:22.800+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==> Parameters: fb7bd9a6-803b-45d4-bbf2-2c8128e3e90b(String), 1550842522798(Long), 15207312(Long)
+time=2019-02-22T21:35:22.812+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`<==    Updates: 1
+time=2019-02-22T21:35:23.105+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==>  Preparing: SELECT relation_id AS relationId,operator_id AS operatorId,role_id AS roleId,deleted,ctime,utime FROM operator_role_relation WHERE operator_id = ? 
+time=2019-02-22T21:35:23.106+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==> Parameters: 15207312(Long)
+time=2019-02-22T21:35:23.110+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`<==      Total: 1
+time=2019-02-22T21:35:23.112+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==>  Preparing: SELECT relation_id AS relationId,role_id AS roleId,menu_id AS menuId,status,ctime,utime FROM role_menu_relation WHERE role_id = ? 
+time=2019-02-22T21:35:23.112+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==> Parameters: 1(Long)
+time=2019-02-22T21:35:23.117+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`<==      Total: 13
+time=2019-02-22T21:35:23.121+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==>  Preparing: SELECT menu_id AS menuId,title,href,icon,status,parent_id,ctime,utime FROM menu WHERE menu_id IN (?,?,?,?,?,?,?,?,?,?,?,?,?) 
+time=2019-02-22T21:35:23.122+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==> Parameters: 1(Long), 7(Long), 8(Long), 2(Long), 3(Long), 5(Long), 13(Long), 14(Long), 15(Long), 16(Long), 17(Long), 18(Long), 19(Long)
+time=2019-02-22T21:35:23.129+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`<==      Total: 13
+time=2019-02-22T21:35:27.805+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==>  Preparing: SELECT role_id AS roleId,role_name AS roleName,remark,deleted,ctime,utime FROM role 
+time=2019-02-22T21:35:27.806+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==> Parameters: 
+time=2019-02-22T21:35:27.809+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`<==      Total: 5
+time=2019-02-22T21:35:27.852+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==>  Preparing: SELECT COUNT(1) FROM operator 
+time=2019-02-22T21:35:27.852+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==> Parameters: 
+time=2019-02-22T21:35:27.858+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==>  Preparing: SELECT operator_id AS operatorId,operator_name AS operatorName,operator_status AS operatorStatus,deleted,mobile,pwd,role_id AS roleId,ctime,utime FROM operator LIMIT 0,10 
+time=2019-02-22T21:35:27.859+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==> Parameters: 
+time=2019-02-22T21:35:27.862+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`<==      Total: 2
+time=2019-02-22T21:35:27.865+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==>  Preparing: SELECT role_id AS roleId,role_name AS roleName,remark,deleted,ctime,utime FROM role WHERE role_id IN (?,?) 
+time=2019-02-22T21:35:27.866+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==> Parameters: 17(Long), 1(Long)
+time=2019-02-22T21:35:27.869+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`<==      Total: 2
+time=2019-02-22T21:35:38.378+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==>  Preparing: SELECT COUNT(1) FROM recruit_unit WHERE 1 = 1 
+time=2019-02-22T21:35:38.379+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==> Parameters: 
+time=2019-02-22T21:35:38.383+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==>  Preparing: SELECT unit_id AS unitId,unit_name AS unitName,industry,property,scale,unit_web AS unitWeb,contractor,mobile,direct,company_phone AS companyPhone,status,deleted,ctime,utime FROM recruit_unit WHERE 1=1 ORDER BY ctime DESC LIMIT 0,20 
+time=2019-02-22T21:35:38.383+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==> Parameters: 
+time=2019-02-22T21:35:38.387+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`<==      Total: 1
+time=2019-02-22T21:36:38.515+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==>  Preparing: SELECT operator_id AS operatorId,operator_name AS operatorName,operator_status AS operatorStatus,deleted,mobile,pwd,role_id AS roleId,ctime,utime FROM operator WHERE operator_id=? 
+time=2019-02-22T21:36:38.516+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==> Parameters: 15207312(Long)
+time=2019-02-22T21:36:38.527+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`<==      Total: 1
+time=2019-02-22T21:36:38.528+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==>  Preparing: SELECT student_id AS studentId,token,ctime,utime FROM user_web_token WHERE student_id=? 
+time=2019-02-22T21:36:38.529+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==> Parameters: 15207312(Long)
+time=2019-02-22T21:36:38.535+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`<==      Total: 1
+time=2019-02-22T21:36:38.545+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==>  Preparing: UPDATE user_web_token SET token=?,utime=? WHERE student_id=? 
+time=2019-02-22T21:36:38.545+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==> Parameters: 3fc8bf13-c0e5-4628-a52f-22e8cf503bfb(String), 1550842598533(Long), 15207312(Long)
+time=2019-02-22T21:36:38.552+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`<==    Updates: 1
+time=2019-02-22T21:36:38.936+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==>  Preparing: SELECT relation_id AS relationId,operator_id AS operatorId,role_id AS roleId,deleted,ctime,utime FROM operator_role_relation WHERE operator_id = ? 
+time=2019-02-22T21:36:38.936+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==> Parameters: 15207312(Long)
+time=2019-02-22T21:36:38.939+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`<==      Total: 1
+time=2019-02-22T21:36:38.941+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==>  Preparing: SELECT relation_id AS relationId,role_id AS roleId,menu_id AS menuId,status,ctime,utime FROM role_menu_relation WHERE role_id = ? 
+time=2019-02-22T21:36:38.941+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==> Parameters: 1(Long)
+time=2019-02-22T21:36:38.945+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`<==      Total: 13
+time=2019-02-22T21:36:38.948+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==>  Preparing: SELECT menu_id AS menuId,title,href,icon,status,parent_id,ctime,utime FROM menu WHERE menu_id IN (?,?,?,?,?,?,?,?,?,?,?,?,?) 
+time=2019-02-22T21:36:38.949+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==> Parameters: 1(Long), 7(Long), 8(Long), 2(Long), 3(Long), 5(Long), 13(Long), 14(Long), 15(Long), 16(Long), 17(Long), 18(Long), 19(Long)
+time=2019-02-22T21:36:38.954+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`<==      Total: 13
+time=2019-02-22T21:36:43.431+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==>  Preparing: SELECT role_id AS roleId,role_name AS roleName,remark,deleted,ctime,utime FROM role 
+time=2019-02-22T21:36:43.432+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==> Parameters: 
+time=2019-02-22T21:36:43.437+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`<==      Total: 5
+time=2019-02-22T21:36:43.480+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==>  Preparing: SELECT COUNT(1) FROM operator 
+time=2019-02-22T21:36:43.480+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==> Parameters: 
+time=2019-02-22T21:36:43.483+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==>  Preparing: SELECT operator_id AS operatorId,operator_name AS operatorName,operator_status AS operatorStatus,deleted,mobile,pwd,role_id AS roleId,ctime,utime FROM operator LIMIT 0,10 
+time=2019-02-22T21:36:43.484+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==> Parameters: 
+time=2019-02-22T21:36:43.487+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`<==      Total: 2
+time=2019-02-22T21:36:43.490+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==>  Preparing: SELECT role_id AS roleId,role_name AS roleName,remark,deleted,ctime,utime FROM role WHERE role_id IN (?,?) 
+time=2019-02-22T21:36:43.516+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==> Parameters: 17(Long), 1(Long)
+time=2019-02-22T21:36:43.520+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`<==      Total: 2
+time=2019-02-22T21:38:13.598+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==>  Preparing: SELECT relation_id AS relationId,operator_id AS operatorId,role_id AS roleId,deleted,ctime,utime FROM operator_role_relation WHERE operator_id = ? 
+time=2019-02-22T21:38:13.659+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==> Parameters: 15207312(Long)
+time=2019-02-22T21:38:13.686+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`<==      Total: 1
+time=2019-02-22T21:38:13.701+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==>  Preparing: SELECT relation_id AS relationId,role_id AS roleId,menu_id AS menuId,status,ctime,utime FROM role_menu_relation WHERE role_id = ? 
+time=2019-02-22T21:38:13.701+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==> Parameters: 1(Long)
+time=2019-02-22T21:38:13.708+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`<==      Total: 13
+time=2019-02-22T21:38:13.726+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==>  Preparing: SELECT menu_id AS menuId,title,href,icon,status,parent_id,ctime,utime FROM menu WHERE menu_id IN (?,?,?,?,?,?,?,?,?,?,?,?,?) 
+time=2019-02-22T21:38:13.728+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==> Parameters: 1(Long), 7(Long), 8(Long), 2(Long), 3(Long), 5(Long), 13(Long), 14(Long), 15(Long), 16(Long), 17(Long), 18(Long), 19(Long)
+time=2019-02-22T21:38:13.735+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`<==      Total: 13
+time=2019-02-22T21:38:14.420+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==>  Preparing: SELECT role_id AS roleId,role_name AS roleName,remark,deleted,ctime,utime FROM role 
+time=2019-02-22T21:38:14.421+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==> Parameters: 
+time=2019-02-22T21:38:14.426+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`<==      Total: 5
+time=2019-02-22T21:38:14.496+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==>  Preparing: SELECT COUNT(1) FROM operator 
+time=2019-02-22T21:38:14.498+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==> Parameters: 
+time=2019-02-22T21:38:14.508+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==>  Preparing: SELECT operator_id AS operatorId,operator_name AS operatorName,operator_status AS operatorStatus,deleted,mobile,pwd,role_id AS roleId,ctime,utime FROM operator LIMIT 0,10 
+time=2019-02-22T21:38:14.508+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==> Parameters: 
+time=2019-02-22T21:38:14.512+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`<==      Total: 2
+time=2019-02-22T21:38:14.515+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==>  Preparing: SELECT role_id AS roleId,role_name AS roleName,remark,deleted,ctime,utime FROM role WHERE role_id IN (?,?) 
+time=2019-02-22T21:38:14.516+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==> Parameters: 17(Long), 1(Long)
+time=2019-02-22T21:38:14.519+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`<==      Total: 2
+time=2019-02-22T21:38:22.721+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==>  Preparing: SELECT COUNT(1) FROM recruit_unit WHERE 1 = 1 
+time=2019-02-22T21:38:22.722+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==> Parameters: 
+time=2019-02-22T21:38:22.727+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==>  Preparing: SELECT unit_id AS unitId,unit_name AS unitName,industry,property,scale,unit_web AS unitWeb,contractor,mobile,direct,company_phone AS companyPhone,status,deleted,ctime,utime FROM recruit_unit WHERE 1=1 ORDER BY ctime DESC LIMIT 0,20 
+time=2019-02-22T21:38:22.727+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==> Parameters: 
+time=2019-02-22T21:38:22.731+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`<==      Total: 1
+time=2019-02-22T21:39:11.886+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==>  Preparing: SELECT operator_id AS operatorId,operator_name AS operatorName,operator_status AS operatorStatus,deleted,mobile,pwd,role_id AS roleId,ctime,utime FROM operator WHERE operator_id=? 
+time=2019-02-22T21:39:12.180+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==> Parameters: 15207312(Long)
+time=2019-02-22T21:39:12.185+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`<==      Total: 1
+time=2019-02-22T21:39:12.224+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==>  Preparing: SELECT student_id AS studentId,token,ctime,utime FROM user_web_token WHERE student_id=? 
+time=2019-02-22T21:39:12.225+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==> Parameters: 15207312(Long)
+time=2019-02-22T21:39:12.229+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`<==      Total: 1
+time=2019-02-22T21:39:12.262+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==>  Preparing: UPDATE user_web_token SET token=?,utime=? WHERE student_id=? 
+time=2019-02-22T21:39:12.263+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==> Parameters: a2c2d30a-390b-499e-b7c0-392a1600399f(String), 1550842752261(Long), 15207312(Long)
+time=2019-02-22T21:39:12.270+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`<==    Updates: 1
+time=2019-02-22T21:39:12.631+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==>  Preparing: SELECT relation_id AS relationId,operator_id AS operatorId,role_id AS roleId,deleted,ctime,utime FROM operator_role_relation WHERE operator_id = ? 
+time=2019-02-22T21:39:12.632+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==> Parameters: 15207312(Long)
+time=2019-02-22T21:39:12.635+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`<==      Total: 1
+time=2019-02-22T21:39:12.637+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==>  Preparing: SELECT relation_id AS relationId,role_id AS roleId,menu_id AS menuId,status,ctime,utime FROM role_menu_relation WHERE role_id = ? 
+time=2019-02-22T21:39:12.637+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==> Parameters: 1(Long)
+time=2019-02-22T21:39:12.644+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`<==      Total: 13
+time=2019-02-22T21:39:12.647+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==>  Preparing: SELECT menu_id AS menuId,title,href,icon,status,parent_id,ctime,utime FROM menu WHERE menu_id IN (?,?,?,?,?,?,?,?,?,?,?,?,?) 
+time=2019-02-22T21:39:12.649+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==> Parameters: 1(Long), 7(Long), 8(Long), 2(Long), 3(Long), 5(Long), 13(Long), 14(Long), 15(Long), 16(Long), 17(Long), 18(Long), 19(Long)
+time=2019-02-22T21:39:12.659+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`<==      Total: 13
+time=2019-02-22T21:39:13.143+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==>  Preparing: SELECT role_id AS roleId,role_name AS roleName,remark,deleted,ctime,utime FROM role 
+time=2019-02-22T21:39:13.146+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==> Parameters: 
+time=2019-02-22T21:39:13.150+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`<==      Total: 5
+time=2019-02-22T21:39:13.194+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==>  Preparing: SELECT COUNT(1) FROM operator 
+time=2019-02-22T21:39:13.195+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==> Parameters: 
+time=2019-02-22T21:39:13.202+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==>  Preparing: SELECT operator_id AS operatorId,operator_name AS operatorName,operator_status AS operatorStatus,deleted,mobile,pwd,role_id AS roleId,ctime,utime FROM operator LIMIT 0,10 
+time=2019-02-22T21:39:13.202+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==> Parameters: 
+time=2019-02-22T21:39:13.206+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`<==      Total: 2
+time=2019-02-22T21:39:13.209+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==>  Preparing: SELECT role_id AS roleId,role_name AS roleName,remark,deleted,ctime,utime FROM role WHERE role_id IN (?,?) 
+time=2019-02-22T21:39:13.210+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==> Parameters: 17(Long), 1(Long)
+time=2019-02-22T21:39:13.218+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`<==      Total: 2
+time=2019-02-22T21:39:13.286+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==>  Preparing: SELECT COUNT(1) FROM recruit_unit WHERE 1 = 1 
+time=2019-02-22T21:39:13.286+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==> Parameters: 
+time=2019-02-22T21:39:13.289+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==>  Preparing: SELECT unit_id AS unitId,unit_name AS unitName,industry,property,scale,unit_web AS unitWeb,contractor,mobile,direct,company_phone AS companyPhone,status,deleted,ctime,utime FROM recruit_unit WHERE 1=1 ORDER BY ctime DESC LIMIT 0,20 
+time=2019-02-22T21:39:13.290+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==> Parameters: 
+time=2019-02-22T21:39:13.296+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`<==      Total: 1
+time=2019-02-22T21:40:25.707+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==>  Preparing: SELECT operator_id AS operatorId,operator_name AS operatorName,operator_status AS operatorStatus,deleted,mobile,pwd,role_id AS roleId,ctime,utime FROM operator WHERE operator_id=? 
+time=2019-02-22T21:40:25.755+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==> Parameters: 15207312(Long)
+time=2019-02-22T21:40:25.790+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`<==      Total: 1
+time=2019-02-22T21:40:25.817+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==>  Preparing: SELECT student_id AS studentId,token,ctime,utime FROM user_web_token WHERE student_id=? 
+time=2019-02-22T21:40:25.818+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==> Parameters: 15207312(Long)
+time=2019-02-22T21:40:25.820+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`<==      Total: 1
+time=2019-02-22T21:40:25.918+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==>  Preparing: UPDATE user_web_token SET token=?,utime=? WHERE student_id=? 
+time=2019-02-22T21:40:25.920+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==> Parameters: 8456c088-346b-47da-a808-3c8749d18f5e(String), 1550842825916(Long), 15207312(Long)
+time=2019-02-22T21:40:25.923+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`<==    Updates: 1
+time=2019-02-22T21:40:26.539+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==>  Preparing: SELECT relation_id AS relationId,operator_id AS operatorId,role_id AS roleId,deleted,ctime,utime FROM operator_role_relation WHERE operator_id = ? 
+time=2019-02-22T21:40:26.539+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==> Parameters: 15207312(Long)
+time=2019-02-22T21:40:26.542+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`<==      Total: 1
+time=2019-02-22T21:40:26.555+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==>  Preparing: SELECT relation_id AS relationId,role_id AS roleId,menu_id AS menuId,status,ctime,utime FROM role_menu_relation WHERE role_id = ? 
+time=2019-02-22T21:40:26.555+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==> Parameters: 1(Long)
+time=2019-02-22T21:40:26.563+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`<==      Total: 13
+time=2019-02-22T21:40:26.580+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==>  Preparing: SELECT menu_id AS menuId,title,href,icon,status,parent_id,ctime,utime FROM menu WHERE menu_id IN (?,?,?,?,?,?,?,?,?,?,?,?,?) 
+time=2019-02-22T21:40:26.582+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==> Parameters: 1(Long), 7(Long), 8(Long), 2(Long), 3(Long), 5(Long), 13(Long), 14(Long), 15(Long), 16(Long), 17(Long), 18(Long), 19(Long)
+time=2019-02-22T21:40:26.590+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`<==      Total: 13
+time=2019-02-22T21:40:26.940+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==>  Preparing: SELECT COUNT(1) FROM recruit_unit WHERE 1 = 1 
+time=2019-02-22T21:40:26.941+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==> Parameters: 
+time=2019-02-22T21:40:26.947+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==>  Preparing: SELECT unit_id AS unitId,unit_name AS unitName,industry,property,scale,unit_web AS unitWeb,contractor,mobile,direct,company_phone AS companyPhone,status,deleted,ctime,utime FROM recruit_unit WHERE 1=1 ORDER BY ctime DESC LIMIT 0,20 
+time=2019-02-22T21:40:26.947+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==> Parameters: 
+time=2019-02-22T21:40:26.950+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`<==      Total: 1
+time=2019-02-22T21:40:50.597+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==>  Preparing: SELECT operator_id AS operatorId,operator_name AS operatorName,operator_status AS operatorStatus,deleted,mobile,pwd,role_id AS roleId,ctime,utime FROM operator WHERE operator_id=? 
+time=2019-02-22T21:40:50.598+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==> Parameters: 15207312(Long)
+time=2019-02-22T21:40:50.603+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`<==      Total: 1
+time=2019-02-22T21:40:50.604+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==>  Preparing: SELECT student_id AS studentId,token,ctime,utime FROM user_web_token WHERE student_id=? 
+time=2019-02-22T21:40:50.606+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==> Parameters: 15207312(Long)
+time=2019-02-22T21:40:50.614+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`<==      Total: 1
+time=2019-02-22T21:40:50.622+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==>  Preparing: UPDATE user_web_token SET token=?,utime=? WHERE student_id=? 
+time=2019-02-22T21:40:50.624+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==> Parameters: 3973569c-608a-46ff-a888-8387d610f0be(String), 1550842850621(Long), 15207312(Long)
+time=2019-02-22T21:40:50.628+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`<==    Updates: 1
+time=2019-02-22T21:40:50.896+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==>  Preparing: SELECT relation_id AS relationId,operator_id AS operatorId,role_id AS roleId,deleted,ctime,utime FROM operator_role_relation WHERE operator_id = ? 
+time=2019-02-22T21:40:50.896+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==> Parameters: 15207312(Long)
+time=2019-02-22T21:40:50.899+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`<==      Total: 1
+time=2019-02-22T21:40:50.901+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==>  Preparing: SELECT relation_id AS relationId,role_id AS roleId,menu_id AS menuId,status,ctime,utime FROM role_menu_relation WHERE role_id = ? 
+time=2019-02-22T21:40:50.902+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==> Parameters: 1(Long)
+time=2019-02-22T21:40:50.909+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`<==      Total: 13
+time=2019-02-22T21:40:50.912+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==>  Preparing: SELECT menu_id AS menuId,title,href,icon,status,parent_id,ctime,utime FROM menu WHERE menu_id IN (?,?,?,?,?,?,?,?,?,?,?,?,?) 
+time=2019-02-22T21:40:50.913+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==> Parameters: 1(Long), 7(Long), 8(Long), 2(Long), 3(Long), 5(Long), 13(Long), 14(Long), 15(Long), 16(Long), 17(Long), 18(Long), 19(Long)
+time=2019-02-22T21:40:50.921+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`<==      Total: 13
+time=2019-02-22T21:40:51.374+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==>  Preparing: SELECT role_id AS roleId,role_name AS roleName,remark,deleted,ctime,utime FROM role 
+time=2019-02-22T21:40:51.379+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==> Parameters: 
+time=2019-02-22T21:40:51.382+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`<==      Total: 5
+time=2019-02-22T21:40:51.413+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==>  Preparing: SELECT COUNT(1) FROM operator 
+time=2019-02-22T21:40:51.419+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==> Parameters: 
+time=2019-02-22T21:40:51.424+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==>  Preparing: SELECT operator_id AS operatorId,operator_name AS operatorName,operator_status AS operatorStatus,deleted,mobile,pwd,role_id AS roleId,ctime,utime FROM operator LIMIT 0,10 
+time=2019-02-22T21:40:51.425+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==> Parameters: 
+time=2019-02-22T21:40:51.429+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`<==      Total: 2
+time=2019-02-22T21:40:51.433+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==>  Preparing: SELECT role_id AS roleId,role_name AS roleName,remark,deleted,ctime,utime FROM role WHERE role_id IN (?,?) 
+time=2019-02-22T21:40:51.434+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==> Parameters: 17(Long), 1(Long)
+time=2019-02-22T21:40:51.439+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`<==      Total: 2
+time=2019-02-22T21:40:51.483+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==>  Preparing: SELECT COUNT(1) FROM recruit_unit WHERE 1 = 1 
+time=2019-02-22T21:40:51.483+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==> Parameters: 
+time=2019-02-22T21:40:51.486+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==>  Preparing: SELECT unit_id AS unitId,unit_name AS unitName,industry,property,scale,unit_web AS unitWeb,contractor,mobile,direct,company_phone AS companyPhone,status,deleted,ctime,utime FROM recruit_unit WHERE 1=1 ORDER BY ctime DESC LIMIT 0,20 
+time=2019-02-22T21:40:51.486+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==> Parameters: 
+time=2019-02-22T21:40:51.490+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`<==      Total: 1
+time=2019-02-22T21:42:46.986+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==>  Preparing: SELECT operator_id AS operatorId,operator_name AS operatorName,operator_status AS operatorStatus,deleted,mobile,pwd,role_id AS roleId,ctime,utime FROM operator WHERE operator_id=? 
+time=2019-02-22T21:42:47.024+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==> Parameters: 15207312(Long)
+time=2019-02-22T21:42:47.054+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`<==      Total: 1
+time=2019-02-22T21:42:47.145+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==>  Preparing: SELECT student_id AS studentId,token,ctime,utime FROM user_web_token WHERE student_id=? 
+time=2019-02-22T21:42:47.146+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==> Parameters: 15207312(Long)
+time=2019-02-22T21:42:47.150+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`<==      Total: 1
+time=2019-02-22T21:42:47.242+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==>  Preparing: UPDATE user_web_token SET token=?,utime=? WHERE student_id=? 
+time=2019-02-22T21:42:47.243+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==> Parameters: 0d563290-4e1e-4465-89a8-5cf268642adc(String), 1550842967241(Long), 15207312(Long)
+time=2019-02-22T21:42:47.251+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`<==    Updates: 1
+time=2019-02-22T21:42:47.782+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==>  Preparing: SELECT relation_id AS relationId,operator_id AS operatorId,role_id AS roleId,deleted,ctime,utime FROM operator_role_relation WHERE operator_id = ? 
+time=2019-02-22T21:42:47.782+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==> Parameters: 15207312(Long)
+time=2019-02-22T21:42:47.785+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`<==      Total: 1
+time=2019-02-22T21:42:47.796+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==>  Preparing: SELECT relation_id AS relationId,role_id AS roleId,menu_id AS menuId,status,ctime,utime FROM role_menu_relation WHERE role_id = ? 
+time=2019-02-22T21:42:47.797+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==> Parameters: 1(Long)
+time=2019-02-22T21:42:47.804+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`<==      Total: 13
+time=2019-02-22T21:42:47.821+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==>  Preparing: SELECT menu_id AS menuId,title,href,icon,status,parent_id,ctime,utime FROM menu WHERE menu_id IN (?,?,?,?,?,?,?,?,?,?,?,?,?) 
+time=2019-02-22T21:42:47.823+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==> Parameters: 1(Long), 7(Long), 8(Long), 2(Long), 3(Long), 5(Long), 13(Long), 14(Long), 15(Long), 16(Long), 17(Long), 18(Long), 19(Long)
+time=2019-02-22T21:42:47.830+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`<==      Total: 13
+time=2019-02-22T21:42:48.315+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==>  Preparing: SELECT role_id AS roleId,role_name AS roleName,remark,deleted,ctime,utime FROM role 
+time=2019-02-22T21:42:48.316+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==> Parameters: 
+time=2019-02-22T21:42:48.321+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`<==      Total: 5
+time=2019-02-22T21:42:48.440+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==>  Preparing: SELECT COUNT(1) FROM operator 
+time=2019-02-22T21:42:48.440+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==> Parameters: 
+time=2019-02-22T21:42:48.445+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==>  Preparing: SELECT COUNT(1) FROM recruit_unit WHERE 1 = 1 
+time=2019-02-22T21:42:48.447+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==>  Preparing: SELECT operator_id AS operatorId,operator_name AS operatorName,operator_status AS operatorStatus,deleted,mobile,pwd,role_id AS roleId,ctime,utime FROM operator LIMIT 0,10 
+time=2019-02-22T21:42:48.447+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==> Parameters: 
+time=2019-02-22T21:42:48.447+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==> Parameters: 
+time=2019-02-22T21:42:48.451+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==>  Preparing: SELECT unit_id AS unitId,unit_name AS unitName,industry,property,scale,unit_web AS unitWeb,contractor,mobile,direct,company_phone AS companyPhone,status,deleted,ctime,utime FROM recruit_unit WHERE 1=1 ORDER BY ctime DESC LIMIT 0,20 
+time=2019-02-22T21:42:48.452+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`<==      Total: 2
+time=2019-02-22T21:42:48.452+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==> Parameters: 
+time=2019-02-22T21:42:48.457+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`<==      Total: 1
+time=2019-02-22T21:42:48.457+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==>  Preparing: SELECT role_id AS roleId,role_name AS roleName,remark,deleted,ctime,utime FROM role WHERE role_id IN (?,?) 
+time=2019-02-22T21:42:48.457+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==> Parameters: 17(Long), 1(Long)
+time=2019-02-22T21:42:48.460+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`<==      Total: 2
+time=2019-02-22T21:44:33.529+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==>  Preparing: SELECT operator_id AS operatorId,operator_name AS operatorName,operator_status AS operatorStatus,deleted,mobile,pwd,role_id AS roleId,ctime,utime FROM operator WHERE operator_id=? 
+time=2019-02-22T21:44:33.530+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==> Parameters: 15207312(Long)
+time=2019-02-22T21:44:33.531+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`<==      Total: 1
+time=2019-02-22T21:44:33.533+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==>  Preparing: SELECT student_id AS studentId,token,ctime,utime FROM user_web_token WHERE student_id=? 
+time=2019-02-22T21:44:33.533+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==> Parameters: 15207312(Long)
+time=2019-02-22T21:44:33.537+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`<==      Total: 1
+time=2019-02-22T21:44:33.545+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==>  Preparing: UPDATE user_web_token SET token=?,utime=? WHERE student_id=? 
+time=2019-02-22T21:44:33.546+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==> Parameters: ba2be82f-ced8-4308-b226-29eaa27c35cc(String), 1550843073543(Long), 15207312(Long)
+time=2019-02-22T21:44:33.551+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`<==    Updates: 1
+time=2019-02-22T21:44:33.726+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==>  Preparing: SELECT relation_id AS relationId,operator_id AS operatorId,role_id AS roleId,deleted,ctime,utime FROM operator_role_relation WHERE operator_id = ? 
+time=2019-02-22T21:44:33.728+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==> Parameters: 15207312(Long)
+time=2019-02-22T21:44:33.730+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`<==      Total: 1
+time=2019-02-22T21:44:33.733+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==>  Preparing: SELECT relation_id AS relationId,role_id AS roleId,menu_id AS menuId,status,ctime,utime FROM role_menu_relation WHERE role_id = ? 
+time=2019-02-22T21:44:33.734+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==> Parameters: 1(Long)
+time=2019-02-22T21:44:33.738+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`<==      Total: 13
+time=2019-02-22T21:44:33.743+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==>  Preparing: SELECT menu_id AS menuId,title,href,icon,status,parent_id,ctime,utime FROM menu WHERE menu_id IN (?,?,?,?,?,?,?,?,?,?,?,?,?) 
+time=2019-02-22T21:44:33.744+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==> Parameters: 1(Long), 7(Long), 8(Long), 2(Long), 3(Long), 5(Long), 13(Long), 14(Long), 15(Long), 16(Long), 17(Long), 18(Long), 19(Long)
+time=2019-02-22T21:44:33.751+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`<==      Total: 13
+time=2019-02-22T21:44:34.049+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==>  Preparing: SELECT COUNT(1) FROM recruit_unit WHERE 1 = 1 
+time=2019-02-22T21:44:34.050+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==> Parameters: 
+time=2019-02-22T21:44:34.053+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==>  Preparing: SELECT unit_id AS unitId,unit_name AS unitName,industry,property,scale,unit_web AS unitWeb,contractor,mobile,direct,company_phone AS companyPhone,status,deleted,ctime,utime FROM recruit_unit WHERE 1=1 ORDER BY ctime DESC LIMIT 0,20 
+time=2019-02-22T21:44:34.054+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==> Parameters: 
+time=2019-02-22T21:44:34.057+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`<==      Total: 1
+time=2019-02-22T21:51:48.786+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==>  Preparing: SELECT relation_id AS relationId,operator_id AS operatorId,role_id AS roleId,deleted,ctime,utime FROM operator_role_relation WHERE operator_id = ? 
+time=2019-02-22T21:51:48.822+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==> Parameters: 15207312(Long)
+time=2019-02-22T21:51:48.849+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`<==      Total: 1
+time=2019-02-22T21:51:48.862+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==>  Preparing: SELECT relation_id AS relationId,role_id AS roleId,menu_id AS menuId,status,ctime,utime FROM role_menu_relation WHERE role_id = ? 
+time=2019-02-22T21:51:48.863+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==> Parameters: 1(Long)
+time=2019-02-22T21:51:48.871+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`<==      Total: 13
+time=2019-02-22T21:51:48.891+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==>  Preparing: SELECT menu_id AS menuId,title,href,icon,status,parent_id,ctime,utime FROM menu WHERE menu_id IN (?,?,?,?,?,?,?,?,?,?,?,?,?) 
+time=2019-02-22T21:51:48.893+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==> Parameters: 1(Long), 7(Long), 8(Long), 2(Long), 3(Long), 5(Long), 13(Long), 14(Long), 15(Long), 16(Long), 17(Long), 18(Long), 19(Long)
+time=2019-02-22T21:51:48.903+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`<==      Total: 13
+time=2019-02-22T21:51:49.425+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==>  Preparing: SELECT COUNT(1) FROM recruit_unit WHERE 1 = 1 
+time=2019-02-22T21:51:49.425+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==> Parameters: 
+time=2019-02-22T21:51:49.431+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==>  Preparing: SELECT unit_id AS unitId,unit_name AS unitName,industry,property,scale,unit_web AS unitWeb,contractor,mobile,direct,company_phone AS companyPhone,status,deleted,ctime,utime FROM recruit_unit WHERE 1=1 ORDER BY ctime DESC LIMIT 0,20 
+time=2019-02-22T21:51:49.431+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==> Parameters: 
+time=2019-02-22T21:51:49.435+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`<==      Total: 1
+time=2019-02-22T22:08:56.467+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==>  Preparing: SELECT relation_id AS relationId,operator_id AS operatorId,role_id AS roleId,deleted,ctime,utime FROM operator_role_relation WHERE operator_id = ? 
+time=2019-02-22T22:08:56.469+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==> Parameters: 15207312(Long)
+time=2019-02-22T22:08:56.474+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`<==      Total: 1
+time=2019-02-22T22:08:56.477+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==>  Preparing: SELECT relation_id AS relationId,role_id AS roleId,menu_id AS menuId,status,ctime,utime FROM role_menu_relation WHERE role_id = ? 
+time=2019-02-22T22:08:56.477+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==> Parameters: 1(Long)
+time=2019-02-22T22:08:56.485+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`<==      Total: 13
+time=2019-02-22T22:08:56.488+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==>  Preparing: SELECT menu_id AS menuId,title,href,icon,status,parent_id,ctime,utime FROM menu WHERE menu_id IN (?,?,?,?,?,?,?,?,?,?,?,?,?) 
+time=2019-02-22T22:08:56.489+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==> Parameters: 1(Long), 7(Long), 8(Long), 2(Long), 3(Long), 5(Long), 13(Long), 14(Long), 15(Long), 16(Long), 17(Long), 18(Long), 19(Long)
+time=2019-02-22T22:08:56.500+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`<==      Total: 13
+time=2019-02-22T22:08:56.771+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==>  Preparing: SELECT COUNT(1) FROM recruit_unit WHERE 1 = 1 
+time=2019-02-22T22:08:56.772+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==> Parameters: 
+time=2019-02-22T22:08:56.777+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==>  Preparing: SELECT unit_id AS unitId,unit_name AS unitName,industry,property,scale,unit_web AS unitWeb,contractor,mobile,direct,company_phone AS companyPhone,status,deleted,ctime,utime FROM recruit_unit WHERE 1=1 ORDER BY ctime DESC LIMIT 0,20 
+time=2019-02-22T22:08:56.778+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==> Parameters: 
+time=2019-02-22T22:08:56.781+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`<==      Total: 1
+time=2019-02-22T22:15:55.750+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==>  Preparing: SELECT relation_id AS relationId,operator_id AS operatorId,role_id AS roleId,deleted,ctime,utime FROM operator_role_relation WHERE operator_id = ? 
+time=2019-02-22T22:15:55.788+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==> Parameters: 15207312(Long)
+time=2019-02-22T22:15:55.811+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`<==      Total: 1
+time=2019-02-22T22:15:55.826+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==>  Preparing: SELECT relation_id AS relationId,role_id AS roleId,menu_id AS menuId,status,ctime,utime FROM role_menu_relation WHERE role_id = ? 
+time=2019-02-22T22:15:55.826+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==> Parameters: 1(Long)
+time=2019-02-22T22:15:55.833+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`<==      Total: 13
+time=2019-02-22T22:15:55.850+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==>  Preparing: SELECT menu_id AS menuId,title,href,icon,status,parent_id,ctime,utime FROM menu WHERE menu_id IN (?,?,?,?,?,?,?,?,?,?,?,?,?) 
+time=2019-02-22T22:15:55.852+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==> Parameters: 1(Long), 7(Long), 8(Long), 2(Long), 3(Long), 5(Long), 13(Long), 14(Long), 15(Long), 16(Long), 17(Long), 18(Long), 19(Long)
+time=2019-02-22T22:15:55.861+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`<==      Total: 13
+time=2019-02-22T22:15:56.399+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==>  Preparing: SELECT COUNT(1) FROM recruit_unit WHERE 1 = 1 
+time=2019-02-22T22:15:56.399+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==> Parameters: 
+time=2019-02-22T22:15:56.405+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==>  Preparing: SELECT unit_id AS unitId,unit_name AS unitName,industry,property,scale,unit_web AS unitWeb,contractor,mobile,direct,company_phone AS companyPhone,status,deleted,ctime,utime FROM recruit_unit WHERE 1=1 ORDER BY ctime DESC LIMIT 0,20 
+time=2019-02-22T22:15:56.406+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==> Parameters: 
+time=2019-02-22T22:15:56.410+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`<==      Total: 1
+time=2019-02-22T22:17:00.397+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==>  Preparing: SELECT operator_id AS operatorId,operator_name AS operatorName,operator_status AS operatorStatus,deleted,mobile,pwd,role_id AS roleId,ctime,utime FROM operator WHERE operator_id=? 
+time=2019-02-22T22:17:00.399+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==> Parameters: 15207312(Long)
+time=2019-02-22T22:17:00.404+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`<==      Total: 1
+time=2019-02-22T22:17:00.492+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==>  Preparing: SELECT student_id AS studentId,token,ctime,utime FROM user_web_token WHERE student_id=? 
+time=2019-02-22T22:17:00.494+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==> Parameters: 15207312(Long)
+time=2019-02-22T22:17:00.499+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`<==      Total: 1
+time=2019-02-22T22:17:00.541+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==>  Preparing: UPDATE user_web_token SET token=?,utime=? WHERE student_id=? 
+time=2019-02-22T22:17:00.542+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==> Parameters: 0df47bf8-ca3c-4775-b6bf-967ee0d3de2b(String), 1550845020539(Long), 15207312(Long)
+time=2019-02-22T22:17:00.547+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`<==    Updates: 1
+time=2019-02-22T22:17:01.032+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==>  Preparing: SELECT relation_id AS relationId,operator_id AS operatorId,role_id AS roleId,deleted,ctime,utime FROM operator_role_relation WHERE operator_id = ? 
+time=2019-02-22T22:17:01.032+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==> Parameters: 15207312(Long)
+time=2019-02-22T22:17:01.035+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`<==      Total: 1
+time=2019-02-22T22:17:01.037+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==>  Preparing: SELECT relation_id AS relationId,role_id AS roleId,menu_id AS menuId,status,ctime,utime FROM role_menu_relation WHERE role_id = ? 
+time=2019-02-22T22:17:01.038+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==> Parameters: 1(Long)
+time=2019-02-22T22:17:01.044+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`<==      Total: 13
+time=2019-02-22T22:17:01.048+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==>  Preparing: SELECT menu_id AS menuId,title,href,icon,status,parent_id,ctime,utime FROM menu WHERE menu_id IN (?,?,?,?,?,?,?,?,?,?,?,?,?) 
+time=2019-02-22T22:17:01.049+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==> Parameters: 1(Long), 7(Long), 8(Long), 2(Long), 3(Long), 5(Long), 13(Long), 14(Long), 15(Long), 16(Long), 17(Long), 18(Long), 19(Long)
+time=2019-02-22T22:17:01.057+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`<==      Total: 13
+time=2019-02-22T22:17:03.642+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==>  Preparing: SELECT COUNT(1) FROM recruit_unit WHERE 1 = 1 
+time=2019-02-22T22:17:03.642+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==> Parameters: 
+time=2019-02-22T22:17:03.645+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==>  Preparing: SELECT unit_id AS unitId,unit_name AS unitName,industry,property,scale,unit_web AS unitWeb,contractor,mobile,direct,company_phone AS companyPhone,status,deleted,ctime,utime FROM recruit_unit WHERE 1=1 ORDER BY ctime DESC LIMIT 0,20 
+time=2019-02-22T22:17:03.646+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==> Parameters: 
+time=2019-02-22T22:17:03.649+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`<==      Total: 1
+time=2019-02-22T22:19:51.256+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==>  Preparing: SELECT relation_id AS relationId,operator_id AS operatorId,role_id AS roleId,deleted,ctime,utime FROM operator_role_relation WHERE operator_id = ? 
+time=2019-02-22T22:19:51.295+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==> Parameters: 15207312(Long)
+time=2019-02-22T22:19:51.321+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`<==      Total: 1
+time=2019-02-22T22:19:51.336+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==>  Preparing: SELECT relation_id AS relationId,role_id AS roleId,menu_id AS menuId,status,ctime,utime FROM role_menu_relation WHERE role_id = ? 
+time=2019-02-22T22:19:51.337+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==> Parameters: 1(Long)
+time=2019-02-22T22:19:51.348+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`<==      Total: 13
+time=2019-02-22T22:19:51.369+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==>  Preparing: SELECT menu_id AS menuId,title,href,icon,status,parent_id,ctime,utime FROM menu WHERE menu_id IN (?,?,?,?,?,?,?,?,?,?,?,?,?) 
+time=2019-02-22T22:19:51.375+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==> Parameters: 1(Long), 7(Long), 8(Long), 2(Long), 3(Long), 5(Long), 13(Long), 14(Long), 15(Long), 16(Long), 17(Long), 18(Long), 19(Long)
+time=2019-02-22T22:19:51.387+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`<==      Total: 13
+time=2019-02-22T22:19:52.293+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==>  Preparing: SELECT COUNT(1) FROM recruit_unit WHERE 1 = 1 
+time=2019-02-22T22:19:52.293+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==> Parameters: 
+time=2019-02-22T22:19:52.299+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==>  Preparing: SELECT unit_id AS unitId,unit_name AS unitName,industry,property,scale,unit_web AS unitWeb,contractor,mobile,direct,company_phone AS companyPhone,status,deleted,ctime,utime FROM recruit_unit WHERE 1=1 ORDER BY ctime DESC LIMIT 0,20 
+time=2019-02-22T22:19:52.300+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==> Parameters: 
+time=2019-02-22T22:19:52.304+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`<==      Total: 1

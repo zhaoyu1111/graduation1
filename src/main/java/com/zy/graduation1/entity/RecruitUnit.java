@@ -36,7 +36,7 @@ public class RecruitUnit extends SuperEntity<RecruitUnit> {
     /**
      * 单位ID
      */
-    @TableId(value = "unit_id", type = IdType.ID_WORKER)
+    @TableId(value = "unit_id", type = IdType.AUTO)
     private Long unitId;
     /**
      * 单位名称
@@ -73,6 +73,19 @@ public class RecruitUnit extends SuperEntity<RecruitUnit> {
      */
     @TableField("mobile")
     private String mobile;
+
+    /**
+     * 单位描述
+     */
+    @TableField("direct")
+    private String direct;
+
+    /**
+     * 单位电话
+     */
+    @TableField("company_phone")
+    private String companyPhone;
+
     /**
      * 状态1-审核 2-正常
      */

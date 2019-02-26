@@ -28,6 +28,11 @@ public class MenuTree {
      */
     private Long parentId;
 
+    /**
+     * 是否选中
+     */
+    private Boolean checked;
+
     public MenuTree() {
         this.data = new ArrayList<>();
     }

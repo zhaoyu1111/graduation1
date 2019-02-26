@@ -39,12 +39,18 @@ public class RecruitUnitServiceImpl extends ServiceImpl<RecruitUnitMapper, Recru
     }
 
     @Override
-    public IPage<RecruitUnit> queryRecruitUnit(String unitName, Integer currentPage) {
+    public IPage<RecruitUnit> queryRecruitUnit(String unitName, Integer property, Integer status, Integer currentPage) {
         Page<RecruitUnit> page = new Page<>(currentPage, 20);
         QueryWrapper<RecruitUnit> query = new QueryWrapper<>();
         query.orderByDesc("ctime");
         if(StringUtils.isNotEmpty(unitName)) {
             query.like("unit_name", unitName);
+        }
+        if(null != property) {
+            query.eq("property", property);
+        }
+        if(null != status) {
+            query.eq("status", status);
         }
         return baseMapper.selectPage(page, query);
     }

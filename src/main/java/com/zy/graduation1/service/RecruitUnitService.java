@@ -31,9 +31,11 @@ public interface RecruitUnitService extends IService<RecruitUnit> {
     /**
      * 分页查询公司信息
      * @param unitName
+     * @param property
+     * @param currentPage
      * @return
      */
-    IPage<RecruitUnit> queryRecruitUnit(String unitName, Integer currentPage);
+    IPage<RecruitUnit> queryRecruitUnit(String unitName, Integer property, Integer status, Integer currentPage);
 
     /**
      * 通过单位ID查询单位信息
