@@ -1,9 +1,0 @@
-time=2019-01-28T15:46:07.795+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==>  Preparing: SELECT relation_id AS relationId,role_id AS roleId,menu_id AS menuId,status,ctime,utime FROM role_menu_relation WHERE role_id = ? 
-time=2019-01-28T15:46:07.838+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==> Parameters: 1(Long)
-time=2019-01-28T15:46:07.897+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`<==      Total: 4
-time=2019-01-28T15:46:07.925+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==>  Preparing: SELECT menu_id AS menuId,title,href,icon,status,parent_id,ctime,utime FROM menu WHERE menu_id IN (?,?,?,?) 
-time=2019-01-28T15:46:07.926+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==> Parameters: 2(Long), 3(Long), 4(Long), 5(Long)
-time=2019-01-28T15:46:07.935+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`<==      Total: 4
-time=2019-01-28T15:46:11.479+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==>  Preparing: SELECT role_id AS roleId,role_name AS roleName,remark,deleted,ctime,utime FROM role 
-time=2019-01-28T15:46:11.479+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`==> Parameters: 
-time=2019-01-28T15:46:11.489+0800`appName=graduation`hostName=localhost`logLevel=DEBUG`<==      Total: 1

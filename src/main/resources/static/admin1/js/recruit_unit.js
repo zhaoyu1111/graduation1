@@ -49,7 +49,11 @@ layui.use(['layer', 'table', 'form', 'jquery'], function () {
     $.each(scale, function(index, item) {
         $('#scale').append("<option value='" + item.value + "'>" + item.title + "</option>");
     });
-    form.render("select");
+
+    $.each(propertyData, function(index, item) {
+        $('#property').append("<option value='" + item.value + "'>" + item.title + "</option>");
+    });
+    form.render();
 
     var tableIns = table.render({
         elem: '#mytable',
@@ -109,7 +113,7 @@ layui.use(['layer', 'table', 'form', 'jquery'], function () {
         if(layEven === 'edit') {
             edit(data, '编辑');
         } else if(layEven === 'del') {
-            del_operator(data, data.operatorId);
+            del_unit(data, data.unitId);
         } else if(layEven === 'detail') {
             detail(data);
         }
@@ -131,13 +135,27 @@ layui.use(['layer', 'table', 'form', 'jquery'], function () {
             content:$("#add_unit").html(),
             success: function (layero, index) {
                 if(data != null) {
-                    layero.find("#operatorId").val(data.operatorId);
-                    layero.find("#operatorId").attr("disabled", true);
-                    layero.find("#operatorName").val(data.operatorName);
-                    layero.find("#mobile").val(data.mobile);
-                    $("input[name=deleted][value='0']").attr("checked", data.deleted == 0 ? true : false);
-                    $("input[name=deleted][value='1']").attr("checked", data.deleted == 1 ? true : false);
-                    layero.find("option[value='"+data.roleId+"']").prop("selected",true);
+                    $.post('/web/recruit/getRecruitUnit', {"unitId": data.unitId}, function (res) {
+                       if(res.code === '2000') {
+                           layero.find("#unitName").val(res.data.unitName);
+                           layero.find("#unitName").attr("disabled", true);
+                           layero.find("#industry").val(res.data.industry);
+                           layero.find("option[value='"+data.property+"']").prop("selected",true);
+                           layero.find("option[value='"+data.scale+"']").prop("selected",true);
+                           layero.find("#unitWeb").val(res.data.unitWeb);
+                           layero.find("#companyPhone").val(res.data.companyPhone);
+                           layero.find("#contractor").val(res.data.contractor);
+                           layero.find("#mobile").val(res.data.mobile);
+                           layero.find("#status").val(res.data.status);
+                           layero.find("#address").val(res.data.address);
+                           layero.find("#direct").text(res.data.direct);
+                           $("input[name=deleted][value='0']").attr("checked", data.deleted == 0 ? true : false);
+                           $("input[name=deleted][value='1']").attr("checked", data.deleted == 1 ? true : false);
+                           form.render();
+                       } else {
+                           layer.msg(res.message);
+                       }
+                    });
                     form.render();
                 }else {
                     $("input:radio").removeAttr("checked");
@@ -150,12 +168,16 @@ layui.use(['layer', 'table', 'form', 'jquery'], function () {
                     recruitUnit[this.name] = this.value;
                 });
                 recruitUnit["deleted"] = $("input[name='deleted']:checked").val();
-                recruitUnit["scale"] = $("#scale").val();
-                recruitUnit["property"] = $("#property").val();
+                recruitUnit["scale"] = $(layero).find("#scale").val();
+                recruitUnit["property"] = $(layero).find("#property").val();
+                recruitUnit["direct"] = $(layero).find("#direct").val();
+                if(data != null) {
+                    recruitUnit["unitId"] = data.unitId;
+                }
                 $.post('/web/recruit/saveOrUpdateUnit', recruitUnit, function (rec) {//得到数据提交到后端进行更新
                     if (rec.code === "2000") {
                         layer.msg(rec.message);
-                        reload(null, null);
+                        reload(null, null, null);
                     } else {
                         layer.msg(rec.message);
                     }
@@ -166,16 +188,16 @@ layui.use(['layer', 'table', 'form', 'jquery'], function () {
         });
     }
 
-    function del_operator(obj,id) {
+    function del_unit(obj,id) {
         if(null!=id){
             layer.confirm('您确定要删除吗？', {
                 btn: ['确认','返回'] //按钮
             }, function(){
-                $.post("/web/system/deleteOperator",{"operatorId" : id},function(data){
+                $.post("/web/recruit/deleteUnit",{"unitId" : id},function(data){
                     if (data.code == "2000") {
                         layer.alert(data.message,{icon: 6}, function(){
                             layer.closeAll();
-                            reload(null, null);
+                            reload(null, null, null);
                         });
                     } else {
                         layer.alert(data.message);

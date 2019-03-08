@@ -33,14 +33,13 @@ public class RecruitServiceImpl extends ServiceImpl<RecruitMapper, Recruit> impl
         if(null == recruit) {
             throw new BizException(OriginErrorCode.RECRUIT_NOT_EXIST);
         }
-        recruit.setDeleted(0);
-        return updateById(recruit);
+        return baseMapper.deleteById(recruit.getRecuritId()) == 1;
     }
 
     @Override
-    public IPage<Recruit> queryRecruit(Long unitId, Long applyId, String title, Integer currentPage) {
+    public IPage<Recruit> queryRecruit(Long unitId, Long applyId, String title, Integer page) {
         QueryWrapper<Recruit> query = new QueryWrapper<>();
-        Page<Recruit> page = new Page<>(currentPage, 20);
+        Page<Recruit> recruitPage = new Page<>(page, 100);
         if(null != unitId) {
             query.eq("unit_id", unitId);
         }
@@ -50,7 +49,7 @@ public class RecruitServiceImpl extends ServiceImpl<RecruitMapper, Recruit> impl
         if(null != title) {
             query.like("title", title);
         }
-        return baseMapper.selectPage(page, query);
+        return baseMapper.selectPage(recruitPage, query);
     }
 
     @Override

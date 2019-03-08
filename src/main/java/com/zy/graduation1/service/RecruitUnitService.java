@@ -1,8 +1,11 @@
 package com.zy.graduation1.service;
 
+import com.baomidou.mybatisplus.core.conditions.Wrapper;
 import com.baomidou.mybatisplus.core.metadata.IPage;
 import com.zy.graduation1.entity.RecruitUnit;
 import com.baomidou.mybatisplus.extension.service.IService;
+
+import java.util.List;
 
 /**
  * <p>
@@ -43,4 +46,17 @@ public interface RecruitUnitService extends IService<RecruitUnit> {
      * @return
      */
     RecruitUnit getRecruitUnit(Long unitId);
+
+    /**
+     * 获取招聘单位信息
+     * @param unitIds
+     * @return
+     */
+    List<RecruitUnit> getRecruitUnit(List<Long> unitIds);
+
+    /**
+     * 获取所有的单位信息
+     * @return
+     */
+    List<RecruitUnit> getAllRecruitUnit();
 }

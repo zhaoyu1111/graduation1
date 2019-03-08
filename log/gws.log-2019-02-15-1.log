@@ -1,2 +1,0 @@
-time=2019-02-15T22:08:31.724+0800`appName=graduation`hostName=localhost`logLevel=WARN `msg=HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1d1h47m20s478ms867µs995ns).
-time=2019-02-15T22:09:55.770+0800`appName=graduation`hostName=localhost`logLevel=WARN `msg=HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=57s184ms690µs453ns).

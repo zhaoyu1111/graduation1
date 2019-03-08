@@ -87,6 +87,12 @@ public class RecruitUnit extends SuperEntity<RecruitUnit> {
     private String companyPhone;
 
     /**
+     * 公司地址
+     */
+    @TableField("address")
+    private String address;
+
+    /**
      * 状态1-审核 2-正常
      */
     @TableField("status")

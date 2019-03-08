@@ -99,8 +99,8 @@ public class Recruit extends SuperEntity<Recruit> {
     /**
      * 申请人Id
      */
-    @TableField("apply_id")
-    private Long applyId;
+    @TableField("email")
+    private Long email;
     /**
      * 职位状态1-审核 2-正在招聘 3-已结束
      */

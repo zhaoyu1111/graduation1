@@ -4,6 +4,7 @@ import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.baomidou.mybatisplus.core.metadata.IPage;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.zy.graduation1.entity.RecruitUnit;
+import com.zy.graduation1.enums.YesOrNoEnum;
 import com.zy.graduation1.exception.BizException;
 import com.zy.graduation1.exception.OriginErrorCode;
 import com.zy.graduation1.mapper.RecruitUnitMapper;
@@ -11,6 +12,8 @@ import com.zy.graduation1.service.RecruitUnitService;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.stereotype.Service;
+
+import java.util.List;
 
 /**
  * <p>
@@ -34,9 +37,10 @@ public class RecruitUnitServiceImpl extends ServiceImpl<RecruitUnitMapper, Recru
         if(null == unit) {
             throw new BizException(OriginErrorCode.UNIT_NOT_EXIST);
         }
-        unit.setDeleted(0);
-        return baseMapper.updateById(unit) == 1;
+        return baseMapper.deleteById(unit.getUnitId()) == 1;
     }
+
+
 
     @Override
     public IPage<RecruitUnit> queryRecruitUnit(String unitName, Integer property, Integer status, Integer currentPage) {
@@ -58,5 +62,20 @@ public class RecruitUnitServiceImpl extends ServiceImpl<RecruitUnitMapper, Recru
     @Override
     public RecruitUnit getRecruitUnit(Long unitId) {
         return baseMapper.selectById(unitId);
+    }
+
+    @Override
+    public List<RecruitUnit> getRecruitUnit(List<Long> unitIds) {
+        QueryWrapper<RecruitUnit> query = new QueryWrapper<>();
+        query.in("unit_id", unitIds);
+        return baseMapper.selectList(query);
+    }
+
+    @Override
+    public List<RecruitUnit> getAllRecruitUnit() {
+        QueryWrapper<RecruitUnit> query = new QueryWrapper<>();
+        query.eq("deleted", YesOrNoEnum.NO.getCode());
+        query.eq("status", 3);
+        return baseMapper.selectList(query);
     }
 }
