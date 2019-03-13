@@ -4,54 +4,49 @@ layui.use(['layer', 'table', 'form', 'jquery'], function () {
         $ = layui.jquery,
         form = layui.form;
 
-    $.post('/web/system/getParentMenu', null, function (rec) {//得到数据提交到后端进行更新
-        if (rec.code === "2000") {
-            $("select[name=parent-menu]").append("<option value=''>请选择</option>");
-            $("#select").append("<option value='0'>根目录</option>");
-            $.each(rec.data, function(index, item) {
-                $('select[name=parent-menu]').append("<option value='" + item.menuId + "'>" + item.title + "</option>");
-            });
-        }
-    }, 'json');
-    form.render("select");
-
     var tableIns = table.render({
         elem: '#mytable',
-        url: '/web/system/queryMenu',
-        toolbar: '#tool_menu',
-        height: 460,
+        url: '/web/activity/queryActivity',
+        toolbar: '#tool_activity',
+        height: 509,
         cols: [[
             {type:'checkbox'}
-            ,{field:'menuId', title: '菜单ID'}
-            ,{field:'title', title: '菜单标题'}
-            ,{field:'href', title: '菜单url'}
-            ,{field:'icon', title: 'icon'}
-            ,{field:'parentId', title: '父菜单'}
-            ,{field:'ctime',  title: '创建时间',
-                templet: function (data) {
-                    return createDate(data.ctime);
-                }}
-            ,{field:'status', title: '状态',
+            ,{field:'activityId', title: '活动ID'}
+            ,{field:'activityName', title: '活动名称'}
+            ,{field:'activityAddr', title: '活动地址'}
+            ,{field:'startTime', title: '开始时间'}
+            ,{field:'endTime', title: '结束时间'}
+            ,{field:'activityNumber', title: '活动人数'}
+            ,{field:'signNumber', title: '报名人数'}
+            ,{field:'interests', title: '感兴趣数'}
+            ,{field:'status', title: '当前状态',
                 templet:function (data) {
-                    if(data.status == 0) {
-                        return "正常";
-                    }else {
-                        return "冻结";
+                    if(data.status == 1) {
+                        return "待审核";
+                    }else if(data.status == 2){
+                        return "正在进行";
+                    } else {
+                        return "已结束";
                     }
                 }}
             ,{fixed: 'right',title:"操作",align:'center', toolbar: '#barDemo'}
         ]],
+        done: function (res, curr, couunt) {
+            $('.layui-table-box').find("[data-field = 'activityId']").css('display', 'none');
+        },
         page: true
     });
 
-    table.on('tool(activity)', function (obj) {
+    table.on('tool(role)', function (obj) {
         var data = obj.data;
         var layEven = obj.event;
 
         if(layEven === 'edit') {
             edit(data, '编辑');
         } else if(layEven === 'del') {
-            del_menu(data, data.menuId);
+            deleted(data, data.activityId);
+        } else if(layEven === 'detail') {
+            detail(data);
         }
     });
 
@@ -62,53 +57,59 @@ layui.use(['layer', 'table', 'form', 'jquery'], function () {
 
     function edit(data, title){
 
-        form.render('select');
         layer.open({
             type:1,
             title:title,
             skin:"myclass",
-            area:["30%"],
+            area: ['630px', '430px'],
             btn: ['确认', '取消'],//弹出层按钮
-            content:$("#add_menu").html(),
+            content:$("#add_activity").html(),
             success: function (layero, index) {
                 if(data != null) {
-                    layero.find("#title").val(data.title);
-                    layero.find("#operatorId").attr("disabled", true);
-                    layero.find("#href").val(data.href);
-                    layero.find("#icon").val(data.icon);
-                    $("input[name=deleted][value='0']").attr("checked", data.status == 0 ? true : false);
-                    $("input[name=deleted][value='1']").attr("checked", data.status == 1 ? true : false);
-                    layero.find("option[value='"+data.parentId+"']").prop("selected",true);
-                    if(data.parentId == 0) {
-                        layero.find("select").prop("disabled", true);
-                    }/*else {
-                        layero.find("option[value='"+data.parentId+"']").prop("selected",true);
-                    }*/
+                    $.post('/web/activity/getActivity', {"activityId": data.activityId}, function (res) {
+                        if(res.code === '2000') {
+                            layero.find("#activityName").val(res.data.activityName);
+                            layero.find("#activityAddr").val(res.data.activityAddr);
+                            layero.find("#activityNumber").val(res.data.activityNumber);
+                            layero.find("#startTime").val(res.data.startTime);
+                            layero.find("#endTime").val(res.data.endTime);
+                            layero.find("#leaderName").val(res.data.leaderName);
+                            layero.find("#leaderMobile").val(res.data.leaderMobile);
+                            layero.find("#activityDesc").text(res.data.activityDesc);
+                            $("input[name=deleted][value='0']").attr("checked", data.deleted == 0 ? true : false);
+                            $("input[name=deleted][value='1']").attr("checked", data.deleted == 1 ? true : false);
+
+                            $("input[name=status][value='1']").attr("checked", data.status == 1 ? true : false);
+                            $("input[name=status][value='2']").attr("checked", data.status == 2 ? true : false);
+                            $("input[name=status][value='3']").attr("checked", data.status == 3 ? true : false);
+                            form.render();
+                        } else {
+                            layer.msg(res.message);
+                        }
+                    });
                     form.render();
                 }else {
                     $("input:radio").removeAttr("checked");
-
                     form.render();
                 }
             },
             yes: function (index, layero) {
-                var operatorRole = {};
+                var activity = {};
                 $(layero).find("input").each(function() {
-                    if(this.name === "deleted"){
-                        var val=$("input[checked]").val();
-                        operatorRole[this.name] = val;
-                        return true;
-                    }
-                    operatorRole[this.name] = this.value;
+                    activity[this.name] = this.value;
+                    alert(this.name + this.value);
                 });
-                operatorRole["parentId"] = $(layero).find("select").val();
+                //activity["deleted"] = $("input[name='deleted']:checked").val();
+                activity["activityDesc"] = $(layero).find("#activityDesc").val();
+                activity["status"] = $("input[name='status']:checked").val();
+
                 if(data != null) {
-                    operatorRole['menuId'] = data.menuId;
+                    activity["activityId"] = data.activityId;
                 }
-                $.post('/web/system/saveOrUpdateMenu', operatorRole, function (rec) {//得到数据提交到后端进行更新
+                $.post('/web/activity/saveOrUpdateActivity', activity, function (rec) {//得到数据提交到后端进行更新
                     if (rec.code === "2000") {
                         layer.msg(rec.message);
-                        reload(null, null);
+                        reload(null, null, null);
                     } else {
                         layer.msg(rec.message);
                     }
@@ -119,16 +120,16 @@ layui.use(['layer', 'table', 'form', 'jquery'], function () {
         });
     }
 
-    function del_menu(obj,id) {
+    function deleted(obj,id) {
         if(null!=id){
             layer.confirm('您确定要删除吗？', {
                 btn: ['确认','返回'] //按钮
             }, function(){
-                $.post("/web/system/deleteMenu",{"menuId" : id},function(data){
+                $.post("/web/activity/deleteActivity",{"activityId" : id},function(data){
                     if (data.code == "2000") {
                         layer.alert(data.message,{icon: 6}, function(){
                             layer.closeAll();
-                            reload(null, null);
+                            reload(null, null, null);
                         });
                     } else {
                         layer.alert(data.message);
@@ -140,27 +141,46 @@ layui.use(['layer', 'table', 'form', 'jquery'], function () {
         }
     }
 
+    function detail(data) {
+        layer.open({
+            type:1,
+            title:title,
+            skin:"myclass",
+            area:["30%"],
+            btn: ['确认', '取消'],//弹出层按钮
+            content:$("#add_operator").html(),
+            success: function (layero, index) {
+
+            },
+            yes: function (index, layero) {
+
+            }
+        });
+    }
+
     $(document).on('click', '#add', function () {
         edit(null, "新增角色");
         form.render();
     });
 
     $(document).on('click', '#search',  function () {
-        var menu_title = $('#menu_title').val();
-        var parent_id = $("#parentId").val();
-        reload(menu_title, parent_id);
+        var activityName = $('#search_activityName').val();
+        var startTime = $("#search_startTime").val();
+        var status = $("#search_status").val();
+        reload(activityName, startTime, status);
         form.render();
     });
 
     $(document).on('click', '#recover', function () {
-        reload(null, null);
+        reload(null, null, null);
     });
 
-    function reload(menu_title, parent_id) {
+    function reload(activityName, startTime, status) {
         tableIns.reload({
             where: {
-                title: menu_title,
-                parentId: parent_id
+                activityName: activityName,
+                startTime: startTime,
+                status: status
             }
         });
     }

@@ -7,6 +7,7 @@ import com.zy.graduation1.entity.Class;
 import com.zy.graduation1.mapper.ClassMapper;
 import com.zy.graduation1.service.ClassService;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
+import org.apache.commons.lang3.StringUtils;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -30,19 +31,16 @@ public class ClassServiceImpl extends ServiceImpl<ClassMapper, Class> implements
     }
 
     @Override
-    public IPage<Class> queryClassInfo(Long classId, Long majorId, Long collegeId, Integer currentPage) {
-        Page<Class> page = new Page<>(currentPage, 20);
+    public IPage<Class> queryClass(Long collegeId, String className, Integer page) {
+        Page<Class> classPage = new Page<>(page, 10);
         QueryWrapper<Class> query = new QueryWrapper<>();
-        if(null != classId) {
-            query.eq("class_id", classId);
-        }
-        if(null != majorId) {
-            query.eq("major_id", majorId);
-        }
         if(null != collegeId) {
             query.eq("college_id", collegeId);
         }
-        return baseMapper.selectPage(page, query);
+        if(StringUtils.isNotEmpty(className)) {
+            query.eq("class_name", className);
+        }
+        return baseMapper.selectPage(classPage, query);
     }
 
     @Override

@@ -75,7 +75,7 @@
         </Logger>
 
         <Logger name="com.zy.graduation1.mapper" level="debug" additivity="false">
-            <appender-ref ref="EYLogFileAppender"/>
+            <appender-ref ref="SqlLogFileAppender"/>
         </Logger>
 
         <Logger name="com.alibaba.druid" level="error" additivity="false">

@@ -23,13 +23,18 @@
         .layui-table-sort .layui-table-sort-desc{
             border-top-color: white;
         }
+
+        .layui-form-item .layui-inline {
+            margin-bottom: 5px;
+            margin-right: -15px;
+        }
         /* 修改table的样式 end */
     </style>
 </head>
 <body>
 <div class="layui-container">
     <div class="layui-row">
-        <table class="layui-hide" id="mytable" lay-filter="activity"></table>
+        <table class="layui-hide" id="mytable" lay-filter="role"></table>
         <!--表格列工具条模板-->
         <script type="text/html" id="barDemo">
             <a class="layui-btn layui-btn-xs" lay-event="edit">编辑</a>
@@ -38,58 +43,88 @@
     </div>
 </div>
 </body>
-<div class="layui-row" id="add_menu" style="display: none;">
+<div class="layui-row" id="add_activity" style="display: none;">
     <div class="layui-col-md12">
         <form class="layui-form" id="add_operator_form">
             <div class="layui-form-item">
-                <label class="layui-form-label" style="width: 100px;">标题：</label>
+                <label class="layui-form-label" style="width: 100px;">活动名称：</label>
                 <div class="layui-input-inline">
-                    <input type="text" name="title" class="layui-input" id="title">
+                    <input type="text" name="activityName" class="layui-input" id="activityName">
+                </div>
+
+                <label class="layui-form-label" style="width: 100px;">活动地址：</label>
+                <div class="layui-input-inline">
+                    <input type="text" name="activityAddr" class="layui-input" id="activityAddr">
+                </div>
+            </div>
+
+            <div class="layui-form-item">
+                <label class="layui-form-label" style="width: 100px;">活动人数：</label>
+                <div class="layui-input-inline">
+                    <input type="text" name="activityNumber" class="layui-input" id="activityNumber">
+                </div>
+
+                <label class="layui-form-label" style="width: 100px;">活动时间：</label>
+                <div class="layui-input-inline" style="width: 78px;">
+                    <input type="text" name="startTime" id="startTime" placeholder="开始时间" autocomplete="off" class="layui-input">
+                </div>
+                <div class="layui-form-mid">-</div>
+                <div class="layui-input-inline" style="width: 78px;">
+                    <input type="text" name="endTime" id="endTime" placeholder="结束时间" autocomplete="off" class="layui-input">
                 </div>
             </div>
             <div class="layui-form-item">
-                <label class="layui-form-label" style="width: 100px;">前端路由url：</label>
+                <label class="layui-form-label" style="width: 100px;">负责人：</label>
                 <div class="layui-input-inline">
-                    <input type="text" name="href" class="layui-input" id="href">
+                    <input type="text" name="leaderName" class="layui-input" id="leaderName">
+                </div>
+
+                <label class="layui-form-label" style="width: 100px;">负责人电话：</label>
+                <div class="layui-input-inline">
+                    <input type="text" name="leaderMobile" class="layui-input" id="leaderMobile">
                 </div>
             </div>
+
             <div class="layui-form-item">
-                <label class="layui-form-label" style="width: 100px;">父标题：</label>
-                <div class="layui-input-inline">
-                    <select name="parent-menu" id="select">
-                    </select>
-                </div>
-            </div>
-            <div class="layui-form-item">
-                <label class="layui-form-label" style="width: 100px;">icon：</label>
-                <div class="layui-input-inline">
-                    <input type="text" name="icon" class="layui-input" id="icon">
-                </div>
-            </div>
-            <div class="layui-form-item">
-                <label class="layui-form-label" style="width: 100px;">启用状态：</label>
+                <label class="layui-form-label" style="width: 100px;">状态：</label>
                 <div class="layui-input-block">
-                    <input type="radio" name="deleted" value="0" title="启用">
-                    <input type="radio" name="deleted" value="1" title="废除">
+                    <input type="radio" name="status" value="1" title="待审核">
+                    <input type="radio" name="status" value="2" title="正在进行">
+                    <input type="radio" name="status" value="3" title="已结束">
+                </div>
+            </div>
+            <div class="layui-form-item">
+                <label class="layui-form-label" style="width: 100px;">活动描述：</label>
+                <div class="layui-input-block">
+                    <textarea name="activityDesc" placeholder="请输入内容" class="layui-textarea" id="activityDesc"></textarea>
                 </div>
             </div>
         </form>
     </div>
 </div>
-<script type="text/html" id="tool_menu">
+<script type="text/html" id="tool_activity">
     <div class="layui-form">
         <div class="layui-form-item">
             <div class="layui-inline">
-                <label class="layui-form-label" style="width: 100px;">标题：</label>
+                <label class="layui-form-label" style="width: 78px;">活动名称：</label>
                 <div class="layui-input-inline">
-                    <input type="text" name="menu_title" id="menu_title" autocomplete="off" class="layui-input"/>
+                    <input type="text" name="search_activityName" id="search_activityName" autocomplete="off" class="layui-input"/>
                 </div>
             </div>
             <div class="layui-inline">
-                <label class="layui-form-label">父目录：</label>
+                <label class="layui-form-label">开始时间：</label>
                 <div class="layui-input-inline">
-                    <select name="parent-menu" lay-search="" id="parentId">
-
+                    <input type="text" name="search_startTime" id="search_startTime" autocomplete="off" class="layui-input"/>
+                </div>
+            </div>
+            <div class="layui-inline">
+                <label class="layui-form-label">当前状态：</label>
+                <div class="layui-input-inline">
+                    <select name="modules" lay-search="" id="search_status">
+                        <option value="">请选择</option>
+                        <option value="1">待审核</option>
+                        <option value="2">正在进行</option>
+                        <option value="3">已结束</option>
                     </select>
                 </div>
             </div>

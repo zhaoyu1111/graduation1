@@ -7,6 +7,7 @@ import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.google.common.collect.Lists;
 import com.google.common.collect.Maps;
 import com.zy.graduation1.common.MyPage;
+import com.zy.graduation1.dto.user.ClassDetail;
 import com.zy.graduation1.dto.user.ClassDto;
 import com.zy.graduation1.dto.user.CollegeDto;
 import com.zy.graduation1.dto.user.MajorDto;
@@ -41,36 +42,36 @@ public class OriginManageServiceImpl implements OriginManageService {
     private OperatorService operatorService;
 
     @Override
-    public MyPage<ClassDto> queryClass(Long classId, Long collegeId, Long majorId, Integer currentPage) {
-        IPage<Class> classPage = classService.queryClassInfo(classId, collegeId, majorId, currentPage);
+    public MyPage<ClassDetail> queryClass(Long collegeId, String className, Integer page) {
+        IPage<Class> classPage = classService.queryClass(collegeId, className, page);
         List<Class> classes = classPage.getRecords();
         if(CollectionUtils.isEmpty(classes)) {
             return new MyPage<>();
         }
 
         List<Long> collegeIds = classes.stream().map(Class::getCollegeId).distinct().collect(Collectors.toList());
-        List<College> colleges = collegeService.listCollege(collegeIds);
-        Map<Long, College> collegeNameMap = Maps.uniqueIndex(colleges.iterator(), College::getCollegeId);
+        List<College> colleges =  collegeService.listCollege(collegeIds);
+        Map<Long, String> collegeMap = Maps.newHashMap();
+        colleges.forEach(college -> {
+            collegeMap.put(college.getCollegeId(), college.getCollegeName());
+        });
 
         List<Long> majorIds = classes.stream().map(Class::getMajorId).distinct().collect(Collectors.toList());
         List<Major> majors = majorService.listMajorByIds(majorIds);
-        Map<Long, Major> majorMap = Maps.uniqueIndex(majors.iterator(), Major::getMajorId);
+        Map<Long, String> majorMap = Maps.newHashMap();
+        majors.forEach(major -> {
+            majorMap.put(major.getMajorId(), major.getMajorName());
+        });
 
-        List<ClassDto> classDtos = Lists.newArrayList();
+        List<ClassDetail> details = Lists.newArrayList();
         for (Class aClass : classes) {
-            ClassDto classDto = new ClassDto();
-            BeanUtils.copyProperties(aClass, classDto);
-            College college = collegeNameMap.get(aClass.getCollegeId());
-            if(null != college) {
-                classDto.setCollegeName(college.getCollegeName());
-            }
-            Major major = majorMap.get(aClass.getMajorId());
-            if(null != major) {
-                classDto.setMajorName(major.getMajorName());
-            }
-            classDtos.add(classDto);
+            ClassDetail classDetail = new ClassDetail();
+            BeanUtils.copyProperties(aClass, classDetail);
+            classDetail.setCollegeName(collegeMap.get(aClass.getCollegeId()));
+            classDetail.setMajorName(collegeMap.get(aClass.getMajorId()));
+            details.add(classDetail);
         }
-        return new MyPage<>(classPage.getTotal(), classDtos);
+        return new MyPage<>(classPage.getTotal(), details);
     }
 
     @Override

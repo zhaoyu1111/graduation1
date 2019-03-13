@@ -1,6 +1,5 @@
 package com.zy.graduation1.service.impl;
 
-import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.baomidou.mybatisplus.core.metadata.IPage;
 import com.baomidou.mybatisplus.core.toolkit.CollectionUtils;
 import com.google.common.collect.Lists;
@@ -27,9 +26,6 @@ public class UserInfoManageManageServiceImpl implements UserInfoManageService {
     private OriginService originService;
 
     @Autowired
-    private OriginUserRelationService originUserRelationService;
-
-    @Autowired
     private ClassService classService;
 
     @Autowired
@@ -52,32 +48,32 @@ public class UserInfoManageManageServiceImpl implements UserInfoManageService {
 
     @Override
     public MyPage<UserInfoDto> queryUserInfo(Long operatorId, Integer currentPage, Long classId, Long majorId, Long collegeId) {
-        Origin origin = originService.getOriginOperator(operatorId);
+        /*Origin origin = originService.getOriginOperator(operatorId);
         if(null == origin) {
             return new MyPage<>();
         }
-        IPage<OriginUserRelation> originUserRelationPage = originUserRelationService.queryUserInfo(origin.getOriginId(), currentPage);
-        List<OriginUserRelation> originUserRelations = originUserRelationPage.getRecords();
+        IPage<OperatorOriginRelationController> originUserRelationPage = originUserRelationService.queryUserInfo(origin.getOriginId(), currentPage);
+        List<OperatorOriginRelationController> originUserRelations = originUserRelationPage.getRecords();
         if(CollectionUtils.isEmpty(originUserRelations)) {
             return new MyPage<>();
         }
 
-        List<Long> studentIds = originUserRelations.stream().map(OriginUserRelation::getStudentId).distinct().collect(Collectors.toList());
+        List<Long> studentIds = originUserRelations.stream().map(OperatorOriginRelationController::getStudentId).distinct().collect(Collectors.toList());
         List<User> users = userService.listUser(studentIds, classId, majorId, collegeId);
         if(CollectionUtils.isEmpty(users)) {
             return new MyPage<>();
         }
-        /* 批量查询班级信息*/
+        *//* 批量查询班级信息*//*
         List<Long> classIds = users.stream().map(User::getClassId).distinct().collect(Collectors.toList());
         List<Class> classes = classService.listClassInfo(classIds);
         Map<Long, Class> classMap = Maps.uniqueIndex(classes.iterator(), Class::getClassId);
 
-        /* 批量查询专业信息*/
+        *//* 批量查询专业信息*//*
         List<Long> majorIds = users.stream().map(User::getMajorId).distinct().collect(Collectors.toList());
         List<Major> majors = majorService.listMajor(majorIds);
         Map<Long, Major> majorMap = Maps.uniqueIndex(majors.iterator(), Major::getMajorId);
 
-        /* 批量查询学院信息*/
+        *//* 批量查询学院信息*//*
         List<Long> collegeIds = users.stream().map(User::getCollegeId).distinct().collect(Collectors.toList());
         List<College> colleges = collegeService.listCollege(collegeIds);
         Map<Long, College> collegeMap = Maps.uniqueIndex(colleges.iterator(), College::getCollegeId);
@@ -100,7 +96,8 @@ public class UserInfoManageManageServiceImpl implements UserInfoManageService {
             }
             userInfos.add(userInfoDto);
         }
-        return new MyPage<>((long)userInfos.size(), userInfos);
+        return new MyPage<>((long)userInfos.size(), userInfos);*/
+        return null;
     }
 
     @Override

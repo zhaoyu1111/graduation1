@@ -11,11 +11,11 @@ import org.springframework.web.bind.annotation.RestController;
  * </p>
  *
  * @author zy
- * @since 2019-01-03
+ * @since 2019-03-12
  */
 @RestController
-@RequestMapping("/originUserRelation")
-public class OriginUserRelationController {
+@RequestMapping("/operatorOriginRelation")
+public class OperatorOriginRelationController {
 
 }
 

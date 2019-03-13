@@ -1,10 +1,12 @@
 package com.zy.graduation1.entity;
 
+import com.baomidou.mybatisplus.annotation.IdType;
 import com.baomidou.mybatisplus.annotation.TableId;
 import com.baomidou.mybatisplus.annotation.TableField;
 import com.baomidou.mybatisplus.annotation.TableField;
 import com.baomidou.mybatisplus.annotation.TableId;
 import com.baomidou.mybatisplus.annotation.IdType;
+import com.baomidou.mybatisplus.annotation.TableName;
 import com.zy.graduation1.entity.SuperEntity;
 
 import com.baomidou.mybatisplus.annotation.Version;
@@ -21,54 +23,46 @@ import java.io.Serializable;
  * </p>
  *
  * @author zy
- * @since 2019-01-04
+ * @since 2019-03-08
  */
 @Data
 @EqualsAndHashCode(callSuper = true)
 @Accessors(chain = true)
-public class Class extends SuperEntity<Class> {
+@TableName("activity_user_apply")
+public class ActivityUserApply extends SuperEntity<ActivityUserApply> {
 
     private static final long serialVersionUID = 1L;
 
     /**
-     * 班级ID
+     * 申请ID
      */
-    @TableId(value = "class_id", type = IdType.ID_WORKER)
-    private Long classId;
+    @TableId(value = "apply_id", type = IdType.AUTO)
+    private Long applyId;
     /**
-     * 学院ID
+     * 活动ID
      */
-    @TableField("college_id")
-    private Long collegeId;
+    @TableField("activity_id")
+    private Long activityId;
     /**
-     * 专业ID
+     * 用户ID
      */
-    @TableField("major_id")
-    private Long majorId;
-
+    @TableField("user_id")
+    private Long userId;
     /**
-     * 班级联系人
+     * 手机号
      */
-    @TableField("contractor")
-    private String contractor;
+    @TableField("mobile")
+    private String mobile;
     /**
-     * 班主任
+     * 活动参与码
      */
-    @TableField("head_master")
-    private String headMaster;
-    /**
-     * 辅导员
-     */
-    @TableField("counselor")
-    private String counselor;
-
-    @TableField("class_name")
-    private String className;
+    @TableField("activity_code")
+    private String activityCode;
 
 
     @Override
     protected Serializable pkVal() {
-        return this.classId;
+        return this.applyId;
     }
 
 }

@@ -35,8 +35,8 @@ public class RecruitManageController {
 
     @RequestMapping("/queryRecruitUnit")
     public MyPage<RecruitUnitDto> queryRecruitUnit(String unitName, Integer property, Integer status,
-                                                   @RequestParam(defaultValue = "1") Integer currentPage) {
-        IPage<RecruitUnit> recruitUnitPage = recruitUnitService.queryRecruitUnit(unitName, property, status, currentPage);
+                                                   @RequestParam(defaultValue = "1") Integer page) {
+        IPage<RecruitUnit> recruitUnitPage = recruitUnitService.queryRecruitUnit(unitName, property, status, page);
         List<RecruitUnit> units = recruitUnitPage.getRecords();
         if(CollectionUtils.isEmpty(units)) {
             return new MyPage<>();

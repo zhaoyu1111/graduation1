@@ -46,5 +46,5 @@ public interface ClassService extends IService<Class> {
      * @param currentPage
      * @return
      */
-    IPage<Class> queryClassInfo(Long classId, Long majorId, Long collegeId, Integer currentPage);
+    IPage<Class> queryClass(Long collegeId, String className, Integer page);
 }

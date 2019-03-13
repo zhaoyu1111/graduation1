@@ -1,6 +1,6 @@
 package com.zy.graduation1.mapper;
 
-import com.zy.graduation1.entity.OriginUserRelation;
+import com.zy.graduation1.entity.OperatorOriginRelation;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 import org.apache.ibatis.annotations.Mapper;
 
@@ -10,9 +10,9 @@ import org.apache.ibatis.annotations.Mapper;
  * </p>
  *
  * @author zy
- * @since 2019-01-03
+ * @since 2019-03-12
  */
 @Mapper
-public interface OriginUserRelationMapper extends BaseMapper<OriginUserRelation> {
+public interface OperatorOriginRelationMapper extends BaseMapper<OperatorOriginRelation> {
 
 }

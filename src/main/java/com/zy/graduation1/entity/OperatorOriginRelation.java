@@ -22,13 +22,13 @@ import java.io.Serializable;
  * </p>
  *
  * @author zy
- * @since 2019-01-03
+ * @since 2019-03-12
  */
 @Data
 @EqualsAndHashCode(callSuper = true)
 @Accessors(chain = true)
-@TableName("origin_user_relation")
-public class OriginUserRelation extends SuperEntity<OriginUserRelation> {
+@TableName("operator_origin_relation")
+public class OperatorOriginRelation extends SuperEntity<OperatorOriginRelation> {
 
     private static final long serialVersionUID = 1L;
 
@@ -38,15 +38,20 @@ public class OriginUserRelation extends SuperEntity<OriginUserRelation> {
     @TableId(value = "relation_id", type = IdType.ID_WORKER)
     private Long relationId;
     /**
-     * 用户ID
+     * 管理员ID
      */
-    @TableField("student_id")
-    private Long studentId;
+    @TableField("operator_id")
+    private Long operatorId;
     /**
      * 组织ID
      */
     @TableField("origin_id")
     private Long originId;
+    /**
+     * 组织类型 1-班级 2-专业 3-学院 4-学校 5-校友会
+     */
+    @TableField("origin_type")
+    private Integer originType;
     /**
      * 状态0-正常 1-冻结
      */

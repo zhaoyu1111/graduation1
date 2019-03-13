@@ -1,0 +1,191 @@
+time=2019-03-10T21:34:34.515+0800`appName=oms`hostName=docker-20`logLevel=DEBUG`==>  Preparing: SELECT operator_id AS operatorId,operator_name AS operatorName,operator_status AS operatorStatus,deleted,mobile,pwd,role_id AS roleId,ctime,utime FROM operator WHERE operator_id=? 
+time=2019-03-10T21:34:34.618+0800`appName=oms`hostName=docker-20`logLevel=DEBUG`==> Parameters: 15207312(Long)
+time=2019-03-10T21:34:34.669+0800`appName=oms`hostName=docker-20`logLevel=DEBUG`<==      Total: 1
+time=2019-03-10T21:34:34.730+0800`appName=oms`hostName=docker-20`logLevel=DEBUG`==>  Preparing: SELECT student_id AS studentId,token,ctime,utime FROM user_web_token WHERE student_id=? 
+time=2019-03-10T21:34:34.730+0800`appName=oms`hostName=docker-20`logLevel=DEBUG`==> Parameters: 15207312(Long)
+time=2019-03-10T21:34:34.737+0800`appName=oms`hostName=docker-20`logLevel=DEBUG`<==      Total: 1
+time=2019-03-10T21:34:34.877+0800`appName=oms`hostName=docker-20`logLevel=DEBUG`==>  Preparing: UPDATE user_web_token SET token=?,utime=? WHERE student_id=? 
+time=2019-03-10T21:34:34.879+0800`appName=oms`hostName=docker-20`logLevel=DEBUG`==> Parameters: 5fa639b7-20bd-4955-9f69-512d7dddce8c(String), 1552224874872(Long), 15207312(Long)
+time=2019-03-10T21:34:34.883+0800`appName=oms`hostName=docker-20`logLevel=DEBUG`<==    Updates: 1
+time=2019-03-10T21:34:36.763+0800`appName=oms`hostName=docker-20`logLevel=DEBUG`==>  Preparing: SELECT relation_id AS relationId,operator_id AS operatorId,role_id AS roleId,deleted,ctime,utime FROM operator_role_relation WHERE operator_id = ? 
+time=2019-03-10T21:34:36.765+0800`appName=oms`hostName=docker-20`logLevel=DEBUG`==> Parameters: 15207312(Long)
+time=2019-03-10T21:34:36.771+0800`appName=oms`hostName=docker-20`logLevel=DEBUG`<==      Total: 1
+time=2019-03-10T21:34:36.785+0800`appName=oms`hostName=docker-20`logLevel=DEBUG`==>  Preparing: SELECT relation_id AS relationId,role_id AS roleId,menu_id AS menuId,status,ctime,utime FROM role_menu_relation WHERE role_id = ? 
+time=2019-03-10T21:34:36.786+0800`appName=oms`hostName=docker-20`logLevel=DEBUG`==> Parameters: 1(Long)
+time=2019-03-10T21:34:36.796+0800`appName=oms`hostName=docker-20`logLevel=DEBUG`<==      Total: 15
+time=2019-03-10T21:34:36.817+0800`appName=oms`hostName=docker-20`logLevel=DEBUG`==>  Preparing: SELECT menu_id AS menuId,title,href,icon,status,parent_id,ctime,utime FROM menu WHERE menu_id IN (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?) 
+time=2019-03-10T21:34:36.819+0800`appName=oms`hostName=docker-20`logLevel=DEBUG`==> Parameters: 1(Long), 7(Long), 8(Long), 2(Long), 3(Long), 5(Long), 13(Long), 14(Long), 15(Long), 16(Long), 17(Long), 18(Long), 19(Long), 20(Long), 21(Long)
+time=2019-03-10T21:34:36.828+0800`appName=oms`hostName=docker-20`logLevel=DEBUG`<==      Total: 15
+time=2019-03-10T21:34:39.645+0800`appName=oms`hostName=docker-20`logLevel=DEBUG`==>  Preparing: SELECT COUNT(1) FROM activity WHERE activity_name LIKE ? 
+time=2019-03-10T21:34:39.647+0800`appName=oms`hostName=docker-20`logLevel=DEBUG`==> Parameters: %null%(String)
+time=2019-03-10T21:34:39.651+0800`appName=oms`hostName=docker-20`logLevel=DEBUG`==>  Preparing: SELECT activity_id AS activityId,activity_name AS activityName,activity_addr AS activityAddr,start_time AS startTime,end_time AS endTime,activity_desc AS activityDesc,activity_number AS activityNumber,sign_number AS signNumber,interests,leader_name AS leaderName,leader_mobile AS leaderMobile,status,creator,ctime,utime FROM activity WHERE activity_name LIKE ? 
+time=2019-03-10T21:34:39.652+0800`appName=oms`hostName=docker-20`logLevel=DEBUG`==> Parameters: %null%(String)
+time=2019-03-10T21:34:39.654+0800`appName=oms`hostName=docker-20`logLevel=DEBUG`<==      Total: 0
+time=2019-03-10T21:34:44.909+0800`appName=oms`hostName=docker-20`logLevel=DEBUG`==>  Preparing: SELECT relation_id AS relationId,operator_id AS operatorId,role_id AS roleId,deleted,ctime,utime FROM operator_role_relation WHERE operator_id = ? 
+time=2019-03-10T21:34:44.910+0800`appName=oms`hostName=docker-20`logLevel=DEBUG`==> Parameters: 15207312(Long)
+time=2019-03-10T21:34:44.912+0800`appName=oms`hostName=docker-20`logLevel=DEBUG`<==      Total: 1
+time=2019-03-10T21:34:44.950+0800`appName=oms`hostName=docker-20`logLevel=DEBUG`==>  Preparing: SELECT relation_id AS relationId,role_id AS roleId,menu_id AS menuId,status,ctime,utime FROM role_menu_relation WHERE role_id = ? 
+time=2019-03-10T21:34:44.951+0800`appName=oms`hostName=docker-20`logLevel=DEBUG`==> Parameters: 1(Long)
+time=2019-03-10T21:34:44.957+0800`appName=oms`hostName=docker-20`logLevel=DEBUG`<==      Total: 15
+time=2019-03-10T21:34:44.962+0800`appName=oms`hostName=docker-20`logLevel=DEBUG`==>  Preparing: SELECT menu_id AS menuId,title,href,icon,status,parent_id,ctime,utime FROM menu WHERE menu_id IN (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?) 
+time=2019-03-10T21:34:44.964+0800`appName=oms`hostName=docker-20`logLevel=DEBUG`==> Parameters: 1(Long), 7(Long), 8(Long), 2(Long), 3(Long), 5(Long), 13(Long), 14(Long), 15(Long), 16(Long), 17(Long), 18(Long), 19(Long), 20(Long), 21(Long)
+time=2019-03-10T21:34:44.972+0800`appName=oms`hostName=docker-20`logLevel=DEBUG`<==      Total: 15
+time=2019-03-10T21:34:45.184+0800`appName=oms`hostName=docker-20`logLevel=DEBUG`==>  Preparing: SELECT COUNT(1) FROM activity WHERE activity_name LIKE ? 
+time=2019-03-10T21:34:45.186+0800`appName=oms`hostName=docker-20`logLevel=DEBUG`==> Parameters: %null%(String)
+time=2019-03-10T21:34:45.189+0800`appName=oms`hostName=docker-20`logLevel=DEBUG`==>  Preparing: SELECT activity_id AS activityId,activity_name AS activityName,activity_addr AS activityAddr,start_time AS startTime,end_time AS endTime,activity_desc AS activityDesc,activity_number AS activityNumber,sign_number AS signNumber,interests,leader_name AS leaderName,leader_mobile AS leaderMobile,status,creator,ctime,utime FROM activity WHERE activity_name LIKE ? 
+time=2019-03-10T21:34:45.190+0800`appName=oms`hostName=docker-20`logLevel=DEBUG`==> Parameters: %null%(String)
+time=2019-03-10T21:34:45.192+0800`appName=oms`hostName=docker-20`logLevel=DEBUG`<==      Total: 0
+time=2019-03-10T21:35:57.839+0800`appName=oms`hostName=docker-20`logLevel=DEBUG`==>  Preparing: SELECT relation_id AS relationId,operator_id AS operatorId,role_id AS roleId,deleted,ctime,utime FROM operator_role_relation WHERE operator_id = ? 
+time=2019-03-10T21:35:57.840+0800`appName=oms`hostName=docker-20`logLevel=DEBUG`==> Parameters: 15207312(Long)
+time=2019-03-10T21:35:57.842+0800`appName=oms`hostName=docker-20`logLevel=DEBUG`<==      Total: 1
+time=2019-03-10T21:35:57.844+0800`appName=oms`hostName=docker-20`logLevel=DEBUG`==>  Preparing: SELECT relation_id AS relationId,role_id AS roleId,menu_id AS menuId,status,ctime,utime FROM role_menu_relation WHERE role_id = ? 
+time=2019-03-10T21:35:57.845+0800`appName=oms`hostName=docker-20`logLevel=DEBUG`==> Parameters: 1(Long)
+time=2019-03-10T21:35:57.849+0800`appName=oms`hostName=docker-20`logLevel=DEBUG`<==      Total: 15
+time=2019-03-10T21:35:57.853+0800`appName=oms`hostName=docker-20`logLevel=DEBUG`==>  Preparing: SELECT menu_id AS menuId,title,href,icon,status,parent_id,ctime,utime FROM menu WHERE menu_id IN (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?) 
+time=2019-03-10T21:35:57.856+0800`appName=oms`hostName=docker-20`logLevel=DEBUG`==> Parameters: 1(Long), 7(Long), 8(Long), 2(Long), 3(Long), 5(Long), 13(Long), 14(Long), 15(Long), 16(Long), 17(Long), 18(Long), 19(Long), 20(Long), 21(Long)
+time=2019-03-10T21:35:57.860+0800`appName=oms`hostName=docker-20`logLevel=DEBUG`<==      Total: 15
+time=2019-03-10T21:35:58.140+0800`appName=oms`hostName=docker-20`logLevel=DEBUG`==>  Preparing: SELECT COUNT(1) FROM activity WHERE activity_name LIKE ? 
+time=2019-03-10T21:35:58.141+0800`appName=oms`hostName=docker-20`logLevel=DEBUG`==> Parameters: %null%(String)
+time=2019-03-10T21:35:58.143+0800`appName=oms`hostName=docker-20`logLevel=DEBUG`==>  Preparing: SELECT activity_id AS activityId,activity_name AS activityName,activity_addr AS activityAddr,start_time AS startTime,end_time AS endTime,activity_desc AS activityDesc,activity_number AS activityNumber,sign_number AS signNumber,interests,leader_name AS leaderName,leader_mobile AS leaderMobile,status,creator,ctime,utime FROM activity WHERE activity_name LIKE ? 
+time=2019-03-10T21:35:58.144+0800`appName=oms`hostName=docker-20`logLevel=DEBUG`==> Parameters: %null%(String)
+time=2019-03-10T21:35:58.148+0800`appName=oms`hostName=docker-20`logLevel=DEBUG`<==      Total: 0
+time=2019-03-10T21:36:00.318+0800`appName=oms`hostName=docker-20`logLevel=DEBUG`==>  Preparing: SELECT COUNT(1) FROM recruit_unit WHERE 1 = 1 
+time=2019-03-10T21:36:00.318+0800`appName=oms`hostName=docker-20`logLevel=DEBUG`==> Parameters: 
+time=2019-03-10T21:36:00.332+0800`appName=oms`hostName=docker-20`logLevel=DEBUG`==>  Preparing: SELECT unit_id AS unitId,unit_name AS unitName,industry,property,scale,unit_web AS unitWeb,contractor,mobile,direct,company_phone AS companyPhone,address,status,deleted,ctime,utime FROM recruit_unit WHERE 1=1 ORDER BY ctime DESC LIMIT 0,20 
+time=2019-03-10T21:36:00.333+0800`appName=oms`hostName=docker-20`logLevel=DEBUG`==> Parameters: 
+time=2019-03-10T21:36:00.338+0800`appName=oms`hostName=docker-20`logLevel=DEBUG`<==      Total: 2
+time=2019-03-10T21:46:00.079+0800`appName=oms`hostName=docker-20`logLevel=DEBUG`==>  Preparing: SELECT relation_id AS relationId,operator_id AS operatorId,role_id AS roleId,deleted,ctime,utime FROM operator_role_relation WHERE operator_id = ? 
+time=2019-03-10T21:46:00.111+0800`appName=oms`hostName=docker-20`logLevel=DEBUG`==> Parameters: 15207312(Long)
+time=2019-03-10T21:46:00.136+0800`appName=oms`hostName=docker-20`logLevel=DEBUG`<==      Total: 1
+time=2019-03-10T21:46:00.149+0800`appName=oms`hostName=docker-20`logLevel=DEBUG`==>  Preparing: SELECT relation_id AS relationId,role_id AS roleId,menu_id AS menuId,status,ctime,utime FROM role_menu_relation WHERE role_id = ? 
+time=2019-03-10T21:46:00.150+0800`appName=oms`hostName=docker-20`logLevel=DEBUG`==> Parameters: 1(Long)
+time=2019-03-10T21:46:00.157+0800`appName=oms`hostName=docker-20`logLevel=DEBUG`<==      Total: 15
+time=2019-03-10T21:46:00.174+0800`appName=oms`hostName=docker-20`logLevel=DEBUG`==>  Preparing: SELECT menu_id AS menuId,title,href,icon,status,parent_id,ctime,utime FROM menu WHERE menu_id IN (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?) 
+time=2019-03-10T21:46:00.176+0800`appName=oms`hostName=docker-20`logLevel=DEBUG`==> Parameters: 1(Long), 7(Long), 8(Long), 2(Long), 3(Long), 5(Long), 13(Long), 14(Long), 15(Long), 16(Long), 17(Long), 18(Long), 19(Long), 20(Long), 21(Long)
+time=2019-03-10T21:46:00.183+0800`appName=oms`hostName=docker-20`logLevel=DEBUG`<==      Total: 15
+time=2019-03-10T21:46:00.677+0800`appName=oms`hostName=docker-20`logLevel=DEBUG`==>  Preparing: SELECT COUNT(1) FROM activity WHERE activity_name LIKE ? 
+time=2019-03-10T21:46:00.677+0800`appName=oms`hostName=docker-20`logLevel=DEBUG`==> Parameters: %null%(String)
+time=2019-03-10T21:46:00.677+0800`appName=oms`hostName=docker-20`logLevel=DEBUG`==>  Preparing: SELECT activity_id AS activityId,activity_name AS activityName,activity_addr AS activityAddr,start_time AS startTime,end_time AS endTime,activity_desc AS activityDesc,activity_number AS activityNumber,sign_number AS signNumber,interests,leader_name AS leaderName,leader_mobile AS leaderMobile,status,creator,ctime,utime FROM activity WHERE activity_name LIKE ? 
+time=2019-03-10T21:46:00.677+0800`appName=oms`hostName=docker-20`logLevel=DEBUG`==> Parameters: %null%(String)
+time=2019-03-10T21:46:00.677+0800`appName=oms`hostName=docker-20`logLevel=DEBUG`<==      Total: 0
+time=2019-03-10T21:46:00.775+0800`appName=oms`hostName=docker-20`logLevel=DEBUG`==>  Preparing: SELECT COUNT(1) FROM recruit_unit WHERE 1 = 1 
+time=2019-03-10T21:46:00.775+0800`appName=oms`hostName=docker-20`logLevel=DEBUG`==> Parameters: 
+time=2019-03-10T21:46:00.792+0800`appName=oms`hostName=docker-20`logLevel=DEBUG`==>  Preparing: SELECT unit_id AS unitId,unit_name AS unitName,industry,property,scale,unit_web AS unitWeb,contractor,mobile,direct,company_phone AS companyPhone,address,status,deleted,ctime,utime FROM recruit_unit WHERE 1=1 ORDER BY ctime DESC LIMIT 0,20 
+time=2019-03-10T21:46:00.792+0800`appName=oms`hostName=docker-20`logLevel=DEBUG`==> Parameters: 
+time=2019-03-10T21:46:00.797+0800`appName=oms`hostName=docker-20`logLevel=DEBUG`<==      Total: 2
+time=2019-03-10T21:46:09.258+0800`appName=oms`hostName=docker-20`logLevel=DEBUG`==>  Preparing: SELECT relation_id AS relationId,operator_id AS operatorId,role_id AS roleId,deleted,ctime,utime FROM operator_role_relation WHERE operator_id = ? 
+time=2019-03-10T21:46:09.259+0800`appName=oms`hostName=docker-20`logLevel=DEBUG`==> Parameters: 15207312(Long)
+time=2019-03-10T21:46:09.261+0800`appName=oms`hostName=docker-20`logLevel=DEBUG`<==      Total: 1
+time=2019-03-10T21:46:09.263+0800`appName=oms`hostName=docker-20`logLevel=DEBUG`==>  Preparing: SELECT relation_id AS relationId,role_id AS roleId,menu_id AS menuId,status,ctime,utime FROM role_menu_relation WHERE role_id = ? 
+time=2019-03-10T21:46:09.264+0800`appName=oms`hostName=docker-20`logLevel=DEBUG`==> Parameters: 1(Long)
+time=2019-03-10T21:46:09.269+0800`appName=oms`hostName=docker-20`logLevel=DEBUG`<==      Total: 15
+time=2019-03-10T21:46:09.274+0800`appName=oms`hostName=docker-20`logLevel=DEBUG`==>  Preparing: SELECT menu_id AS menuId,title,href,icon,status,parent_id,ctime,utime FROM menu WHERE menu_id IN (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?) 
+time=2019-03-10T21:46:09.277+0800`appName=oms`hostName=docker-20`logLevel=DEBUG`==> Parameters: 1(Long), 7(Long), 8(Long), 2(Long), 3(Long), 5(Long), 13(Long), 14(Long), 15(Long), 16(Long), 17(Long), 18(Long), 19(Long), 20(Long), 21(Long)
+time=2019-03-10T21:46:09.284+0800`appName=oms`hostName=docker-20`logLevel=DEBUG`<==      Total: 15
+time=2019-03-10T21:46:11.577+0800`appName=oms`hostName=docker-20`logLevel=DEBUG`==>  Preparing: SELECT COUNT(1) FROM activity WHERE activity_name LIKE ? 
+time=2019-03-10T21:46:11.579+0800`appName=oms`hostName=docker-20`logLevel=DEBUG`==> Parameters: %null%(String)
+time=2019-03-10T21:46:11.582+0800`appName=oms`hostName=docker-20`logLevel=DEBUG`==>  Preparing: SELECT activity_id AS activityId,activity_name AS activityName,activity_addr AS activityAddr,start_time AS startTime,end_time AS endTime,activity_desc AS activityDesc,activity_number AS activityNumber,sign_number AS signNumber,interests,leader_name AS leaderName,leader_mobile AS leaderMobile,status,creator,ctime,utime FROM activity WHERE activity_name LIKE ? 
+time=2019-03-10T21:46:11.584+0800`appName=oms`hostName=docker-20`logLevel=DEBUG`==> Parameters: %null%(String)
+time=2019-03-10T21:46:11.585+0800`appName=oms`hostName=docker-20`logLevel=DEBUG`<==      Total: 0
+time=2019-03-10T21:46:55.058+0800`appName=oms`hostName=docker-20`logLevel=DEBUG`==>  Preparing: SELECT operator_id AS operatorId,operator_name AS operatorName,operator_status AS operatorStatus,deleted,mobile,pwd,role_id AS roleId,ctime,utime FROM operator WHERE operator_id=? 
+time=2019-03-10T21:46:55.059+0800`appName=oms`hostName=docker-20`logLevel=DEBUG`==> Parameters: 15207312(Long)
+time=2019-03-10T21:46:55.062+0800`appName=oms`hostName=docker-20`logLevel=DEBUG`<==      Total: 1
+time=2019-03-10T21:46:55.178+0800`appName=oms`hostName=docker-20`logLevel=DEBUG`==>  Preparing: SELECT student_id AS studentId,token,ctime,utime FROM user_web_token WHERE student_id=? 
+time=2019-03-10T21:46:55.179+0800`appName=oms`hostName=docker-20`logLevel=DEBUG`==> Parameters: 15207312(Long)
+time=2019-03-10T21:46:55.181+0800`appName=oms`hostName=docker-20`logLevel=DEBUG`<==      Total: 1
+time=2019-03-10T21:46:55.214+0800`appName=oms`hostName=docker-20`logLevel=DEBUG`==>  Preparing: UPDATE user_web_token SET token=?,utime=? WHERE student_id=? 
+time=2019-03-10T21:46:55.215+0800`appName=oms`hostName=docker-20`logLevel=DEBUG`==> Parameters: 66c2d74b-51e3-418f-9353-67bde3c2a2f4(String), 1552225615213(Long), 15207312(Long)
+time=2019-03-10T21:46:55.220+0800`appName=oms`hostName=docker-20`logLevel=DEBUG`<==    Updates: 1
+time=2019-03-10T21:46:55.773+0800`appName=oms`hostName=docker-20`logLevel=DEBUG`==>  Preparing: SELECT relation_id AS relationId,operator_id AS operatorId,role_id AS roleId,deleted,ctime,utime FROM operator_role_relation WHERE operator_id = ? 
+time=2019-03-10T21:46:55.776+0800`appName=oms`hostName=docker-20`logLevel=DEBUG`==> Parameters: 15207312(Long)
+time=2019-03-10T21:46:55.778+0800`appName=oms`hostName=docker-20`logLevel=DEBUG`<==      Total: 1
+time=2019-03-10T21:46:55.781+0800`appName=oms`hostName=docker-20`logLevel=DEBUG`==>  Preparing: SELECT relation_id AS relationId,role_id AS roleId,menu_id AS menuId,status,ctime,utime FROM role_menu_relation WHERE role_id = ? 
+time=2019-03-10T21:46:55.782+0800`appName=oms`hostName=docker-20`logLevel=DEBUG`==> Parameters: 1(Long)
+time=2019-03-10T21:46:55.786+0800`appName=oms`hostName=docker-20`logLevel=DEBUG`<==      Total: 15
+time=2019-03-10T21:46:55.792+0800`appName=oms`hostName=docker-20`logLevel=DEBUG`==>  Preparing: SELECT menu_id AS menuId,title,href,icon,status,parent_id,ctime,utime FROM menu WHERE menu_id IN (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?) 
+time=2019-03-10T21:46:55.793+0800`appName=oms`hostName=docker-20`logLevel=DEBUG`==> Parameters: 1(Long), 7(Long), 8(Long), 2(Long), 3(Long), 5(Long), 13(Long), 14(Long), 15(Long), 16(Long), 17(Long), 18(Long), 19(Long), 20(Long), 21(Long)
+time=2019-03-10T21:46:55.801+0800`appName=oms`hostName=docker-20`logLevel=DEBUG`<==      Total: 15
+time=2019-03-10T21:46:58.518+0800`appName=oms`hostName=docker-20`logLevel=DEBUG`==>  Preparing: SELECT COUNT(1) FROM activity WHERE activity_name LIKE ? 
+time=2019-03-10T21:46:58.518+0800`appName=oms`hostName=docker-20`logLevel=DEBUG`==> Parameters: %null%(String)
+time=2019-03-10T21:46:58.520+0800`appName=oms`hostName=docker-20`logLevel=DEBUG`==>  Preparing: SELECT activity_id AS activityId,activity_name AS activityName,activity_addr AS activityAddr,start_time AS startTime,end_time AS endTime,activity_desc AS activityDesc,activity_number AS activityNumber,sign_number AS signNumber,interests,leader_name AS leaderName,leader_mobile AS leaderMobile,status,creator,ctime,utime FROM activity WHERE activity_name LIKE ? 
+time=2019-03-10T21:46:58.522+0800`appName=oms`hostName=docker-20`logLevel=DEBUG`==> Parameters: %null%(String)
+time=2019-03-10T21:46:58.524+0800`appName=oms`hostName=docker-20`logLevel=DEBUG`<==      Total: 0
+time=2019-03-10T21:51:53.861+0800`appName=oms`hostName=docker-20`logLevel=DEBUG`==>  Preparing: SELECT relation_id AS relationId,operator_id AS operatorId,role_id AS roleId,deleted,ctime,utime FROM operator_role_relation WHERE operator_id = ? 
+time=2019-03-10T21:51:53.894+0800`appName=oms`hostName=docker-20`logLevel=DEBUG`==> Parameters: 15207312(Long)
+time=2019-03-10T21:51:53.920+0800`appName=oms`hostName=docker-20`logLevel=DEBUG`<==      Total: 1
+time=2019-03-10T21:51:53.933+0800`appName=oms`hostName=docker-20`logLevel=DEBUG`==>  Preparing: SELECT relation_id AS relationId,role_id AS roleId,menu_id AS menuId,status,ctime,utime FROM role_menu_relation WHERE role_id = ? 
+time=2019-03-10T21:51:53.934+0800`appName=oms`hostName=docker-20`logLevel=DEBUG`==> Parameters: 1(Long)
+time=2019-03-10T21:51:53.940+0800`appName=oms`hostName=docker-20`logLevel=DEBUG`<==      Total: 15
+time=2019-03-10T21:51:53.958+0800`appName=oms`hostName=docker-20`logLevel=DEBUG`==>  Preparing: SELECT menu_id AS menuId,title,href,icon,status,parent_id,ctime,utime FROM menu WHERE menu_id IN (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?) 
+time=2019-03-10T21:51:53.960+0800`appName=oms`hostName=docker-20`logLevel=DEBUG`==> Parameters: 1(Long), 7(Long), 8(Long), 2(Long), 3(Long), 5(Long), 13(Long), 14(Long), 15(Long), 16(Long), 17(Long), 18(Long), 19(Long), 20(Long), 21(Long)
+time=2019-03-10T21:51:53.967+0800`appName=oms`hostName=docker-20`logLevel=DEBUG`<==      Total: 15
+time=2019-03-10T21:51:54.429+0800`appName=oms`hostName=docker-20`logLevel=DEBUG`==>  Preparing: SELECT COUNT(1) FROM activity WHERE activity_name LIKE ? 
+time=2019-03-10T21:51:54.429+0800`appName=oms`hostName=docker-20`logLevel=DEBUG`==> Parameters: %null%(String)
+time=2019-03-10T21:51:54.429+0800`appName=oms`hostName=docker-20`logLevel=DEBUG`==>  Preparing: SELECT activity_id AS activityId,activity_name AS activityName,activity_addr AS activityAddr,start_time AS startTime,end_time AS endTime,activity_desc AS activityDesc,activity_number AS activityNumber,sign_number AS signNumber,interests,leader_name AS leaderName,leader_mobile AS leaderMobile,status,creator,ctime,utime FROM activity WHERE activity_name LIKE ? 
+time=2019-03-10T21:51:54.429+0800`appName=oms`hostName=docker-20`logLevel=DEBUG`==> Parameters: %null%(String)
+time=2019-03-10T21:51:54.429+0800`appName=oms`hostName=docker-20`logLevel=DEBUG`<==      Total: 0
+time=2019-03-10T21:55:33.637+0800`appName=oms`hostName=docker-20`logLevel=DEBUG`==>  Preparing: SELECT relation_id AS relationId,operator_id AS operatorId,role_id AS roleId,deleted,ctime,utime FROM operator_role_relation WHERE operator_id = ? 
+time=2019-03-10T21:55:33.677+0800`appName=oms`hostName=docker-20`logLevel=DEBUG`==> Parameters: 15207312(Long)
+time=2019-03-10T21:55:33.702+0800`appName=oms`hostName=docker-20`logLevel=DEBUG`<==      Total: 1
+time=2019-03-10T21:55:33.717+0800`appName=oms`hostName=docker-20`logLevel=DEBUG`==>  Preparing: SELECT relation_id AS relationId,role_id AS roleId,menu_id AS menuId,status,ctime,utime FROM role_menu_relation WHERE role_id = ? 
+time=2019-03-10T21:55:33.718+0800`appName=oms`hostName=docker-20`logLevel=DEBUG`==> Parameters: 1(Long)
+time=2019-03-10T21:55:33.726+0800`appName=oms`hostName=docker-20`logLevel=DEBUG`<==      Total: 15
+time=2019-03-10T21:55:33.745+0800`appName=oms`hostName=docker-20`logLevel=DEBUG`==>  Preparing: SELECT menu_id AS menuId,title,href,icon,status,parent_id,ctime,utime FROM menu WHERE menu_id IN (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?) 
+time=2019-03-10T21:55:33.748+0800`appName=oms`hostName=docker-20`logLevel=DEBUG`==> Parameters: 1(Long), 7(Long), 8(Long), 2(Long), 3(Long), 5(Long), 13(Long), 14(Long), 15(Long), 16(Long), 17(Long), 18(Long), 19(Long), 20(Long), 21(Long)
+time=2019-03-10T21:55:33.755+0800`appName=oms`hostName=docker-20`logLevel=DEBUG`<==      Total: 15
+time=2019-03-10T21:55:34.223+0800`appName=oms`hostName=docker-20`logLevel=DEBUG`==>  Preparing: SELECT COUNT(1) FROM activity WHERE activity_name LIKE ? 
+time=2019-03-10T21:55:34.223+0800`appName=oms`hostName=docker-20`logLevel=DEBUG`==> Parameters: %null%(String)
+time=2019-03-10T21:55:34.223+0800`appName=oms`hostName=docker-20`logLevel=DEBUG`==>  Preparing: SELECT activity_id AS activityId,activity_name AS activityName,activity_addr AS activityAddr,start_time AS startTime,end_time AS endTime,activity_desc AS activityDesc,activity_number AS activityNumber,sign_number AS signNumber,interests,leader_name AS leaderName,leader_mobile AS leaderMobile,status,creator,ctime,utime FROM activity WHERE activity_name LIKE ? 
+time=2019-03-10T21:55:34.239+0800`appName=oms`hostName=docker-20`logLevel=DEBUG`==> Parameters: %null%(String)
+time=2019-03-10T21:55:34.241+0800`appName=oms`hostName=docker-20`logLevel=DEBUG`<==      Total: 0
+time=2019-03-10T21:55:54.504+0800`appName=oms`hostName=docker-20`logLevel=DEBUG`==>  Preparing: SELECT operator_id AS operatorId,operator_name AS operatorName,operator_status AS operatorStatus,deleted,mobile,pwd,role_id AS roleId,ctime,utime FROM operator WHERE operator_id=? 
+time=2019-03-10T21:55:54.504+0800`appName=oms`hostName=docker-20`logLevel=DEBUG`==> Parameters: 15207312(Long)
+time=2019-03-10T21:55:54.506+0800`appName=oms`hostName=docker-20`logLevel=DEBUG`<==      Total: 1
+time=2019-03-10T21:55:54.523+0800`appName=oms`hostName=docker-20`logLevel=DEBUG`==>  Preparing: SELECT student_id AS studentId,token,ctime,utime FROM user_web_token WHERE student_id=? 
+time=2019-03-10T21:55:54.524+0800`appName=oms`hostName=docker-20`logLevel=DEBUG`==> Parameters: 15207312(Long)
+time=2019-03-10T21:55:54.527+0800`appName=oms`hostName=docker-20`logLevel=DEBUG`<==      Total: 1
+time=2019-03-10T21:55:54.570+0800`appName=oms`hostName=docker-20`logLevel=DEBUG`==>  Preparing: UPDATE user_web_token SET token=?,utime=? WHERE student_id=? 
+time=2019-03-10T21:55:54.570+0800`appName=oms`hostName=docker-20`logLevel=DEBUG`==> Parameters: bf961460-366b-4038-a05d-4e3a0fae4772(String), 1552226154568(Long), 15207312(Long)
+time=2019-03-10T21:55:54.574+0800`appName=oms`hostName=docker-20`logLevel=DEBUG`<==    Updates: 1
+time=2019-03-10T21:55:54.992+0800`appName=oms`hostName=docker-20`logLevel=DEBUG`==>  Preparing: SELECT relation_id AS relationId,operator_id AS operatorId,role_id AS roleId,deleted,ctime,utime FROM operator_role_relation WHERE operator_id = ? 
+time=2019-03-10T21:55:54.993+0800`appName=oms`hostName=docker-20`logLevel=DEBUG`==> Parameters: 15207312(Long)
+time=2019-03-10T21:55:54.995+0800`appName=oms`hostName=docker-20`logLevel=DEBUG`<==      Total: 1
+time=2019-03-10T21:55:54.998+0800`appName=oms`hostName=docker-20`logLevel=DEBUG`==>  Preparing: SELECT relation_id AS relationId,role_id AS roleId,menu_id AS menuId,status,ctime,utime FROM role_menu_relation WHERE role_id = ? 
+time=2019-03-10T21:55:54.998+0800`appName=oms`hostName=docker-20`logLevel=DEBUG`==> Parameters: 1(Long)
+time=2019-03-10T21:55:55.003+0800`appName=oms`hostName=docker-20`logLevel=DEBUG`<==      Total: 15
+time=2019-03-10T21:55:55.010+0800`appName=oms`hostName=docker-20`logLevel=DEBUG`==>  Preparing: SELECT menu_id AS menuId,title,href,icon,status,parent_id,ctime,utime FROM menu WHERE menu_id IN (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?) 
+time=2019-03-10T21:55:55.011+0800`appName=oms`hostName=docker-20`logLevel=DEBUG`==> Parameters: 1(Long), 7(Long), 8(Long), 2(Long), 3(Long), 5(Long), 13(Long), 14(Long), 15(Long), 16(Long), 17(Long), 18(Long), 19(Long), 20(Long), 21(Long)
+time=2019-03-10T21:55:55.017+0800`appName=oms`hostName=docker-20`logLevel=DEBUG`<==      Total: 15
+time=2019-03-10T21:55:57.693+0800`appName=oms`hostName=docker-20`logLevel=DEBUG`==>  Preparing: SELECT COUNT(1) FROM activity WHERE activity_name LIKE ? 
+time=2019-03-10T21:55:57.694+0800`appName=oms`hostName=docker-20`logLevel=DEBUG`==> Parameters: %null%(String)
+time=2019-03-10T21:55:57.695+0800`appName=oms`hostName=docker-20`logLevel=DEBUG`==>  Preparing: SELECT activity_id AS activityId,activity_name AS activityName,activity_addr AS activityAddr,start_time AS startTime,end_time AS endTime,activity_desc AS activityDesc,activity_number AS activityNumber,sign_number AS signNumber,interests,leader_name AS leaderName,leader_mobile AS leaderMobile,status,creator,ctime,utime FROM activity WHERE activity_name LIKE ? 
+time=2019-03-10T21:55:57.696+0800`appName=oms`hostName=docker-20`logLevel=DEBUG`==> Parameters: %null%(String)
+time=2019-03-10T21:55:57.697+0800`appName=oms`hostName=docker-20`logLevel=DEBUG`<==      Total: 0
+time=2019-03-10T22:03:03.895+0800`appName=oms`hostName=docker-20`logLevel=DEBUG`==>  Preparing: SELECT relation_id AS relationId,operator_id AS operatorId,role_id AS roleId,deleted,ctime,utime FROM operator_role_relation WHERE operator_id = ? 
+time=2019-03-10T22:03:03.926+0800`appName=oms`hostName=docker-20`logLevel=DEBUG`==> Parameters: 15207312(Long)
+time=2019-03-10T22:03:03.949+0800`appName=oms`hostName=docker-20`logLevel=DEBUG`<==      Total: 1
+time=2019-03-10T22:03:03.961+0800`appName=oms`hostName=docker-20`logLevel=DEBUG`==>  Preparing: SELECT relation_id AS relationId,role_id AS roleId,menu_id AS menuId,status,ctime,utime FROM role_menu_relation WHERE role_id = ? 
+time=2019-03-10T22:03:03.962+0800`appName=oms`hostName=docker-20`logLevel=DEBUG`==> Parameters: 1(Long)
+time=2019-03-10T22:03:03.970+0800`appName=oms`hostName=docker-20`logLevel=DEBUG`<==      Total: 15
+time=2019-03-10T22:03:03.987+0800`appName=oms`hostName=docker-20`logLevel=DEBUG`==>  Preparing: SELECT menu_id AS menuId,title,href,icon,status,parent_id,ctime,utime FROM menu WHERE menu_id IN (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?) 
+time=2019-03-10T22:03:03.989+0800`appName=oms`hostName=docker-20`logLevel=DEBUG`==> Parameters: 1(Long), 7(Long), 8(Long), 2(Long), 3(Long), 5(Long), 13(Long), 14(Long), 15(Long), 16(Long), 17(Long), 18(Long), 19(Long), 20(Long), 21(Long)
+time=2019-03-10T22:03:03.995+0800`appName=oms`hostName=docker-20`logLevel=DEBUG`<==      Total: 15
+time=2019-03-10T22:03:04.457+0800`appName=oms`hostName=docker-20`logLevel=DEBUG`==>  Preparing: SELECT COUNT(1) FROM activity WHERE activity_name LIKE ? 
+time=2019-03-10T22:03:04.458+0800`appName=oms`hostName=docker-20`logLevel=DEBUG`==> Parameters: %null%(String)
+time=2019-03-10T22:03:04.461+0800`appName=oms`hostName=docker-20`logLevel=DEBUG`==>  Preparing: SELECT activity_id AS activityId,activity_name AS activityName,activity_addr AS activityAddr,start_time AS startTime,end_time AS endTime,activity_desc AS activityDesc,activity_number AS activityNumber,sign_number AS signNumber,interests,leader_name AS leaderName,leader_mobile AS leaderMobile,status,creator,ctime,utime FROM activity WHERE activity_name LIKE ? 
+time=2019-03-10T22:03:04.462+0800`appName=oms`hostName=docker-20`logLevel=DEBUG`==> Parameters: %null%(String)
+time=2019-03-10T22:03:04.464+0800`appName=oms`hostName=docker-20`logLevel=DEBUG`<==      Total: 0
+time=2019-03-10T22:04:13.867+0800`appName=oms`hostName=docker-20`logLevel=DEBUG`==>  Preparing: SELECT relation_id AS relationId,operator_id AS operatorId,role_id AS roleId,deleted,ctime,utime FROM operator_role_relation WHERE operator_id = ? 
+time=2019-03-10T22:04:13.897+0800`appName=oms`hostName=docker-20`logLevel=DEBUG`==> Parameters: 15207312(Long)
+time=2019-03-10T22:04:13.919+0800`appName=oms`hostName=docker-20`logLevel=DEBUG`<==      Total: 1
+time=2019-03-10T22:04:13.931+0800`appName=oms`hostName=docker-20`logLevel=DEBUG`==>  Preparing: SELECT relation_id AS relationId,role_id AS roleId,menu_id AS menuId,status,ctime,utime FROM role_menu_relation WHERE role_id = ? 
+time=2019-03-10T22:04:13.931+0800`appName=oms`hostName=docker-20`logLevel=DEBUG`==> Parameters: 1(Long)
+time=2019-03-10T22:04:13.938+0800`appName=oms`hostName=docker-20`logLevel=DEBUG`<==      Total: 15
+time=2019-03-10T22:04:14.001+0800`appName=oms`hostName=docker-20`logLevel=DEBUG`==>  Preparing: SELECT menu_id AS menuId,title,href,icon,status,parent_id,ctime,utime FROM menu WHERE menu_id IN (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?) 
+time=2019-03-10T22:04:14.003+0800`appName=oms`hostName=docker-20`logLevel=DEBUG`==> Parameters: 1(Long), 7(Long), 8(Long), 2(Long), 3(Long), 5(Long), 13(Long), 14(Long), 15(Long), 16(Long), 17(Long), 18(Long), 19(Long), 20(Long), 21(Long)
+time=2019-03-10T22:04:14.009+0800`appName=oms`hostName=docker-20`logLevel=DEBUG`<==      Total: 15
+time=2019-03-10T22:04:14.451+0800`appName=oms`hostName=docker-20`logLevel=DEBUG`==>  Preparing: SELECT COUNT(1) FROM activity WHERE activity_name LIKE ? 
+time=2019-03-10T22:04:14.451+0800`appName=oms`hostName=docker-20`logLevel=DEBUG`==> Parameters: %null%(String)
+time=2019-03-10T22:04:14.451+0800`appName=oms`hostName=docker-20`logLevel=DEBUG`==>  Preparing: SELECT activity_id AS activityId,activity_name AS activityName,activity_addr AS activityAddr,start_time AS startTime,end_time AS endTime,activity_desc AS activityDesc,activity_number AS activityNumber,sign_number AS signNumber,interests,leader_name AS leaderName,leader_mobile AS leaderMobile,status,creator,ctime,utime FROM activity WHERE activity_name LIKE ? 
+time=2019-03-10T22:04:14.451+0800`appName=oms`hostName=docker-20`logLevel=DEBUG`==> Parameters: %null%(String)
+time=2019-03-10T22:04:14.451+0800`appName=oms`hostName=docker-20`logLevel=DEBUG`<==      Total: 0

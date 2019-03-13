@@ -1,6 +1,7 @@
 package com.zy.graduation1.service;
 
 import com.zy.graduation1.common.MyPage;
+import com.zy.graduation1.dto.user.ClassDetail;
 import com.zy.graduation1.dto.user.ClassDto;
 import com.zy.graduation1.dto.user.CollegeDto;
 import com.zy.graduation1.dto.user.MajorDto;
@@ -15,7 +16,7 @@ public interface OriginManageService {
      * @param currentPage
      * @return
      */
-    MyPage<ClassDto> queryClass(Long classId, Long collegeId, Long majorId, Integer currentPage);
+    MyPage<ClassDetail> queryClass(Long collegeId, String className, Integer page);
 
     /**
      * 分页查询专业信息
