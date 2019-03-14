@@ -3,10 +3,10 @@ package com.zy.graduation1.dto.user;
 import lombok.Data;
 
 @Data
-public class MajorDto {
+public class MajorDetail {
 
     /**
-     * 专业ID
+     * 专业编号
      */
     private Long majorId;
 
@@ -21,17 +21,7 @@ public class MajorDto {
     private String collegeName;
 
     /**
-     * 学院ID
+     * 学院编号
      */
     private Long collegeId;
-
-    /**
-     * 学院管理员姓名
-     */
-    private String collegeOperatorName;
-
-    /**
-     * 学院管理员联系方式
-     */
-    private String collegeOperatorMobile;
 }

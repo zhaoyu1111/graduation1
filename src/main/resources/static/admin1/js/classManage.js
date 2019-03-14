@@ -5,11 +5,20 @@ layui.use(['layer', 'table', 'form', 'jquery'], function () {
         form = layui.form;
 
     var menu;
-    $.post('/web/origin/listCollege', null, function (rec) {//得到数据提交到后端进行更新
+    /*$.post('/web/origin/listCollege', {'collegeId': collegeId}, function (rec) {//得到数据提交到后端进行更新
         if (rec.code === "2000") {
             $("select[name=collegeName]").append("<option value=''>请选择</option>");
             $.each(rec.data, function(index, item) {
                 $('select[name=collegeName]').append("<option value='" + item.collegeId + "'>" + item.collegeName + "</option>");
+            });
+        }
+    }, 'json');*/
+
+    $.post('/web/origin/listMajor', null, function (rec) {//得到数据提交到后端进行更新
+        if (rec.code === "2000") {
+            $("select[name=majorName]").append("<option value=''>请选择</option>");
+            $.each(rec.data, function(index, item) {
+                $('select[name=majorName]').append("<option value='" + item.majorId + "'>" + item.majorName + "</option>");
             });
         }
     }, 'json');

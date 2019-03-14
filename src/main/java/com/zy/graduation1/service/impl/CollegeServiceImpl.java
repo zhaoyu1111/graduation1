@@ -32,9 +32,14 @@ public class CollegeServiceImpl extends ServiceImpl<CollegeMapper, College> impl
     }
 
     @Override
-    public IPage<College> queryCollegeInfo(String collegeName, Integer currentPage) {
+    public IPage<College> queryCollegeInfo(String collegeName, Long collegeId, Integer currentPage) {
         QueryWrapper<College> query = new QueryWrapper<>();
-        query.like("college_name", collegeName);
+        if(StringUtils.isNotEmpty(collegeName)) {
+            query.like("college_name", collegeName);
+        }
+        if(null != collegeId) {
+            query.eq("college_id", collegeId);
+        }
         Page<College> collegePage = new Page<>(currentPage, 20);
         return baseMapper.selectPage(collegePage, query);
     }
@@ -45,10 +50,13 @@ public class CollegeServiceImpl extends ServiceImpl<CollegeMapper, College> impl
     }
 
     @Override
-    public Boolean saveCollege(Long collegeId, String collegeName, Long operatorId) {
+    public Boolean saveOrUpdateCollege(Long collegeId, String collegeName, Long operatorId) {
         College college = new College();
-        college.setCollegeId(collegeId).setCollegeName(collegeName).setOperatorId(operatorId);
-        return baseMapper.insert(college) == 1;
+        college.setCollegeName(collegeName).setOperatorId(operatorId);
+        if(null != collegeId) {
+            college.setCollegeId(collegeId);
+        }
+        return this.insertOrUpdate(college);
     }
 
     @Override
@@ -56,5 +64,37 @@ public class CollegeServiceImpl extends ServiceImpl<CollegeMapper, College> impl
         College college = new College();
         college.setCollegeId(collegeId).setCollegeName(collegeName).setOperatorId(operatorId);
         return baseMapper.updateById(college) == 1;
+    }
+
+    @Override
+    public College getCollege(String collegeName) {
+        QueryWrapper<College> query = new QueryWrapper<>();
+        if(StringUtils.isNotEmpty(collegeName)) {
+            query.eq("college_name", collegeName);
+        }
+        return baseMapper.selectOne(query);
+    }
+
+    @Override
+    public List<College> getCollege(String collegeName, Long collegeId) {
+        QueryWrapper<College> query = new QueryWrapper<>();
+        if(StringUtils.isNotEmpty(collegeName)) {
+            query.eq("college_name", collegeName);
+        }
+        if(null != collegeId) {
+            query.ne("college_id", collegeId);
+        }
+        return baseMapper.selectList(query);
+    }
+
+    @Override
+    public List<College> getCollege(Long operatorId) {
+        QueryWrapper<College> query = new QueryWrapper<>();
+        if(null != operatorId) {
+            query.eq("operator_id", operatorId);
+        } else {
+            return null;
+        }
+        return baseMapper.selectList(query);
     }
 }

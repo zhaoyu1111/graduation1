@@ -4,7 +4,9 @@ public enum OriginErrorCode implements CodeStatus {
 
     RECRUIT_NOT_EXIST("50001", "职位不存在"),
     UNIT_NOT_EXIST("50002", "公司不存在"),
-    ACTIVITY_NOT_EXIST("50003", "活动不存在");
+    ACTIVITY_NOT_EXIST("50003", "活动不存在"),
+    COLLEGE_EXIST("50004", "学院已存在，请勿重复添加"),
+    COLLEGE_NOT_EXIST("50005", "学院不存在");
 
     private String code;
     private String message;

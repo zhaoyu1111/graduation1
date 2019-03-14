@@ -24,14 +24,14 @@ public interface OriginManageService {
      * @param majorId
      * @return
      */
-    MyPage<MajorDto> queryMajor(Long collegeId, Long majorId, Integer currentPage);
+    MyPage<MajorDto> queryMajor(Long operatorId, Long collegeId, Long majorId, Integer currentPage);
 
     /**
      * 分页查询学院信息
      * @param collegeName
      * @return
      */
-    MyPage<CollegeDto> queryCollege(String collegeName, Integer currentPage);
+    MyPage<CollegeDto> queryCollege(String collegeName, Long collegeId, Integer currentPage);
 
     /**
      * 新增学院信息（首先管理员要存在）
@@ -39,7 +39,7 @@ public interface OriginManageService {
      * @param collegeName
      * @param operatorName
      */
-    void saveCollege(Long collegeId, String collegeName, String operatorName);
+    void saveOrUpdateCollege(Long collegeId, String collegeName, String operatorName);
 
     /**
      * 更新学院信息
@@ -48,4 +48,12 @@ public interface OriginManageService {
      * @param operatorName
      */
     void updateCollege(Long collegeId, String collegeName, String operatorName);
+
+    /**
+     * 新增或修改专业信息
+     * @param majorId
+     * @param majorName
+     * @param collegeId
+     */
+    void saveOrUpdateMajor(Long majorId, String majorName, Long collegeId);
 }

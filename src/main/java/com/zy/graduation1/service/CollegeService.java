@@ -28,7 +28,7 @@ public interface CollegeService extends IService<College> {
      * @param collegeName
      * @return
      */
-    IPage<College> queryCollegeInfo(String collegeName, Integer currentPage);
+    IPage<College> queryCollegeInfo(String collegeName, Long collegeId, Integer currentPage);
 
     /**
      * 查询学院
@@ -43,7 +43,7 @@ public interface CollegeService extends IService<College> {
      * @param operatorId
      * @return
      */
-    Boolean saveCollege(Long collegeId, String collegeName, Long operatorId);
+    Boolean saveOrUpdateCollege(Long collegeId, String collegeName, Long operatorId);
 
     /**
      * 更新学院信息
@@ -53,4 +53,26 @@ public interface CollegeService extends IService<College> {
      * @return
      */
     Boolean updateCollege(Long collegeId, String collegeName, Long operatorId);
+
+    /**
+     * 查询学院是否存在
+     * @param collegeName
+     * @return
+     */
+    College getCollege(String collegeName);
+
+    /**
+     * 查询学院信息
+     * @param collegeName
+     * @param collegeId
+     * @return
+     */
+    List<College> getCollege(String collegeName, Long collegeId);
+
+    /**
+     * 查询学院信息
+     * @param operatorId
+     * @return
+     */
+    List<College> getCollege(Long operatorId);
 }

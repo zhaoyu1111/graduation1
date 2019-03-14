@@ -7,16 +7,14 @@ import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.google.common.collect.Lists;
 import com.google.common.collect.Maps;
 import com.zy.graduation1.common.MyPage;
-import com.zy.graduation1.dto.user.ClassDetail;
-import com.zy.graduation1.dto.user.ClassDto;
-import com.zy.graduation1.dto.user.CollegeDto;
-import com.zy.graduation1.dto.user.MajorDto;
+import com.zy.graduation1.dto.user.*;
 import com.zy.graduation1.entity.Class;
 import com.zy.graduation1.entity.College;
 import com.zy.graduation1.entity.Major;
 import com.zy.graduation1.entity.Operator;
 import com.zy.graduation1.exception.BizErrorCode;
 import com.zy.graduation1.exception.BizException;
+import com.zy.graduation1.exception.OriginErrorCode;
 import com.zy.graduation1.service.*;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -75,8 +73,8 @@ public class OriginManageServiceImpl implements OriginManageService {
     }
 
     @Override
-    public MyPage<MajorDto> queryMajor(Long collegeId, Long majorId, Integer currentPage) {
-        IPage<Major> majorPage = majorService.queryMajor(collegeId, majorId, currentPage);
+    public MyPage<MajorDto> queryMajor(Long operatorId, Long collegeId, Long majorId, Integer currentPage) {
+        IPage<Major> majorPage = majorService.queryMajor(operatorId, collegeId, majorId, currentPage);
         List<Major> majors = majorPage.getRecords();
         if(CollectionUtils.isEmpty(majors)) {
             return new MyPage<>();
@@ -86,11 +84,6 @@ public class OriginManageServiceImpl implements OriginManageService {
         List<Long> collegeIds = majors.stream().map(Major::getCollegeId).distinct().collect(Collectors.toList());
         List<College> colleges = collegeService.listCollege(collegeIds);
         Map<Long, College> collegeMap = Maps.uniqueIndex(colleges.iterator(), College::getCollegeId);
-
-        /* 查询专业管理员信息*/
-        List<Long> majorOperatorIds = majors.stream().map(Major::getOperatorId).distinct().collect(Collectors.toList());
-        List<Operator> majorOperators = operatorService.getOperatorInfo(majorOperatorIds);
-        Map<Long, Operator> majorOperatorMap = Maps.uniqueIndex(majorOperators.iterator(), Operator::getOperatorId);
 
         /* 查询学院管理员信息*/
         List<Long> collegeOperatorIds = colleges.stream().map(College::getOperatorId).distinct().collect(Collectors.toList());
@@ -111,19 +104,14 @@ public class OriginManageServiceImpl implements OriginManageService {
                     majorDto.setCollegeOperatorMobile(collegeOperator.getMobile());
                 }
             }
-            Operator majorOperator = majorOperatorMap.get(major.getOperatorId());
-            if(null != majorOperator) {
-                majorDto.setMajorOperatorName(majorOperator.getOperatorName());
-                majorDto.setMajorOperatorMobile(majorOperator.getMobile());
-            }
             majorInfos.add(majorDto);
         }
         return new MyPage<>(majorPage.getTotal(), majorInfos);
     }
 
     @Override
-    public MyPage<CollegeDto> queryCollege(String collegeName, Integer currentPage) {
-        IPage<College> collegePage = collegeService.queryCollegeInfo(collegeName, currentPage);
+    public MyPage<CollegeDto> queryCollege(String collegeName, Long collegeId, Integer page) {
+        IPage<College> collegePage = collegeService.queryCollegeInfo(collegeName, collegeId, page);
         List<College> colleges = collegePage.getRecords();
         if(CollectionUtils.isEmpty(colleges)) {
             return new MyPage<>();
@@ -149,17 +137,24 @@ public class OriginManageServiceImpl implements OriginManageService {
     }
 
     @Override
-    public void saveCollege(Long collegeId, String collegeName, String operatorName) {
+    public void saveOrUpdateCollege(Long collegeId, String collegeName, String operatorName) {
         Operator operator = operatorService.getOperatorInfo(operatorName);
         if(null == operator) {
-            throw new BizException(BizErrorCode.ACCOUNT_NOT_EXIST);
+            throw new BizException(BizErrorCode.OPERATOR_NOT_EXIST);
         }
 
-        College college = collegeService.selectById(collegeId);
-        if(null != college) {
-            throw new BizException(BizErrorCode.ORIGIN_EXIST);
+        if(null == collegeId) {
+            College college =  collegeService.getCollege(collegeName);
+            if(null != college) {
+                throw new BizException(OriginErrorCode.COLLEGE_EXIST);
+            }
+        }else {
+            List<College> colleges = collegeService.getCollege(collegeName, collegeId);
+            if(CollectionUtils.isNotEmpty(colleges)) {
+                throw new BizException(OriginErrorCode.COLLEGE_EXIST);
+            }
         }
-        collegeService.saveCollege(collegeId, collegeName, operator.getOperatorId());
+        collegeService.saveOrUpdateCollege(collegeId, collegeName, operator.getOperatorId());
     }
 
     @Override
@@ -187,5 +182,20 @@ public class OriginManageServiceImpl implements OriginManageService {
             throw new BizException(BizErrorCode.ORIGIN_EXIST);
         }
         return operator.getOperatorId();
+    }
+
+    @Override
+    public void saveOrUpdateMajor(Long majorId, String majorName, Long collegeId) {
+        List<College> colleges = collegeService.getCollege(null, collegeId);
+        if(CollectionUtils.isNotEmpty(colleges)) {
+            throw new BizException(OriginErrorCode.COLLEGE_NOT_EXIST);
+        }
+
+        Major major = new Major();
+        major.setCollegeId(collegeId).setMajorName(majorName);
+        if(null != majorId) {
+            major.setMajorId(majorId);
+        }
+        majorService.insertOrUpdate(major);
     }
 }

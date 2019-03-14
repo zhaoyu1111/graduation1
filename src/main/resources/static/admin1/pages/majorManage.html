@@ -2,9 +2,99 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>角色管理</title>
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href="../../layui-2.3.0/css/layui.css">
+    <script type="text/javascript" src="../../jquery/jquery.min.js"></script>
+    <script type="text/javascript" src="../../layui-2.3.0/layui.js"></script>
+    <script type="text/javascript" src="../js/majorManage.js"></script>
+    <script type="text/javascript" src="../js/common.js"></script>
+    <script type="text/javascript" src="../../layui-2.3.0/lay/modules/layui-xtree.js"></script>
+    <style>
+        /* 修改table的样式 start */
+        .layui-table thead tr{
+            background-color: #009688;
+            color:white;
+        }
+        .layui-table-sort .layui-table-sort-asc{
+            border-bottom-color: white;
+        }
+        .layui-table-sort .layui-table-sort-desc{
+            border-top-color: white;
+        }
+        /* 修改table的样式 end */
+    </style>
+
 </head>
 <body>
-
+<div class="layui-container">
+    <div class="layui-row">
+        <table class="layui-hide" id="mytable" lay-filter="major"></table>
+        <!--表格列工具条模板-->
+        <script type="text/html" id="barDemo">
+            <a class="layui-btn layui-btn-xs" lay-event="edit">编辑</a>
+            <a class="layui-btn layui-btn-danger layui-btn-xs" lay-event="del">删除</a>
+        </script>
+    </div>
+</div>
 </body>
+<!-- 需要弹出的用户组新增或修改界面 -->
+<div class="layui-row" id="addMajor" style="display: none;">
+    <div class="layui-col-md12">
+        <form class="layui-form" id="addMajorForm">
+            <div class="layui-form-item">
+                <label class="layui-form-label" style="width: 100px;">专业编号：</label>
+                <div class="layui-input-inline">
+                    <input type="text" name="majorId" class="layui-input" id="majorId">
+                </div>
+            </div>
+            <div class="layui-form-item">
+                <label class="layui-form-label" style="width: 100px;">专业名称：</label>
+                <div class="layui-input-inline">
+                    <input type="text" name="majorName" class="layui-input" id="majorName">
+                </div>
+            </div>
+            <div class="layui-form-item">
+                <label class="layui-form-label" style="width: 100px;">学院名称：</label>
+                <div class="layui-input-inline">
+                    <select name="collegeName" id="collegeName">
+
+                    </select>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+<script type="text/html" id="major">
+    <div class="layui-form">
+        <div class="layui-form-item">
+            <div class="layui-inline">
+                <label class="layui-form-label" style="width: 100px;">学院名称：</label>
+                <div class="layui-input-inline">
+                    <input type="text" name="serach_college_name" id="serach_college_name" autocomplete="off" class="layui-input"/>
+                </div>
+            </div>
+            <div class="layui-inline">
+                <label class="layui-form-label" style="width: 100px;">学院编号：</label>
+                <div class="layui-input-inline">
+                    <input type="text" name="serach_college_id" id="serach_college_id" autocomplete="off" class="layui-input"/>
+                </div>
+            </div>
+            <div class="layui-inline">
+                <button class="layui-btn layui-btn-normal" id="add"><i class="layui-icon layui-icon-add-circle"></i>新增</button>
+                <button class="layui-btn layui-btn-normal" id="search"><i class="layui-icon layui-icon-search"></i>查询</button>
+                <button class="layui-btn layui-btn-normal" id="recover"><i class="layui-icon layui-icon-refresh"></i>重置</button>
+            </div>
+        </div>
+    </div>
+</script>
+<div id="add_resource" style="display: none;">
+    <form class="layui-form" id="resource" lay-filter="resource">
+        <div id="xtree1" style="height: 400px; overflow: auto;" class="xtree_contianer"></div>
+        <script type="text/javascript"></script>
+    </form>
+</div>
+
 </html>

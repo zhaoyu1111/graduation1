@@ -1,26 +1,26 @@
 package com.zy.graduation1.controller;
 
-import com.baomidou.mybatisplus.core.metadata.IPage;
-import com.baomidou.mybatisplus.core.toolkit.CollectionUtils;
-import com.google.common.collect.Lists;
-import com.google.common.collect.Maps;
 import com.zy.graduation1.common.Anonymous;
 import com.zy.graduation1.common.MyPage;
+import com.zy.graduation1.common.RequestUser;
 import com.zy.graduation1.dto.user.ClassDetail;
 import com.zy.graduation1.dto.user.CollegeDto;
-import com.zy.graduation1.entity.Class;
+import com.zy.graduation1.dto.user.MajorDto;
 import com.zy.graduation1.entity.College;
 import com.zy.graduation1.entity.Major;
+import com.zy.graduation1.exception.BizException;
+import com.zy.graduation1.exception.OriginErrorCode;
 import com.zy.graduation1.service.*;
-import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import javax.validation.constraints.NotBlank;
+import javax.validation.constraints.NotNull;
 import java.util.List;
-import java.util.Map;
-import java.util.stream.Collectors;
 
+@Validated
 @RestController
 @RequestMapping("/web/origin")
 public class OriginManageController {
@@ -42,26 +42,24 @@ public class OriginManageController {
 
     @Anonymous
     @RequestMapping("/deleteCollege")
-    public void deleteCollege(Long collegeId) {
+    public void deleteCollege(@NotNull(message = "请选择要删除的学院") Long collegeId) {
+        College college = collegeService.selectById(collegeId);
+        if(null == college) {
+            throw new BizException(OriginErrorCode.COLLEGE_NOT_EXIST);
+        }
         collegeService.deleteById(collegeId);
     }
 
-    @Anonymous
-    @RequestMapping("/saveCollege")
-    public void saveCollege(Long collegeId, String collegeName, String operatorName) {
-        originManageService.saveCollege(collegeId, collegeName, operatorName);
-    }
-
-    @Anonymous
-    @RequestMapping("/updateCollege")
-    public void updateCollege(Long collegeId, String collegeName, String operatorName) {
-        originManageService.updateCollege(collegeId, collegeName, operatorName);
+    @RequestMapping("/saveOrUpdateCollege")
+    public void saveCollege(Long collegeId,@NotBlank(message = "请输入学院名称") String collegeName,
+                            @NotBlank(message = "请输入管理员名称") String operatorName) {
+        originManageService.saveOrUpdateCollege(collegeId, collegeName, operatorName);
     }
 
     @Anonymous
     @RequestMapping("/queryCollege")
-    public MyPage<CollegeDto> queryCollege(String collegeName, Integer currentPage) {
-        return originManageService.queryCollege(collegeName, currentPage);
+    public MyPage<CollegeDto> queryCollege(String collegeName, Long collegeId, Integer page) {
+        return originManageService.queryCollege(collegeName, collegeId, page);
     }
 
     @RequestMapping("/queryClass")
@@ -72,6 +70,28 @@ public class OriginManageController {
     @RequestMapping("/listCollege")
     public List<College> listCollege() {
         return collegeService.listCollegeName();
+    }
+
+    @RequestMapping("/listMajor")
+    public List<Major> listMajor() {
+        return majorService.listMajor();
+    }
+
+    @RequestMapping("/queryMajor")
+    public MyPage<MajorDto> queryMajor(Long collegeId, Long majorId, Integer page) {
+        return originManageService.queryMajor(RequestUser.getCurrentUser(), collegeId, majorId, page);
+    }
+
+    @RequestMapping("/getCollege")
+    public List<College> getCollege() {
+        return collegeService.getCollege(RequestUser.getCurrentUser());
+    }
+
+    @RequestMapping("/saveOrUpdateMajor")
+    public void saveOrUpdateMajor(@NotBlank(message = "请输入专业编号") Long majorId,
+                                  @NotBlank(message = "请输入专业名称") String majorName,
+                                  @NotNull(message = "请选择学院") Long collegeId) {
+        originManageService.saveOrUpdateMajor(majorId, majorName, collegeId);
     }
 
 }

@@ -54,7 +54,7 @@ public class MajorServiceImpl extends ServiceImpl<MajorMapper, Major> implements
     }
 
     @Override
-    public IPage<Major> queryMajor(Long collegeId, Long majorId, Integer currentPage) {
+    public IPage<Major> queryMajor(Long operatorId, Long collegeId, Long majorId, Integer currentPage) {
         Page<Major> majorPage = new Page<>(currentPage, 20);
         QueryWrapper<Major> query = new QueryWrapper<>();
         if(null != collegeId) {
@@ -63,14 +63,16 @@ public class MajorServiceImpl extends ServiceImpl<MajorMapper, Major> implements
         if(null != majorId) {
             query.eq("major_id", majorId);
         }
+
+        if(null != operatorId) {
+            query.eq("operator_id", operatorId);
+        }
         query.orderByAsc("college_id").orderByDesc("major_id");
         return baseMapper.selectPage(majorPage, query);
     }
 
     @Override
-    public List<Major> listMajor(List<Long> majorIds) {
-        QueryWrapper<Major> query = new QueryWrapper<>();
-        query.eq("major_id", majorIds);
-        return baseMapper.selectList(query);
+    public List<Major> listMajor() {
+        return baseMapper.selectList(new QueryWrapper<>());
     }
 }

@@ -49,12 +49,12 @@ public interface MajorService extends IService<Major> {
      * @param collegeId
      * @return
      */
-    IPage<Major> queryMajor(Long collegeId, Long majorId, Integer currentPage);
+    IPage<Major> queryMajor(Long operatorId, Long collegeId, Long majorId, Integer currentPage);
 
     /**
      * 批量查询专业信息
      * @param majorIds
      * @return
      */
-    List<Major> listMajor(List<Long> majorIds);
+    List<Major> listMajor();
 }
