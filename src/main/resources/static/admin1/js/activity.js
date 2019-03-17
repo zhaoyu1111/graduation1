@@ -8,7 +8,7 @@ layui.use(['layer', 'table', 'form', 'jquery'], function () {
         elem: '#mytable',
         url: '/web/activity/queryActivity',
         toolbar: '#tool_activity',
-        height: 509,
+        height: 525,
         cols: [[
             {type:'checkbox'}
             ,{field:'activityId', title: '活动ID'}

@@ -66,7 +66,7 @@ public class OriginManageServiceImpl implements OriginManageService {
             ClassDetail classDetail = new ClassDetail();
             BeanUtils.copyProperties(aClass, classDetail);
             classDetail.setCollegeName(collegeMap.get(aClass.getCollegeId()));
-            classDetail.setMajorName(collegeMap.get(aClass.getMajorId()));
+            classDetail.setMajorName(majorMap.get(aClass.getMajorId()));
             details.add(classDetail);
         }
         return new MyPage<>(classPage.getTotal(), details);
@@ -74,15 +74,20 @@ public class OriginManageServiceImpl implements OriginManageService {
 
     @Override
     public MyPage<MajorDto> queryMajor(Long operatorId, Long collegeId, Long majorId, Integer currentPage) {
-        IPage<Major> majorPage = majorService.queryMajor(operatorId, collegeId, majorId, currentPage);
+        List<College> colleges = collegeService.getCollege(operatorId);
+        if(CollectionUtils.isEmpty(colleges)) {
+            return new MyPage<>();
+        }
+
+        List<Long> collegeIds = colleges.stream().map(College::getCollegeId).distinct().collect(Collectors.toList());
+
+        IPage<Major> majorPage = majorService.queryMajor(collegeIds, majorId, currentPage);
         List<Major> majors = majorPage.getRecords();
         if(CollectionUtils.isEmpty(majors)) {
             return new MyPage<>();
         }
 
         /* 查询学院信息*/
-        List<Long> collegeIds = majors.stream().map(Major::getCollegeId).distinct().collect(Collectors.toList());
-        List<College> colleges = collegeService.listCollege(collegeIds);
         Map<Long, College> collegeMap = Maps.uniqueIndex(colleges.iterator(), College::getCollegeId);
 
         /* 查询学院管理员信息*/
@@ -186,8 +191,8 @@ public class OriginManageServiceImpl implements OriginManageService {
 
     @Override
     public void saveOrUpdateMajor(Long majorId, String majorName, Long collegeId) {
-        List<College> colleges = collegeService.getCollege(null, collegeId);
-        if(CollectionUtils.isNotEmpty(colleges)) {
+        College colleges = collegeService.selectById(collegeId);
+        if(null == colleges) {
             throw new BizException(OriginErrorCode.COLLEGE_NOT_EXIST);
         }
 

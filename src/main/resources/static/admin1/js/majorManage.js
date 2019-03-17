@@ -7,17 +7,28 @@ layui.use(['layer', 'table', 'form', 'jquery'], function () {
     $.post('/web/origin/getCollege', null, function (rec) {//得到数据提交到后端进行更新
         if (rec.code === "2000") {
             $("#collegeName").append("<option value=''>请选择</option>");
+            $("#search_collegeName").append("<option value=''>请选择</option>");
             $.each(rec.data, function(index, item) {
                 $('#collegeName').append("<option value='" + item.collegeId + "'>" + item.collegeName + "</option>");
+                $('#search_collegeName').append("<option value='" + item.collegeId + "'>" + item.collegeName + "</option>");
             });
         }
     }, 'json');
     form.render();
 
-    /*form.on('select(major)', function(data){         //级联操作
-
+    form.on('select(collegeName)', function(data){         //级联操作
+        $.ajaxSettings.async = false;
+        $.post('/web/origin/getMajor', {"collegeId" : data.value}, function (rec) {//得到数据提交到后端进行更新
+            if (rec.code === "2000") {
+                $("#search_majorName").append("<option value=''>请选择</option>");
+                $.each(rec.data, function(index, item) {
+                    $('#search_majorName').append("<option value='" + item.majorId + "'>" + item.majorName + "</option>");
+                });
+            }
+        }, 'json');
+        form.render('select');
     });
-    form.render();*/
+
 
 
     var tableIns = table.render({
@@ -43,7 +54,7 @@ layui.use(['layer', 'table', 'form', 'jquery'], function () {
         if(layEven === 'edit') {
             edit(data, '编辑');
         } else if(layEven === 'del') {
-            delCollege(data, data.roleId);
+            delMajor(data, data.majorId);
         }
     });
 
@@ -58,13 +69,10 @@ layui.use(['layer', 'table', 'form', 'jquery'], function () {
             content:$("#addMajor").html(),
             success: function (layero, index) {
                 if(data != null) {
-                    layero.find("#collegeId").val(data.collegeId);
-                    layero.find("#collegeId").attr("disabled", true);
-                    layero.find("#collegeName").val(data.collegeName);
-                    layero.find("#operatorName").val(data.operatorName);
-                    form.render();
-                }else {
-                    $("input:radio").removeAttr("checked");
+                    layero.find("#majorId").val(data.majorId);
+                    layero.find("#majorId").attr("disabled", true);
+                    layero.find("#majorName").val(data.majorName);
+                    layero.find("option[value='"+data.collegeId+"']").prop("selected",true);
                     form.render();
                 }
             },
@@ -84,17 +92,16 @@ layui.use(['layer', 'table', 'form', 'jquery'], function () {
                         layer.msg(rec.message);
                     }
                 }, 'json');
-
             }
         });
     }
 
-    function delCollege(obj,id) {
+    function delMajor(obj,id) {
         if(null!=id){
             layer.confirm('您确定要删除吗？', {
                 btn: ['确认','返回'] //按钮
             }, function(){
-                $.post("/web/origin/deleteCollege",{"collegeId" : id},function(data){
+                $.post("/web/origin/deleteMajor",{"majorId" : id},function(data){
                     if (data.code == "2000") {
                         layer.alert(data.message,{icon: 6}, function(){
                             layer.closeAll();
@@ -116,9 +123,9 @@ layui.use(['layer', 'table', 'form', 'jquery'], function () {
     });
 
     $(document).on('click', '#search',  function () {
-        var collegeId = $('#serach_college_id').val();
-        var collegeName = $("#serach_college_name").val();
-        reload(collegeId, collegeName);
+        var collegeId = $('#search_collegeName').val();
+        var majorId = $("#search_majorName").val();
+        reload(collegeId, majorId);
         form.render();
     });
 
@@ -126,11 +133,11 @@ layui.use(['layer', 'table', 'form', 'jquery'], function () {
         reload(null, null);
     });
 
-    function reload(collegeId, collegeName) {
+    function reload(collegeId, majorId) {
         tableIns.reload({
             where: {
                 collegeId: collegeId,
-                collegeName: collegeName
+                majorId: majorId
             }
         });
     }

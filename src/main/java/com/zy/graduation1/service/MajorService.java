@@ -46,15 +46,21 @@ public interface MajorService extends IService<Major> {
 
     /**
      * 查询专业信息
-     * @param collegeId
+     * @param collegeIds
      * @return
      */
-    IPage<Major> queryMajor(Long operatorId, Long collegeId, Long majorId, Integer currentPage);
+    IPage<Major> queryMajor(List<Long> collegeIds, Long majorId, Integer currentPage);
 
     /**
      * 批量查询专业信息
-     * @param majorIds
      * @return
      */
     List<Major> listMajor();
+
+    /**
+     * 获取专业信息
+     * @param collegeId
+     * @return
+     */
+    List<Major> getMajor(Long collegeId);
 }

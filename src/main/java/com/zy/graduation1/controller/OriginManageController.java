@@ -11,6 +11,8 @@ import com.zy.graduation1.entity.Major;
 import com.zy.graduation1.exception.BizException;
 import com.zy.graduation1.exception.OriginErrorCode;
 import com.zy.graduation1.service.*;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -40,7 +42,6 @@ public class OriginManageController {
     @Autowired
     private MajorService majorService;
 
-    @Anonymous
     @RequestMapping("/deleteCollege")
     public void deleteCollege(@NotNull(message = "请选择要删除的学院") Long collegeId) {
         College college = collegeService.selectById(collegeId);
@@ -88,10 +89,28 @@ public class OriginManageController {
     }
 
     @RequestMapping("/saveOrUpdateMajor")
-    public void saveOrUpdateMajor(@NotBlank(message = "请输入专业编号") Long majorId,
+    public void saveOrUpdateMajor(@NotNull(message = "请输入专业编号") Long majorId,
                                   @NotBlank(message = "请输入专业名称") String majorName,
                                   @NotNull(message = "请选择学院") Long collegeId) {
         originManageService.saveOrUpdateMajor(majorId, majorName, collegeId);
+    }
+
+    @RequestMapping("/deleteMajor")
+    public void deleteMajor(@NotNull(message = "请选择需要删除的专业") Long majorId) {
+        Major major = majorService.selectById(majorId);
+        if(null == major) {
+            throw new BizException(OriginErrorCode.MAJOR_NOT_EXIST);
+        }
+        majorService.deleteMajor(majorId);
+    }
+
+    @RequestMapping("/getMajor")
+    public List<Major> getMajor(@NotNull(message = "请选择学院信息") Long collegeId) {
+        College college = collegeService.selectById(collegeId);
+        if(null == college) {
+            throw new BizException(OriginErrorCode.COLLEGE_NOT_EXIST);
+        }
+        return majorService.getMajor(collegeId);
     }
 
 }

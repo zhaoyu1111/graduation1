@@ -4,26 +4,29 @@ layui.use(['layer', 'table', 'form', 'jquery'], function () {
         $ = layui.jquery,
         form = layui.form;
 
-    var menu;
-    /*$.post('/web/origin/listCollege', {'collegeId': collegeId}, function (rec) {//得到数据提交到后端进行更新
+    $.post('/web/origin/getCollege', null, function (rec) {//得到数据提交到后端进行更新
         if (rec.code === "2000") {
-            $("select[name=collegeName]").append("<option value=''>请选择</option>");
+            $("#collegeName").append("<option value=''>请选择</option>");
             $.each(rec.data, function(index, item) {
-                $('select[name=collegeName]').append("<option value='" + item.collegeId + "'>" + item.collegeName + "</option>");
-            });
-        }
-    }, 'json');*/
-
-    $.post('/web/origin/listMajor', null, function (rec) {//得到数据提交到后端进行更新
-        if (rec.code === "2000") {
-            $("select[name=majorName]").append("<option value=''>请选择</option>");
-            $.each(rec.data, function(index, item) {
-                $('select[name=majorName]').append("<option value='" + item.majorId + "'>" + item.majorName + "</option>");
+                $('#collegeName').append("<option value='" + item.collegeId + "'>" + item.collegeName + "</option>");
             });
         }
     }, 'json');
-    form.render();
+    //form.render();
 
+    form.on('select(collegeName)', function(data){         //级联操作
+        $("#majorName").empty();
+        $.ajaxSettings.async = false;
+        $.post('/web/origin/getMajor', {"collegeId" : data.value}, function (rec) {//得到数据提交到后端进行更新
+            if (rec.code === "2000") {
+                $("#majorName").append("<option value=''>请选择</option>");
+                $.each(rec.data, function(index, item) {
+                    $('#majorName').append("<option value='" + item.majorId + "'>" + item.majorName + "</option>");
+                });
+            }
+        }, 'json');
+        form.render('select');
+    });
 
 
     var tableIns = table.render({
@@ -52,14 +55,7 @@ layui.use(['layer', 'table', 'form', 'jquery'], function () {
             edit(data, '编辑');
         } else if(layEven === 'del') {
             delClass(data, data.roleId);
-        } else if(layEven === 'resource_allocation') {
-            resource_allocation('权限分配', data.roleId);
         }
-    });
-
-    form.on('radio', function (data) {
-        $("input:radio").removeAttr("checked");
-        $(data.elem).attr('checked', 'checked');
     });
 
     function edit(data, title){
@@ -78,8 +74,7 @@ layui.use(['layer', 'table', 'form', 'jquery'], function () {
                     $("input[name=deleted][value='1']").attr("checked", data.deleted == 1 ? true : false);
                     form.render();
                 }else {
-                    $("input:radio").removeAttr("checked");
-                    form.render();
+
                 }
             },
             yes: function (index, layero) {
@@ -129,62 +124,6 @@ layui.use(['layer', 'table', 'form', 'jquery'], function () {
                 layer.closeAll();
             });
         }
-    }
-
-    form.on('checkbox', function (data) {
-        //$("input:checkbox").removeAttr("checked");
-        $(data.elem).attr('checked', true);
-    });
-
-    function resource_allocation(title, id) {
-        var menu;
-        $.ajaxSettings.async = false;
-        $.post('/web/system/getAllMenu', {roleId: id}, function (res) {
-            if(res.code === '2000') {
-                menu = res.data;
-            }
-        });
-        var xtree1 = new layuiXtree({
-            elem: 'xtree1'   //(必填) 放置xtree的容器，样式参照 .xtree_contianer
-            , form: form     //(必填) layui 的 from
-            , data: menu     //(必填) json数据
-        });
-        layer.open({
-            type: 1,
-            title: title,
-            skin: "myclass",
-            area: ["30%"],
-            btn: ['确认', '取消'],//弹出层按钮
-            content: $("#add_resource").html(),
-            success: function (layero, index) {
-                xtree1.render();
-                $.post('/web/system/getResourceByRoleId', {roleId: id}, function (rec) {
-                    if(rec.code === '2000') {
-                        var data = rec.data;
-                        for(var i = 0; i < data.length; i++) {
-                            $("input:checkbox[value='" + data[i].menuId + "']").attr('checked', true);
-                        }
-                    }
-                });
-                form.render();
-            },
-            yes: function (layero, index) {
-
-                var check = $(".layui-xtree-checkbox");
-                var arr = new Array();
-                var ind = 0;
-                for(var i = check.length / 2; i < check.length; i++) {
-                    if(check[i].checked) {
-                        arr[ind] = check[i].value;
-                        ind++;
-                    }
-                }
-                $.post('/web/system/editResource', {roleId: id, resources: arr }, function (res) {
-                    layer.msg(res.message);
-                });
-                layer.closeAll();
-            }
-        });
     }
 
     $(document).on('click', '#add', function () {

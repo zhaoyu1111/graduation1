@@ -40,11 +40,6 @@ public class Major extends SuperEntity<Major> {
      */
     @TableField("major_name")
     private String majorName;
-    /**
-     * 管理员ID
-     */
-    @TableField("operator_id")
-    private Long operatorId;
 
     @TableField("college_id")
     private Long collegeId;

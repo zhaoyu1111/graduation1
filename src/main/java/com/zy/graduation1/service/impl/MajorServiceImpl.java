@@ -2,6 +2,7 @@ package com.zy.graduation1.service.impl;
 
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.baomidou.mybatisplus.core.metadata.IPage;
+import com.baomidou.mybatisplus.core.toolkit.CollectionUtils;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.zy.graduation1.entity.Major;
 import com.zy.graduation1.mapper.MajorMapper;
@@ -9,7 +10,6 @@ import com.zy.graduation1.service.MajorService;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.stereotype.Service;
-import org.springframework.util.CollectionUtils;
 
 import java.util.List;
 
@@ -54,19 +54,16 @@ public class MajorServiceImpl extends ServiceImpl<MajorMapper, Major> implements
     }
 
     @Override
-    public IPage<Major> queryMajor(Long operatorId, Long collegeId, Long majorId, Integer currentPage) {
-        Page<Major> majorPage = new Page<>(currentPage, 20);
+    public IPage<Major> queryMajor(List<Long> collegeIds, Long majorId, Integer currentPage) {
+        Page<Major> majorPage = new Page<>(currentPage, 10);
         QueryWrapper<Major> query = new QueryWrapper<>();
-        if(null != collegeId) {
-            query.eq("college_id", collegeId);
+        if(CollectionUtils.isNotEmpty(collegeIds)) {
+            query.in("college_id", collegeIds);
         }
         if(null != majorId) {
             query.eq("major_id", majorId);
         }
 
-        if(null != operatorId) {
-            query.eq("operator_id", operatorId);
-        }
         query.orderByAsc("college_id").orderByDesc("major_id");
         return baseMapper.selectPage(majorPage, query);
     }
@@ -74,5 +71,12 @@ public class MajorServiceImpl extends ServiceImpl<MajorMapper, Major> implements
     @Override
     public List<Major> listMajor() {
         return baseMapper.selectList(new QueryWrapper<>());
+    }
+
+    @Override
+    public List<Major> getMajor(Long collegeId) {
+        QueryWrapper<Major> query = new QueryWrapper<>();
+        query.eq("college_id", collegeId);
+        return baseMapper.selectList(query);
     }
 }

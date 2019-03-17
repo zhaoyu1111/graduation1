@@ -106,12 +106,12 @@ public class RecruitManageController {
 
     @RequestMapping("/saveOrUpdateRecruit")
     public void saveOrUpdateRecruit(Long recuritId,@NotBlank(message = "请输入标题") String title,
-                                    @NotBlank(message = "请输入薪酬范围") String salary,@NotBlank(message = "请输入招聘人数") Integer members,
-                                    @NotBlank(message = "请输入结束时间") Long endTime,@NotBlank(message = "请输入联系人") String contractor,
+                                    @NotBlank(message = "请输入薪酬范围") String salary,@NotNull(message = "请输入招聘人数") Integer members,
+                                    @NotNull(message = "请输入结束时间") Long endTime,@NotBlank(message = "请输入联系人") String contractor,
                                     @NotBlank(message = "请输入手机号") String mobile,@NotBlank(message = "请输入职位名称") String posName,
                                     @RequestParam(defaultValue = "无") String posDescript,@NotBlank(message = "请输入福利") String welfare,
-                                    @NotBlank(message = "请输入工作地点") String workPlace,@NotBlank(message = "请选择招聘公司") Long unitId,
-                                    @NotBlank(message = "请输入邮箱") Long email,@RequestParam(defaultValue = "1") Integer status,
+                                    @NotBlank(message = "请输入工作地点") String workPlace,@NotNull(message = "请选择招聘公司") Long unitId,
+                                    @NotBlank(message = "请输入邮箱") String email,@RequestParam(defaultValue = "1") Integer status,
                                     @RequestParam(defaultValue = "0") Integer deleted) {
         Recruit recruit = new Recruit();
         recruit.setTitle(title).setMembers(members).setEndTime(endTime).setContractor(contractor).setMobile(mobile).setPosName(posName)
