@@ -27,17 +27,17 @@ layui.use(['layer', 'table', 'form', 'jquery'], function () {
         elem: '#mytable',
         url: '/web/activity/queryDonation',
         toolbar: '#tool_donation',
-        height: 650,
+        height: 525,
         cols: [[
             {type:'checkbox'}
             ,{field:'donationId', title: 'ID'}
-            ,{field:'donationName', title: '捐赠人姓名', width: 103}
-            ,{field:'donationMobile', title: '联系方式', width: 125}
-            ,{field:'goodsName', title: '物品名称'}
-            ,{field:'amount', title: '数量'}
-            ,{field:'objectName', title: '被赠名称', width: 116}
-            ,{field:'handleName', title: '处理人名称', width: 101}
-            ,{field:'donationObject',  title: '捐赠对象',
+            ,{field:'donationName', title: '捐赠人姓名', width: 103, align: 'center'}
+            ,{field:'donationMobile', title: '联系方式', width: 125, align: 'center'}
+            ,{field:'goodsName', title: '物品名称', align: 'center'}
+            ,{field:'amount', title: '数量', align: 'center'}
+            ,{field:'objectName', title: '被赠名称', width: 116, align: 'center'}
+            ,{field:'handleName', title: '处理人名称', width: 101, align: 'center'}
+            ,{field:'donationObject',  title: '捐赠对象', align: 'center',
                 templet: function (data) {
                     var object;
                     $.each(donationObject, function (index, item) {
@@ -47,7 +47,7 @@ layui.use(['layer', 'table', 'form', 'jquery'], function () {
                     });
                     return object;
                 }}
-            ,{field:'status',  title: '状态',
+            ,{field:'status',  title: '状态', align: 'center',
                 templet: function (data) {
                     if(data.status == 1) {
                         return "待处理";

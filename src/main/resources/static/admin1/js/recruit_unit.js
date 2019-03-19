@@ -59,13 +59,13 @@ layui.use(['layer', 'table', 'form', 'jquery'], function () {
         elem: '#mytable',
         url: '/web/recruit/queryRecruitUnit',
         toolbar: '#tool_unit',
-        height: 460,
+        height: 525,
         cols: [[
             {type:'checkbox'}
             ,{field:'unitId', title: 'ID'}
-            ,{field:'unitName', title: '单位名称'}
-            ,{field:'industry', title: '所属行业'}
-            ,{field:'property', title: '单位性质',
+            ,{field:'unitName', title: '单位名称', align: 'center'}
+            ,{field:'industry', title: '所属行业', align: 'center'}
+            ,{field:'property', title: '单位性质', align: 'center',
                 templet: function (data) {
                     var proper;
                     $.each(propertyData, function (index, item) {
@@ -75,7 +75,7 @@ layui.use(['layer', 'table', 'form', 'jquery'], function () {
                     });
                     return proper;
                 }}
-            ,{field:'scale', title: '单位规模',
+            ,{field:'scale', title: '单位规模', align: 'center',
                 templet: function (data) {
                     var scale_data;
                     $.each(scale, function (index, item) {
@@ -85,10 +85,10 @@ layui.use(['layer', 'table', 'form', 'jquery'], function () {
                     });
                     return scale_data;
                 }}
-            ,{field:'unitWeb', title: '官方网址'}
-            ,{field:'contractor', title: '联系人'}
-            ,{field:'mobile', title: '电话'}
-            ,{field:'status', title: '状态',
+            ,{field:'unitWeb', title: '官方网址', align: 'center'}
+            ,{field:'contractor', title: '联系人', align: 'center'}
+            ,{field:'mobile', title: '电话', align: 'center'}
+            ,{field:'status', title: '状态', align: 'center',
                 templet:function (data) {
                     if(data.status == 1) {
                         return "正在审核";

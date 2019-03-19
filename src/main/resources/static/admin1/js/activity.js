@@ -11,15 +11,15 @@ layui.use(['layer', 'table', 'form', 'jquery'], function () {
         height: 525,
         cols: [[
             {type:'checkbox'}
-            ,{field:'activityId', title: '活动ID'}
-            ,{field:'activityName', title: '活动名称'}
-            ,{field:'activityAddr', title: '活动地址'}
-            ,{field:'startTime', title: '开始时间'}
-            ,{field:'endTime', title: '结束时间'}
-            ,{field:'activityNumber', title: '活动人数'}
-            ,{field:'signNumber', title: '报名人数'}
-            ,{field:'interests', title: '感兴趣数'}
-            ,{field:'status', title: '当前状态',
+            ,{field:'activityId', title: '活动ID', align: 'center'}
+            ,{field:'activityName', title: '活动名称', align: 'center'}
+            ,{field:'activityAddr', title: '活动地址', align: 'center'}
+            ,{field:'startTime', title: '开始时间', align: 'center'}
+            ,{field:'endTime', title: '结束时间', align: 'center'}
+            ,{field:'activityNumber', title: '活动人数', align: 'center'}
+            ,{field:'signNumber', title: '报名人数', align: 'center'}
+            ,{field:'interests', title: '感兴趣数', align: 'center'}
+            ,{field:'status', title: '当前状态', align: 'center',
                 templet:function (data) {
                     if(data.status == 1) {
                         return "待审核";

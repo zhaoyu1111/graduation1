@@ -28,18 +28,18 @@ layui.use(['layer', 'table', 'form', 'jquery'], function () {
         elem: '#mytable',
         url: '/web/recruit/queryRecruit',
         toolbar: '#tool_recruit',
-        height: 460,
+        height: 525,
         cols: [[
             {type:'checkbox'}
             ,{field:'recuritId', title: 'ID'}
-            ,{field:'title', title: '单位名称'}
+            ,{field:'title', title: '单位名称', align: 'center'}
             ,{field:'salary', title: '薪资'}
-            ,{field:'members', title: '招聘人数'}
-            ,{field:'resumes', title: '简历投递数'}
-            ,{field:'endTime', title: '结束时间'}
-            ,{field:'contractor', title: '联系人'}
-            ,{field:'posName', title: '职位名称'}
-            ,{field:'status', title: '招聘状态',
+            ,{field:'members', title: '招聘人数', align: 'center'}
+            ,{field:'resumes', title: '简历投递数', align: 'center'}
+            ,{field:'endTime', title: '结束时间', align: 'center'}
+            ,{field:'contractor', title: '联系人', align: 'center'}
+            ,{field:'posName', title: '职位名称', align: 'center'}
+            ,{field:'status', title: '招聘状态', align: 'center',
                 templet: function (data) {
                     var status_data;
                     $.each(status, function (index, item) {

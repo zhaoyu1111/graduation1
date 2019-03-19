@@ -8,7 +8,10 @@ public enum OriginErrorCode implements CodeStatus {
     COLLEGE_EXIST("50004", "学院已存在，请勿重复添加"),
     COLLEGE_NOT_EXIST("50005", "学院不存在"),
     MAJOR_NOT_EXIST("50006", "专业不存在"),
-    DONATION_PROJECT_NOT_EXIST("50007", "捐赠项目不存在，请刷新后重试");
+    DONATION_PROJECT_NOT_EXIST("50007", "捐赠项目不存在，请刷新后重试"),
+    ASSOCIATION_EXIST("50008", "当前地区已存在校友会， 请勿重复添加"),
+    ASSOCIATION_NOT_EXIST("50009", "校友会不存在，删除失败"),
+    ARTICLE_NOT_EXIST("50010", "文章不存在，删除失败");
 
     private String code;
     private String message;

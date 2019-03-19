@@ -10,7 +10,7 @@ layui.use(['layer', 'table', 'form', 'jquery'], function () {
             elem: '#mytable',
             url: '/web/system/listRole',
             toolbar: '#operator',
-            height: 460,
+            height: 525,
             response: {
                 statusName: 'code'
                 , statusCode: '2000'
@@ -20,14 +20,14 @@ layui.use(['layer', 'table', 'form', 'jquery'], function () {
             },
             cols: [[
                 {type:'checkbox'}
-                ,{field:'roleId', title: 'ID', sort: true}
-                ,{field:'roleName', title: '角色名称'}
-                ,{field:'ctime',  title: '创建时间', sort: true,
+                ,{field:'roleId', title: 'ID', align: 'center'}
+                ,{field:'roleName', title: '角色名称', align: 'center'}
+                ,{field:'ctime',  title: '创建时间', align: 'center',
                     templet: function (data) {
                         return createTime(data.ctime);
                     }}
-                ,{field:'remark', title: '备注'}
-                ,{field:'deleted', title: '状态',
+                ,{field:'remark', title: '备注', align: 'center'}
+                ,{field:'deleted', title: '状态', align: 'center',
                     templet:function (data) {
                         if(data.deleted == 0) {
                             return "正常";

@@ -1,6 +1,6 @@
 package com.zy.graduation1.mapper;
 
-import com.zy.graduation1.entity.Test;
+import com.zy.graduation1.entity.Article;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 import org.apache.ibatis.annotations.Mapper;
 
@@ -10,9 +10,9 @@ import org.apache.ibatis.annotations.Mapper;
  * </p>
  *
  * @author zy
- * @since 2018-12-30
+ * @since 2019-03-19
  */
 @Mapper
-public interface TestMapper extends BaseMapper<Test> {
+public interface ArticleMapper extends BaseMapper<Article> {
 
 }

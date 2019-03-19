@@ -1,10 +1,9 @@
 package com.zy.graduation1.service;
 
+import com.baomidou.mybatisplus.core.metadata.IPage;
 import com.zy.graduation1.common.MyPage;
-import com.zy.graduation1.dto.user.ClassDetail;
-import com.zy.graduation1.dto.user.ClassDto;
-import com.zy.graduation1.dto.user.CollegeDto;
-import com.zy.graduation1.dto.user.MajorDto;
+import com.zy.graduation1.dto.user.*;
+import com.zy.graduation1.entity.AlumniAssociation;
 
 public interface OriginManageService {
 
@@ -56,4 +55,13 @@ public interface OriginManageService {
      * @param collegeId
      */
     void saveOrUpdateMajor(Long majorId, String majorName, Long collegeId);
+
+    /**
+     * 分页查询校友会信息
+     * @param associaName
+     * @param address
+     * @param currentPage
+     * @return
+     */
+    MyPage<AssociationDto> queryAlumniAssociation(String associaName, String address, Integer currentPage);
 }

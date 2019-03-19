@@ -73,4 +73,10 @@ public interface OperatorService extends IService<Operator> {
      * @param operatorId
      */
     void deleteOperator(Long operatorId);
+
+    /**
+     * 获取管理员列表
+     * @return
+     */
+    List<Operator> getOperator();
 }

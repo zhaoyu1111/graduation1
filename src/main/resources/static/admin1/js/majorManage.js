@@ -29,19 +29,17 @@ layui.use(['layer', 'table', 'form', 'jquery'], function () {
         form.render('select');
     });
 
-
-
     var tableIns = table.render({
         elem: '#mytable',
         url: '/web/origin/queryMajor',
         toolbar: '#major',
-        height: 460,
+        height: 525,
         cols: [[
             {type:'checkbox'}
-            ,{field:'majorId', title: '专业编号', sort: true}
-            ,{field:'majorName', title: '专业名称'}
-            ,{field:'collegeName', title: '学院名称'}
-            ,{field:'collegeId', title: '学院编号'}
+            ,{field:'majorId', title: '专业编号', align: 'center'}
+            ,{field:'majorName', title: '专业名称', align: 'center'}
+            ,{field:'collegeName', title: '学院名称', align: 'center'}
+            ,{field:'collegeId', title: '学院编号', align: 'center'}
             ,{fixed: 'right',title:"操作",align:'center', toolbar: '#barDemo'}
         ]]
         ,page: true

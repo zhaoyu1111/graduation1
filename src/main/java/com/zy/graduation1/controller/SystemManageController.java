@@ -7,6 +7,7 @@ import com.zy.graduation1.common.Anonymous;
 import com.zy.graduation1.common.MyPage;
 import com.zy.graduation1.dto.user.*;
 import com.zy.graduation1.entity.Menu;
+import com.zy.graduation1.entity.Operator;
 import com.zy.graduation1.entity.Role;
 import com.zy.graduation1.entity.RoleMenuRelation;
 import com.zy.graduation1.service.*;
@@ -275,5 +276,10 @@ public class SystemManageController {
     public void deleteOperator(@NotNull(message = "请选择要删除的管理员") Long operatorId) {
         operatorService.deleteOperator(operatorId);
         operatorRoleRelationService.deleteOperatorRole(operatorId);
+    }
+
+    @RequestMapping("/getOperator")
+    public List<Operator> getOperator() {
+        return operatorService.getOperator();
     }
 }

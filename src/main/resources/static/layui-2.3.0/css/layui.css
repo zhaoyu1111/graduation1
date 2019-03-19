@@ -814,7 +814,7 @@ hr, .layui-timeline-item:before{background-color: #e6e6e6;}
 .layui-table-sort .layui-table-sort-desc:hover{border-top-color: #666;}
 .layui-table-sort[lay-sort="asc"] .layui-table-sort-asc{border-bottom-color: #000;}
 .layui-table-sort[lay-sort="desc"] .layui-table-sort-desc{border-top-color: #000;}
-.layui-table-cell{height: 28px; line-height: 28px; padding: 0 15px; position: relative; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; box-sizing: border-box;}
+.layui-table-cell{height: 28px; line-height: 28px; padding: -6px 15px; position: relative; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; box-sizing: border-box;}
 .layui-table-cell .layui-form-checkbox[lay-skin="primary"],
 .layui-table-cell .layui-form-radio[lay-skin="primary"]{top: -1px; vertical-align: middle;}
 .layui-table-cell .layui-form-radio{padding-right: 0px}

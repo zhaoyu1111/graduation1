@@ -18,15 +18,15 @@ layui.use(['layer', 'table', 'form', 'jquery'], function () {
         elem: '#mytable',
         url: '/web/system/queryOperator',
         toolbar: '#tool_user',
-        height: 460,
+        height: 525,
         cols: [[
             {type:'checkbox'}
-            ,{field:'operatorName', title: '管理员名称'}
-            ,{field:'operatorId', title: '管理员ID'}
-            ,{field:'roleName', title: '角色名称'}
-            ,{field:'roleId', title: '角色ID'}
-            ,{field:'mobile', title: '手机号'}
-            ,{field:'ctime',  title: '创建时间',
+            ,{field:'operatorName', title: '管理员名称', align: 'center'}
+            ,{field:'operatorId', title: '管理员ID', align: 'center'}
+            ,{field:'roleName', title: '角色名称', align: 'center'}
+            ,{field:'roleId', title: '角色ID', align: 'center'}
+            ,{field:'mobile', title: '手机号', align: 'center'}
+            ,{field:'ctime',  title: '创建时间', align: 'center',
                 templet: function (data) {
                     return createDate(data.ctime);
                 }}

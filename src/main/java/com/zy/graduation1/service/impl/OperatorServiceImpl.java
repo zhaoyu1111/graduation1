@@ -86,4 +86,9 @@ public class OperatorServiceImpl extends ServiceImpl<OperatorMapper, Operator> i
         }
         baseMapper.deleteById(operatorId);
     }
+
+    @Override
+    public List<Operator> getOperator() {
+        return baseMapper.selectList(new QueryWrapper<>());
+    }
 }

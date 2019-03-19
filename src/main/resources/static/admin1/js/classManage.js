@@ -33,15 +33,15 @@ layui.use(['layer', 'table', 'form', 'jquery'], function () {
         elem: '#mytable',
         url: '/web/origin/queryClass',
         toolbar: '#class',
-        height: 460,
+        height: 525,
         cols: [[
             {type:'checkbox'}
-            ,{field:'classId', title: '班级编号', sort: true}
-            ,{field:'collegeName', title: '学院名称'}
-            ,{field:'majorName', title: '专业名称'}
-            ,{field:'headMaster', title: '班主任'}
-            ,{field:'counselor', title: '辅导员'}
-            ,{field:'contractor', title: '班级联系人'}
+            ,{field:'classId', title: '班级编号', align: 'center'}
+            ,{field:'collegeName', title: '学院名称', align: 'center'}
+            ,{field:'majorName', title: '专业名称', align: 'center'}
+            ,{field:'headMaster', title: '班主任', align: 'center'}
+            ,{field:'counselor', title: '辅导员', align: 'center'}
+            ,{field:'contractor', title: '班级联系人', align: 'center'}
             ,{fixed: 'right',title:"操作",align:'center', toolbar: '#barDemo'}
         ]]
         ,page: true

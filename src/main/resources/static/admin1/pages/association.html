@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="../../layui-2.3.0/css/layui.css">
     <script type="text/javascript" src="../../jquery/jquery.min.js"></script>
     <script type="text/javascript" src="../../layui-2.3.0/layui.js"></script>
-    <script type="text/javascript" src="../js/majorManage.js"></script>
+    <script type="text/javascript" src="../js/association.js"></script>
     <script type="text/javascript" src="../js/common.js"></script>
     <script type="text/javascript" src="../../layui-2.3.0/lay/modules/layui-xtree.js"></script>
     <style>
@@ -31,7 +31,7 @@
 <body>
 <div class="layui-container">
     <div class="layui-row">
-        <table class="layui-hide" id="mytable" lay-filter="major"></table>
+        <table class="layui-hide" id="mytable" lay-filter="role"></table>
         <!--表格列工具条模板-->
         <script type="text/html" id="barDemo">
             <a class="layui-btn layui-btn-xs" lay-event="edit">编辑</a>
@@ -41,49 +41,52 @@
 </div>
 </body>
 <!-- 需要弹出的用户组新增或修改界面 -->
-<div class="layui-row" id="addMajor" style="display: none;">
+<div class="layui-row" id="addassocia" style="display: none;">
     <div class="layui-col-md12">
-        <form class="layui-form" id="addMajorForm">
+        <form class="layui-form" id="addAssociaForm">
             <div class="layui-form-item">
-                <label class="layui-form-label" style="width: 100px;">专业编号：</label>
+                <label class="layui-form-label" style="width: 100px;">校友会名称：</label>
                 <div class="layui-input-inline">
-                    <input type="text" name="majorId" class="layui-input" id="majorId">
+                    <input type="text" name="associaName" class="layui-input" id="associaName">
                 </div>
             </div>
             <div class="layui-form-item">
-                <label class="layui-form-label" style="width: 100px;">专业名称：</label>
+                <label class="layui-form-label" style="width: 100px;">会长名称：</label>
                 <div class="layui-input-inline">
-                    <input type="text" name="majorName" class="layui-input" id="majorName">
-                </div>
-            </div>
-            <div class="layui-form-item">
-                <label class="layui-form-label" style="width: 100px;">学院名称：</label>
-                <div class="layui-input-inline">
-                    <select name="collegeName" id="collegeName">
+                    <select name="presidentName" id="presidentName">
 
                     </select>
+                </div>
+            </div>
+            <div class="layui-form-item">
+                <label class="layui-form-label" style="width: 100px;">地址：</label>
+                <div class="layui-input-inline">
+                    <input type="text" name="address" class="layui-input" id="address">
+                </div>
+            </div>
+            <div class="layui-form-item">
+                <label class="layui-form-label" style="width: 100px;">启用状态：</label>
+                <div class="layui-input-block">
+                    <input type="radio" name="deleted" value="0" title="启用">
+                    <input type="radio" name="deleted" value="1" title="废除">
                 </div>
             </div>
         </form>
     </div>
 </div>
-<script type="text/html" id="major">
+<script type="text/html" id="association">
     <div class="layui-form">
         <div class="layui-form-item">
             <div class="layui-inline">
-                <label class="layui-form-label" style="width: 100px;">学院名称：</label>
+                <label class="layui-form-label" style="width: 100px;">校友会名称：</label>
                 <div class="layui-input-inline">
-                    <select name="search_collegeName" id="search_collegeName" lay-filter = "collegeName">
-
-                    </select>
+                    <input type="text" name="search_associaName" id="search_associaName" autocomplete="off" class="layui-input"/>
                 </div>
             </div>
             <div class="layui-inline">
-                <label class="layui-form-label" style="width: 100px;">专业名称：</label>
+                <label class="layui-form-label">地址：</label>
                 <div class="layui-input-inline">
-                    <select name="search_majorName" id="search_majorName" lay-filter = "majorName">
-
-                    </select>
+                    <input type="text" name="search_address" id="search_address" autocomplete="off" class="layui-input"/>
                 </div>
             </div>
             <div class="layui-inline">

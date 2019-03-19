@@ -1,6 +1,9 @@
 package com.zy.graduation1.service;
 
 import com.baomidou.mybatisplus.core.metadata.IPage;
+import com.zy.graduation1.common.MyPage;
+import com.zy.graduation1.dto.user.UserDto;
+import com.zy.graduation1.entity.College;
 import com.zy.graduation1.entity.User;
 import com.baomidou.mybatisplus.extension.service.IService;
 
@@ -59,4 +62,15 @@ public interface UserService extends IService<User> {
      * @return
      */
     List<User> listUser(List<Long> studentIds, Long classId, Long majorId, Long collegeId);
+
+    /**
+     * 分页查询用户信息
+     * @param majorId
+     * @param classId
+     * @param nameOrId
+     * @return
+     */
+    IPage<User> queryUser(List<College> colleges, String address, Long majorId, Long classId,
+                          String nameOrId, Integer currentPage);
+
 }

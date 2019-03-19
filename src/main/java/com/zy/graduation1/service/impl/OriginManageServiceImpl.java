@@ -8,10 +8,8 @@ import com.google.common.collect.Lists;
 import com.google.common.collect.Maps;
 import com.zy.graduation1.common.MyPage;
 import com.zy.graduation1.dto.user.*;
+import com.zy.graduation1.entity.*;
 import com.zy.graduation1.entity.Class;
-import com.zy.graduation1.entity.College;
-import com.zy.graduation1.entity.Major;
-import com.zy.graduation1.entity.Operator;
 import com.zy.graduation1.exception.BizErrorCode;
 import com.zy.graduation1.exception.BizException;
 import com.zy.graduation1.exception.OriginErrorCode;
@@ -38,6 +36,9 @@ public class OriginManageServiceImpl implements OriginManageService {
 
     @Autowired
     private OperatorService operatorService;
+
+    @Autowired
+    private AlumniAssociationService alumniAssociationService;
 
     @Override
     public MyPage<ClassDetail> queryClass(Long collegeId, String className, Integer page) {
@@ -202,5 +203,28 @@ public class OriginManageServiceImpl implements OriginManageService {
             major.setMajorId(majorId);
         }
         majorService.insertOrUpdate(major);
+    }
+
+    @Override
+    public MyPage<AssociationDto> queryAlumniAssociation(String associaName, String address, Integer currentPage) {
+        IPage<AlumniAssociation> associationIPage = alumniAssociationService.queryAlumniAssociation(associaName, address, currentPage);
+        List<AlumniAssociation> associations = associationIPage.getRecords();
+        if(CollectionUtils.isEmpty(associations)) {
+            return new MyPage<>();
+        }
+
+        List<Long> presidentIds = associations.stream().map(AlumniAssociation::getPresidentId).distinct().collect(Collectors.toList());
+        List<Operator> operators = operatorService.getOperatorInfo(presidentIds);
+        Map<Long, String> operatorMap = Maps.newHashMap();
+        operators.forEach(operator -> operatorMap.put(operator.getOperatorId(), operator.getOperatorName()));
+
+        List<AssociationDto> associationDtos = Lists.newArrayList();
+        for (AlumniAssociation association : associations) {
+            AssociationDto associationDto = new AssociationDto();
+            BeanUtils.copyProperties(association, associationDto);
+            associationDto.setPresidentName(operatorMap.get(association.getPresidentId()));
+            associationDtos.add(associationDto);
+        }
+        return new MyPage<>(associationIPage.getTotal(), associationDtos);
     }
 }

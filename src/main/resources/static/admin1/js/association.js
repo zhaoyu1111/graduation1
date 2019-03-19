@@ -4,12 +4,12 @@ layui.use(['layer', 'table', 'form', 'jquery'], function () {
         $ = layui.jquery,
         form = layui.form;
 
-    $.post('/web/system/getParentMenu', null, function (rec) {//得到数据提交到后端进行更新
+
+    $.post('/web/system/getOperator', null, function (rec) {//得到数据提交到后端进行更新
         if (rec.code === "2000") {
-            $("select[name=parent-menu]").append("<option value=''>请选择</option>");
-            $("#select").append("<option value='0'>根目录</option>");
+            $("#presidentName").append("<option value=''>请选择</option>");
             $.each(rec.data, function(index, item) {
-                $('select[name=parent-menu]').append("<option value='" + item.menuId + "'>" + item.title + "</option>");
+                $('#presidentName').append("<option value='" + item.operatorId + "'>" + item.operatorName + "</option>");
             });
         }
     }, 'json');
@@ -17,23 +17,23 @@ layui.use(['layer', 'table', 'form', 'jquery'], function () {
 
     var tableIns = table.render({
         elem: '#mytable',
-        url: '/web/system/queryMenu',
-        toolbar: '#tool_menu',
+        url: '/web/origin/queryAlumniAssociation',
+        toolbar: '#association',
         height: 525,
         cols: [[
             {type:'checkbox'}
-            ,{field:'menuId', title: '菜单ID', align: 'center'}
-            ,{field:'title', title: '菜单标题', align: 'center'}
-            ,{field:'href', title: '菜单url', align: 'center'}
-            ,{field:'icon', title: 'icon', align: 'center'}
-            ,{field:'parentId', title: '父菜单', align: 'center'}
+            ,{field:'associaId', title: 'ID', align: 'center'}
+            ,{field:'associaName', title: '校友会名称', align: 'center'}
+            ,{field:'presidentId', title: '会长ID', align: 'center'}
+            ,{field:'presidentName', title: '会长名称', align: 'center'}
+            ,{field:'address', title: '地址', align: 'center'}
             ,{field:'ctime',  title: '创建时间', align: 'center',
                 templet: function (data) {
-                    return createDate(data.ctime);
+                    return createTime(data.ctime);
                 }}
-            ,{field:'status', title: '状态',
+            ,{field:'deleted', title: '状态', align: 'center',
                 templet:function (data) {
-                    if(data.status == 0) {
+                    if(data.deleted == 0) {
                         return "正常";
                     }else {
                         return "冻结";
@@ -41,17 +41,21 @@ layui.use(['layer', 'table', 'form', 'jquery'], function () {
                 }}
             ,{fixed: 'right',title:"操作",align:'center', toolbar: '#barDemo'}
         ]],
+        done: function (res, curr, couunt) {
+            $('.layui-table-box').find("[data-field = 'associaId']").css('display', 'none');
+            $('.layui-table-box').find("[data-field = 'presidentId']").css('display', 'none');
+        },
         page: true
     });
 
-    table.on('tool(menu)', function (obj) {
+    table.on('tool(role)', function (obj) {
         var data = obj.data;
         var layEven = obj.event;
 
         if(layEven === 'edit') {
             edit(data, '编辑');
         } else if(layEven === 'del') {
-            del_menu(data, data.menuId);
+            del_associa(data, data.associaId);
         }
     });
 
@@ -62,50 +66,36 @@ layui.use(['layer', 'table', 'form', 'jquery'], function () {
 
     function edit(data, title){
 
-        form.render('select');
         layer.open({
             type:1,
             title:title,
             skin:"myclass",
             area:["30%"],
             btn: ['确认', '取消'],//弹出层按钮
-            content:$("#add_menu").html(),
+            content:$("#addassocia").html(),
             success: function (layero, index) {
                 if(data != null) {
-                    layero.find("#title").val(data.title);
-                    layero.find("#operatorId").attr("disabled", true);
-                    layero.find("#href").val(data.href);
-                    layero.find("#icon").val(data.icon);
-                    $("input[name=deleted][value='0']").attr("checked", data.status == 0 ? true : false);
-                    $("input[name=deleted][value='1']").attr("checked", data.status == 1 ? true : false);
-                    layero.find("option[value='"+data.parentId+"']").prop("selected",true);
-                    if(data.parentId == 0) {
-                        layero.find("select").prop("disabled", true);
-                    }/*else {
-                        layero.find("option[value='"+data.parentId+"']").prop("selected",true);
-                    }*/
+                    layero.find("#associaName").val(data.associaName);
+                    layero.find("#address").val(data.address);
+                    layero.find("option[value='"+data.presidentId+"']").prop("selected",true);
+                    $("input[name=deleted][value='0']").attr("checked", data.deleted == 0 ? true : false);
+                    $("input[name=deleted][value='1']").attr("checked", data.deleted == 1 ? true : false);
                     form.render();
                 }else {
                     $("input:radio").removeAttr("checked");
-
                     form.render();
                 }
             },
             yes: function (index, layero) {
-                var operatorRole = {};
+                var association = {};
                 $(layero).find("input").each(function() {
-                    if(this.name === "deleted"){
-                        var val=$("input[checked]").val();
-                        operatorRole[this.name] = val;
-                        return true;
-                    }
-                    operatorRole[this.name] = this.value;
+                    association[this.name] = this.value;
                 });
-                operatorRole["parentId"] = $(layero).find("select").val();
+                association["presidentId"] = $(layero).find("#presidentName").val();
                 if(data != null) {
-                    operatorRole['menuId'] = data.menuId;
+                    association["associaId"] = data.associaId;
                 }
-                $.post('/web/system/saveOrUpdateMenu', operatorRole, function (rec) {//得到数据提交到后端进行更新
+                $.post('/web/origin/saveOrUpdateAssocia', association, function (rec) {//得到数据提交到后端进行更新
                     if (rec.code === "2000") {
                         layer.msg(rec.message);
                         reload(null, null);
@@ -119,12 +109,13 @@ layui.use(['layer', 'table', 'form', 'jquery'], function () {
         });
     }
 
-    function del_menu(obj,id) {
+    function del_associa(obj,id) {
+        alert(1);
         if(null!=id){
             layer.confirm('您确定要删除吗？', {
                 btn: ['确认','返回'] //按钮
             }, function(){
-                $.post("/web/system/deleteMenu",{"menuId" : id},function(data){
+                $.post("/web/origin/deleteAssocia",{"associaId" : id},function(data){
                     if (data.code == "2000") {
                         layer.alert(data.message,{icon: 6}, function(){
                             layer.closeAll();
@@ -140,15 +131,20 @@ layui.use(['layer', 'table', 'form', 'jquery'], function () {
         }
     }
 
+    form.on('checkbox', function (data) {
+        //$("input:checkbox").removeAttr("checked");
+        $(data.elem).attr('checked', true);
+    });
+
     $(document).on('click', '#add', function () {
-        edit(null, "新增角色");
+        edit(null, "新增分会");
         form.render();
     });
 
     $(document).on('click', '#search',  function () {
-        var menu_title = $('#menu_title').val();
-        var parent_id = $("#parentId").val();
-        reload(menu_title, parent_id);
+        var associaName = $('#search_associaName').val();
+        var address = $("#search_address").val();
+        reload(associaName, address);
         form.render();
     });
 
@@ -156,12 +152,12 @@ layui.use(['layer', 'table', 'form', 'jquery'], function () {
         reload(null, null);
     });
 
-    function reload(menu_title, parent_id) {
+    function reload(associaName, address) {
         tableIns.reload({
             where: {
-                title: menu_title,
-                parentId: parent_id
+                associaName: associaName,
+                address: address
             }
         });
     }
-})
+});

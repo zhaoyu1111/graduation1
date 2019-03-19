@@ -54,4 +54,11 @@ public class ClassServiceImpl extends ServiceImpl<ClassMapper, Class> implements
     public Boolean saveOrUpdateClass(Class classs) {
         return this.saveOrUpdateClass(classs);
     }
+
+    @Override
+    public List<Class> getClass(Long majorId) {
+        QueryWrapper<Class> query = new QueryWrapper<>();
+        query.eq("major_id", majorId);
+        return baseMapper.selectList(query);
+    }
 }

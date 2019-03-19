@@ -47,4 +47,11 @@ public interface ClassService extends IService<Class> {
      * @return
      */
     IPage<Class> queryClass(Long collegeId, String className, Integer page);
+
+    /**
+     * 获取班级
+     * @param majorId
+     * @return
+     */
+    List<Class> getClass(Long majorId);
 }

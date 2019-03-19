@@ -8,7 +8,7 @@ public enum BizErrorCode implements CodeStatus {
     OPERATOR_NOT_EXIST("400004", "管理员不存在"),
     ORIGIN_EXIST("400005", "学院已存在"),
     ORIGIN_NOT_EXIST("400006", "学院不存在"),
-    OPERATOR_NOT_ROLE("400007", "管理员没有分配角色"),
+    OPERATOR_NOT_ROLE("400007", "管理员没有分配角色，请联系学校负责人"),
     ;
 
     private String code;

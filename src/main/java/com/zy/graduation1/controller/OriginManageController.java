@@ -3,9 +3,11 @@ package com.zy.graduation1.controller;
 import com.zy.graduation1.common.Anonymous;
 import com.zy.graduation1.common.MyPage;
 import com.zy.graduation1.common.RequestUser;
+import com.zy.graduation1.dto.user.AssociationDto;
 import com.zy.graduation1.dto.user.ClassDetail;
 import com.zy.graduation1.dto.user.CollegeDto;
 import com.zy.graduation1.dto.user.MajorDto;
+import com.zy.graduation1.entity.Class;
 import com.zy.graduation1.entity.College;
 import com.zy.graduation1.entity.Major;
 import com.zy.graduation1.exception.BizException;
@@ -41,6 +43,9 @@ public class OriginManageController {
 
     @Autowired
     private MajorService majorService;
+
+    @Autowired
+    private AlumniAssociationService alumniAssociationService;
 
     @RequestMapping("/deleteCollege")
     public void deleteCollege(@NotNull(message = "请选择要删除的学院") Long collegeId) {
@@ -113,4 +118,25 @@ public class OriginManageController {
         return majorService.getMajor(collegeId);
     }
 
+    @RequestMapping("/getClass")
+    public List<Class> getClass(@NotNull(message = "请选择专业") Long majorId) {
+        return classService.getClass(majorId);
+    }
+
+    @RequestMapping("/queryAlumniAssociation")
+    public MyPage<AssociationDto> queryAlumniAssociation(String associaName, String address, Integer page) {
+        return originManageService.queryAlumniAssociation(associaName, address, page);
+    }
+
+    @RequestMapping("/saveOrUpdateAssocia")
+    public void saveOrUpdateAssocia(Long associaId,@NotBlank(message = "请输入校友会名称") String associaName,
+                                    @NotBlank(message = "请输入校友会所在市的地址") String address,
+                                    @NotNull(message = "请选择校友会负责人") Long presidentId) {
+        alumniAssociationService.saveOrUpdateAssocia(associaId, associaName, address, presidentId);
+    }
+
+    @RequestMapping("/deleteAssocia")
+    public void deleteAssocia(@NotNull(message = "请选择需要删除的对象") Long associaId) {
+        alumniAssociationService.deleteAssocia(associaId);
+    }
 }

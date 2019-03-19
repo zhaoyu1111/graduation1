@@ -8,13 +8,13 @@ layui.use(['layer', 'table', 'form', 'jquery'], function () {
         elem: '#mytable',
         url: '/web/origin/queryCollege',
         toolbar: '#college',
-        height: 460,
+        height: 525,
         cols: [[
             {type:'checkbox'}
-            ,{field:'collegeId', title: '学院编号', sort: true}
-            ,{field:'collegeName', title: '学院名称'}
-            ,{field:'operatorName', title: '学院联系人'}
-            ,{field:'mobile', title: '联系方式'}
+            ,{field:'collegeId', title: '学院编号', align: 'center'}
+            ,{field:'collegeName', title: '学院名称', align: 'center'}
+            ,{field:'operatorName', title: '学院联系人', align: 'center'}
+            ,{field:'mobile', title: '联系方式', align: 'center'}
             ,{fixed: 'right',title:"操作",align:'center', toolbar: '#barDemo'}
         ]]
         ,page: true

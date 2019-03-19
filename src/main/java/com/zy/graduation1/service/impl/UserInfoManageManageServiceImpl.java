@@ -5,6 +5,7 @@ import com.baomidou.mybatisplus.core.toolkit.CollectionUtils;
 import com.google.common.collect.Lists;
 import com.google.common.collect.Maps;
 import com.zy.graduation1.common.MyPage;
+import com.zy.graduation1.dto.user.UserDto;
 import com.zy.graduation1.dto.user.UserInfoDto;
 import com.zy.graduation1.entity.*;
 import com.zy.graduation1.entity.Class;
@@ -46,58 +47,58 @@ public class UserInfoManageManageServiceImpl implements UserInfoManageService {
     @Autowired
     private OperatorRoleRelationService operatorRoleRelationService;
 
+    @Autowired
+    private OperatorOriginRelationService operatorOriginRelationService;
+
     @Override
-    public MyPage<UserInfoDto> queryUserInfo(Long operatorId, Integer currentPage, Long classId, Long majorId, Long collegeId) {
-        /*Origin origin = originService.getOriginOperator(operatorId);
-        if(null == origin) {
-            return new MyPage<>();
-        }
-        IPage<OperatorOriginRelationController> originUserRelationPage = originUserRelationService.queryUserInfo(origin.getOriginId(), currentPage);
-        List<OperatorOriginRelationController> originUserRelations = originUserRelationPage.getRecords();
-        if(CollectionUtils.isEmpty(originUserRelations)) {
-            return new MyPage<>();
+    public MyPage<UserDto> queryUser(Long operatorId, Long majorId, Long classId,
+                                         String nameOrId, Integer currentPage) {
+        OperatorRoleRelation relation = operatorRoleRelationService.getOperatorRole(operatorId);
+        if(null == relation) {
+            throw new BizException(BizErrorCode.OPERATOR_NOT_ROLE);
         }
 
-        List<Long> studentIds = originUserRelations.stream().map(OperatorOriginRelationController::getStudentId).distinct().collect(Collectors.toList());
-        List<User> users = userService.listUser(studentIds, classId, majorId, collegeId);
+        IPage<User> userPage = null;
+        if(relation.getRoleId() == 1) {
+            userPage = userService.queryUser(null, null, majorId, classId, nameOrId, currentPage);
+        }else if(relation.getRoleId() == 2) {
+            List<College> colleges = collegeService.getCollege(operatorId);
+            userPage = userService.queryUser(colleges, null, majorId, classId, nameOrId, currentPage);
+        }else if(relation.getRoleId() == 3) {
+            //TODO 校友会管理员
+        } else {
+            return new MyPage<>();
+        }
+        List<User> users = userPage.getRecords();
         if(CollectionUtils.isEmpty(users)) {
             return new MyPage<>();
         }
-        *//* 批量查询班级信息*//*
-        List<Long> classIds = users.stream().map(User::getClassId).distinct().collect(Collectors.toList());
-        List<Class> classes = classService.listClassInfo(classIds);
-        Map<Long, Class> classMap = Maps.uniqueIndex(classes.iterator(), Class::getClassId);
 
-        *//* 批量查询专业信息*//*
+        List<Long> collegeId = users.stream().map(User::getCollegeId).distinct().collect(Collectors.toList());
+        List<College> colleges = collegeService.listCollege(collegeId);
+        Map<Long, String> collegeMap = Maps.newHashMap();
+        colleges.forEach(college -> collegeMap.put(college.getCollegeId(), college.getCollegeName()));
+
         List<Long> majorIds = users.stream().map(User::getMajorId).distinct().collect(Collectors.toList());
-        List<Major> majors = majorService.listMajor(majorIds);
-        Map<Long, Major> majorMap = Maps.uniqueIndex(majors.iterator(), Major::getMajorId);
+        List<Major> majors = majorService.listMajorByIds(majorIds);
+        Map<Long, String> majorMap = Maps.newHashMap();
+        majors.forEach(major -> majorMap.put(major.getMajorId(), major.getMajorName()));
 
-        *//* 批量查询学院信息*//*
-        List<Long> collegeIds = users.stream().map(User::getCollegeId).distinct().collect(Collectors.toList());
-        List<College> colleges = collegeService.listCollege(collegeIds);
-        Map<Long, College> collegeMap = Maps.uniqueIndex(colleges.iterator(), College::getCollegeId);
-
-        List<UserInfoDto> userInfos = Lists.newArrayList();
+        List<UserDto> userDtos = Lists.newArrayList();
         for (User user : users) {
-            UserInfoDto userInfoDto = new UserInfoDto();
-            BeanUtils.copyProperties(user, userInfoDto);
-            Class classs = classMap.get(user.getClassId());
-            if(null != classs) {
-                userInfoDto.setClassName(classs.getClassName());
-            }
-            Major major = majorMap.get(user.getMajorId());
-            if(null != major) {
-                userInfoDto.setMajorName(major.getMajorName());
-            }
-            College college = collegeMap.get(user.getCollegeId());
-            if(null != college) {
-                userInfoDto.setCollegeName(college.getCollegeName());
-            }
-            userInfos.add(userInfoDto);
+            UserDto userDto = new UserDto();
+            BeanUtils.copyProperties(user, userDto);
+            userDto.setClassName(user.getClassId().toString());
+            userDto.setCollegeName(collegeMap.get(user.getCollegeId()));
+            userDto.setMajorName(majorMap.get(user.getMajorId()));
+            userDtos.add(userDto);
         }
-        return new MyPage<>((long)userInfos.size(), userInfos);*/
-        return null;
+        return new MyPage<>(userPage.getTotal(), userDtos);
+    }
+
+    @Override
+    public User getUser(Long studentId) {
+        return userService.selectById(studentId);
     }
 
     @Override

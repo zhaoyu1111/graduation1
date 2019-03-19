@@ -1,6 +1,6 @@
 package com.zy.graduation1.mapper;
 
-import com.zy.graduation1.entity.RolePermissionRelation;
+import com.zy.graduation1.entity.AlumniAssociation;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 import org.apache.ibatis.annotations.Mapper;
 
@@ -10,9 +10,9 @@ import org.apache.ibatis.annotations.Mapper;
  * </p>
  *
  * @author zy
- * @since 2018-12-30
+ * @since 2019-03-18
  */
 @Mapper
-public interface RolePermissionRelationMapper extends BaseMapper<RolePermissionRelation> {
+public interface AlumniAssociationMapper extends BaseMapper<AlumniAssociation> {
 
 }
