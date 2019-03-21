@@ -21,6 +21,8 @@ public class BaseInterceptor implements WebMvcConfigurer {
     @Override
     public void addResourceHandlers(ResourceHandlerRegistry registry) {
         registry.addResourceHandler("/static/**").addResourceLocations("classpath:/static/");
+        //TODO 该位置和上传时的路径一致，也和config.json访问前缀一致
+        registry.addResourceHandler("/upload/**").addResourceLocations("file:E:/upload/");
     }
 
     @Bean

@@ -54,9 +54,9 @@ public class ArticleManageServiceimpl implements ArticleManageService {
     }
 
     @Override
-    public void saveOrUpdateArticle(Long articleId, String title, String author, String context, String source, Integer status) {
+    public void saveOrUpdateArticle(Long articleId, String title, String author, String context, String source, Long menuId, Integer status) {
         Article article = new Article();
-        article.setTitle(title).setAuthor(author).setContext(context).setSource(source).setStatus(status);
+        article.setTitle(title).setAuthor(author).setContext(context).setSource(source).setStatus(status).setMenuId(menuId);
         if(null != articleId) {
             article.setArticleId(articleId);
         }

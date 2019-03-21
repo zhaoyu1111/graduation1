@@ -15,4 +15,8 @@ import com.baomidou.mybatisplus.extension.service.IService;
 public interface ArticleService extends IService<Article> {
 
     IPage<Article> queryArticle(Long menuId, String articleName, Integer currentPage);
+
+    void toggleArticle(Long articleId);
+
+    String getContext(Long id);
 }

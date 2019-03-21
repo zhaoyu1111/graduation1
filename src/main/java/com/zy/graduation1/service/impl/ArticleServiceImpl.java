@@ -33,4 +33,27 @@ public class ArticleServiceImpl extends ServiceImpl<ArticleMapper, Article> impl
         }
         return baseMapper.selectPage(page, query);
     }
+
+    @Override
+    public void toggleArticle(Long articleId) {
+        Article article = baseMapper.selectById(articleId);
+        if(null == article) {
+            return ;
+        }
+        if(article.getStatus().equals(1)) {
+            article.setStatus(2);
+        }else {
+            article.setStatus(1);
+        }
+        baseMapper.updateById(article);
+    }
+
+    @Override
+    public String getContext(Long id) {
+        Article article = baseMapper.selectById(id);
+        if(null == article) {
+            return "无内容";
+        }
+        return article.getContext();
+    }
 }

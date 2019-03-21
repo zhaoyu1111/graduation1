@@ -23,7 +23,7 @@ public interface ArticleManageService {
      * @param source
      * @param status
      */
-    void saveOrUpdateArticle(Long articleId, String title, String author, String context, String source, Integer status);
+    void saveOrUpdateArticle(Long articleId, String title, String author, String context, String source, Long menuId, Integer status);
 
     /**
      * 删除文章信息
