@@ -185,8 +185,8 @@ public class SystemManageServerImpl implements SystemManageService {
     }
 
     @Override
-    public MyPage<OperatorDto> queryOperator(String operatorName, Long roleId, Long operatorId, Integer currentPage) {
-        IPage<Operator> operatorPage = operatorService.queryOperator(operatorName, roleId, operatorId, currentPage);
+    public MyPage<OperatorDto> queryOperator(String operatorName, Long roleId, Integer deleted, Integer currentPage) {
+        IPage<Operator> operatorPage = operatorService.queryOperator(operatorName, roleId, deleted, currentPage);
         List<Operator> operators = operatorPage.getRecords();
         if(CollectionUtils.isEmpty(operators)) {
             return new MyPage<>();

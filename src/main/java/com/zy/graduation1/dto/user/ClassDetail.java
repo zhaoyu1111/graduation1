@@ -15,10 +15,14 @@ public class ClassDetail {
      */
     private String collegeName;
 
+    private Long collegeId;
+
     /**
      * 专业名称
      */
     private String majorName;
+
+    private Long majorId;
 
     /**
      * 班主任
@@ -34,4 +38,6 @@ public class ClassDetail {
      * 联系人
      */
     private String contractor;
+
+    private String descript;
 }

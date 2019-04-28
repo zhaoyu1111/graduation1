@@ -45,7 +45,7 @@ public class Recruit extends SuperEntity<Recruit> {
      * 工资
      */
     @TableField("salary")
-    private String salary;
+    private Integer salary;
     /**
      * 招聘人数
      */
@@ -60,7 +60,7 @@ public class Recruit extends SuperEntity<Recruit> {
      * 结束时间
      */
     @TableField("endTime")
-    private Long endTime;
+    private String endTime;
     /**
      * 联系人姓名
      */

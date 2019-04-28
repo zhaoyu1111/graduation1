@@ -97,9 +97,7 @@ layui.use(['layer', 'table', 'form', 'jquery'], function () {
                 var activity = {};
                 $(layero).find("input").each(function() {
                     activity[this.name] = this.value;
-                    alert(this.name + this.value);
                 });
-                //activity["deleted"] = $("input[name='deleted']:checked").val();
                 activity["activityDesc"] = $(layero).find("#activityDesc").val();
                 activity["status"] = $("input[name='status']:checked").val();
 

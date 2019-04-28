@@ -28,6 +28,9 @@
             margin-bottom: 5px;
             margin-right: -15px;
         }
+
+        #endTime .layui-laydate-main{width:372px;}
+        #endTime .layui-laydate-content td,#endTime .layui-laydate-content th{width:50px;}
         /* 修改table的样式 end */
     </style>
 </head>
@@ -37,7 +40,6 @@
         <table class="layui-hide" id="mytable" lay-filter="recruit"></table>
         <!--表格列工具条模板-->
         <script type="text/html" id="barDemo">
-            <a class="layui-btn layui-btn-xs" lay-event="detail">详情</a>
             <a class="layui-btn layui-btn-xs" lay-event="edit">编辑</a>
             <a class="layui-btn layui-btn-danger layui-btn-xs" lay-event="del">删除</a>
         </script>
@@ -55,7 +57,9 @@
 
                 <label class="layui-form-label" style="width: 100px;">薪资：</label>
                 <div class="layui-input-inline">
-                    <input type="text" name="salary" class="layui-input" id="salary">
+                    <select name="property" lay-verify="required" id="salary">
+                        <option value="">请选择</option>
+                    </select>
                 </div>
             </div>
 
@@ -67,7 +71,7 @@
 
                 <label class="layui-form-label" style="width: 100px;">结束时间：</label>
                 <div class="layui-input-inline">
-                    <input type="text" name="endTime" class="layui-input" id="endTime">
+                    <input type="text" name="endTime" class="layui-input test-item" id="endTime" placeholder="如:2019-4-28">
                 </div>
             </div>
 
@@ -89,9 +93,9 @@
                     <input type="text" name="posName" class="layui-input" id="posName">
                 </div>
 
-                <label class="layui-form-label" style="width: 100px;">福利：</label>
+                <label class="layui-form-label" style="width: 100px;">简历邮箱：</label>
                 <div class="layui-input-inline">
-                    <input type="text" name="welfare" class="layui-input" id="welfare">
+                    <input type="text" name="email" class="layui-input" id="email">
                 </div>
             </div>
 
@@ -110,6 +114,13 @@
             </div>
 
             <div class="layui-form-item">
+                <label class="layui-form-label" style="width: 100px;">福利：</label>
+                <div class="layui-input-block">
+                    <input type="text" name="welfare" class="layui-input" id="welfare">
+                </div>
+            </div>
+
+            <div class="layui-form-item">
                 <label class="layui-form-label" style="width: 100px;">审核状态：</label>
                 <div class="layui-input-inline">
                     <input type="radio" name="status" value="1" title="审核">
@@ -123,12 +134,7 @@
                     <input type="radio" name="deleted" value="0" title="废除">
                 </div>
             </div>
-            <div class="layui-form-item">
-                <label class="layui-form-label" style="width: 100px;">简历邮箱：</label>
-                <div class="layui-input-block">
-                    <input type="text" name="email" class="layui-input" id="email">
-                </div>
-            </div>
+
             <div class="layui-form-item">
                 <label class="layui-form-label" style="width: 100px;">职位描述：</label>
                 <div class="layui-input-block">
@@ -144,20 +150,27 @@
             <div class="layui-inline">
                 <label class="layui-form-label" style="width: 78px;">招聘单位：</label>
                 <div class="layui-input-inline">
-                    <input type="text" name="unit_name" id="unit_name" autocomplete="off" class="layui-input"/>
+                    <!--<input type="text" name="unit_name" id="unit_name" autocomplete="off" class="layui-input"/>-->
+                    <select name="modules" lay-search="" id="unit_name">
+                        <option value="">请选择</option>
+                    </select>
                 </div>
             </div>
             <div class="layui-inline">
                 <label class="layui-form-label">招聘状态：</label>
                 <div class="layui-input-inline">
-                    <select name="modules" lay-search="" id="search_property">
+                    <select name="modules" lay-search="" id="search_status">
                         <option value="">请选择</option>
+                        <option value="1">待审核</option>
+                        <option value="2">正在招聘</option>
+                        <option value="3">已结束</option>
                     </select>
                 </div>
             </div>
             <div class="layui-inline">
                 <label class="layui-form-label">结束日期：</label>
                 <div class="layui-input-inline">
+                    <input type="text" name="search_endtime" class="layui-input test-item" id="search_endtime" placeholder="如:2019-4-28">
                 </div>
             </div>
             <div class="layui-inline">

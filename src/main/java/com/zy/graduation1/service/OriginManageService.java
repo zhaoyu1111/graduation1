@@ -15,7 +15,7 @@ public interface OriginManageService {
      * @param currentPage
      * @return
      */
-    MyPage<ClassDetail> queryClass(Long collegeId, String className, Integer page);
+    MyPage<ClassDetail> queryClass(Long collegeId, String className, Long majorId, Integer page);
 
     /**
      * 分页查询专业信息
@@ -55,6 +55,10 @@ public interface OriginManageService {
      * @param collegeId
      */
     void saveOrUpdateMajor(Long majorId, String majorName, Long collegeId);
+
+    void saveOrUpdateClass(Long classId, Long majorId, Long collegeId,
+                           String headMaster, String counselor, String contractor,
+                           String descript);
 
     /**
      * 分页查询校友会信息

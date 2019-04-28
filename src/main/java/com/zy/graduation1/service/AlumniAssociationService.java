@@ -30,7 +30,8 @@ public interface AlumniAssociationService extends IService<AlumniAssociation> {
      * @param address
      * @param presidentId
      */
-    void saveOrUpdateAssocia(Long associaId, String associaName, String address, Long presidentId);
+    void saveOrUpdateAssocia(Long associaId, String associaName, String address,
+                             Long presidentId, String descrip, Integer deleted);
 
     /**
      * 删除校友会信息

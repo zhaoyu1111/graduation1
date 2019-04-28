@@ -6,8 +6,10 @@ layui.use(['layer', 'table', 'form', 'jquery'], function () {
 
     $.post('/web/system/listRole', null, function (rec) {//得到数据提交到后端进行更新
         if (rec.code === "2000") {
+            $("#roleId").append("<option value=''>请选择</option>");
             $("#select").append("<option value=''>请选择</option>");
             $.each(rec.data.list, function(index, item) {
+                $('#roleId').append("<option value='" + item.roleId + "'>" + item.roleName + "</option>");
                 $('#select').append("<option value='" + item.roleId + "'>" + item.roleName + "</option>");
             });
         }
@@ -30,7 +32,7 @@ layui.use(['layer', 'table', 'form', 'jquery'], function () {
                 templet: function (data) {
                     return createDate(data.ctime);
                 }}
-            ,{field:'deleted', title: '状态',
+            ,{field:'deleted', title: '状态',align: 'center',
                 templet:function (data) {
                     if(data.deleted == 0) {
                         return "正常";
@@ -102,7 +104,7 @@ layui.use(['layer', 'table', 'form', 'jquery'], function () {
                 $.post('/web/system/saveOrUpdateOperator', operatorRole, function (rec) {//得到数据提交到后端进行更新
                     if (rec.code === "2000") {
                         layer.msg(rec.message);
-                        reload(null, null);
+                        reload(null, null, null);
                     } else {
                         layer.msg(rec.message);
                     }
@@ -122,7 +124,7 @@ layui.use(['layer', 'table', 'form', 'jquery'], function () {
                     if (data.code == "2000") {
                         layer.alert(data.message,{icon: 6}, function(){
                             layer.closeAll();
-                            reload(null, null);
+                            reload(null, null, null);
                         });
                     } else {
                         layer.alert(data.message);
@@ -159,19 +161,21 @@ layui.use(['layer', 'table', 'form', 'jquery'], function () {
     $(document).on('click', '#search',  function () {
         var operator_name = $('#accountname').val();
         var deleted = $("#status").val();
-        reload(operator_name, deleted);
+        var roleId = $("#roleId").val();
+        reload(operator_name, deleted, roleId);
         form.render();
     });
 
     $(document).on('click', '#recover', function () {
-        reload(null, null);
+        reload(null, null, null);
     });
 
-    function reload(operatorName, deleted) {
+    function reload(operatorName, deleted, roleId) {
         tableIns.reload({
             where: {
                 operatorName: operatorName,
-                deleted: deleted
+                deleted: deleted,
+                roleId: roleId
             }
         });
     }

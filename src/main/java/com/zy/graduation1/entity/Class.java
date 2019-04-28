@@ -65,6 +65,12 @@ public class Class extends SuperEntity<Class> {
     @TableField("class_name")
     private String className;
 
+    @TableField("grade")
+    private String geade;
+
+    @TableField("descript")
+    private String descript;
+
 
     @Override
     protected Serializable pkVal() {

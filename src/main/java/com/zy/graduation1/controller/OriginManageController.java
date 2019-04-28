@@ -18,6 +18,7 @@ import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import javax.validation.constraints.NotBlank;
@@ -69,8 +70,20 @@ public class OriginManageController {
     }
 
     @RequestMapping("/queryClass")
-    public MyPage<ClassDetail> queryClass(Long collegeId, String className, Integer page) {
-        return originManageService.queryClass(collegeId, className, page);
+    public MyPage<ClassDetail> queryClass(Long collegeId, String className, Long majorId, Integer page) {
+        return originManageService.queryClass(collegeId, className, majorId, page);
+    }
+
+    @RequestMapping("/saveOrUpdateClass")
+    public void saveOrUpdateClass(@NotNull(message = "请输入班级编号") Long classId,
+                                  @NotNull(message = "请选择专业") Long majorId,
+                                  @NotNull(message = "请选择学院") Long collegeId,
+                                  @NotBlank(message = "请输入班主任姓名") String headMaster,
+                                  @NotBlank(message = "请输入辅导员姓名") String counselor,
+                                  @NotBlank(message = "请输入班级联系人姓名") String contractor,
+                                  String descript) {
+        originManageService.saveOrUpdateClass(classId, majorId, collegeId,
+                headMaster, counselor, contractor, descript);
     }
 
     @RequestMapping("/listCollege")
@@ -131,8 +144,9 @@ public class OriginManageController {
     @RequestMapping("/saveOrUpdateAssocia")
     public void saveOrUpdateAssocia(Long associaId,@NotBlank(message = "请输入校友会名称") String associaName,
                                     @NotBlank(message = "请输入校友会所在市的地址") String address,
+                                    String descrip, @RequestParam(defaultValue = "1") Integer deleted,
                                     @NotNull(message = "请选择校友会负责人") Long presidentId) {
-        alumniAssociationService.saveOrUpdateAssocia(associaId, associaName, address, presidentId);
+        alumniAssociationService.saveOrUpdateAssocia(associaId, associaName, address, presidentId, descrip, deleted);
     }
 
     @RequestMapping("/deleteAssocia")

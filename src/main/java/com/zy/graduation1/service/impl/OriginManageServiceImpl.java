@@ -41,8 +41,8 @@ public class OriginManageServiceImpl implements OriginManageService {
     private AlumniAssociationService alumniAssociationService;
 
     @Override
-    public MyPage<ClassDetail> queryClass(Long collegeId, String className, Integer page) {
-        IPage<Class> classPage = classService.queryClass(collegeId, className, page);
+    public MyPage<ClassDetail> queryClass(Long collegeId, String className, Long majorId, Integer page) {
+        IPage<Class> classPage = classService.queryClass(collegeId, className, majorId, page);
         List<Class> classes = classPage.getRecords();
         if(CollectionUtils.isEmpty(classes)) {
             return new MyPage<>();
@@ -203,6 +203,20 @@ public class OriginManageServiceImpl implements OriginManageService {
             major.setMajorId(majorId);
         }
         majorService.insertOrUpdate(major);
+    }
+
+    @Override
+    public void saveOrUpdateClass(Long classId, Long majorId, Long collegeId, String headMaster, String counselor, String contractor, String descript) {
+        Class cla = new Class();
+        cla.setCollegeId(collegeId).setMajorId(majorId).setHeadMaster(headMaster).
+                setCounselor(counselor).setContractor(contractor).setDescript(descript);
+        if(null != classId) {
+            String className = String.valueOf(classId);
+            cla.setClassId(classId);
+            cla.setClassName(className);
+            cla.setGeade(className.substring(0, 2));
+        }
+        classService.insertOrUpdate(cla);
     }
 
     @Override

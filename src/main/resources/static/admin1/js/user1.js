@@ -6,25 +6,39 @@ layui.use(['layer', 'table', 'form', 'jquery'], function () {
 
     $.post('/web/origin/getCollege', null, function (rec) {//得到数据提交到后端进行更新
         if (rec.code === "2000") {
+            $("#search_collegeName").append("<option value=''>请选择</option>");
+            $("#collegeName").append("<option value=''>请选择</option>");
             $.each(rec.data, function(index, item) {
                 $('#collegeName').append("<option value='" + item.collegeId + "'>" + item.collegeName + "</option>");
+                $('#search_collegeName').append("<option value='" + item.collegeId + "'>" + item.collegeName + "</option>");
             });
         }
     }, 'json');
     form.render();
 
+    form.on('select(search_collegeName)', function(data){         //级联操作
+        $.ajaxSettings.async = false;
+        $.post('/web/origin/getMajor', {"collegeId" : data.value}, function (rec) {//得到数据提交到后端进行更新
+            if (rec.code === "2000") {
+                $("#search_majorName").append("<option value=''>请选择</option>");
+                $.each(rec.data, function(index, item) {
+                    $('#search_majorName').append("<option value='" + item.majorId + "'>" + item.majorName + "</option>");
+                });
+            }
+        }, 'json');
+        form.render('select');
+    });
+
     form.on('select(collegeName)', function(data){         //级联操作
-        $('#majorName').empty();
-        //$.ajaxSettings.async = false;
+        $.ajaxSettings.async = false;
         $.post('/web/origin/getMajor', {"collegeId" : data.value}, function (rec) {//得到数据提交到后端进行更新
             if (rec.code === "2000") {
                 $.each(rec.data, function(index, item) {
                     $('#majorName').append("<option value='" + item.majorId + "'>" + item.majorName + "</option>");
                 });
             }
-            form.render('select', 'majorName');
         }, 'json');
-
+        form.render('select');
     });
 
     form.on('select(majorName)', function(data){         //级联操作
@@ -111,9 +125,26 @@ layui.use(['layer', 'table', 'form', 'jquery'], function () {
             content:$("#add_user").html(),
             success: function (layero, index) {
                 if(data != null) {
-                    $.post('/web/user/getUser', {"studentId": data.studentId}, function (res) {
+                    $.post('/api/user/getUser', {"studentId": data.studentId}, function (res) {
                         if(res.code === '2000') {
+                            layero.find("#studentId").val(res.data.studentId);
+                            layero.find("#userName").val(res.data.userName);
+                            layero.find("#collegeName").val(res.data.collegeName);
+                            layero.find("#majorName").val(res.data.majorName);
+                            layero.find("#className").val(res.data.className);
+                            layero.find("#mobile").val(res.data.mobile);
+                            layero.find("#birthday").val(res.data.birthday);
+                            layero.find("#email").val(res.data.email);
+                            layero.find("#currentCity").val(res.data.currentCity);
+                            layero.find("#homeAddress").val(res.data.homeAddress);
+                            layero.find("#qq").val(res.data.qq);
+                            layero.find("#wechat").val(res.data.wechat);
+                            layero.find("#introduce").text(res.data.introduce);
+                            $("input[name=gender][value='0']").attr("checked", data.gender == 0 ? true : false);
+                            $("input[name=gender][value='1']").attr("checked", data.gender == 1 ? true : false);
 
+                            $("input[name=status][value='0']").attr("checked", data.status == 0 ? true : false);
+                            $("input[name=status][value='1']").attr("checked", data.status == 1 ? true : false);
                             form.render();
                         } else {
                             layer.msg(res.message);
@@ -130,7 +161,8 @@ layui.use(['layer', 'table', 'form', 'jquery'], function () {
                 $(layero).find("input").each(function() {
                     recruitUnit[this.name] = this.value;
                 });
-                recruitUnit["deleted"] = $("input[name='deleted']:checked").val();
+                recruitUnit["status"] = $("input[name='status']:checked").val();
+                recruitUnit["gender"] = $("input[name='gender']:checked").val();
                 recruitUnit["scale"] = $(layero).find("#scale").val();
                 recruitUnit["property"] = $(layero).find("#property").val();
                 recruitUnit["direct"] = $(layero).find("#direct").val();
@@ -195,10 +227,10 @@ layui.use(['layer', 'table', 'form', 'jquery'], function () {
     });
 
     $(document).on('click', '#search',  function () {
-        var roleName = $('#unit_name').val();
-        var property = $("#search_property").val();
-        var status = $("#search_status").val();
-        reload(roleName, property, status);
+        var userName = $('#user_name').val();
+        var collegeName = $("#search_collegeName").val();
+        var majorName = $("#search_majorName").val();
+        reload(userName, collegeName, majorName);
         form.render();
     });
 
@@ -206,12 +238,12 @@ layui.use(['layer', 'table', 'form', 'jquery'], function () {
         reload(null, null, null);
     });
 
-    function reload(unitName, property, status) {
+    function reload(userName, collegeName, majorName) {
         tableIns.reload({
             where: {
-                unitName: unitName,
-                property: property,
-                status: status
+                userName: userName,
+                collegeName: collegeName,
+                majorName: majorName
             }
         });
     }

@@ -27,6 +27,7 @@ layui.use(['layer', 'table', 'form', 'jquery'], function () {
             ,{field:'presidentId', title: '会长ID', align: 'center'}
             ,{field:'presidentName', title: '会长名称', align: 'center'}
             ,{field:'address', title: '地址', align: 'center'}
+            ,{field:'descrip', title: '活动描述', align: 'center'}
             ,{field:'ctime',  title: '创建时间', align: 'center',
                 templet: function (data) {
                     return createTime(data.ctime);
@@ -77,6 +78,7 @@ layui.use(['layer', 'table', 'form', 'jquery'], function () {
                 if(data != null) {
                     layero.find("#associaName").val(data.associaName);
                     layero.find("#address").val(data.address);
+                    layero.find("#descrip").text(data.descrip);
                     layero.find("option[value='"+data.presidentId+"']").prop("selected",true);
                     $("input[name=deleted][value='0']").attr("checked", data.deleted == 0 ? true : false);
                     $("input[name=deleted][value='1']").attr("checked", data.deleted == 1 ? true : false);
@@ -91,6 +93,7 @@ layui.use(['layer', 'table', 'form', 'jquery'], function () {
                 $(layero).find("input").each(function() {
                     association[this.name] = this.value;
                 });
+                association["descrip"] = $(layero).find("#descrip").val();
                 association["presidentId"] = $(layero).find("#presidentName").val();
                 if(data != null) {
                     association["associaId"] = data.associaId;

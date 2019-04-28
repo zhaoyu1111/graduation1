@@ -50,17 +50,16 @@
 <body>
 <div class="layui-form">
     <div class="layui-form-item">
-        <div class="layui-inline">
-            <label class="layui-form-label" style="width: 100px;">父菜单名称：</label>
-            <div class="layui-input-inline">
-                <input type="text" name="parent_menu" id="parent_menu" autocomplete="off" class="layui-input"/>
-            </div>
-        </div>
-        <div class="layui-inline">
+        <div class="layui-inline" style="z-index: 9999;">
             <label class="layui-form-label">子菜单名称：</label>
             <div class="layui-input-inline">
-                <input type="text" name="child_menu" id="child_menu" autocomplete="off" class="layui-input"/>
+                <select name="child_menu" id="child_menu" lay-filter = "majorName">请选择
+                    <option value="1">新闻中心</option>
+                    <option value="2">校友捐赠</option>
+                    <option value="3">杰出校友</option>
+                </select>
             </div>
+
         </div>
         <div class="layui-inline">
             <label class="layui-form-label">文章标题：</label>
@@ -87,7 +86,7 @@
         </div>
     </div>
 </div>
-<script id="editor" type="text/plain" style="width:1120px;height:330px;" ></script>
+<script id="editor" type="text/plain" style="width:1120px;height:330px; z-index: -1;" ></script>
 <script type="text/javascript">
     //实例化编辑器
     //建议使用工厂方法getEditor创建和引用编辑器实例，如果在某个闭包下引用该编辑器，直接调用UE.getEditor('editor')就能拿到相关的实例

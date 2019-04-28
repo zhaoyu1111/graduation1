@@ -31,7 +31,7 @@ layui.use(['layer', 'table', 'form', 'jquery'], function () {
                 templet: function (data) {
                     return createDate(data.ctime);
                 }}
-            ,{field:'status', title: '状态',
+            ,{field:'status', title: '状态', align: 'center',
                 templet:function (data) {
                     if(data.status == 0) {
                         return "正常";

@@ -47,17 +47,17 @@ public class OperatorServiceImpl extends ServiceImpl<OperatorMapper, Operator> i
     }
 
     @Override
-    public IPage<Operator> queryOperator(String operatorName, Long roleId, Long operatorId, Integer currentPage) {
+    public IPage<Operator> queryOperator(String operatorName, Long roleId, Integer deleted, Integer currentPage) {
         QueryWrapper<Operator> query = new QueryWrapper<>();
         Page<Operator> page = new Page<>(currentPage, 10);
         if(StringUtils.isNotEmpty(operatorName)) {
-            query.eq("operator_name", operatorName);
+            query.like("operator_name", operatorName);
         }
         if(null != roleId) {
             query.eq("role_id", roleId);
         }
-        if(null != operatorId) {
-            query.eq("operator_id", operatorId);
+        if(null != deleted) {
+            query.eq("deleted", deleted);
         }
         return baseMapper.selectPage(page, query);
     }

@@ -57,7 +57,7 @@ public interface SystemManageService {
      * @param currentPage
      * @return
      */
-    MyPage<OperatorDto> queryOperator(String operatorName, Long roleId, Long operatorId, Integer currentPage);
+    MyPage<OperatorDto> queryOperator(String operatorName, Long roleId, Integer deleted, Integer currentPage);
 
     /**
      * 新增或更新管理员信息

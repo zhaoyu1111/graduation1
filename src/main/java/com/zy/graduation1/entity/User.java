@@ -108,6 +108,12 @@ public class User extends SuperEntity<User> {
     @TableField("pwd")
     private String pwd;
 
+    @TableField("qq")
+    private String qq;
+
+    @TableField("wechat")
+    private String wechat;
+
 
     @Override
     protected Serializable pkVal() {

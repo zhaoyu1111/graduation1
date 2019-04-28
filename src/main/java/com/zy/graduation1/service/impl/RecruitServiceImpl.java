@@ -9,6 +9,7 @@ import com.zy.graduation1.exception.OriginErrorCode;
 import com.zy.graduation1.mapper.RecruitMapper;
 import com.zy.graduation1.service.RecruitService;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
+import org.apache.commons.lang3.StringUtils;
 import org.springframework.stereotype.Service;
 
 /**
@@ -37,17 +38,17 @@ public class RecruitServiceImpl extends ServiceImpl<RecruitMapper, Recruit> impl
     }
 
     @Override
-    public IPage<Recruit> queryRecruit(Long unitId, Long applyId, String title, Integer page) {
+    public IPage<Recruit> queryRecruit(Long unitId, Integer status, String endTime, Integer page) {
         QueryWrapper<Recruit> query = new QueryWrapper<>();
-        Page<Recruit> recruitPage = new Page<>(page, 100);
+        Page<Recruit> recruitPage = new Page<>(page, 10);
         if(null != unitId) {
             query.eq("unit_id", unitId);
         }
-        if(null != applyId) {
-            query.eq("apply_id", applyId);
+        if(StringUtils.isNotEmpty(endTime)) {
+            query.le("endTime", endTime);
         }
-        if(null != title) {
-            query.like("title", title);
+        if(null != status) {
+            query.eq("status", status);
         }
         return baseMapper.selectPage(recruitPage, query);
     }

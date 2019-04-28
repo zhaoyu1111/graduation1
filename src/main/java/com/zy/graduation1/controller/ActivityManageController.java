@@ -71,7 +71,7 @@ public class ActivityManageController {
     }
 
     @RequestMapping("/deleteActivity")
-    public void deleteActivity(@NotBlank(message = "请选择需要删除的活动") Long activityId) {
+    public void deleteActivity(@NotNull(message = "请选择需要删除的活动") Long activityId) {
         Activity activity = activityService.getActivity(activityId);
         if(null == activity) {
             throw new BizException(OriginErrorCode.ACTIVITY_NOT_EXIST);
@@ -80,7 +80,7 @@ public class ActivityManageController {
     }
 
     @RequestMapping("/getActivity")
-    public Activity getActivity(@NotBlank(message = "请选择编辑的活动") Long activityId) {
+    public Activity getActivity(@NotNull(message = "请选择编辑的活动") Long activityId) {
         return activityService.getActivity(activityId);
     }
 

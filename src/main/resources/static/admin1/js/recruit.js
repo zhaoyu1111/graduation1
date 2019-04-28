@@ -1,8 +1,15 @@
-layui.use(['layer', 'table', 'form', 'jquery'], function () {
+layui.use(['layer', 'table', 'form', 'jquery', 'laydate'], function () {
     var layer = layui.layer,
         table = layui.table,
         $ = layui.jquery,
-        form = layui.form;
+        form = layui.form,
+        laydate1 = layui.laydate;
+    laydate2 = layui.laydate;
+
+    laydate1.render({
+        elem: '#search_endtime',
+        zIndex: 99999
+    });
 
     var status = [{
         "title": "待审核",
@@ -15,10 +22,23 @@ layui.use(['layer', 'table', 'form', 'jquery'], function () {
         "value": 3
     }];
 
+    var salary = [];
+
     $.post('/web/recruit/getAllUnit', null, function (rec) {//得到数据提交到后端进行更新
         if (rec.code === "2000") {
             $.each(rec.data, function(index, item) {
+                $('#unit_name').append("<option value='" + item.unitId + "'>" + item.unitName + "</option>");
                 $('#unitId').append("<option value='" + item.unitId + "'>" + item.unitName + "</option>");
+            });
+        }
+    }, 'json');
+    form.render();
+
+    $.post('/web/system/unitData', {'dictValue': 'sl'}, function (rec) {
+        salary = rec.data;
+        if (rec.code === "2000") {
+            $.each(rec.data, function(index, item) {
+                $('#salary').append("<option value='" + item.dictdataValue + "'>" + item.dictdataName + "</option>");
             });
         }
     }, 'json');
@@ -30,16 +50,31 @@ layui.use(['layer', 'table', 'form', 'jquery'], function () {
         toolbar: '#tool_recruit',
         height: 525,
         cols: [[
-            {type:'checkbox'}
-            ,{field:'recuritId', title: 'ID'}
-            ,{field:'title', title: '单位名称', align: 'center'}
-            ,{field:'salary', title: '薪资'}
-            ,{field:'members', title: '招聘人数', align: 'center'}
-            ,{field:'resumes', title: '简历投递数', align: 'center'}
-            ,{field:'endTime', title: '结束时间', align: 'center'}
-            ,{field:'contractor', title: '联系人', align: 'center'}
-            ,{field:'posName', title: '职位名称', align: 'center'}
-            ,{field:'status', title: '招聘状态', align: 'center',
+            {field:'recuritId', title: 'ID'}
+            ,{field:'title', title: '单位名称', align: 'center', width: 85}
+            ,{field:'salary', title: '薪资', align: 'center', width: 85,
+                templet: function (data) {
+                    var salary_data;
+                    $.each(salary, function (index, item) {
+                        if(item.dictdataValue === data.salary) {
+                            salary_data = item.dictdataName;
+                        }
+                    });
+                    return salary_data;
+                }}
+            ,{field:'members', title: '招聘人数', align: 'center', width: 70}
+            ,{field:'resumes', title: '简历投递数', align: 'center',width: 75,
+                templet:function(data){
+                    if(data.resumes == null) {
+                        return '0';
+                    }else {
+                        return data.resumes;
+                    }
+                }}
+            ,{field:'endTime', title: '结束时间', align: 'center',width: 100}
+            ,{field:'contractor', title: '联系人', align: 'center', width: 75}
+            ,{field:'posName', title: '职位名称', align: 'center', width: 100}
+            ,{field:'status', title: '招聘状态', align: 'center', width: 80,
                 templet: function (data) {
                     var status_data;
                     $.each(status, function (index, item) {
@@ -49,7 +84,7 @@ layui.use(['layer', 'table', 'form', 'jquery'], function () {
                     });
                     return status_data;
                 }}
-            ,{fixed: 'right',title:"操作",align:'center', toolbar: '#barDemo'}
+            ,{fixed: 'right',title:"操作",align:'center', toolbar: '#barDemo', width: 135}
         ]],
         done: function (res, curr, couunt) {
             $('.layui-table-box').find("[data-field = 'recuritId']").css('display', 'none');
@@ -83,13 +118,12 @@ layui.use(['layer', 'table', 'form', 'jquery'], function () {
             skin:"myclass",
             area: ['630px', '500px'],
             btn: ['确认', '取消'],//弹出层按钮
-            content:$("#add_recruit").html(),
+            content:$("#add_recruit"),
             success: function (layero, index) {
                 if(data != null) {
                     $.post('/web/recruit/getRecruit', {"recuritId": data.recuritId}, function (res) {
                         if(res.code === '2000') {
                             layero.find("#title").val(res.data.title);
-                            //layero.find("#unitName").attr("disabled", true);
                             layero.find("#salary").val(res.data.salary);
                             layero.find("option[value='"+data.unitId+"']").prop("selected",true);
                             layero.find("#members").val(res.data.members);
@@ -101,6 +135,8 @@ layui.use(['layer', 'table', 'form', 'jquery'], function () {
                             layero.find("#workPlace").val(res.data.workPlace);
                             layero.find("#email").val(res.data.email);
                             layero.find("#posDescript").text(res.data.posDescript);
+                            layero.find("#qq").text(res.data.qq);
+                            layero.find("#wechat").text(res.data.wechat);
                             $("input[name=deleted][value='0']").attr("checked", data.deleted == 0 ? true : false);
                             $("input[name=deleted][value='1']").attr("checked", data.deleted == 1 ? true : false);
 
@@ -123,9 +159,12 @@ layui.use(['layer', 'table', 'form', 'jquery'], function () {
                 $(layero).find("input").each(function() {
                     recruit[this.name] = this.value;
                 });
-                recruit["deleted"] = $("input[name='deleted']:checked").val();
+                recruit["status"] = $("input[name='status']:checked").val();
+                //recruit["status"] = $(layero).find("input[name='status']").val();
                 recruit["unitId"] = $(layero).find("#unitId").val();
+                recruit["salary"] = $(layero).find("#salary").val();
                 recruit["posDescript"] = $(layero).find("#posDescript").val();
+                recruit["deleted"] = $("input[name='deleted']:checked").val();
                 if(data != null) {
                     recruit["recuritId"] = data.recuritId;
                 }
@@ -172,10 +211,10 @@ layui.use(['layer', 'table', 'form', 'jquery'], function () {
     });
 
     $(document).on('click', '#search',  function () {
-        var roleName = $('#unit_name').val();
-        var property = $("#search_property").val();
+        var unitId = $('#unit_name').val();
+        var endTime = $("#search_endtime").val();
         var status = $("#search_status").val();
-        reload(roleName, property, status);
+        reload(unitId, endTime, status);
         form.render();
     });
 
@@ -183,13 +222,13 @@ layui.use(['layer', 'table', 'form', 'jquery'], function () {
         reload(null, null, null);
     });
 
-    function reload(unitName, property, status) {
+    function reload(unitId, endTime, status) {
         tableIns.reload({
             where: {
-                unitName: unitName,
-                property: property,
+                unitId: unitId,
+                endTime: endTime,
                 status: status
             }
         });
     }
-})
+});

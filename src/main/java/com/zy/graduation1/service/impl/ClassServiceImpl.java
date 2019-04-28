@@ -31,7 +31,7 @@ public class ClassServiceImpl extends ServiceImpl<ClassMapper, Class> implements
     }
 
     @Override
-    public IPage<Class> queryClass(Long collegeId, String className, Integer page) {
+    public IPage<Class> queryClass(Long collegeId, String className, Long majorId, Integer page) {
         Page<Class> classPage = new Page<>(page, 10);
         QueryWrapper<Class> query = new QueryWrapper<>();
         if(null != collegeId) {
@@ -39,6 +39,9 @@ public class ClassServiceImpl extends ServiceImpl<ClassMapper, Class> implements
         }
         if(StringUtils.isNotEmpty(className)) {
             query.eq("class_name", className);
+        }
+        if(null != majorId) {
+            query.eq("major_id", majorId);
         }
         return baseMapper.selectPage(classPage, query);
     }
@@ -52,6 +55,9 @@ public class ClassServiceImpl extends ServiceImpl<ClassMapper, Class> implements
 
     @Override
     public Boolean saveOrUpdateClass(Class classs) {
+        if(null != classs && !classs.getClassName().isEmpty()) {
+            classs.setGeade(classs.getClassName().substring(0, 2));
+        }
         return this.saveOrUpdateClass(classs);
     }
 

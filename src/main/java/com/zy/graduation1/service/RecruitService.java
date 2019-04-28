@@ -35,7 +35,7 @@ public interface RecruitService extends IService<Recruit> {
      * @param title
      * @return
      */
-    IPage<Recruit> queryRecruit(Long unitId, Long applyId, String title, Integer currentPage);
+    IPage<Recruit> queryRecruit(Long unitId, Integer status, String endTime, Integer currentPage);
 
     /**
      * 通过职位ID查询职位信息

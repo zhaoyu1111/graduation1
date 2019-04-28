@@ -40,13 +40,15 @@ public class AlumniAssociationServiceImpl extends ServiceImpl<AlumniAssociationM
     }
 
     @Override
-    public void saveOrUpdateAssocia(Long associaId, String associaName, String address, Long presidentId) {
+    public void saveOrUpdateAssocia(Long associaId, String associaName, String address, Long presidentId
+            , String descrip, Integer deleted) {
         AlumniAssociation getAssociation = this.getAssociation(address);
-        if(null != getAssociation) {
+        if(null != getAssociation && null == associaId) {
             throw new BizException(OriginErrorCode.ASSOCIATION_EXIST);
         }
         AlumniAssociation association = new AlumniAssociation();
-        association.setAssociaName(associaName).setAddress(address).setPresidentId(presidentId);
+        association.setAssociaName(associaName).setAddress(address).setPresidentId(presidentId)
+            .setDescrip(descrip).setDeleted(deleted);
         if(null != associaId) {
             association.setAssociaId(associaId);
         }

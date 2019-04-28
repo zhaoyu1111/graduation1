@@ -16,7 +16,7 @@ public class RecruitDto {
     /**
      * 工资
      */
-    private String salary;
+    private Integer salary;
     /**
      * 招聘人数
      */
@@ -28,7 +28,7 @@ public class RecruitDto {
     /**
      * 结束时间
      */
-    private Long endTime;
+    private String endTime;
     /**
      * 联系人姓名
      */
@@ -65,7 +65,7 @@ public class RecruitDto {
     /**
      * 申请人Id
      */
-    private Long email;
+    private String email;
     /**
      * 职位状态1-审核 2-正在招聘 3-已结束
      */

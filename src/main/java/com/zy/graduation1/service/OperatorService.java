@@ -46,7 +46,7 @@ public interface OperatorService extends IService<Operator> {
      * @param currentPage
      * @return
      */
-    IPage<Operator> queryOperator(String operatorName, Long roleId, Long operatorId, Integer currentPage);
+    IPage<Operator> queryOperator(String operatorName, Long roleId, Integer deleted, Integer currentPage);
 
     /**
      * 新增管理员信息

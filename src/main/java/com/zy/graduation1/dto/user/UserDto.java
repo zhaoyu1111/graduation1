@@ -80,4 +80,8 @@ public class UserDto {
      * 用户状态0-正常 1-冻结
      */
     private Integer status;
+
+    private String qq;
+
+    private String wechat;
 }

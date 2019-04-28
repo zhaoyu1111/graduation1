@@ -6,10 +6,7 @@ import com.google.common.collect.Lists;
 import com.zy.graduation1.common.Anonymous;
 import com.zy.graduation1.common.MyPage;
 import com.zy.graduation1.dto.user.*;
-import com.zy.graduation1.entity.Menu;
-import com.zy.graduation1.entity.Operator;
-import com.zy.graduation1.entity.Role;
-import com.zy.graduation1.entity.RoleMenuRelation;
+import com.zy.graduation1.entity.*;
 import com.zy.graduation1.service.*;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -45,6 +42,9 @@ public class SystemManageController {
 
     @Autowired
     private OperatorService operatorService;
+
+    @Autowired
+    private DictionaryDataService dictionaryDataService;
 
     /**
      * 查询角色列表
@@ -258,9 +258,9 @@ public class SystemManageController {
     }
 
     @RequestMapping("/queryOperator")
-    public MyPage<OperatorDto> queryOperator(String operatorName, Long roleId, Long operatorId,
+    public MyPage<OperatorDto> queryOperator(String operatorName, Long roleId, Integer deleted,
                                              @RequestParam(defaultValue = "1") Integer currentPage) {
-        return systemManageService.queryOperator(operatorName, roleId, operatorId, currentPage);
+        return systemManageService.queryOperator(operatorName, roleId, deleted, currentPage);
     }
 
     @RequestMapping("/saveOrUpdateOperator")
@@ -281,5 +281,10 @@ public class SystemManageController {
     @RequestMapping("/getOperator")
     public List<Operator> getOperator() {
         return operatorService.getOperator();
+    }
+
+    @RequestMapping("/unitData")
+    public List<DictionaryData> unitData(String dictValue) {
+        return dictionaryDataService.unitData(dictValue);
     }
 }

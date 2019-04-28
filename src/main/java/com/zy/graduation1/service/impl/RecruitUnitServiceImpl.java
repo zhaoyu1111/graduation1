@@ -75,7 +75,7 @@ public class RecruitUnitServiceImpl extends ServiceImpl<RecruitUnitMapper, Recru
     public List<RecruitUnit> getAllRecruitUnit() {
         QueryWrapper<RecruitUnit> query = new QueryWrapper<>();
         query.eq("deleted", YesOrNoEnum.NO.getCode());
-        query.eq("status", 3);
+        query.eq("status", 2);
         return baseMapper.selectList(query);
     }
 }

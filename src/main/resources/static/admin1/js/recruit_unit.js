@@ -61,9 +61,8 @@ layui.use(['layer', 'table', 'form', 'jquery'], function () {
         toolbar: '#tool_unit',
         height: 525,
         cols: [[
-            {type:'checkbox'}
-            ,{field:'unitId', title: 'ID'}
-            ,{field:'unitName', title: '单位名称', align: 'center'}
+            {field:'unitId', title: 'ID'}
+            ,{field:'unitName', title: '单位名称', align: 'center', width: 155}
             ,{field:'industry', title: '所属行业', align: 'center'}
             ,{field:'property', title: '单位性质', align: 'center',
                 templet: function (data) {
@@ -98,7 +97,7 @@ layui.use(['layer', 'table', 'form', 'jquery'], function () {
                         return "审核未通过";
                     }
                 }}
-            ,{fixed: 'right',title:"操作",align:'center', toolbar: '#barDemo'}
+            ,{fixed: 'right',title:"操作",align:'center', toolbar: '#barDemo', width: 136}
         ]],
         done: function (res, curr, couunt) {
             $('.layui-table-box').find("[data-field = 'unitId']").css('display', 'none');

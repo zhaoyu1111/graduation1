@@ -15,6 +15,7 @@ layui.use(['layer', 'table', 'form', 'jquery'], function () {
 
         $.post('/web/article/saveOrUpdateArticle', article, function(res) {
            layer.msg(res.message);
+            window.location.reload();
         });
 
     });

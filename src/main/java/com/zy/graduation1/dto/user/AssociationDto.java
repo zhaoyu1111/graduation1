@@ -32,6 +32,8 @@ public class AssociationDto {
      */
     private Integer deleted;
 
+    private String descrip;
+
     /**
      * 创建时间
      */

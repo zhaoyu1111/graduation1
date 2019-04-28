@@ -11,6 +11,7 @@ import com.zy.graduation1.entity.Recruit;
 import com.zy.graduation1.entity.RecruitUnit;
 import com.zy.graduation1.service.RecruitService;
 import com.zy.graduation1.service.RecruitUnitService;
+import com.zy.graduation1.service.UserJobService;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.validation.annotation.Validated;
@@ -32,6 +33,10 @@ public class RecruitManageController {
 
     @Autowired
     private RecruitService recruitService;
+
+    @Autowired
+    private UserJobService userJobService;
+
 
     @RequestMapping("/queryRecruitUnit")
     public MyPage<RecruitUnitDto> queryRecruitUnit(String unitName, Integer property, Integer status,
@@ -57,6 +62,7 @@ public class RecruitManageController {
             return ;
         }
         recruitUnitService.saveOrUpdateUnit(recruitUnit);
+        userJobService.updateStatus(recruitUnit.getUnitId());
     }
 
     @RequestMapping("/getAllUnit")
@@ -77,8 +83,8 @@ public class RecruitManageController {
     }
 
     @RequestMapping("/queryRecruit")
-    public MyPage<RecruitDto> queryRecruit(Long unitId, Long applyId, String title, Integer page) {
-        IPage<Recruit> recruitPage = recruitService.queryRecruit(unitId, applyId, title, page);
+    public MyPage<RecruitDto> queryRecruit(Long unitId, Integer status, String endTime, Integer page) {
+        IPage<Recruit> recruitPage = recruitService.queryRecruit(unitId, status, endTime, page);
         List<Recruit> recruits = recruitPage.getRecords();
         if(CollectionUtils.isEmpty(recruits)) {
             return  new MyPage<>();
@@ -106,13 +112,13 @@ public class RecruitManageController {
 
     @RequestMapping("/saveOrUpdateRecruit")
     public void saveOrUpdateRecruit(Long recuritId,@NotBlank(message = "请输入标题") String title,
-                                    @NotBlank(message = "请输入薪酬范围") String salary,@NotNull(message = "请输入招聘人数") Integer members,
-                                    @NotNull(message = "请输入结束时间") Long endTime,@NotBlank(message = "请输入联系人") String contractor,
+                                    @NotNull(message = "请输入薪酬范围") Integer salary,@NotNull(message = "请输入招聘人数") Integer members,
+                                    @NotBlank(message = "请输入结束时间") String endTime,@NotBlank(message = "请输入联系人") String contractor,
                                     @NotBlank(message = "请输入手机号") String mobile,@NotBlank(message = "请输入职位名称") String posName,
                                     @RequestParam(defaultValue = "无") String posDescript,@NotBlank(message = "请输入福利") String welfare,
                                     @NotBlank(message = "请输入工作地点") String workPlace,@NotNull(message = "请选择招聘公司") Long unitId,
-                                    @NotBlank(message = "请输入邮箱") String email,@RequestParam(defaultValue = "1") Integer status,
-                                    @RequestParam(defaultValue = "0") Integer deleted) {
+                                    @NotBlank(message = "请输入邮箱") String email,Integer status,
+                                    Integer deleted) {
         Recruit recruit = new Recruit();
         recruit.setTitle(title).setMembers(members).setEndTime(endTime).setContractor(contractor).setMobile(mobile).setPosName(posName)
                 .setSalary(salary).setPosDescript(posDescript).setWelfare(welfare).setWorkPlace(workPlace).setUnitId(unitId).setEmail(email)

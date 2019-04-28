@@ -58,6 +58,13 @@ public class AlumniAssociation extends SuperEntity<AlumniAssociation> {
      */
     private Integer deleted;
 
+    /**
+     * 描述
+     * @return
+     */
+    @TableField("descrip")
+    private String descrip;
+
     @Override
     protected Serializable pkVal() {
         return this.associaId;
