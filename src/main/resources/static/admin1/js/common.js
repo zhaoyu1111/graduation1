@@ -29,6 +29,13 @@ $(function () {
         type: 'post',
         headers: {
             token: sessionStorage.getItem('token')
+        },
+        complete: function (XMLHttpRequest, status) {
+            var code = XMLHttpRequest.responseText;
+            var jsonData = JSON.parse(code);
+            if(jsonData.code == '2001') {
+                window.location = 'login.html';
+            }
         }
     })
 })

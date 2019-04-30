@@ -22,7 +22,6 @@ public class LoginInterceptor extends HandlerInterceptorAdapter {
                 return true;
             }
             if(null == RequestUser.getCurrentUser()) {
-                // TODO: 2018/12/30 跳转登录界面
                 JsonResult result = new JsonResult(SystemCode.NEED_LOGIN);
                 response.getOutputStream().write(JSON.toJSONString(result).getBytes());
                 response.setHeader("Content-type", "text/html;charset=UTF-8");

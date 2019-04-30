@@ -1,19 +1,33 @@
 package com.zy.graduation1.controller;
 
+import com.google.common.collect.Lists;
 import com.zy.graduation1.common.MyPage;
 import com.zy.graduation1.common.RequestUser;
 import com.zy.graduation1.dto.user.UserDto;
 import com.zy.graduation1.entity.Menu;
 import com.zy.graduation1.entity.User;
 import com.zy.graduation1.service.*;
+import javafx.scene.control.Cell;
+import org.apache.commons.fileupload.disk.DiskFileItem;
+import org.apache.commons.io.FileUtils;
+import org.apache.poi.ss.usermodel.CellType;
+import org.apache.poi.xssf.usermodel.XSSFCell;
+import org.apache.poi.xssf.usermodel.XSSFRow;
+import org.apache.poi.xssf.usermodel.XSSFSheet;
+import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.multipart.MultipartFile;
+import org.springframework.web.multipart.commons.CommonsMultipartFile;
 
+import javax.servlet.http.HttpServletRequest;
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotNull;
+import java.io.File;
+import java.io.IOException;
 import java.util.List;
 
 @Validated
@@ -76,5 +90,52 @@ public class UserInfoController {
     @RequestMapping("/getUserInfo")
     public User getUserInfo() {
         return userService.selectById(RequestUser.getCurrentUser());
+    }
+
+    @RequestMapping("/excelImport")
+    public void excelImport(MultipartFile file, HttpServletRequest request) throws IOException {
+        List<User> users = Lists.newArrayList();
+        XSSFWorkbook workbook = null;
+        CommonsMultipartFile cmf = (CommonsMultipartFile)file;
+        DiskFileItem dfi = (DiskFileItem)cmf.getFileItem();
+        File fo = dfi.getStoreLocation();
+        //创建Excel，读取文件内容
+        workbook = new XSSFWorkbook(FileUtils.openInputStream(fo));
+        //获取第一个工作表
+        XSSFSheet sheet = workbook.getSheet("学员信息");
+
+        //获取sheet中第一行行号
+        int firstRowNum = sheet.getFirstRowNum();
+        //获取sheet中最后一行行号
+        int lastRowNum = sheet.getLastRowNum();
+
+        try {
+            //循环插入数据
+            for(int i=firstRowNum+1;i<=lastRowNum;i++){
+                XSSFRow row = sheet.getRow(i);
+
+                User user = new User();
+
+                //学员名称
+                XSSFCell studentId = row.getCell(0);
+                if(studentId != null){
+                    studentId.setCellType(CellType.STRING);
+                    user.setUserName((studentId.getStringCellValue()));
+                }
+
+                //学员名称
+                XSSFCell username = row.getCell(0);
+                if(username!=null){
+                    username.setCellType(CellType.STRING);
+                    user.setUserName((username.getStringCellValue()));
+                }
+                users.add(user);
+            }
+            //usersMapper.insert(list);//往数据库插入数据
+        } catch (Exception e) {
+            e.printStackTrace();
+        } finally {
+            workbook.close();
+        }
     }
 }
