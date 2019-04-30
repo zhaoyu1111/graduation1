@@ -51,9 +51,10 @@
 <div class="layui-form">
     <div class="layui-form-item">
         <div class="layui-inline" style="z-index: 9999;">
-            <label class="layui-form-label">子菜单名称：</label>
+            <label class="layui-form-label">菜单名称：</label>
             <div class="layui-input-inline">
-                <select name="child_menu" id="child_menu" lay-filter = "majorName">请选择
+                <select name="child_menu" id="child_menu" lay-filter = "majorName">
+                    <option value="">请选择</option>
                     <option value="1">新闻中心</option>
                     <option value="2">校友捐赠</option>
                     <option value="3">杰出校友</option>
@@ -80,8 +81,6 @@
             </div>
         </div>
         <div class="layui-inline">
-            <button class="layui-btn layui-btn-normal" id="add"><i class="layui-icon layui-icon-add-circle"></i>上传word</button>
-            <button class="layui-btn layui-btn-normal" id="search"><i class="layui-icon layui-icon-search"></i>上传excel</button>
             <button class="layui-btn layui-btn-normal" id="submit"><i class="layui-icon layui-icon-refresh"></i>提交</button>
         </div>
     </div>

@@ -75,4 +75,11 @@ public interface CollegeService extends IService<College> {
      * @return
      */
     List<College> getCollege(Long operatorId);
+
+    /**
+     * 验证学院是否存在
+     * @param collegeName
+     * @return
+     */
+    Long validCollege(String collegeName);
 }

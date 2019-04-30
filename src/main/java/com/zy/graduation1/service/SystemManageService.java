@@ -6,6 +6,9 @@ import com.zy.graduation1.dto.user.OperatorRoleDto;
 import com.zy.graduation1.dto.user.RoleMenuRelationDto;
 import com.zy.graduation1.entity.OperatorRoleRelation;
 
+import javax.servlet.http.HttpServletResponse;
+import java.io.IOException;
+
 public interface SystemManageService {
 
     /**
@@ -69,4 +72,8 @@ public interface SystemManageService {
      */
     void saveOrUpdateOperator(String operatorName, Long roleId, Long operatorId,
                               String mobile, Integer deleted);
+
+    void logout();
+
+    void changePwd(String oldPwd, String newPwd, String confirmPwd);
 }

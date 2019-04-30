@@ -97,8 +97,29 @@ public class UserInfoManageManageServiceImpl implements UserInfoManageService {
     }
 
     @Override
-    public User getUser(Long studentId) {
-        return userService.selectById(studentId);
+    public UserDto getUser(Long studentId) {
+        User user = userService.selectById(studentId);
+        if(null == user) {
+            return null;
+        }
+        UserDto userDto = new UserDto();
+        BeanUtils.copyProperties(user, userDto);
+        College college = collegeService.selectById(user.getCollegeId());
+        if(null == college) {
+            return userDto;
+        }
+        userDto.setCollegeName(college.getCollegeName());
+        Major major = majorService.selectById(user.getMajorId());
+        if(null == major) {
+            return userDto;
+        }
+        userDto.setMajorName(major.getMajorName());
+        Class cla = classService.selectById(user.getClassId());
+        if(null == cla) {
+            return userDto;
+        }
+        userDto.setClassName(cla.getClassName());
+        return userDto;
     }
 
     @Override

@@ -3,8 +3,10 @@ package com.zy.graduation1.controller;
 import com.baomidou.mybatisplus.core.metadata.IPage;
 import com.baomidou.mybatisplus.core.toolkit.CollectionUtils;
 import com.google.common.collect.Lists;
+import com.sun.deploy.net.HttpResponse;
 import com.zy.graduation1.common.Anonymous;
 import com.zy.graduation1.common.MyPage;
+import com.zy.graduation1.common.RequestUser;
 import com.zy.graduation1.dto.user.*;
 import com.zy.graduation1.entity.*;
 import com.zy.graduation1.service.*;
@@ -13,7 +15,9 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
 
+import javax.servlet.http.HttpServletResponse;
 import javax.validation.constraints.NotNull;
+import java.io.IOException;
 import java.util.Arrays;
 import java.util.List;
 
@@ -286,5 +290,21 @@ public class SystemManageController {
     @RequestMapping("/unitData")
     public List<DictionaryData> unitData(String dictValue) {
         return dictionaryDataService.unitData(dictValue);
+    }
+
+    @RequestMapping("/operatorInfo")
+    public Operator operatorInfo() {
+        return operatorService.getOperator(RequestUser.getCurrentUser());
+    }
+
+    @RequestMapping("/logout")
+    public void logout(){
+
+    }
+
+    @Anonymous
+    @RequestMapping("/changePwd")
+    public void changePwd(String oldPwd, String newPwd, String confirmPwd) {
+        systemManageService.changePwd(oldPwd, newPwd, confirmPwd);
     }
 }

@@ -63,4 +63,6 @@ public interface MajorService extends IService<Major> {
      * @return
      */
     List<Major> getMajor(Long collegeId);
+
+    Long validMajor(String majoeName, Long collegeId);
 }

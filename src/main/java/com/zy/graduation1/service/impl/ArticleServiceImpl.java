@@ -29,7 +29,7 @@ public class ArticleServiceImpl extends ServiceImpl<ArticleMapper, Article> impl
             query.eq("menu_id", menuId);
         }
         if(StringUtils.isNotEmpty(articleName)) {
-            query.like("article_name", articleName);
+            query.like("title", articleName);
         }
         return baseMapper.selectPage(page, query);
     }

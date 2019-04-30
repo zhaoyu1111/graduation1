@@ -4,6 +4,8 @@ import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.baomidou.mybatisplus.core.metadata.IPage;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.zy.graduation1.entity.Class;
+import com.zy.graduation1.exception.BizException;
+import com.zy.graduation1.exception.OriginErrorCode;
 import com.zy.graduation1.mapper.ClassMapper;
 import com.zy.graduation1.service.ClassService;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
@@ -66,5 +68,18 @@ public class ClassServiceImpl extends ServiceImpl<ClassMapper, Class> implements
         QueryWrapper<Class> query = new QueryWrapper<>();
         query.eq("major_id", majorId);
         return baseMapper.selectList(query);
+    }
+
+    @Override
+    public Long validClass(Long collegeId, Long majorId, String className) {
+        QueryWrapper<Class> query = new QueryWrapper<>();
+        query.eq("college_id", collegeId);
+        query.eq("major_id", majorId);
+        query.eq("class_name", className);
+        Class cla = baseMapper.selectOne(query);
+        if(null == cla) {
+            throw new BizException(OriginErrorCode.CLASS_NOT_EXIST);
+        }
+        return cla.getClassId();
     }
 }

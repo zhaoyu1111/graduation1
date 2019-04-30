@@ -44,8 +44,8 @@ public class ArticleController {
     private ArticleService articleService;
 
     @RequestMapping("/queryArticle")
-    public MyPage<ArticleDto> queryArticle(Long menuId, String articleName, Integer page) {
-        return articleManageService.queryArticle(menuId, articleName, page);
+    public MyPage<ArticleDto> queryArticle(Long menuId, String title, Integer page) {
+        return articleManageService.queryArticle(menuId, title, page);
     }
 
     @RequestMapping("/saveOrUpdateArticle")

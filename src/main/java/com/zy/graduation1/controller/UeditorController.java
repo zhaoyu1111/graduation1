@@ -51,9 +51,12 @@ public class UeditorController {
         fileName = Calendar.getInstance().getTimeInMillis() + suffixName;
 
         //String realPath = request.getContextPath();
-        String realPath = "E:\\upload\\images\\";
+        //String realPath = "E:\\upload\\images\\";
+        String realPath = "images\\";
+        String path1 = "E:\\upload\\";
 
-        String path = realPath+"\\"+fileName;
+        //String path = realPath+"\\"+fileName;
+        String path = path1 + realPath + fileName;
         File dest = new File(path);
         // 检测是否存在目录
         if (!dest.getParentFile().exists()) {

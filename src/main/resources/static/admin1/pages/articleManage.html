@@ -23,11 +23,6 @@
         .layui-table-sort .layui-table-sort-desc{
             border-top-color: white;
         }
-
-        .layui-form-item .layui-inline {
-            margin-bottom: 5px;
-            margin-right: -15px;
-        }
         /* 修改table的样式 end */
     </style>
 </head>
@@ -69,9 +64,13 @@
                 </div>
             </div>
             <div class="layui-form-item">
-                <label class="layui-form-label" style="width: 100px;">二级菜单：</label>
+                <label class="layui-form-label" style="width: 100px;">菜单：</label>
                 <div class="layui-input-inline">
-                    <input type="text" name="menuId" class="layui-input" id="menuId">
+                    <select name="modules" lay-search="" id="menuId">
+                        <option value="1">新闻中心</option>
+                        <option value="2">校友捐赠</option>
+                        <option value="3">杰出校友</option>
+                    </select>
                 </div>
             </div>
 
@@ -85,35 +84,28 @@
         </form>
     </div>
 </div>
+<div class="layui-row" id="detail" style="display: none;">
+    <div class="layui-col-md12">
+        <p id="content">111</p>
+    </div>
+</div>
 <script type="text/html" id="tool_article">
     <div class="layui-form">
         <div class="layui-form-item">
             <div class="layui-inline">
-                <label class="layui-form-label" style="width: 78px;">单位名称：</label>
+                <label class="layui-form-label" style="width: 78px;">文章标题：</label>
                 <div class="layui-input-inline">
-                    <input type="text" name="unit_name" id="unit_name" autocomplete="off" class="layui-input"/>
+                    <input type="text" name="search_title" id="search_title" autocomplete="off" class="layui-input"/>
                 </div>
             </div>
             <div class="layui-inline">
-                <label class="layui-form-label">单位性质：</label>
+                <label class="layui-form-label">文章类型：</label>
                 <div class="layui-input-inline">
-                    <select name="modules" lay-search="" id="search_property">
+                    <select name="modules" lay-search="" id="search_menu">
                         <option value="">请选择</option>
-                        <option value="1">国企</option>
-                        <option value="2">私企</option>
-                        <option value="3">合资</option>
-                        <option value="4">其他</option>
-                    </select>
-                </div>
-            </div>
-            <div class="layui-inline">
-                <label class="layui-form-label">审核状态：</label>
-                <div class="layui-input-inline">
-                    <select name="modules" lay-search="" id="search_status">
-                        <option value="">请选择</option>
-                        <option value="1">待审核</option>
-                        <option value="2">通过</option>
-                        <option value="3">拒绝</option>
+                        <option value="1">新闻中心</option>
+                        <option value="2">校友捐赠</option>
+                        <option value="3">杰出校友</option>
                     </select>
                 </div>
             </div>
@@ -123,11 +115,6 @@
                 <button class="layui-btn layui-btn-normal" id="recover"><i class="layui-icon layui-icon-refresh"></i>重置</button>
             </div>
         </div>
-    </div>
-</script>
-<script type="text/html" id="article">
-    <div id="detail">
-
     </div>
 </script>
 </html>

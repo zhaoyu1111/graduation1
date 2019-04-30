@@ -14,7 +14,16 @@ layui.use(['layer', 'table', 'form', 'jquery'], function () {
             ,{field:'articleId', title: 'ID'}
             ,{field:'title', title: '文章标题', align: 'center'}
             ,{field:'author', title: '作者', align: 'center'}
-            ,{field:'menuId', title: '二级菜单', align: 'center'}
+            ,{field:'menuId', title: '菜单', align: 'center',
+                templet: function (data) {
+                    if(data.menuId == 1) {
+                        return "新闻中心";
+                    }else if(data.menuId == 2) {
+                        return "校友捐赠";
+                    }else if(data.menuId == 3){
+                        return "杰出校友";
+                    }
+                }}
             ,{field:'source', title: '文章来源', align: 'center'}
             ,{field:'count', title: '点击数', align: 'center'}
             ,{field:'status', title: '状态', align: 'center',
@@ -61,7 +70,8 @@ layui.use(['layer', 'table', 'form', 'jquery'], function () {
                 if(data != null) {
                     layero.find("#title").val(data.title);
                     layero.find("#author").val(data.author);
-                    layero.find("#menuId").val(data.menuId);
+                    //layero.find("#menuId").val(data.menuId);
+                    layero.find("option[value='"+data.menuId+"']").prop("selected",true);
                     layero.find("#source").val(data.source);
                     form.render();
                 }
@@ -71,13 +81,14 @@ layui.use(['layer', 'table', 'form', 'jquery'], function () {
                 $(layero).find("input").each(function() {
                     article[this.name] = this.value;
                 });
+                article["menuId"] = $(layero).find("#menuId").val();
                 if(data != null) {
                     article["articleId"] = data.articleId;
                 }
                 $.post('/web/article/saveOrUpdateArticle', article, function (rec) {//得到数据提交到后端进行更新
                     if (rec.code === "2000") {
                         layer.msg(rec.message);
-                        reload(null, null, null);
+                        reload(null, null);
                         layer.close(index);
                         return false;
                     } else {
@@ -97,7 +108,7 @@ layui.use(['layer', 'table', 'form', 'jquery'], function () {
                     if (data.code == "2000") {
                         layer.alert(data.message,{icon: 6}, function(){
                             layer.closeAll();
-                            reload(null, null, null);
+                            reload(null, null);
                         });
                     } else {
                         layer.alert(data.message);
@@ -118,7 +129,7 @@ layui.use(['layer', 'table', 'form', 'jquery'], function () {
                     if (data.code == "2000") {
                         layer.alert(data.message,{icon: 6}, function(){
                             layer.closeAll();
-                            reload(null, null, null);
+                            reload(null, null);
                         });
                     } else {
                         layer.alert(data.message);
@@ -131,19 +142,31 @@ layui.use(['layer', 'table', 'form', 'jquery'], function () {
     }
 
     function detail(id) {
+        $.ajaxSettings.async = false;
+        $.post("/web/article/getContext", {"articleId": id}, function (res) {
+            if (res.code === '2000') {
+                $("#content").html(res.data);
+            }else {
+                layer.msg(res.message);
+            }
+        }, 'json');
+
         layer.open({
             type: 1,
             title: "详情",
             skin: "myclass",
-            area: ["30%"],
+            area: ['630px', '500px'],
             content: $("#detail").html(),
             success: function (layero, index) {
-                $.post("/web/article/getContext", {"articleId": id}, function (res) {
+                /*$.post("/web/article/getContext", {"articleId": id}, function (res) {
                     if (res.code === '2000') {
-                        $("#detail").append(res.data);
+                        $("#content").html(res.data);
+                    }else {
+                        layer.msg(res.message);
                     }
                     form.render();
-                });
+                }, 'json');
+                form.render();*/
             }
         });
     }
@@ -154,23 +177,21 @@ layui.use(['layer', 'table', 'form', 'jquery'], function () {
     });
 
     $(document).on('click', '#search',  function () {
-        var roleName = $('#unit_name').val();
-        var property = $("#search_property").val();
-        var status = $("#search_status").val();
-        reload(roleName, property, status);
+        var title = $('#search_title').val();
+        var menuId = $("#search_menu").val();
+        reload(title, menuId);
         form.render();
     });
 
     $(document).on('click', '#recover', function () {
-        reload(null, null, null);
+        reload(null, null);
     });
 
-    function reload(unitName, property, status) {
+    function reload(title, menuId) {
         tableIns.reload({
             where: {
-                unitName: unitName,
-                property: property,
-                status: status
+                title: title,
+                menuId: menuId
             }
         });
     }

@@ -40,10 +40,10 @@ public interface ClassService extends IService<Class> {
 
     /**
      * 查询班级信息
-     * @param classId
+     * @param collegeId
      * @param majorId
      * @param collegeId
-     * @param currentPage
+     * @param page
      * @return
      */
     IPage<Class> queryClass(Long collegeId, String className, Long majorId, Integer page);
@@ -54,4 +54,6 @@ public interface ClassService extends IService<Class> {
      * @return
      */
     List<Class> getClass(Long majorId);
+
+    Long validClass(Long collegeId, Long majorId, String className);
 }

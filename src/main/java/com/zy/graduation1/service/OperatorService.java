@@ -20,6 +20,7 @@ public interface OperatorService extends IService<Operator> {
 
     /**
      * 批量查询管理员信息
+     *
      * @param operatorIds
      * @return
      */
@@ -27,6 +28,7 @@ public interface OperatorService extends IService<Operator> {
 
     /**
      * 通过管理员名称查询管理员信息（不支持模糊查询）
+     *
      * @param operatorName
      * @return
      */
@@ -34,6 +36,7 @@ public interface OperatorService extends IService<Operator> {
 
     /**
      * 获取管理员信息
+     *
      * @param operatorId
      * @return
      */
@@ -41,6 +44,7 @@ public interface OperatorService extends IService<Operator> {
 
     /**
      * 分页查询管理员信息
+     *
      * @param operatorName
      * @param roleId
      * @param currentPage
@@ -50,6 +54,7 @@ public interface OperatorService extends IService<Operator> {
 
     /**
      * 新增管理员信息
+     *
      * @param operatorName
      * @param roleId
      * @param operatorId
@@ -60,6 +65,7 @@ public interface OperatorService extends IService<Operator> {
 
     /**
      * 更新管理员信息
+     *
      * @param operatorName
      * @param roleId
      * @param operatorId
@@ -70,13 +76,16 @@ public interface OperatorService extends IService<Operator> {
 
     /**
      * 删除管理员
+     *
      * @param operatorId
      */
     void deleteOperator(Long operatorId);
 
     /**
      * 获取管理员列表
+     *
      * @return
      */
     List<Operator> getOperator();
+
 }

@@ -5,6 +5,8 @@ import com.baomidou.mybatisplus.core.metadata.IPage;
 import com.baomidou.mybatisplus.core.toolkit.CollectionUtils;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.zy.graduation1.entity.Major;
+import com.zy.graduation1.exception.BizException;
+import com.zy.graduation1.exception.OriginErrorCode;
 import com.zy.graduation1.mapper.MajorMapper;
 import com.zy.graduation1.service.MajorService;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
@@ -78,5 +80,17 @@ public class MajorServiceImpl extends ServiceImpl<MajorMapper, Major> implements
         QueryWrapper<Major> query = new QueryWrapper<>();
         query.eq("college_id", collegeId);
         return baseMapper.selectList(query);
+    }
+
+    @Override
+    public Long validMajor(String majoeName, Long collegeId) {
+        QueryWrapper<Major> query = new QueryWrapper<>();
+        query.eq("major_name", majoeName);
+        query.eq("college_id", collegeId);
+        Major major = baseMapper.selectOne(query);
+        if(null == major) {
+            throw new BizException(OriginErrorCode.MAJOR_NOT_EXIST);
+        }
+        return major.getMajorId();
     }
 }

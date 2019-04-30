@@ -4,6 +4,8 @@ import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.baomidou.mybatisplus.core.metadata.IPage;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.zy.graduation1.entity.College;
+import com.zy.graduation1.exception.BizException;
+import com.zy.graduation1.exception.OriginErrorCode;
 import com.zy.graduation1.mapper.CollegeMapper;
 import com.zy.graduation1.service.CollegeService;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
@@ -96,5 +98,16 @@ public class CollegeServiceImpl extends ServiceImpl<CollegeMapper, College> impl
             return null;
         }
         return baseMapper.selectList(query);
+    }
+
+    @Override
+    public Long validCollege(String collegeName) {
+        QueryWrapper<College> query = new QueryWrapper<>();
+        query.eq("college_name", collegeName);
+        College college = baseMapper.selectOne(query);
+        if(null == college) {
+            throw new BizException(OriginErrorCode.COLLEGE_NOT_EXIST);
+        }
+        return college.getCollegeId();
     }
 }

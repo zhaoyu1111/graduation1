@@ -14,9 +14,13 @@ layui.use(['layer', 'table', 'form', 'jquery'], function () {
         article["source"] = $("#source").val();
 
         $.post('/web/article/saveOrUpdateArticle', article, function(res) {
-           layer.msg(res.message);
-            window.location.reload();
-        });
-
+            if(res.code == '2000') {
+                layer.msg('发布成功',{icon:1,time:1500, end:function () {
+                        window.location.reload();
+                    }});
+            }else {
+                layer.msg(res.message,{icon:1,time:1500});
+            }
+        }, 'json');
     });
 });

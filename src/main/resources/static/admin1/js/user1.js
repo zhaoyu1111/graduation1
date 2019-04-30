@@ -7,9 +7,7 @@ layui.use(['layer', 'table', 'form', 'jquery'], function () {
     $.post('/web/origin/getCollege', null, function (rec) {//得到数据提交到后端进行更新
         if (rec.code === "2000") {
             $("#search_collegeName").append("<option value=''>请选择</option>");
-            $("#collegeName").append("<option value=''>请选择</option>");
             $.each(rec.data, function(index, item) {
-                $('#collegeName').append("<option value='" + item.collegeId + "'>" + item.collegeName + "</option>");
                 $('#search_collegeName').append("<option value='" + item.collegeId + "'>" + item.collegeName + "</option>");
             });
         }
@@ -23,31 +21,6 @@ layui.use(['layer', 'table', 'form', 'jquery'], function () {
                 $("#search_majorName").append("<option value=''>请选择</option>");
                 $.each(rec.data, function(index, item) {
                     $('#search_majorName').append("<option value='" + item.majorId + "'>" + item.majorName + "</option>");
-                });
-            }
-        }, 'json');
-        form.render('select');
-    });
-
-    form.on('select(collegeName)', function(data){         //级联操作
-        $.ajaxSettings.async = false;
-        $.post('/web/origin/getMajor', {"collegeId" : data.value}, function (rec) {//得到数据提交到后端进行更新
-            if (rec.code === "2000") {
-                $.each(rec.data, function(index, item) {
-                    $('#majorName').append("<option value='" + item.majorId + "'>" + item.majorName + "</option>");
-                });
-            }
-        }, 'json');
-        form.render('select');
-    });
-
-    form.on('select(majorName)', function(data){         //级联操作
-        $('#className').empty();
-        $.ajaxSettings.async = false;
-        $.post('/web/origin/getClass', {"majorId" : data.value}, function (rec) {//得到数据提交到后端进行更新
-            if (rec.code === "2000") {
-                $.each(rec.data, function(index, item) {
-                    $('#className').append("<option value='" + item.majorId + "'>" + item.majorName + "</option>");
                 });
             }
         }, 'json');
@@ -78,9 +51,9 @@ layui.use(['layer', 'table', 'form', 'jquery'], function () {
             ,{field:'majorName', title: '专业名称', align: "center"}
             ,{field:'classId', title: '班级ID', align: "center"}
             ,{field:'className', title: '班级名称', align: "center", width: 67}
-            ,{field:'deleted', title: '状态', align: "center",
+            ,{field:'status', title: '状态', align: "center",
                 templet:function (data) {
-                    if(data.deleted == 0) {
+                    if(data.status == 0) {
                         return "正常";
                     }else {
                         return "冻结";
@@ -128,6 +101,7 @@ layui.use(['layer', 'table', 'form', 'jquery'], function () {
                     $.post('/api/user/getUser', {"studentId": data.studentId}, function (res) {
                         if(res.code === '2000') {
                             layero.find("#studentId").val(res.data.studentId);
+                            layero.find("#studentId").attr("disabled", true);
                             layero.find("#userName").val(res.data.userName);
                             layero.find("#collegeName").val(res.data.collegeName);
                             layero.find("#majorName").val(res.data.majorName);
@@ -157,19 +131,17 @@ layui.use(['layer', 'table', 'form', 'jquery'], function () {
                 }
             },
             yes: function (index, layero) {
-                var recruitUnit = {};
+                var user = {};
                 $(layero).find("input").each(function() {
-                    recruitUnit[this.name] = this.value;
+                    user[this.name] = this.value;
                 });
-                recruitUnit["status"] = $("input[name='status']:checked").val();
-                recruitUnit["gender"] = $("input[name='gender']:checked").val();
-                recruitUnit["scale"] = $(layero).find("#scale").val();
-                recruitUnit["property"] = $(layero).find("#property").val();
-                recruitUnit["direct"] = $(layero).find("#direct").val();
+                user["status"] = $("input[name='status']:checked").val();
+                user["gender"] = $("input[name='gender']:checked").val();
+                user["introduce"] = $(layero).find("#introduce").val();
                 if(data != null) {
-                    recruitUnit["unitId"] = data.unitId;
+                    user["studentId"] = data.studentId;
                 }
-                $.post('/web/recruit/saveOrUpdateUnit', recruitUnit, function (rec) {//得到数据提交到后端进行更新
+                $.post('/api/user/saveOrUpdateUser', user, function (rec) {//得到数据提交到后端进行更新
                     if (rec.code === "2000") {
                         layer.msg(rec.message);
                         reload(null, null, null);

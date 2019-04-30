@@ -103,4 +103,24 @@ public class UserServiceImpl extends ServiceImpl<UserMapper, User> implements Us
         }
         return baseMapper.selectPage(userPage, query);
     }
+
+    @Override
+    public void saveOrUpdateUser(Long studentId, String userName, Long collegeId,
+                                 Long majorId, Long classId, String mobile,
+                                 Integer gender, String birthday, String email, Integer status,
+                                 String currentCity, String homeAddress, String qq,
+                                 String wechat, String introduce) {
+        User user = new User();
+        user.setUserName(userName).setCollegeId(collegeId).setMajorId(majorId)
+                .setClassId(classId).setMobile(mobile).setGender(gender).setBirthday(birthday)
+                .setEmail(email).setStatus(status).setCurrentCity(currentCity).setHomeAddress(homeAddress)
+                .setQq(qq).setWechat(wechat).setIntroduce(introduce);
+        user.setStudentId(studentId);
+        user.setPwd(MD5Utils.encode("123456"));
+        if(null != baseMapper.selectById(studentId)) {
+            this.updateById(user);
+        }else {
+            this.insert(user);
+        }
+    }
 }

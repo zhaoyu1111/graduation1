@@ -8,6 +8,11 @@ layui.config({
     $ = layui.jquery;
     tab = layui.bodyTab();
 
+    $.post('/web/system/operatorInfo', null, function (data) {
+        $("#userName").html(data.data.operatorName);
+        $("#operatorName").html(data.data.operatorName);
+    });
+
     // 添加新窗口
     $(".layui-nav .layui-nav-item a").on("click",function(){
         addTab($(this));
@@ -79,4 +84,8 @@ layui.config({
 //打开新窗口
 function addTab(_this){
     tab.tabAdd(_this);
+}
+
+function logout(){
+    $.post('')
 }

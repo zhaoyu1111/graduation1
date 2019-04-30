@@ -76,12 +76,15 @@ public class OriginManageController {
 
     @RequestMapping("/saveOrUpdateClass")
     public void saveOrUpdateClass(@NotNull(message = "请输入班级编号") Long classId,
-                                  @NotNull(message = "请选择专业") Long majorId,
-                                  @NotNull(message = "请选择学院") Long collegeId,
+                                  @NotBlank(message = "请选择专业") String majorName,
+                                  @NotBlank(message = "请选择学院") String collegeName,
                                   @NotBlank(message = "请输入班主任姓名") String headMaster,
                                   @NotBlank(message = "请输入辅导员姓名") String counselor,
                                   @NotBlank(message = "请输入班级联系人姓名") String contractor,
                                   String descript) {
+        Long collegeId =  collegeService.validCollege(collegeName);
+        Long majorId = majorService.validMajor(majorName, collegeId);
+
         originManageService.saveOrUpdateClass(classId, majorId, collegeId,
                 headMaster, counselor, contractor, descript);
     }

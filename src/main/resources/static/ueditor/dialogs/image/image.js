@@ -726,7 +726,7 @@
                         _this.imageList.push(json);
                         var ue = UE.getEditor('editor');
                         //将图片回写  ret.data就是我上传成功的url.
-                        ue.execCommand('insertimage', {src:json.url});
+                        //ue.execCommand('insertimage', {src:json.url});
                         $file.append('<span class="success"></span>');
                     } else {
                         $file.find('.error').text(json.state).show();

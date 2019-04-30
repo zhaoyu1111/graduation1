@@ -73,4 +73,9 @@ public interface UserService extends IService<User> {
     IPage<User> queryUser(List<College> colleges, String address, Long majorId, Long classId,
                           String nameOrId, Integer currentPage);
 
+    void saveOrUpdateUser(Long studentId, String userName,Long collegeName,  Long majorName,
+                          Long className, String mobile,Integer gender,  String birthday,
+                          String email, Integer status,String currentCity, String homeAddress,
+                          String qq, String wechat, String introduce);
+
 }

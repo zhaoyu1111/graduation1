@@ -23,7 +23,7 @@ public interface UserInfoManageService {
      * @param studentId
      * @return
      */
-    User getUser(Long studentId);
+    UserDto getUser(Long studentId);
 
     /**
      * 通过角色获取菜单列表

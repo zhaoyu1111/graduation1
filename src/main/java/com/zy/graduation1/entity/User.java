@@ -37,7 +37,7 @@ public class User extends SuperEntity<User> {
     /**
      * 学号
      */
-    @TableId("student_id")
+    @TableId(value = "student_id", type = IdType.INPUT)
     private Long studentId;
     /**
      * 班级ID

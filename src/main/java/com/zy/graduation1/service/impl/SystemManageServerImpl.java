@@ -5,7 +5,9 @@ import com.baomidou.mybatisplus.core.toolkit.CollectionUtils;
 import com.baomidou.mybatisplus.core.toolkit.StringUtils;
 import com.google.common.collect.Lists;
 import com.google.common.collect.Maps;
+import com.sun.deploy.net.HttpResponse;
 import com.zy.graduation1.common.MyPage;
+import com.zy.graduation1.common.RequestUser;
 import com.zy.graduation1.common.SystemCode;
 import com.zy.graduation1.dto.user.OperatorDto;
 import com.zy.graduation1.dto.user.OperatorRoleDto;
@@ -14,10 +16,14 @@ import com.zy.graduation1.entity.*;
 import com.zy.graduation1.exception.BizErrorCode;
 import com.zy.graduation1.exception.BizException;
 import com.zy.graduation1.service.*;
+import com.zy.graduation1.utils.MD5Utils;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.stereotype.Service;
 
+import javax.servlet.http.HttpServletResponse;
+import java.io.IOException;
 import java.util.List;
 import java.util.Map;
 import java.util.stream.Collectors;
@@ -39,6 +45,9 @@ public class SystemManageServerImpl implements SystemManageService {
 
     @Autowired
     private OperatorRoleRelationService operatorRoleRelationService;
+
+    @Autowired
+    private RedisTemplate redisTemplate;
 
     @Override
     public MyPage<OperatorRoleRelation> queryOperatorRole(String operatorName, String roleName) {
@@ -219,5 +228,23 @@ public class SystemManageServerImpl implements SystemManageService {
             operatorService.updateOperator(operatorName, roleId, operatorId, mobile, deleted);
         }
         operatorRoleRelationService.saveOrUpdateOperatorRole(operatorId, roleId);
+    }
+
+    @Override
+    public void logout() {
+
+    }
+
+    @Override
+    public void changePwd(String oldPwd, String newPwd, String confirmPwd) {
+        Operator operator = operatorService.getOperator(RequestUser.getCurrentUser());
+        if(!newPwd.equals(confirmPwd)) {
+            throw new BizException(BizErrorCode.CONFIRM_NOT_SAME);
+        }
+        if(!operator.getPwd().equals(MD5Utils.encode(oldPwd))) {
+            throw new BizException(BizErrorCode.PASSWORD_ERROR);
+        }
+        operator.setPwd(MD5Utils.encode(newPwd));
+        operatorService.updateById(operator);
     }
 }

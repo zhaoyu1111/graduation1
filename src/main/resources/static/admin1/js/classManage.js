@@ -6,10 +6,8 @@ layui.use(['layer', 'table', 'form', 'jquery'], function () {
 
     $.post('/web/origin/getCollege', null, function (rec) {//得到数据提交到后端进行更新
         if (rec.code === "2000") {
-            $("#collegeName").append("<option value=''>请选择</option>");
             $("#search_collegeName").append("<option value=''>请选择</option>");
             $.each(rec.data, function(index, item) {
-                $('#collegeName').append("<option value='" + item.collegeId + "'>" + item.collegeName + "</option>");
                 $('#search_collegeName').append("<option value='" + item.collegeId + "'>" + item.collegeName + "</option>");
             });
         }
@@ -23,19 +21,6 @@ layui.use(['layer', 'table', 'form', 'jquery'], function () {
                 $("#search_majorName").append("<option value=''>请选择</option>");
                 $.each(rec.data, function(index, item) {
                     $('#search_majorName').append("<option value='" + item.majorId + "'>" + item.majorName + "</option>");
-                });
-            }
-        }, 'json');
-        form.render('select');
-    });
-
-    form.on('select(collegeName)', function(data){         //级联操作
-        $("#majorName").empty();
-        $.ajaxSettings.async = false;
-        $.post('/web/origin/getMajor', {"collegeId" : data.value}, function (rec) {//得到数据提交到后端进行更新
-            if (rec.code === "2000") {
-                $.each(rec.data, function(index, item) {
-                    $('#majorName').append("<option value='" + item.majorId + "'>" + item.majorName + "</option>");
                 });
             }
         }, 'json');
@@ -91,12 +76,13 @@ layui.use(['layer', 'table', 'form', 'jquery'], function () {
             success: function (layero, index) {
                 if(data != null) {
                     layero.find("#classId").val(data.classId);
+                    layero.find("#classId").attr("disabled", true);
                     layero.find("#contractor").val(data.contractor);
                     layero.find("#headMaster").val(data.headMaster);
                     layero.find("#counselor").val(data.counselor);
                     layero.find("#descript").text(data.descript);
-                    alert(data.collegeId);
-                    alert(data.majorId);
+                    layero.find("#collegeName").val(data.collegeName);
+                    layero.find("#majorName").val(data.majorName);
                     layero.find("option[value='"+data.collegeId+"']").prop("selected",true);
                     layero.find("option[value='"+data.majorId+"']").prop("selected",true);
                     form.render();
@@ -114,11 +100,11 @@ layui.use(['layer', 'table', 'form', 'jquery'], function () {
                     classes[this.name] = this.value;
                 });
                 if(data != null) {
-                    classes["roleId"] = data.roleId;
+                    classes["classId"] = data.classId;
                 }
                 classes["descript"] = $(layero).find("#descript").val();
-                classes["collegeId"] = $(layero).find("#collegeName").val();
-                classes["majorId"] = $(layero).find("#majorName").val();
+                //classes["collegeId"] = $(layero).find("#collegeName").val();
+                //classes["majorId"] = $(layero).find("#majorName").val();
                 $.post('/web/origin/saveOrUpdateClass', classes, function (rec) {//得到数据提交到后端进行更新
                     if (rec.code === "2000") {
                         layer.msg(rec.message);
