@@ -29,7 +29,7 @@ import java.io.Serializable;
 @EqualsAndHashCode(callSuper = true)
 @Accessors(chain = true)
 @TableName("activity_user_apply")
-public class ActivityUserApply extends SuperEntity<ActivityUserApply> {
+public class ActivityUserApply extends SuperEntity<ActivityUserApply> implements Serializable {
 
     private static final long serialVersionUID = 1L;
 

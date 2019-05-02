@@ -29,7 +29,7 @@ import java.io.Serializable;
 @EqualsAndHashCode(callSuper = true)
 @Accessors(chain = true)
 @TableName("dictionary_data")
-public class DictionaryData extends SuperEntity<DictionaryData> {
+public class DictionaryData extends SuperEntity<DictionaryData> implements  Serializable {
 
     private static final long serialVersionUID = 1L;
 

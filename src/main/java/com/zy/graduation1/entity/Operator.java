@@ -25,7 +25,7 @@ import java.io.Serializable;
 @Data
 @EqualsAndHashCode(callSuper = true)
 @Accessors(chain = true)
-public class Operator extends SuperEntity<Operator> {
+public class Operator extends SuperEntity<Operator> implements Serializable {
 
     private static final long serialVersionUID = 1L;
 

@@ -1,8 +1,9 @@
-layui.use(['layer', 'table', 'form', 'jquery'], function () {
+layui.use(['layer', 'table', 'form', 'jquery', 'upload'], function () {
     var layer = layui.layer,
         table = layui.table,
         $ = layui.jquery,
-        form = layui.form;
+        form = layui.form,
+        upload = layui.upload;
 
     $.post('/web/origin/getCollege', null, function (rec) {//得到数据提交到后端进行更新
         if (rec.code === "2000") {
@@ -26,6 +27,14 @@ layui.use(['layer', 'table', 'form', 'jquery'], function () {
         }, 'json');
         form.render('select');
     });
+
+    /*var uploadInst = upload.render({
+        elem: '#excel',
+        url: '/api/user/excelImport',
+        done: function (res) {
+            alert(res.code);
+        }
+    });*/
 
     var tableIns = table.render({
         elem: '#mytable',
@@ -197,6 +206,29 @@ layui.use(['layer', 'table', 'form', 'jquery'], function () {
         edit(null, "新增角色");
         form.render();
     });
+
+    /*$(document).on('click', '#excel', function () {
+        upload.render({
+            elem: '#excel',
+            url: '/api/user/excelImport',
+            accept: 'file',
+            multiple: true,
+            before: function(){
+                alert(2);
+            },
+            done: function (res) {
+                alert(res.code);
+            },
+            error: function(){
+                //演示失败状态，并实现重传
+                /!*var demoText = $('#demoText');
+                demoText.html('<span style="color: #FF5722;">上传失败</span> <a class="layui-btn layui-btn-xs demo-reload">重试</a>');
+                demoText.find('.demo-reload').on('click', function(){
+                    uploadInst.upload();
+                });*!/
+            }
+        });
+    });*/
 
     $(document).on('click', '#search',  function () {
         var userName = $('#user_name').val();

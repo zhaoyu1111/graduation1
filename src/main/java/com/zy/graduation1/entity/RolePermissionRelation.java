@@ -27,7 +27,7 @@ import java.io.Serializable;
 @EqualsAndHashCode(callSuper = true)
 @Accessors(chain = true)
 @TableName("role_permission_relation")
-public class RolePermissionRelation extends SuperEntity<RolePermissionRelation> {
+public class RolePermissionRelation extends SuperEntity<RolePermissionRelation> implements Serializable {
 
     private static final long serialVersionUID = 1L;
 

@@ -28,7 +28,7 @@ import java.io.Serializable;
 @EqualsAndHashCode(callSuper = true)
 @Accessors(chain = true)
 @TableName("operator_origin_relation")
-public class OperatorOriginRelation extends SuperEntity<OperatorOriginRelation> {
+public class OperatorOriginRelation extends SuperEntity<OperatorOriginRelation> implements Serializable {
 
     private static final long serialVersionUID = 1L;
 

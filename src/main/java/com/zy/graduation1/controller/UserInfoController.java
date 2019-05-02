@@ -17,6 +17,7 @@ import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.validation.annotation.Validated;
+import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
@@ -92,8 +93,8 @@ public class UserInfoController {
         return userService.selectById(RequestUser.getCurrentUser());
     }
 
-    @RequestMapping("/excelImport")
-    public void excelImport(MultipartFile file, HttpServletRequest request) throws IOException {
+    @PostMapping("/excelImport")
+    public void excelImport(@RequestParam(value = "file") MultipartFile file, HttpServletRequest request) throws IOException {
         List<User> users = Lists.newArrayList();
         XSSFWorkbook workbook = null;
         CommonsMultipartFile cmf = (CommonsMultipartFile)file;

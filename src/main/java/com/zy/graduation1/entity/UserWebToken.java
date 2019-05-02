@@ -26,7 +26,7 @@ import java.io.Serializable;
 @EqualsAndHashCode(callSuper = true)
 @Accessors(chain = true)
 @TableName("user_web_token")
-public class UserWebToken extends SuperEntity<UserWebToken> {
+public class UserWebToken extends SuperEntity<UserWebToken> implements Serializable {
 
     private static final long serialVersionUID = 1L;
 

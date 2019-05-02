@@ -28,7 +28,7 @@ import java.io.Serializable;
 @EqualsAndHashCode(callSuper = true)
 @Accessors(chain = true)
 @TableName("role_menu_relation")
-public class RoleMenuRelation extends SuperEntity<RoleMenuRelation> {
+public class RoleMenuRelation extends SuperEntity<RoleMenuRelation> implements Serializable {
 
     private static final long serialVersionUID = 1L;
 

@@ -30,7 +30,7 @@ import java.io.Serializable;
 @EqualsAndHashCode(callSuper = true)
 @Accessors(chain = true)
 @TableName("operator_role_relation")
-public class OperatorRoleRelation extends SuperEntity<OperatorRoleRelation> {
+public class OperatorRoleRelation extends SuperEntity<OperatorRoleRelation> implements Serializable {
 
     private static final long serialVersionUID = 1L;
 

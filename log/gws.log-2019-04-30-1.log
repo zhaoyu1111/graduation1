@@ -1,0 +1,1392 @@
+time=2019-04-30T09:34:00.122+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Starting Graduation1Application on DESKTOP-Q8HC681 with PID 10056 (F:\idea\graduation1\target\classes started by pcdn in F:\idea\graduation1)
+time=2019-04-30T09:34:00.324+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=The following profiles are active: dev
+time=2019-04-30T09:34:00.604+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@25748410: startup date [Tue Apr 30 09:34:00 CST 2019]; root of context hierarchy
+time=2019-04-30T09:34:09.804+0800`appName=oms`hostName=docker-20`logLevel= WARN`msg=No MyBatis mapper was found in '[com.zy.project.mapper]' package. Please check your configuration.
+time=2019-04-30T09:34:15.192+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Tomcat initialized with port(s): 8083 (http)
+time=2019-04-30T09:34:17.085+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Servlet dispatcherServlet mapped to [/]
+time=2019-04-30T09:34:17.098+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Mapping filter: 'characterEncodingFilter' to: [/*]
+time=2019-04-30T09:34:17.099+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+time=2019-04-30T09:34:17.099+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Mapping filter: 'httpPutFormContentFilter' to: [/*]
+time=2019-04-30T09:34:17.099+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Mapping filter: 'requestContextFilter' to: [/*]
+time=2019-04-30T09:34:19.090+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=HikariPool-1 - Starting...
+time=2019-04-30T09:34:21.430+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=HikariPool-1 - Start completed.
+time=2019-04-30T09:34:31.916+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Tomcat started on port(s): 8083 (http) with context path ''
+time=2019-04-30T09:34:31.931+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Started Graduation1Application in 33.103 seconds (JVM running for 41.02)
+time=2019-04-30T09:50:57.200+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Starting Graduation1Application on DESKTOP-Q8HC681 with PID 17212 (F:\idea\graduation1\target\classes started by pcdn in F:\idea\graduation1)
+time=2019-04-30T09:50:57.214+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=The following profiles are active: dev
+time=2019-04-30T09:50:57.516+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@14c01636: startup date [Tue Apr 30 09:50:57 CST 2019]; root of context hierarchy
+time=2019-04-30T09:51:01.347+0800`appName=oms`hostName=docker-20`logLevel= WARN`msg=No MyBatis mapper was found in '[com.zy.project.mapper]' package. Please check your configuration.
+time=2019-04-30T09:51:05.153+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Tomcat initialized with port(s): 8083 (http)
+time=2019-04-30T09:51:06.087+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Servlet dispatcherServlet mapped to [/]
+time=2019-04-30T09:51:06.099+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Mapping filter: 'characterEncodingFilter' to: [/*]
+time=2019-04-30T09:51:06.100+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+time=2019-04-30T09:51:06.100+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Mapping filter: 'httpPutFormContentFilter' to: [/*]
+time=2019-04-30T09:51:06.100+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Mapping filter: 'requestContextFilter' to: [/*]
+time=2019-04-30T09:51:07.821+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=HikariPool-1 - Starting...
+time=2019-04-30T09:51:08.164+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=HikariPool-1 - Start completed.
+time=2019-04-30T09:51:15.123+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Tomcat started on port(s): 8083 (http) with context path ''
+time=2019-04-30T09:51:15.146+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Started Graduation1Application in 20.016 seconds (JVM running for 28.254)
+time=2019-04-30T09:53:01.392+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Starting without optional epoll library
+time=2019-04-30T09:53:01.404+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Starting without optional kqueue library
+time=2019-04-30T10:03:48.948+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Starting Graduation1Application on DESKTOP-Q8HC681 with PID 8816 (F:\idea\graduation1\target\classes started by pcdn in F:\idea\graduation1)
+time=2019-04-30T10:03:48.992+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=The following profiles are active: dev
+time=2019-04-30T10:03:49.294+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@21aa6d6c: startup date [Tue Apr 30 10:03:49 CST 2019]; root of context hierarchy
+time=2019-04-30T10:03:52.814+0800`appName=oms`hostName=docker-20`logLevel= WARN`msg=No MyBatis mapper was found in '[com.zy.project.mapper]' package. Please check your configuration.
+time=2019-04-30T10:03:55.340+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Tomcat initialized with port(s): 8083 (http)
+time=2019-04-30T10:03:56.285+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Servlet dispatcherServlet mapped to [/]
+time=2019-04-30T10:03:56.355+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Mapping filter: 'characterEncodingFilter' to: [/*]
+time=2019-04-30T10:03:56.356+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+time=2019-04-30T10:03:56.356+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Mapping filter: 'httpPutFormContentFilter' to: [/*]
+time=2019-04-30T10:03:56.356+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Mapping filter: 'requestContextFilter' to: [/*]
+time=2019-04-30T10:03:57.915+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=HikariPool-1 - Starting...
+time=2019-04-30T10:03:58.344+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=HikariPool-1 - Start completed.
+time=2019-04-30T10:04:08.045+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Tomcat started on port(s): 8083 (http) with context path ''
+time=2019-04-30T10:04:08.065+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Started Graduation1Application in 20.19 seconds (JVM running for 26.107)
+time=2019-04-30T10:04:09.057+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Starting without optional epoll library
+time=2019-04-30T10:04:09.064+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Starting without optional kqueue library
+time=2019-04-30T10:07:01.896+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Starting Graduation1Application on DESKTOP-Q8HC681 with PID 12172 (F:\idea\graduation1\target\classes started by pcdn in F:\idea\graduation1)
+time=2019-04-30T10:07:01.923+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=The following profiles are active: dev
+time=2019-04-30T10:07:02.204+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@53dacd14: startup date [Tue Apr 30 10:07:02 CST 2019]; root of context hierarchy
+time=2019-04-30T10:07:07.623+0800`appName=oms`hostName=docker-20`logLevel= WARN`msg=No MyBatis mapper was found in '[com.zy.project.mapper]' package. Please check your configuration.
+time=2019-04-30T10:07:11.824+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Tomcat initialized with port(s): 8083 (http)
+time=2019-04-30T10:07:12.919+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Servlet dispatcherServlet mapped to [/]
+time=2019-04-30T10:07:12.928+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Mapping filter: 'characterEncodingFilter' to: [/*]
+time=2019-04-30T10:07:12.928+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+time=2019-04-30T10:07:12.961+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Mapping filter: 'httpPutFormContentFilter' to: [/*]
+time=2019-04-30T10:07:12.962+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Mapping filter: 'requestContextFilter' to: [/*]
+time=2019-04-30T10:07:13.786+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=HikariPool-1 - Starting...
+time=2019-04-30T10:07:14.221+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=HikariPool-1 - Start completed.
+time=2019-04-30T10:07:22.862+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Tomcat started on port(s): 8083 (http) with context path ''
+time=2019-04-30T10:07:22.876+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Started Graduation1Application in 22.268 seconds (JVM running for 28.076)
+time=2019-04-30T10:07:40.121+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Starting without optional epoll library
+time=2019-04-30T10:07:40.124+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Starting without optional kqueue library
+time=2019-04-30T10:09:40.010+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Starting Graduation1Application on DESKTOP-Q8HC681 with PID 15676 (F:\idea\graduation1\target\classes started by pcdn in F:\idea\graduation1)
+time=2019-04-30T10:09:40.025+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=The following profiles are active: dev
+time=2019-04-30T10:09:40.244+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@11eadcba: startup date [Tue Apr 30 10:09:40 CST 2019]; root of context hierarchy
+time=2019-04-30T10:09:43.354+0800`appName=oms`hostName=docker-20`logLevel= WARN`msg=No MyBatis mapper was found in '[com.zy.project.mapper]' package. Please check your configuration.
+time=2019-04-30T10:09:45.413+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Tomcat initialized with port(s): 8083 (http)
+time=2019-04-30T10:09:46.194+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Servlet dispatcherServlet mapped to [/]
+time=2019-04-30T10:09:46.248+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Mapping filter: 'characterEncodingFilter' to: [/*]
+time=2019-04-30T10:09:46.249+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+time=2019-04-30T10:09:46.249+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Mapping filter: 'httpPutFormContentFilter' to: [/*]
+time=2019-04-30T10:09:46.250+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Mapping filter: 'requestContextFilter' to: [/*]
+time=2019-04-30T10:09:46.971+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=HikariPool-1 - Starting...
+time=2019-04-30T10:09:47.364+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=HikariPool-1 - Start completed.
+time=2019-04-30T10:09:55.100+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Tomcat started on port(s): 8083 (http) with context path ''
+time=2019-04-30T10:09:55.118+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Started Graduation1Application in 16.206 seconds (JVM running for 21.383)
+time=2019-04-30T10:09:57.214+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Starting without optional epoll library
+time=2019-04-30T10:09:57.220+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Starting without optional kqueue library
+time=2019-04-30T10:10:46.867+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Starting Graduation1Application on DESKTOP-Q8HC681 with PID 9000 (F:\idea\graduation1\target\classes started by pcdn in F:\idea\graduation1)
+time=2019-04-30T10:10:46.879+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=The following profiles are active: dev
+time=2019-04-30T10:10:47.194+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@75ed9710: startup date [Tue Apr 30 10:10:47 CST 2019]; root of context hierarchy
+time=2019-04-30T10:10:50.607+0800`appName=oms`hostName=docker-20`logLevel= WARN`msg=No MyBatis mapper was found in '[com.zy.project.mapper]' package. Please check your configuration.
+time=2019-04-30T10:10:53.207+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Tomcat initialized with port(s): 8083 (http)
+time=2019-04-30T10:10:54.145+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Servlet dispatcherServlet mapped to [/]
+time=2019-04-30T10:10:54.157+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Mapping filter: 'characterEncodingFilter' to: [/*]
+time=2019-04-30T10:10:54.158+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+time=2019-04-30T10:10:54.158+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Mapping filter: 'httpPutFormContentFilter' to: [/*]
+time=2019-04-30T10:10:54.158+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Mapping filter: 'requestContextFilter' to: [/*]
+time=2019-04-30T10:10:55.421+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=HikariPool-1 - Starting...
+time=2019-04-30T10:10:55.869+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=HikariPool-1 - Start completed.
+time=2019-04-30T10:11:04.549+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Tomcat started on port(s): 8083 (http) with context path ''
+time=2019-04-30T10:11:04.562+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Started Graduation1Application in 18.923 seconds (JVM running for 25.096)
+time=2019-04-30T10:11:07.009+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Starting without optional epoll library
+time=2019-04-30T10:11:07.014+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Starting without optional kqueue library
+time=2019-04-30T10:13:20.413+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Starting Graduation1Application on DESKTOP-Q8HC681 with PID 7812 (F:\idea\graduation1\target\classes started by pcdn in F:\idea\graduation1)
+time=2019-04-30T10:13:20.461+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=The following profiles are active: dev
+time=2019-04-30T10:13:21.142+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@6f0ca692: startup date [Tue Apr 30 10:13:21 CST 2019]; root of context hierarchy
+time=2019-04-30T10:13:26.769+0800`appName=oms`hostName=docker-20`logLevel= WARN`msg=No MyBatis mapper was found in '[com.zy.project.mapper]' package. Please check your configuration.
+time=2019-04-30T10:13:29.698+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Tomcat initialized with port(s): 8083 (http)
+time=2019-04-30T10:13:30.714+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Servlet dispatcherServlet mapped to [/]
+time=2019-04-30T10:13:30.724+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Mapping filter: 'characterEncodingFilter' to: [/*]
+time=2019-04-30T10:13:30.726+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+time=2019-04-30T10:13:30.726+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Mapping filter: 'httpPutFormContentFilter' to: [/*]
+time=2019-04-30T10:13:30.727+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Mapping filter: 'requestContextFilter' to: [/*]
+time=2019-04-30T10:13:31.733+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=HikariPool-1 - Starting...
+time=2019-04-30T10:13:32.123+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=HikariPool-1 - Start completed.
+time=2019-04-30T10:13:39.999+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Tomcat started on port(s): 8083 (http) with context path ''
+time=2019-04-30T10:13:40.008+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Started Graduation1Application in 21.213 seconds (JVM running for 29.285)
+time=2019-04-30T10:13:49.077+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Starting without optional epoll library
+time=2019-04-30T10:13:49.083+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Starting without optional kqueue library
+time=2019-04-30T10:14:49.970+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Starting Graduation1Application on DESKTOP-Q8HC681 with PID 12356 (F:\idea\graduation1\target\classes started by pcdn in F:\idea\graduation1)
+time=2019-04-30T10:14:49.982+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=The following profiles are active: dev
+time=2019-04-30T10:14:50.191+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@5b04476e: startup date [Tue Apr 30 10:14:50 CST 2019]; root of context hierarchy
+time=2019-04-30T10:14:53.247+0800`appName=oms`hostName=docker-20`logLevel= WARN`msg=No MyBatis mapper was found in '[com.zy.project.mapper]' package. Please check your configuration.
+time=2019-04-30T10:14:55.588+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Tomcat initialized with port(s): 8083 (http)
+time=2019-04-30T10:14:56.519+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Servlet dispatcherServlet mapped to [/]
+time=2019-04-30T10:14:56.529+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Mapping filter: 'characterEncodingFilter' to: [/*]
+time=2019-04-30T10:14:56.530+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+time=2019-04-30T10:14:56.530+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Mapping filter: 'httpPutFormContentFilter' to: [/*]
+time=2019-04-30T10:14:56.530+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Mapping filter: 'requestContextFilter' to: [/*]
+time=2019-04-30T10:14:57.340+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=HikariPool-1 - Starting...
+time=2019-04-30T10:14:57.672+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=HikariPool-1 - Start completed.
+time=2019-04-30T10:15:04.413+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Tomcat started on port(s): 8083 (http) with context path ''
+time=2019-04-30T10:15:04.424+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Started Graduation1Application in 15.734 seconds (JVM running for 21.428)
+time=2019-04-30T10:22:33.230+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Starting without optional epoll library
+time=2019-04-30T10:22:33.234+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Starting without optional kqueue library
+time=2019-04-30T10:23:32.872+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Starting Graduation1Application on DESKTOP-Q8HC681 with PID 17352 (F:\idea\graduation1\target\classes started by pcdn in F:\idea\graduation1)
+time=2019-04-30T10:23:32.920+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=The following profiles are active: dev
+time=2019-04-30T10:23:33.205+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@68d6972f: startup date [Tue Apr 30 10:23:33 CST 2019]; root of context hierarchy
+time=2019-04-30T10:23:37.322+0800`appName=oms`hostName=docker-20`logLevel= WARN`msg=No MyBatis mapper was found in '[com.zy.project.mapper]' package. Please check your configuration.
+time=2019-04-30T10:23:40.826+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Tomcat initialized with port(s): 8083 (http)
+time=2019-04-30T10:23:42.277+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Servlet dispatcherServlet mapped to [/]
+time=2019-04-30T10:23:42.357+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Mapping filter: 'characterEncodingFilter' to: [/*]
+time=2019-04-30T10:23:42.357+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+time=2019-04-30T10:23:42.358+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Mapping filter: 'httpPutFormContentFilter' to: [/*]
+time=2019-04-30T10:23:42.358+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Mapping filter: 'requestContextFilter' to: [/*]
+time=2019-04-30T10:23:44.269+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=HikariPool-1 - Starting...
+time=2019-04-30T10:23:44.695+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=HikariPool-1 - Start completed.
+time=2019-04-30T10:23:55.027+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Tomcat started on port(s): 8083 (http) with context path ''
+time=2019-04-30T10:23:55.037+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Started Graduation1Application in 23.736 seconds (JVM running for 29.797)
+time=2019-04-30T10:23:59.178+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Starting without optional epoll library
+time=2019-04-30T10:23:59.183+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Starting without optional kqueue library
+time=2019-04-30T10:46:24.172+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Starting Graduation1Application on DESKTOP-Q8HC681 with PID 7572 (F:\idea\graduation1\target\classes started by pcdn in F:\idea\graduation1)
+time=2019-04-30T10:46:24.191+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=The following profiles are active: dev
+time=2019-04-30T10:46:24.399+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@1c9f0a20: startup date [Tue Apr 30 10:46:24 CST 2019]; root of context hierarchy
+time=2019-04-30T10:46:27.324+0800`appName=oms`hostName=docker-20`logLevel= WARN`msg=No MyBatis mapper was found in '[com.zy.project.mapper]' package. Please check your configuration.
+time=2019-04-30T10:46:30.551+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Tomcat initialized with port(s): 8083 (http)
+time=2019-04-30T10:46:32.310+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Servlet dispatcherServlet mapped to [/]
+time=2019-04-30T10:46:32.321+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Mapping filter: 'characterEncodingFilter' to: [/*]
+time=2019-04-30T10:46:32.322+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+time=2019-04-30T10:46:32.322+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Mapping filter: 'httpPutFormContentFilter' to: [/*]
+time=2019-04-30T10:46:32.322+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Mapping filter: 'requestContextFilter' to: [/*]
+time=2019-04-30T10:46:33.099+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=HikariPool-1 - Starting...
+time=2019-04-30T10:46:33.515+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=HikariPool-1 - Start completed.
+time=2019-04-30T10:46:45.097+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Tomcat started on port(s): 8083 (http) with context path ''
+time=2019-04-30T10:46:45.111+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Started Graduation1Application in 21.926 seconds (JVM running for 27.54)
+time=2019-04-30T10:46:57.797+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Starting without optional epoll library
+time=2019-04-30T10:46:57.807+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Starting without optional kqueue library
+time=2019-04-30T10:50:38.566+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Starting Graduation1Application on DESKTOP-Q8HC681 with PID 8316 (F:\idea\graduation1\target\classes started by pcdn in F:\idea\graduation1)
+time=2019-04-30T10:50:38.578+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=The following profiles are active: dev
+time=2019-04-30T10:50:38.799+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@338494fa: startup date [Tue Apr 30 10:50:38 CST 2019]; root of context hierarchy
+time=2019-04-30T10:50:40.346+0800`appName=oms`hostName=docker-20`logLevel= WARN`msg=No MyBatis mapper was found in '[com.zy.project.mapper]' package. Please check your configuration.
+time=2019-04-30T10:50:42.434+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Tomcat initialized with port(s): 8083 (http)
+time=2019-04-30T10:50:43.217+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Servlet dispatcherServlet mapped to [/]
+time=2019-04-30T10:50:43.228+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Mapping filter: 'characterEncodingFilter' to: [/*]
+time=2019-04-30T10:50:43.229+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+time=2019-04-30T10:50:43.229+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Mapping filter: 'httpPutFormContentFilter' to: [/*]
+time=2019-04-30T10:50:43.230+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Mapping filter: 'requestContextFilter' to: [/*]
+time=2019-04-30T10:50:44.122+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=HikariPool-1 - Starting...
+time=2019-04-30T10:50:44.613+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=HikariPool-1 - Start completed.
+time=2019-04-30T10:50:51.577+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Tomcat started on port(s): 8083 (http) with context path ''
+time=2019-04-30T10:50:51.586+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Started Graduation1Application in 13.9 seconds (JVM running for 18.963)
+time=2019-04-30T10:50:52.212+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Starting without optional epoll library
+time=2019-04-30T10:50:52.217+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Starting without optional kqueue library
+time=2019-04-30T10:52:07.995+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Starting Graduation1Application on DESKTOP-Q8HC681 with PID 13452 (F:\idea\graduation1\target\classes started by pcdn in F:\idea\graduation1)
+time=2019-04-30T10:52:08.009+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=The following profiles are active: dev
+time=2019-04-30T10:52:08.295+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@31e75d13: startup date [Tue Apr 30 10:52:08 CST 2019]; root of context hierarchy
+time=2019-04-30T10:52:11.670+0800`appName=oms`hostName=docker-20`logLevel= WARN`msg=No MyBatis mapper was found in '[com.zy.project.mapper]' package. Please check your configuration.
+time=2019-04-30T10:52:14.598+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Tomcat initialized with port(s): 8083 (http)
+time=2019-04-30T10:52:15.901+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Servlet dispatcherServlet mapped to [/]
+time=2019-04-30T10:52:15.917+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Mapping filter: 'characterEncodingFilter' to: [/*]
+time=2019-04-30T10:52:15.918+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+time=2019-04-30T10:52:15.918+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Mapping filter: 'httpPutFormContentFilter' to: [/*]
+time=2019-04-30T10:52:15.918+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Mapping filter: 'requestContextFilter' to: [/*]
+time=2019-04-30T10:52:16.986+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=HikariPool-1 - Starting...
+time=2019-04-30T10:52:17.443+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=HikariPool-1 - Start completed.
+time=2019-04-30T10:52:25.661+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Tomcat started on port(s): 8083 (http) with context path ''
+time=2019-04-30T10:52:25.674+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Started Graduation1Application in 18.628 seconds (JVM running for 23.286)
+time=2019-04-30T10:52:26.785+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Starting without optional epoll library
+time=2019-04-30T10:52:26.789+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Starting without optional kqueue library
+time=2019-04-30T10:53:36.684+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Starting Graduation1Application on DESKTOP-Q8HC681 with PID 10772 (F:\idea\graduation1\target\classes started by pcdn in F:\idea\graduation1)
+time=2019-04-30T10:53:36.715+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=The following profiles are active: dev
+time=2019-04-30T10:53:36.966+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@4fc5e095: startup date [Tue Apr 30 10:53:36 CST 2019]; root of context hierarchy
+time=2019-04-30T10:53:38.439+0800`appName=oms`hostName=docker-20`logLevel= WARN`msg=No MyBatis mapper was found in '[com.zy.project.mapper]' package. Please check your configuration.
+time=2019-04-30T10:53:40.838+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Tomcat initialized with port(s): 8083 (http)
+time=2019-04-30T10:53:41.839+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Servlet dispatcherServlet mapped to [/]
+time=2019-04-30T10:53:41.851+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Mapping filter: 'characterEncodingFilter' to: [/*]
+time=2019-04-30T10:53:41.852+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+time=2019-04-30T10:53:41.852+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Mapping filter: 'httpPutFormContentFilter' to: [/*]
+time=2019-04-30T10:53:41.852+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Mapping filter: 'requestContextFilter' to: [/*]
+time=2019-04-30T10:53:42.446+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=HikariPool-1 - Starting...
+time=2019-04-30T10:53:42.773+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=HikariPool-1 - Start completed.
+time=2019-04-30T10:53:48.503+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Tomcat started on port(s): 8083 (http) with context path ''
+time=2019-04-30T10:53:48.513+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Started Graduation1Application in 12.93 seconds (JVM running for 17.971)
+time=2019-04-30T10:53:51.411+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Starting without optional epoll library
+time=2019-04-30T10:53:51.416+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Starting without optional kqueue library
+time=2019-04-30T10:57:44.425+0800`appName=oms`hostName=docker-20`logLevel=ERROR`msg=Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.springframework.dao.QueryTimeoutException: Redis command timed out; nested exception is io.lettuce.core.RedisCommandTimeoutException: Command timed out] with root cause io.lettuce.core.RedisCommandTimeoutException: Command timed out
+	at io.lettuce.core.LettuceFutures.awaitOrCancel(LettuceFutures.java:114)
+	at io.lettuce.core.FutureSyncInvocationHandler.handleInvocation(FutureSyncInvocationHandler.java:62)
+	at io.lettuce.core.internal.AbstractInvocationHandler.invoke(AbstractInvocationHandler.java:80)
+	at com.sun.proxy.$Proxy134.get(Unknown Source)
+	at org.springframework.data.redis.connection.lettuce.LettuceStringCommands.get(LettuceStringCommands.java:61)
+	at org.springframework.data.redis.connection.DefaultedRedisConnection.get(DefaultedRedisConnection.java:210)
+	at org.springframework.data.redis.core.DefaultValueOperations$1.inRedis(DefaultValueOperations.java:52)
+	at org.springframework.data.redis.core.AbstractOperations$ValueDeserializingRedisCallback.doInRedis(AbstractOperations.java:59)
+	at org.springframework.data.redis.core.RedisTemplate.execute(RedisTemplate.java:224)
+	at org.springframework.data.redis.core.RedisTemplate.execute(RedisTemplate.java:184)
+	at org.springframework.data.redis.core.AbstractOperations.execute(AbstractOperations.java:95)
+	at org.springframework.data.redis.core.DefaultValueOperations.get(DefaultValueOperations.java:48)
+	at com.zy.graduation1.interceptor.IdentifyInterceptor.identify(IdentifyInterceptor.java:36)
+	at com.zy.graduation1.interceptor.IdentifyInterceptor.preHandle(IdentifyInterceptor.java:21)
+	at org.springframework.web.servlet.HandlerExecutionChain.applyPreHandle(HandlerExecutionChain.java:136)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:986)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:925)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:974)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:866)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:635)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:851)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:109)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:496)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:803)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:790)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1468)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+time=2019-04-30T10:58:34.443+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Starting Graduation1Application on DESKTOP-Q8HC681 with PID 7724 (F:\idea\graduation1\target\classes started by pcdn in F:\idea\graduation1)
+time=2019-04-30T10:58:34.547+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=The following profiles are active: dev
+time=2019-04-30T10:58:34.673+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@665e9289: startup date [Tue Apr 30 10:58:34 CST 2019]; root of context hierarchy
+time=2019-04-30T10:58:38.075+0800`appName=oms`hostName=docker-20`logLevel= WARN`msg=No MyBatis mapper was found in '[com.zy.project.mapper]' package. Please check your configuration.
+time=2019-04-30T10:58:40.458+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Tomcat initialized with port(s): 8083 (http)
+time=2019-04-30T10:58:41.270+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Servlet dispatcherServlet mapped to [/]
+time=2019-04-30T10:58:41.281+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Mapping filter: 'characterEncodingFilter' to: [/*]
+time=2019-04-30T10:58:41.282+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+time=2019-04-30T10:58:41.282+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Mapping filter: 'httpPutFormContentFilter' to: [/*]
+time=2019-04-30T10:58:41.282+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Mapping filter: 'requestContextFilter' to: [/*]
+time=2019-04-30T10:58:42.140+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=HikariPool-1 - Starting...
+time=2019-04-30T10:58:42.490+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=HikariPool-1 - Start completed.
+time=2019-04-30T10:58:52.433+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Tomcat started on port(s): 8083 (http) with context path ''
+time=2019-04-30T10:58:52.450+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Started Graduation1Application in 19.158 seconds (JVM running for 27.837)
+time=2019-04-30T10:58:54.399+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Starting without optional epoll library
+time=2019-04-30T10:58:54.412+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Starting without optional kqueue library
+time=2019-04-30T11:00:16.926+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Starting Graduation1Application on DESKTOP-Q8HC681 with PID 12688 (F:\idea\graduation1\target\classes started by pcdn in F:\idea\graduation1)
+time=2019-04-30T11:00:16.937+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=The following profiles are active: dev
+time=2019-04-30T11:00:17.161+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@4e28bdd1: startup date [Tue Apr 30 11:00:17 CST 2019]; root of context hierarchy
+time=2019-04-30T11:00:20.004+0800`appName=oms`hostName=docker-20`logLevel= WARN`msg=No MyBatis mapper was found in '[com.zy.project.mapper]' package. Please check your configuration.
+time=2019-04-30T11:00:22.172+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Tomcat initialized with port(s): 8083 (http)
+time=2019-04-30T11:00:23.015+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Servlet dispatcherServlet mapped to [/]
+time=2019-04-30T11:00:23.027+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Mapping filter: 'characterEncodingFilter' to: [/*]
+time=2019-04-30T11:00:23.028+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+time=2019-04-30T11:00:23.028+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Mapping filter: 'httpPutFormContentFilter' to: [/*]
+time=2019-04-30T11:00:23.028+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Mapping filter: 'requestContextFilter' to: [/*]
+time=2019-04-30T11:00:23.917+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=HikariPool-1 - Starting...
+time=2019-04-30T11:00:24.268+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=HikariPool-1 - Start completed.
+time=2019-04-30T11:00:32.504+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Tomcat started on port(s): 8083 (http) with context path ''
+time=2019-04-30T11:00:32.514+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Started Graduation1Application in 16.407 seconds (JVM running for 21.461)
+time=2019-04-30T11:00:33.424+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Starting without optional epoll library
+time=2019-04-30T11:00:33.429+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Starting without optional kqueue library
+time=2019-04-30T11:06:00.655+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Starting Graduation1Application on DESKTOP-Q8HC681 with PID 10996 (F:\idea\graduation1\target\classes started by pcdn in F:\idea\graduation1)
+time=2019-04-30T11:06:00.703+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=The following profiles are active: dev
+time=2019-04-30T11:06:00.938+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@26a4842b: startup date [Tue Apr 30 11:06:00 CST 2019]; root of context hierarchy
+time=2019-04-30T11:06:04.333+0800`appName=oms`hostName=docker-20`logLevel= WARN`msg=No MyBatis mapper was found in '[com.zy.project.mapper]' package. Please check your configuration.
+time=2019-04-30T11:06:07.186+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Tomcat initialized with port(s): 8083 (http)
+time=2019-04-30T11:06:08.144+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Servlet dispatcherServlet mapped to [/]
+time=2019-04-30T11:06:08.161+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Mapping filter: 'characterEncodingFilter' to: [/*]
+time=2019-04-30T11:06:08.161+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+time=2019-04-30T11:06:08.161+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Mapping filter: 'httpPutFormContentFilter' to: [/*]
+time=2019-04-30T11:06:08.162+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Mapping filter: 'requestContextFilter' to: [/*]
+time=2019-04-30T11:06:09.179+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=HikariPool-1 - Starting...
+time=2019-04-30T11:06:09.522+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=HikariPool-1 - Start completed.
+time=2019-04-30T11:06:17.520+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Tomcat started on port(s): 8083 (http) with context path ''
+time=2019-04-30T11:06:17.531+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Started Graduation1Application in 18.014 seconds (JVM running for 23.568)
+time=2019-04-30T11:06:20.588+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Starting without optional epoll library
+time=2019-04-30T11:06:20.592+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Starting without optional kqueue library
+time=2019-04-30T11:14:08.108+0800`appName=oms`hostName=docker-20`logLevel= WARN`msg=HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=7m28s141ms887µs227ns).
+time=2019-04-30T13:16:27.847+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Starting Graduation1Application on DESKTOP-Q8HC681 with PID 14428 (F:\idea\graduation1\target\classes started by pcdn in F:\idea\graduation1)
+time=2019-04-30T13:16:27.897+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=The following profiles are active: dev
+time=2019-04-30T13:16:28.144+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@25748410: startup date [Tue Apr 30 13:16:28 CST 2019]; root of context hierarchy
+time=2019-04-30T13:16:31.376+0800`appName=oms`hostName=docker-20`logLevel= WARN`msg=No MyBatis mapper was found in '[com.zy.project.mapper]' package. Please check your configuration.
+time=2019-04-30T13:16:33.789+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Tomcat initialized with port(s): 8083 (http)
+time=2019-04-30T13:16:34.877+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Servlet dispatcherServlet mapped to [/]
+time=2019-04-30T13:16:34.956+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Mapping filter: 'characterEncodingFilter' to: [/*]
+time=2019-04-30T13:16:34.956+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+time=2019-04-30T13:16:34.956+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Mapping filter: 'httpPutFormContentFilter' to: [/*]
+time=2019-04-30T13:16:34.957+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Mapping filter: 'requestContextFilter' to: [/*]
+time=2019-04-30T13:16:36.051+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=HikariPool-1 - Starting...
+time=2019-04-30T13:16:36.409+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=HikariPool-1 - Start completed.
+time=2019-04-30T13:16:46.125+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Tomcat started on port(s): 8083 (http) with context path ''
+time=2019-04-30T13:16:46.138+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Started Graduation1Application in 19.411 seconds (JVM running for 24.507)
+time=2019-04-30T13:16:52.830+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Starting without optional epoll library
+time=2019-04-30T13:16:52.835+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Starting without optional kqueue library
+time=2019-04-30T13:19:21.007+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Starting Graduation1Application on DESKTOP-Q8HC681 with PID 15340 (F:\idea\graduation1\target\classes started by pcdn in F:\idea\graduation1)
+time=2019-04-30T13:19:21.022+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=The following profiles are active: dev
+time=2019-04-30T13:19:21.259+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@20a8a64e: startup date [Tue Apr 30 13:19:21 CST 2019]; root of context hierarchy
+time=2019-04-30T13:19:24.535+0800`appName=oms`hostName=docker-20`logLevel= WARN`msg=No MyBatis mapper was found in '[com.zy.project.mapper]' package. Please check your configuration.
+time=2019-04-30T13:19:26.948+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Tomcat initialized with port(s): 8083 (http)
+time=2019-04-30T13:19:28.564+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Servlet dispatcherServlet mapped to [/]
+time=2019-04-30T13:19:28.576+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Mapping filter: 'characterEncodingFilter' to: [/*]
+time=2019-04-30T13:19:28.577+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+time=2019-04-30T13:19:28.577+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Mapping filter: 'httpPutFormContentFilter' to: [/*]
+time=2019-04-30T13:19:28.577+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Mapping filter: 'requestContextFilter' to: [/*]
+time=2019-04-30T13:19:30.089+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=HikariPool-1 - Starting...
+time=2019-04-30T13:19:31.086+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=HikariPool-1 - Start completed.
+time=2019-04-30T13:19:42.384+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Tomcat started on port(s): 8083 (http) with context path ''
+time=2019-04-30T13:19:42.406+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Started Graduation1Application in 22.578 seconds (JVM running for 27.455)
+time=2019-04-30T13:19:44.786+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Starting without optional epoll library
+time=2019-04-30T13:19:44.792+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Starting without optional kqueue library
+time=2019-04-30T13:21:29.787+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Starting Graduation1Application on DESKTOP-Q8HC681 with PID 5928 (F:\idea\graduation1\target\classes started by pcdn in F:\idea\graduation1)
+time=2019-04-30T13:21:29.802+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=The following profiles are active: dev
+time=2019-04-30T13:21:30.033+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@24d4d7c9: startup date [Tue Apr 30 13:21:30 CST 2019]; root of context hierarchy
+time=2019-04-30T13:21:33.276+0800`appName=oms`hostName=docker-20`logLevel= WARN`msg=No MyBatis mapper was found in '[com.zy.project.mapper]' package. Please check your configuration.
+time=2019-04-30T13:21:36.457+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Tomcat initialized with port(s): 8083 (http)
+time=2019-04-30T13:21:37.664+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Servlet dispatcherServlet mapped to [/]
+time=2019-04-30T13:21:37.674+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Mapping filter: 'characterEncodingFilter' to: [/*]
+time=2019-04-30T13:21:37.675+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+time=2019-04-30T13:21:37.675+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Mapping filter: 'httpPutFormContentFilter' to: [/*]
+time=2019-04-30T13:21:37.675+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Mapping filter: 'requestContextFilter' to: [/*]
+time=2019-04-30T13:21:39.062+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=HikariPool-1 - Starting...
+time=2019-04-30T13:21:39.554+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=HikariPool-1 - Start completed.
+time=2019-04-30T13:21:51.538+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Tomcat started on port(s): 8083 (http) with context path ''
+time=2019-04-30T13:21:51.553+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Started Graduation1Application in 22.751 seconds (JVM running for 27.687)
+time=2019-04-30T13:21:52.168+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Starting without optional epoll library
+time=2019-04-30T13:21:52.173+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Starting without optional kqueue library
+time=2019-04-30T13:28:17.988+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Starting Graduation1Application on DESKTOP-Q8HC681 with PID 16940 (F:\idea\graduation1\target\classes started by pcdn in F:\idea\graduation1)
+time=2019-04-30T13:28:18.007+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=The following profiles are active: dev
+time=2019-04-30T13:28:18.230+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@6b9ce1bf: startup date [Tue Apr 30 13:28:18 CST 2019]; root of context hierarchy
+time=2019-04-30T13:28:21.410+0800`appName=oms`hostName=docker-20`logLevel= WARN`msg=No MyBatis mapper was found in '[com.zy.project.mapper]' package. Please check your configuration.
+time=2019-04-30T13:28:23.725+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Tomcat initialized with port(s): 8083 (http)
+time=2019-04-30T13:28:24.549+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Servlet dispatcherServlet mapped to [/]
+time=2019-04-30T13:28:24.562+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Mapping filter: 'characterEncodingFilter' to: [/*]
+time=2019-04-30T13:28:24.563+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+time=2019-04-30T13:28:24.563+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Mapping filter: 'httpPutFormContentFilter' to: [/*]
+time=2019-04-30T13:28:24.563+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Mapping filter: 'requestContextFilter' to: [/*]
+time=2019-04-30T13:28:25.362+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=HikariPool-1 - Starting...
+time=2019-04-30T13:28:25.698+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=HikariPool-1 - Start completed.
+time=2019-04-30T13:28:32.873+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Tomcat started on port(s): 8083 (http) with context path ''
+time=2019-04-30T13:28:32.890+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Started Graduation1Application in 17.132 seconds (JVM running for 23.038)
+time=2019-04-30T13:28:37.581+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Starting without optional epoll library
+time=2019-04-30T13:28:37.590+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Starting without optional kqueue library
+time=2019-04-30T13:36:50.547+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Starting Graduation1Application on DESKTOP-Q8HC681 with PID 14252 (F:\idea\graduation1\target\classes started by pcdn in F:\idea\graduation1)
+time=2019-04-30T13:36:50.587+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=The following profiles are active: dev
+time=2019-04-30T13:36:50.940+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@630cb4a4: startup date [Tue Apr 30 13:36:50 CST 2019]; root of context hierarchy
+time=2019-04-30T13:36:56.138+0800`appName=oms`hostName=docker-20`logLevel= WARN`msg=No MyBatis mapper was found in '[com.zy.project.mapper]' package. Please check your configuration.
+time=2019-04-30T13:36:58.398+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Tomcat initialized with port(s): 8083 (http)
+time=2019-04-30T13:36:59.454+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Servlet dispatcherServlet mapped to [/]
+time=2019-04-30T13:36:59.464+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Mapping filter: 'characterEncodingFilter' to: [/*]
+time=2019-04-30T13:36:59.465+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+time=2019-04-30T13:36:59.465+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Mapping filter: 'httpPutFormContentFilter' to: [/*]
+time=2019-04-30T13:36:59.465+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Mapping filter: 'requestContextFilter' to: [/*]
+time=2019-04-30T13:37:01.137+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=HikariPool-1 - Starting...
+time=2019-04-30T13:37:01.862+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=HikariPool-1 - Start completed.
+time=2019-04-30T13:37:13.242+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Tomcat started on port(s): 8083 (http) with context path ''
+time=2019-04-30T13:37:13.255+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Started Graduation1Application in 24.258 seconds (JVM running for 30.682)
+time=2019-04-30T13:37:18.185+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Starting without optional epoll library
+time=2019-04-30T13:37:18.190+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Starting without optional kqueue library
+time=2019-04-30T13:42:24.749+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Starting Graduation1Application on DESKTOP-Q8HC681 with PID 17016 (F:\idea\graduation1\target\classes started by pcdn in F:\idea\graduation1)
+time=2019-04-30T13:42:24.780+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=The following profiles are active: dev
+time=2019-04-30T13:42:25.012+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@5ad10c1a: startup date [Tue Apr 30 13:42:25 CST 2019]; root of context hierarchy
+time=2019-04-30T13:42:27.988+0800`appName=oms`hostName=docker-20`logLevel= WARN`msg=No MyBatis mapper was found in '[com.zy.project.mapper]' package. Please check your configuration.
+time=2019-04-30T13:42:30.326+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Tomcat initialized with port(s): 8083 (http)
+time=2019-04-30T13:42:31.256+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Servlet dispatcherServlet mapped to [/]
+time=2019-04-30T13:42:31.269+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Mapping filter: 'characterEncodingFilter' to: [/*]
+time=2019-04-30T13:42:31.270+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+time=2019-04-30T13:42:31.270+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Mapping filter: 'httpPutFormContentFilter' to: [/*]
+time=2019-04-30T13:42:31.300+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Mapping filter: 'requestContextFilter' to: [/*]
+time=2019-04-30T13:42:32.218+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=HikariPool-1 - Starting...
+time=2019-04-30T13:42:32.590+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=HikariPool-1 - Start completed.
+time=2019-04-30T13:42:40.140+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Tomcat started on port(s): 8083 (http) with context path ''
+time=2019-04-30T13:42:40.149+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Started Graduation1Application in 16.746 seconds (JVM running for 25.059)
+time=2019-04-30T13:42:49.205+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Starting without optional epoll library
+time=2019-04-30T13:42:49.209+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Starting without optional kqueue library
+time=2019-04-30T13:45:47.648+0800`appName=oms`hostName=docker-20`logLevel= WARN`msg=HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2m44s954ms260µs84ns).
+time=2019-04-30T13:46:43.368+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Starting Graduation1Application on DESKTOP-Q8HC681 with PID 5928 (F:\idea\graduation1\target\classes started by pcdn in F:\idea\graduation1)
+time=2019-04-30T13:46:43.386+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=The following profiles are active: dev
+time=2019-04-30T13:46:43.583+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@b968a76: startup date [Tue Apr 30 13:46:43 CST 2019]; root of context hierarchy
+time=2019-04-30T13:46:46.309+0800`appName=oms`hostName=docker-20`logLevel= WARN`msg=No MyBatis mapper was found in '[com.zy.project.mapper]' package. Please check your configuration.
+time=2019-04-30T13:46:48.368+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Tomcat initialized with port(s): 8083 (http)
+time=2019-04-30T13:46:49.172+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Servlet dispatcherServlet mapped to [/]
+time=2019-04-30T13:46:49.182+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Mapping filter: 'characterEncodingFilter' to: [/*]
+time=2019-04-30T13:46:49.183+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+time=2019-04-30T13:46:49.183+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Mapping filter: 'httpPutFormContentFilter' to: [/*]
+time=2019-04-30T13:46:49.183+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Mapping filter: 'requestContextFilter' to: [/*]
+time=2019-04-30T13:46:49.954+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=HikariPool-1 - Starting...
+time=2019-04-30T13:46:50.265+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=HikariPool-1 - Start completed.
+time=2019-04-30T13:46:56.117+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Tomcat started on port(s): 8083 (http) with context path ''
+time=2019-04-30T13:46:56.126+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Started Graduation1Application in 13.604 seconds (JVM running for 17.961)
+time=2019-04-30T13:46:58.945+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Starting without optional epoll library
+time=2019-04-30T13:46:58.953+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Starting without optional kqueue library
+time=2019-04-30T13:49:13.458+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Starting Graduation1Application on DESKTOP-Q8HC681 with PID 9996 (F:\idea\graduation1\target\classes started by pcdn in F:\idea\graduation1)
+time=2019-04-30T13:49:13.471+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=The following profiles are active: dev
+time=2019-04-30T13:49:13.714+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@40e10ff8: startup date [Tue Apr 30 13:49:13 CST 2019]; root of context hierarchy
+time=2019-04-30T13:49:16.958+0800`appName=oms`hostName=docker-20`logLevel= WARN`msg=No MyBatis mapper was found in '[com.zy.project.mapper]' package. Please check your configuration.
+time=2019-04-30T13:49:21.105+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Tomcat initialized with port(s): 8083 (http)
+time=2019-04-30T13:49:22.091+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Servlet dispatcherServlet mapped to [/]
+time=2019-04-30T13:49:22.108+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Mapping filter: 'characterEncodingFilter' to: [/*]
+time=2019-04-30T13:49:22.110+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+time=2019-04-30T13:49:22.110+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Mapping filter: 'httpPutFormContentFilter' to: [/*]
+time=2019-04-30T13:49:22.111+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Mapping filter: 'requestContextFilter' to: [/*]
+time=2019-04-30T13:49:23.336+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=HikariPool-1 - Starting...
+time=2019-04-30T13:49:23.708+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=HikariPool-1 - Start completed.
+time=2019-04-30T13:49:30.812+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Tomcat started on port(s): 8083 (http) with context path ''
+time=2019-04-30T13:49:30.828+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Started Graduation1Application in 18.345 seconds (JVM running for 24.24)
+time=2019-04-30T13:50:23.310+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Starting without optional epoll library
+time=2019-04-30T13:50:23.318+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Starting without optional kqueue library
+time=2019-04-30T13:51:23.971+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Starting Graduation1Application on DESKTOP-Q8HC681 with PID 6304 (F:\idea\graduation1\target\classes started by pcdn in F:\idea\graduation1)
+time=2019-04-30T13:51:23.982+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=The following profiles are active: dev
+time=2019-04-30T13:51:24.189+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@75c9e76b: startup date [Tue Apr 30 13:51:24 CST 2019]; root of context hierarchy
+time=2019-04-30T13:51:27.086+0800`appName=oms`hostName=docker-20`logLevel= WARN`msg=No MyBatis mapper was found in '[com.zy.project.mapper]' package. Please check your configuration.
+time=2019-04-30T13:51:29.200+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Tomcat initialized with port(s): 8083 (http)
+time=2019-04-30T13:51:29.976+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Servlet dispatcherServlet mapped to [/]
+time=2019-04-30T13:51:29.986+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Mapping filter: 'characterEncodingFilter' to: [/*]
+time=2019-04-30T13:51:29.987+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+time=2019-04-30T13:51:29.987+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Mapping filter: 'httpPutFormContentFilter' to: [/*]
+time=2019-04-30T13:51:29.987+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Mapping filter: 'requestContextFilter' to: [/*]
+time=2019-04-30T13:51:30.936+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=HikariPool-1 - Starting...
+time=2019-04-30T13:51:31.320+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=HikariPool-1 - Start completed.
+time=2019-04-30T13:51:37.774+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Tomcat started on port(s): 8083 (http) with context path ''
+time=2019-04-30T13:51:37.785+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Started Graduation1Application in 14.656 seconds (JVM running for 20.101)
+time=2019-04-30T13:54:06.016+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Starting without optional epoll library
+time=2019-04-30T13:54:06.020+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Starting without optional kqueue library
+time=2019-04-30T13:55:57.026+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Starting Graduation1Application on DESKTOP-Q8HC681 with PID 12936 (F:\idea\graduation1\target\classes started by pcdn in F:\idea\graduation1)
+time=2019-04-30T13:55:57.038+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=The following profiles are active: dev
+time=2019-04-30T13:55:57.297+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@41925502: startup date [Tue Apr 30 13:55:57 CST 2019]; root of context hierarchy
+time=2019-04-30T13:56:00.657+0800`appName=oms`hostName=docker-20`logLevel= WARN`msg=No MyBatis mapper was found in '[com.zy.project.mapper]' package. Please check your configuration.
+time=2019-04-30T13:56:03.402+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Tomcat initialized with port(s): 8083 (http)
+time=2019-04-30T13:56:04.425+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Servlet dispatcherServlet mapped to [/]
+time=2019-04-30T13:56:04.437+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Mapping filter: 'characterEncodingFilter' to: [/*]
+time=2019-04-30T13:56:04.438+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+time=2019-04-30T13:56:04.438+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Mapping filter: 'httpPutFormContentFilter' to: [/*]
+time=2019-04-30T13:56:04.438+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Mapping filter: 'requestContextFilter' to: [/*]
+time=2019-04-30T13:56:05.513+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=HikariPool-1 - Starting...
+time=2019-04-30T13:56:06.010+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=HikariPool-1 - Start completed.
+time=2019-04-30T13:56:15.597+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Tomcat started on port(s): 8083 (http) with context path ''
+time=2019-04-30T13:56:15.606+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Started Graduation1Application in 19.537 seconds (JVM running for 24.445)
+time=2019-04-30T13:56:16.433+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Starting without optional epoll library
+time=2019-04-30T13:56:16.438+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Starting without optional kqueue library
+time=2019-04-30T14:01:03.864+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Starting Graduation1Application on DESKTOP-Q8HC681 with PID 1108 (F:\idea\graduation1\target\classes started by pcdn in F:\idea\graduation1)
+time=2019-04-30T14:01:04.002+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=The following profiles are active: dev
+time=2019-04-30T14:01:04.226+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@73db4768: startup date [Tue Apr 30 14:01:04 CST 2019]; root of context hierarchy
+time=2019-04-30T14:01:07.977+0800`appName=oms`hostName=docker-20`logLevel= WARN`msg=No MyBatis mapper was found in '[com.zy.project.mapper]' package. Please check your configuration.
+time=2019-04-30T14:01:10.326+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Tomcat initialized with port(s): 8083 (http)
+time=2019-04-30T14:01:18.114+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Servlet dispatcherServlet mapped to [/]
+time=2019-04-30T14:01:18.380+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Mapping filter: 'characterEncodingFilter' to: [/*]
+time=2019-04-30T14:01:18.381+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+time=2019-04-30T14:01:18.382+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Mapping filter: 'httpPutFormContentFilter' to: [/*]
+time=2019-04-30T14:01:18.382+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Mapping filter: 'requestContextFilter' to: [/*]
+time=2019-04-30T14:01:19.977+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=HikariPool-1 - Starting...
+time=2019-04-30T14:01:20.971+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=HikariPool-1 - Start completed.
+time=2019-04-30T14:01:30.034+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Tomcat started on port(s): 8083 (http) with context path ''
+time=2019-04-30T14:01:30.046+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Started Graduation1Application in 27.667 seconds (JVM running for 44.514)
+time=2019-04-30T14:01:48.417+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Starting without optional epoll library
+time=2019-04-30T14:01:48.422+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Starting without optional kqueue library
+time=2019-04-30T14:06:19.034+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Starting Graduation1Application on DESKTOP-Q8HC681 with PID 15272 (F:\idea\graduation1\target\classes started by pcdn in F:\idea\graduation1)
+time=2019-04-30T14:06:19.061+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=The following profiles are active: dev
+time=2019-04-30T14:06:19.274+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@6f2cb653: startup date [Tue Apr 30 14:06:19 CST 2019]; root of context hierarchy
+time=2019-04-30T14:06:23.001+0800`appName=oms`hostName=docker-20`logLevel= WARN`msg=No MyBatis mapper was found in '[com.zy.project.mapper]' package. Please check your configuration.
+time=2019-04-30T14:06:25.855+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Tomcat initialized with port(s): 8083 (http)
+time=2019-04-30T14:06:27.005+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Servlet dispatcherServlet mapped to [/]
+time=2019-04-30T14:06:27.028+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Mapping filter: 'characterEncodingFilter' to: [/*]
+time=2019-04-30T14:06:27.029+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+time=2019-04-30T14:06:27.030+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Mapping filter: 'httpPutFormContentFilter' to: [/*]
+time=2019-04-30T14:06:27.030+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Mapping filter: 'requestContextFilter' to: [/*]
+time=2019-04-30T14:06:28.232+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=HikariPool-1 - Starting...
+time=2019-04-30T14:06:28.598+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=HikariPool-1 - Start completed.
+time=2019-04-30T14:06:41.337+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Tomcat started on port(s): 8083 (http) with context path ''
+time=2019-04-30T14:06:41.352+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Started Graduation1Application in 23.322 seconds (JVM running for 28.715)
+time=2019-04-30T14:07:14.400+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Starting without optional epoll library
+time=2019-04-30T14:07:14.412+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Starting without optional kqueue library
+time=2019-04-30T14:09:13.719+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Starting Graduation1Application on DESKTOP-Q8HC681 with PID 3904 (F:\idea\graduation1\target\classes started by pcdn in F:\idea\graduation1)
+time=2019-04-30T14:09:13.791+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=The following profiles are active: dev
+time=2019-04-30T14:09:14.145+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@27953a83: startup date [Tue Apr 30 14:09:14 CST 2019]; root of context hierarchy
+time=2019-04-30T14:09:18.515+0800`appName=oms`hostName=docker-20`logLevel= WARN`msg=No MyBatis mapper was found in '[com.zy.project.mapper]' package. Please check your configuration.
+time=2019-04-30T14:09:22.798+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Tomcat initialized with port(s): 8083 (http)
+time=2019-04-30T14:09:23.761+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Servlet dispatcherServlet mapped to [/]
+time=2019-04-30T14:09:23.774+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Mapping filter: 'characterEncodingFilter' to: [/*]
+time=2019-04-30T14:09:23.776+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+time=2019-04-30T14:09:23.776+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Mapping filter: 'httpPutFormContentFilter' to: [/*]
+time=2019-04-30T14:09:23.776+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Mapping filter: 'requestContextFilter' to: [/*]
+time=2019-04-30T14:09:25.089+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=HikariPool-1 - Starting...
+time=2019-04-30T14:09:25.422+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=HikariPool-1 - Start completed.
+time=2019-04-30T14:09:32.171+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Tomcat started on port(s): 8083 (http) with context path ''
+time=2019-04-30T14:09:32.187+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Started Graduation1Application in 19.525 seconds (JVM running for 23.92)
+time=2019-04-30T14:09:49.398+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Starting without optional epoll library
+time=2019-04-30T14:09:49.403+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Starting without optional kqueue library
+time=2019-04-30T14:12:34.771+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Starting Graduation1Application on DESKTOP-Q8HC681 with PID 15476 (F:\idea\graduation1\target\classes started by pcdn in F:\idea\graduation1)
+time=2019-04-30T14:12:34.797+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=The following profiles are active: dev
+time=2019-04-30T14:12:35.038+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@5778826f: startup date [Tue Apr 30 14:12:35 CST 2019]; root of context hierarchy
+time=2019-04-30T14:12:38.015+0800`appName=oms`hostName=docker-20`logLevel= WARN`msg=No MyBatis mapper was found in '[com.zy.project.mapper]' package. Please check your configuration.
+time=2019-04-30T14:12:40.229+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Tomcat initialized with port(s): 8083 (http)
+time=2019-04-30T14:12:41.152+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Servlet dispatcherServlet mapped to [/]
+time=2019-04-30T14:12:41.204+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Mapping filter: 'characterEncodingFilter' to: [/*]
+time=2019-04-30T14:12:41.205+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+time=2019-04-30T14:12:41.205+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Mapping filter: 'httpPutFormContentFilter' to: [/*]
+time=2019-04-30T14:12:41.206+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Mapping filter: 'requestContextFilter' to: [/*]
+time=2019-04-30T14:12:42.179+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=HikariPool-1 - Starting...
+time=2019-04-30T14:12:42.579+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=HikariPool-1 - Start completed.
+time=2019-04-30T14:12:49.093+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Tomcat started on port(s): 8083 (http) with context path ''
+time=2019-04-30T14:12:49.104+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Started Graduation1Application in 15.367 seconds (JVM running for 21.881)
+time=2019-04-30T14:13:15.058+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Starting without optional epoll library
+time=2019-04-30T14:13:15.063+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Starting without optional kqueue library
+time=2019-04-30T14:20:58.464+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Starting Graduation1Application on DESKTOP-Q8HC681 with PID 12948 (F:\idea\graduation1\target\classes started by pcdn in F:\idea\graduation1)
+time=2019-04-30T14:20:58.483+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=The following profiles are active: dev
+time=2019-04-30T14:20:58.628+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@7c7d3c46: startup date [Tue Apr 30 14:20:58 CST 2019]; root of context hierarchy
+time=2019-04-30T14:21:03.958+0800`appName=oms`hostName=docker-20`logLevel= WARN`msg=No MyBatis mapper was found in '[com.zy.project.mapper]' package. Please check your configuration.
+time=2019-04-30T14:21:09.393+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Tomcat initialized with port(s): 8083 (http)
+time=2019-04-30T14:21:10.376+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Servlet dispatcherServlet mapped to [/]
+time=2019-04-30T14:21:10.388+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Mapping filter: 'characterEncodingFilter' to: [/*]
+time=2019-04-30T14:21:10.389+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+time=2019-04-30T14:21:10.389+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Mapping filter: 'httpPutFormContentFilter' to: [/*]
+time=2019-04-30T14:21:10.389+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Mapping filter: 'requestContextFilter' to: [/*]
+time=2019-04-30T14:21:16.070+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=HikariPool-1 - Starting...
+time=2019-04-30T14:21:17.341+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=HikariPool-1 - Start completed.
+time=2019-04-30T14:21:26.730+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Tomcat started on port(s): 8083 (http) with context path ''
+time=2019-04-30T14:21:26.741+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Started Graduation1Application in 29.971 seconds (JVM running for 39.109)
+time=2019-04-30T14:21:42.276+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Starting without optional epoll library
+time=2019-04-30T14:21:42.284+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Starting without optional kqueue library
+time=2019-04-30T14:24:48.145+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Starting Graduation1Application on DESKTOP-Q8HC681 with PID 14176 (F:\idea\graduation1\target\classes started by pcdn in F:\idea\graduation1)
+time=2019-04-30T14:24:48.171+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=The following profiles are active: dev
+time=2019-04-30T14:24:48.430+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@a8c1f44: startup date [Tue Apr 30 14:24:48 CST 2019]; root of context hierarchy
+time=2019-04-30T14:24:51.495+0800`appName=oms`hostName=docker-20`logLevel= WARN`msg=No MyBatis mapper was found in '[com.zy.project.mapper]' package. Please check your configuration.
+time=2019-04-30T14:24:57.798+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Tomcat initialized with port(s): 8083 (http)
+time=2019-04-30T14:24:59.064+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Servlet dispatcherServlet mapped to [/]
+time=2019-04-30T14:24:59.261+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Mapping filter: 'characterEncodingFilter' to: [/*]
+time=2019-04-30T14:24:59.262+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+time=2019-04-30T14:24:59.262+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Mapping filter: 'httpPutFormContentFilter' to: [/*]
+time=2019-04-30T14:24:59.262+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Mapping filter: 'requestContextFilter' to: [/*]
+time=2019-04-30T14:25:01.045+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=HikariPool-1 - Starting...
+time=2019-04-30T14:25:01.621+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=HikariPool-1 - Start completed.
+time=2019-04-30T14:25:13.152+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Tomcat started on port(s): 8083 (http) with context path ''
+time=2019-04-30T14:25:13.164+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Started Graduation1Application in 26.074 seconds (JVM running for 30.991)
+time=2019-04-30T14:25:17.847+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Starting without optional epoll library
+time=2019-04-30T14:25:17.852+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Starting without optional kqueue library
+time=2019-04-30T14:28:31.947+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Starting Graduation1Application on DESKTOP-Q8HC681 with PID 1584 (F:\idea\graduation1\target\classes started by pcdn in F:\idea\graduation1)
+time=2019-04-30T14:28:31.966+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=The following profiles are active: dev
+time=2019-04-30T14:28:32.193+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@79da1ec0: startup date [Tue Apr 30 14:28:32 CST 2019]; root of context hierarchy
+time=2019-04-30T14:28:35.433+0800`appName=oms`hostName=docker-20`logLevel= WARN`msg=No MyBatis mapper was found in '[com.zy.project.mapper]' package. Please check your configuration.
+time=2019-04-30T14:28:37.740+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Tomcat initialized with port(s): 8083 (http)
+time=2019-04-30T14:28:38.588+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Servlet dispatcherServlet mapped to [/]
+time=2019-04-30T14:28:38.647+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Mapping filter: 'characterEncodingFilter' to: [/*]
+time=2019-04-30T14:28:38.648+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+time=2019-04-30T14:28:38.648+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Mapping filter: 'httpPutFormContentFilter' to: [/*]
+time=2019-04-30T14:28:38.648+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Mapping filter: 'requestContextFilter' to: [/*]
+time=2019-04-30T14:28:39.470+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=HikariPool-1 - Starting...
+time=2019-04-30T14:28:39.814+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=HikariPool-1 - Start completed.
+time=2019-04-30T14:28:49.106+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Tomcat started on port(s): 8083 (http) with context path ''
+time=2019-04-30T14:28:49.116+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Started Graduation1Application in 18.27 seconds (JVM running for 22.977)
+time=2019-04-30T14:28:53.932+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Starting without optional epoll library
+time=2019-04-30T14:28:53.937+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Starting without optional kqueue library
+time=2019-04-30T14:29:41.227+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Starting Graduation1Application on DESKTOP-Q8HC681 with PID 2652 (F:\idea\graduation1\target\classes started by pcdn in F:\idea\graduation1)
+time=2019-04-30T14:29:41.258+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=The following profiles are active: dev
+time=2019-04-30T14:29:41.473+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@7894f09b: startup date [Tue Apr 30 14:29:41 CST 2019]; root of context hierarchy
+time=2019-04-30T14:29:44.741+0800`appName=oms`hostName=docker-20`logLevel= WARN`msg=No MyBatis mapper was found in '[com.zy.project.mapper]' package. Please check your configuration.
+time=2019-04-30T14:29:46.757+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Tomcat initialized with port(s): 8083 (http)
+time=2019-04-30T14:29:47.547+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Servlet dispatcherServlet mapped to [/]
+time=2019-04-30T14:29:47.558+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Mapping filter: 'characterEncodingFilter' to: [/*]
+time=2019-04-30T14:29:47.559+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+time=2019-04-30T14:29:47.559+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Mapping filter: 'httpPutFormContentFilter' to: [/*]
+time=2019-04-30T14:29:47.560+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Mapping filter: 'requestContextFilter' to: [/*]
+time=2019-04-30T14:29:48.319+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=HikariPool-1 - Starting...
+time=2019-04-30T14:29:48.634+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=HikariPool-1 - Start completed.
+time=2019-04-30T14:29:55.032+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Tomcat started on port(s): 8083 (http) with context path ''
+time=2019-04-30T14:29:55.049+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Started Graduation1Application in 14.872 seconds (JVM running for 20.66)
+time=2019-04-30T14:29:55.670+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Starting without optional epoll library
+time=2019-04-30T14:29:55.675+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Starting without optional kqueue library
+time=2019-04-30T15:05:09.395+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Starting Graduation1Application on DESKTOP-Q8HC681 with PID 13176 (F:\idea\graduation1\target\classes started by pcdn in F:\idea\graduation1)
+time=2019-04-30T15:05:09.435+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=The following profiles are active: dev
+time=2019-04-30T15:05:09.710+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@69637b10: startup date [Tue Apr 30 15:05:09 CST 2019]; root of context hierarchy
+time=2019-04-30T15:05:13.288+0800`appName=oms`hostName=docker-20`logLevel= WARN`msg=No MyBatis mapper was found in '[com.zy.project.mapper]' package. Please check your configuration.
+time=2019-04-30T15:05:15.422+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Tomcat initialized with port(s): 8083 (http)
+time=2019-04-30T15:05:16.298+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Servlet dispatcherServlet mapped to [/]
+time=2019-04-30T15:05:16.310+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Mapping filter: 'characterEncodingFilter' to: [/*]
+time=2019-04-30T15:05:16.311+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+time=2019-04-30T15:05:16.311+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Mapping filter: 'httpPutFormContentFilter' to: [/*]
+time=2019-04-30T15:05:16.311+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Mapping filter: 'requestContextFilter' to: [/*]
+time=2019-04-30T15:05:17.367+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=HikariPool-1 - Starting...
+time=2019-04-30T15:05:17.724+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=HikariPool-1 - Start completed.
+time=2019-04-30T15:05:25.806+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Tomcat started on port(s): 8083 (http) with context path ''
+time=2019-04-30T15:05:25.818+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Started Graduation1Application in 18.053 seconds (JVM running for 23.448)
+time=2019-04-30T15:05:30.571+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Starting without optional epoll library
+time=2019-04-30T15:05:30.575+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Starting without optional kqueue library
+time=2019-04-30T15:07:59.629+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Starting Graduation1Application on DESKTOP-Q8HC681 with PID 11332 (F:\idea\graduation1\target\classes started by pcdn in F:\idea\graduation1)
+time=2019-04-30T15:07:59.645+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=The following profiles are active: dev
+time=2019-04-30T15:07:59.866+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@1cd201a8: startup date [Tue Apr 30 15:07:59 CST 2019]; root of context hierarchy
+time=2019-04-30T15:08:03.189+0800`appName=oms`hostName=docker-20`logLevel= WARN`msg=No MyBatis mapper was found in '[com.zy.project.mapper]' package. Please check your configuration.
+time=2019-04-30T15:08:05.675+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Tomcat initialized with port(s): 8083 (http)
+time=2019-04-30T15:08:06.629+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Servlet dispatcherServlet mapped to [/]
+time=2019-04-30T15:08:06.642+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Mapping filter: 'characterEncodingFilter' to: [/*]
+time=2019-04-30T15:08:06.643+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+time=2019-04-30T15:08:06.643+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Mapping filter: 'httpPutFormContentFilter' to: [/*]
+time=2019-04-30T15:08:06.643+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Mapping filter: 'requestContextFilter' to: [/*]
+time=2019-04-30T15:08:07.649+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=HikariPool-1 - Starting...
+time=2019-04-30T15:08:08.016+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=HikariPool-1 - Start completed.
+time=2019-04-30T15:08:15.489+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Tomcat started on port(s): 8083 (http) with context path ''
+time=2019-04-30T15:08:15.497+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Started Graduation1Application in 16.825 seconds (JVM running for 23.253)
+time=2019-04-30T15:08:21.321+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Starting without optional epoll library
+time=2019-04-30T15:08:21.326+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Starting without optional kqueue library
+time=2019-04-30T15:10:19.773+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Starting Graduation1Application on DESKTOP-Q8HC681 with PID 13172 (F:\idea\graduation1\target\classes started by pcdn in F:\idea\graduation1)
+time=2019-04-30T15:10:19.787+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=The following profiles are active: dev
+time=2019-04-30T15:10:20.024+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@3234f74e: startup date [Tue Apr 30 15:10:20 CST 2019]; root of context hierarchy
+time=2019-04-30T15:10:23.289+0800`appName=oms`hostName=docker-20`logLevel= WARN`msg=No MyBatis mapper was found in '[com.zy.project.mapper]' package. Please check your configuration.
+time=2019-04-30T15:10:25.475+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Tomcat initialized with port(s): 8083 (http)
+time=2019-04-30T15:10:26.483+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Servlet dispatcherServlet mapped to [/]
+time=2019-04-30T15:10:26.492+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Mapping filter: 'characterEncodingFilter' to: [/*]
+time=2019-04-30T15:10:26.493+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+time=2019-04-30T15:10:26.493+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Mapping filter: 'httpPutFormContentFilter' to: [/*]
+time=2019-04-30T15:10:26.493+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Mapping filter: 'requestContextFilter' to: [/*]
+time=2019-04-30T15:10:27.501+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=HikariPool-1 - Starting...
+time=2019-04-30T15:10:27.874+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=HikariPool-1 - Start completed.
+time=2019-04-30T15:10:35.043+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Tomcat started on port(s): 8083 (http) with context path ''
+time=2019-04-30T15:10:35.053+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Started Graduation1Application in 16.17 seconds (JVM running for 21.51)
+time=2019-04-30T15:10:46.181+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Starting without optional epoll library
+time=2019-04-30T15:10:46.207+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Starting without optional kqueue library
+time=2019-04-30T15:17:22.118+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Starting Graduation1Application on DESKTOP-Q8HC681 with PID 17292 (F:\idea\graduation1\target\classes started by pcdn in F:\idea\graduation1)
+time=2019-04-30T15:17:22.163+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=The following profiles are active: dev
+time=2019-04-30T15:17:22.382+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@2611b9a3: startup date [Tue Apr 30 15:17:22 CST 2019]; root of context hierarchy
+time=2019-04-30T15:17:26.844+0800`appName=oms`hostName=docker-20`logLevel= WARN`msg=No MyBatis mapper was found in '[com.zy.project.mapper]' package. Please check your configuration.
+time=2019-04-30T15:17:38.205+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Tomcat initialized with port(s): 8083 (http)
+time=2019-04-30T15:17:39.170+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Servlet dispatcherServlet mapped to [/]
+time=2019-04-30T15:17:39.182+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Mapping filter: 'characterEncodingFilter' to: [/*]
+time=2019-04-30T15:17:39.183+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+time=2019-04-30T15:17:39.183+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Mapping filter: 'httpPutFormContentFilter' to: [/*]
+time=2019-04-30T15:17:39.183+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Mapping filter: 'requestContextFilter' to: [/*]
+time=2019-04-30T15:17:40.141+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=HikariPool-1 - Starting...
+time=2019-04-30T15:17:40.533+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=HikariPool-1 - Start completed.
+time=2019-04-30T15:17:49.558+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Tomcat started on port(s): 8083 (http) with context path ''
+time=2019-04-30T15:17:49.569+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Started Graduation1Application in 28.523 seconds (JVM running for 33.442)
+time=2019-04-30T15:17:51.608+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Starting without optional epoll library
+time=2019-04-30T15:17:51.616+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Starting without optional kqueue library
+time=2019-04-30T15:19:32.800+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Starting Graduation1Application on DESKTOP-Q8HC681 with PID 1744 (F:\idea\graduation1\target\classes started by pcdn in F:\idea\graduation1)
+time=2019-04-30T15:19:32.817+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=The following profiles are active: dev
+time=2019-04-30T15:19:33.078+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@654d8173: startup date [Tue Apr 30 15:19:33 CST 2019]; root of context hierarchy
+time=2019-04-30T15:19:36.337+0800`appName=oms`hostName=docker-20`logLevel= WARN`msg=No MyBatis mapper was found in '[com.zy.project.mapper]' package. Please check your configuration.
+time=2019-04-30T15:19:38.571+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Tomcat initialized with port(s): 8083 (http)
+time=2019-04-30T15:19:39.527+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Servlet dispatcherServlet mapped to [/]
+time=2019-04-30T15:19:39.537+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Mapping filter: 'characterEncodingFilter' to: [/*]
+time=2019-04-30T15:19:39.538+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+time=2019-04-30T15:19:39.539+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Mapping filter: 'httpPutFormContentFilter' to: [/*]
+time=2019-04-30T15:19:39.539+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Mapping filter: 'requestContextFilter' to: [/*]
+time=2019-04-30T15:19:40.436+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=HikariPool-1 - Starting...
+time=2019-04-30T15:19:40.821+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=HikariPool-1 - Start completed.
+time=2019-04-30T15:19:49.013+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Tomcat started on port(s): 8083 (http) with context path ''
+time=2019-04-30T15:19:49.024+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Started Graduation1Application in 17.336 seconds (JVM running for 23.388)
+time=2019-04-30T15:20:02.539+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Starting without optional epoll library
+time=2019-04-30T15:20:02.545+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Starting without optional kqueue library
+time=2019-04-30T15:30:08.486+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Starting Graduation1Application on DESKTOP-Q8HC681 with PID 11096 (F:\idea\graduation1\target\classes started by pcdn in F:\idea\graduation1)
+time=2019-04-30T15:30:08.507+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=The following profiles are active: dev
+time=2019-04-30T15:30:08.749+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@3a62c01e: startup date [Tue Apr 30 15:30:08 CST 2019]; root of context hierarchy
+time=2019-04-30T15:30:12.150+0800`appName=oms`hostName=docker-20`logLevel= WARN`msg=No MyBatis mapper was found in '[com.zy.project.mapper]' package. Please check your configuration.
+time=2019-04-30T15:30:14.945+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Tomcat initialized with port(s): 8083 (http)
+time=2019-04-30T15:30:15.801+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Servlet dispatcherServlet mapped to [/]
+time=2019-04-30T15:30:15.814+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Mapping filter: 'characterEncodingFilter' to: [/*]
+time=2019-04-30T15:30:15.815+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+time=2019-04-30T15:30:15.815+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Mapping filter: 'httpPutFormContentFilter' to: [/*]
+time=2019-04-30T15:30:15.815+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Mapping filter: 'requestContextFilter' to: [/*]
+time=2019-04-30T15:30:16.741+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=HikariPool-1 - Starting...
+time=2019-04-30T15:30:17.295+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=HikariPool-1 - Start completed.
+time=2019-04-30T15:30:23.673+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Tomcat started on port(s): 8083 (http) with context path ''
+time=2019-04-30T15:30:23.684+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Started Graduation1Application in 16.384 seconds (JVM running for 22.452)
+time=2019-04-30T15:30:37.452+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Starting without optional epoll library
+time=2019-04-30T15:30:37.457+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Starting without optional kqueue library
+time=2019-04-30T15:38:04.495+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Starting Graduation1Application on DESKTOP-Q8HC681 with PID 10436 (F:\idea\graduation1\target\classes started by pcdn in F:\idea\graduation1)
+time=2019-04-30T15:38:04.538+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=The following profiles are active: dev
+time=2019-04-30T15:38:04.888+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@18245eb0: startup date [Tue Apr 30 15:38:04 CST 2019]; root of context hierarchy
+time=2019-04-30T15:38:09.036+0800`appName=oms`hostName=docker-20`logLevel= WARN`msg=No MyBatis mapper was found in '[com.zy.project.mapper]' package. Please check your configuration.
+time=2019-04-30T15:38:11.833+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Tomcat initialized with port(s): 8083 (http)
+time=2019-04-30T15:38:13.383+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Servlet dispatcherServlet mapped to [/]
+time=2019-04-30T15:38:13.395+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Mapping filter: 'characterEncodingFilter' to: [/*]
+time=2019-04-30T15:38:13.396+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+time=2019-04-30T15:38:13.396+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Mapping filter: 'httpPutFormContentFilter' to: [/*]
+time=2019-04-30T15:38:13.396+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Mapping filter: 'requestContextFilter' to: [/*]
+time=2019-04-30T15:38:14.543+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=HikariPool-1 - Starting...
+time=2019-04-30T15:38:14.957+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=HikariPool-1 - Start completed.
+time=2019-04-30T15:38:25.458+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Tomcat started on port(s): 8083 (http) with context path ''
+time=2019-04-30T15:38:25.492+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Started Graduation1Application in 22.156 seconds (JVM running for 38.158)
+time=2019-04-30T15:38:31.006+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Starting without optional epoll library
+time=2019-04-30T15:38:31.013+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Starting without optional kqueue library
+time=2019-04-30T15:57:55.502+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Starting Graduation1Application on DESKTOP-Q8HC681 with PID 15268 (F:\idea\graduation1\target\classes started by pcdn in F:\idea\graduation1)
+time=2019-04-30T15:57:55.575+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=The following profiles are active: dev
+time=2019-04-30T15:57:55.958+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@565b064f: startup date [Tue Apr 30 15:57:55 CST 2019]; root of context hierarchy
+time=2019-04-30T15:58:02.015+0800`appName=oms`hostName=docker-20`logLevel= WARN`msg=No MyBatis mapper was found in '[com.zy.project.mapper]' package. Please check your configuration.
+time=2019-04-30T15:58:07.264+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Tomcat initialized with port(s): 8083 (http)
+time=2019-04-30T15:58:09.173+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Servlet dispatcherServlet mapped to [/]
+time=2019-04-30T15:58:09.186+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Mapping filter: 'characterEncodingFilter' to: [/*]
+time=2019-04-30T15:58:09.187+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+time=2019-04-30T15:58:09.188+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Mapping filter: 'httpPutFormContentFilter' to: [/*]
+time=2019-04-30T15:58:09.188+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Mapping filter: 'requestContextFilter' to: [/*]
+time=2019-04-30T15:58:10.245+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=HikariPool-1 - Starting...
+time=2019-04-30T15:58:10.783+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=HikariPool-1 - Start completed.
+time=2019-04-30T15:58:28.988+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Tomcat started on port(s): 8083 (http) with context path ''
+time=2019-04-30T15:58:29.003+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Started Graduation1Application in 35.778 seconds (JVM running for 60.49)
+time=2019-04-30T15:58:46.384+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Starting without optional epoll library
+time=2019-04-30T15:58:46.390+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Starting without optional kqueue library
+time=2019-04-30T16:03:50.010+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Starting Graduation1Application on DESKTOP-Q8HC681 with PID 6396 (F:\idea\graduation1\target\classes started by pcdn in F:\idea\graduation1)
+time=2019-04-30T16:03:50.081+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=The following profiles are active: dev
+time=2019-04-30T16:03:50.516+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@5c8eee0f: startup date [Tue Apr 30 16:03:50 CST 2019]; root of context hierarchy
+time=2019-04-30T16:04:00.328+0800`appName=oms`hostName=docker-20`logLevel= WARN`msg=No MyBatis mapper was found in '[com.zy.project.mapper]' package. Please check your configuration.
+time=2019-04-30T16:04:05.313+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Tomcat initialized with port(s): 8083 (http)
+time=2019-04-30T16:04:07.416+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Servlet dispatcherServlet mapped to [/]
+time=2019-04-30T16:04:07.522+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Mapping filter: 'characterEncodingFilter' to: [/*]
+time=2019-04-30T16:04:07.524+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+time=2019-04-30T16:04:07.526+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Mapping filter: 'httpPutFormContentFilter' to: [/*]
+time=2019-04-30T16:04:07.531+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Mapping filter: 'requestContextFilter' to: [/*]
+time=2019-04-30T16:04:09.792+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=HikariPool-1 - Starting...
+time=2019-04-30T16:04:10.793+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=HikariPool-1 - Start completed.
+time=2019-04-30T16:04:25.063+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Tomcat started on port(s): 8083 (http) with context path ''
+time=2019-04-30T16:04:25.083+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Started Graduation1Application in 37.047 seconds (JVM running for 53.395)
+time=2019-04-30T16:04:28.102+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Starting without optional epoll library
+time=2019-04-30T16:04:28.109+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Starting without optional kqueue library
+time=2019-04-30T16:22:04.393+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Starting Graduation1Application on DESKTOP-Q8HC681 with PID 6832 (F:\idea\graduation1\target\classes started by pcdn in F:\idea\graduation1)
+time=2019-04-30T16:22:04.435+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=The following profiles are active: dev
+time=2019-04-30T16:22:04.694+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@6f0b0a5e: startup date [Tue Apr 30 16:22:04 CST 2019]; root of context hierarchy
+time=2019-04-30T16:22:09.135+0800`appName=oms`hostName=docker-20`logLevel= WARN`msg=No MyBatis mapper was found in '[com.zy.project.mapper]' package. Please check your configuration.
+time=2019-04-30T16:22:11.974+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Tomcat initialized with port(s): 8083 (http)
+time=2019-04-30T16:22:12.965+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Servlet dispatcherServlet mapped to [/]
+time=2019-04-30T16:22:12.976+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Mapping filter: 'characterEncodingFilter' to: [/*]
+time=2019-04-30T16:22:12.976+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+time=2019-04-30T16:22:12.977+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Mapping filter: 'httpPutFormContentFilter' to: [/*]
+time=2019-04-30T16:22:12.977+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Mapping filter: 'requestContextFilter' to: [/*]
+time=2019-04-30T16:22:13.905+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=HikariPool-1 - Starting...
+time=2019-04-30T16:22:14.373+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=HikariPool-1 - Start completed.
+time=2019-04-30T16:22:23.476+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Tomcat started on port(s): 8083 (http) with context path ''
+time=2019-04-30T16:22:23.529+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Started Graduation1Application in 20.755 seconds (JVM running for 30.358)
+time=2019-04-30T16:22:28.426+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Starting without optional epoll library
+time=2019-04-30T16:22:28.430+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Starting without optional kqueue library
+time=2019-04-30T16:28:43.135+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Starting Graduation1Application on DESKTOP-Q8HC681 with PID 16996 (F:\idea\graduation1\target\classes started by pcdn in F:\idea\graduation1)
+time=2019-04-30T16:28:43.192+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=The following profiles are active: dev
+time=2019-04-30T16:28:43.481+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@636e8cc: startup date [Tue Apr 30 16:28:43 CST 2019]; root of context hierarchy
+time=2019-04-30T16:28:46.821+0800`appName=oms`hostName=docker-20`logLevel= WARN`msg=No MyBatis mapper was found in '[com.zy.project.mapper]' package. Please check your configuration.
+time=2019-04-30T16:28:49.735+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Tomcat initialized with port(s): 8083 (http)
+time=2019-04-30T16:28:51.277+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Servlet dispatcherServlet mapped to [/]
+time=2019-04-30T16:28:51.300+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Mapping filter: 'characterEncodingFilter' to: [/*]
+time=2019-04-30T16:28:51.300+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+time=2019-04-30T16:28:51.301+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Mapping filter: 'httpPutFormContentFilter' to: [/*]
+time=2019-04-30T16:28:51.302+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Mapping filter: 'requestContextFilter' to: [/*]
+time=2019-04-30T16:28:52.659+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=HikariPool-1 - Starting...
+time=2019-04-30T16:28:53.015+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=HikariPool-1 - Start completed.
+time=2019-04-30T16:29:01.848+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Tomcat started on port(s): 8083 (http) with context path ''
+time=2019-04-30T16:29:01.861+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Started Graduation1Application in 19.853 seconds (JVM running for 26.203)
+time=2019-04-30T16:29:02.611+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Starting without optional epoll library
+time=2019-04-30T16:29:02.617+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Starting without optional kqueue library
+time=2019-04-30T16:35:14.014+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Starting Graduation1Application on DESKTOP-Q8HC681 with PID 4032 (F:\idea\graduation1\target\classes started by pcdn in F:\idea\graduation1)
+time=2019-04-30T16:35:14.061+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=The following profiles are active: dev
+time=2019-04-30T16:35:14.290+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@295eaa7c: startup date [Tue Apr 30 16:35:14 CST 2019]; root of context hierarchy
+time=2019-04-30T16:35:17.901+0800`appName=oms`hostName=docker-20`logLevel= WARN`msg=No MyBatis mapper was found in '[com.zy.project.mapper]' package. Please check your configuration.
+time=2019-04-30T16:35:21.316+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Tomcat initialized with port(s): 8083 (http)
+time=2019-04-30T16:35:22.278+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Servlet dispatcherServlet mapped to [/]
+time=2019-04-30T16:35:22.289+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Mapping filter: 'characterEncodingFilter' to: [/*]
+time=2019-04-30T16:35:22.290+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+time=2019-04-30T16:35:22.321+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Mapping filter: 'httpPutFormContentFilter' to: [/*]
+time=2019-04-30T16:35:22.322+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Mapping filter: 'requestContextFilter' to: [/*]
+time=2019-04-30T16:35:23.278+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=HikariPool-1 - Starting...
+time=2019-04-30T16:35:23.688+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=HikariPool-1 - Start completed.
+time=2019-04-30T16:35:49.636+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Tomcat started on port(s): 8083 (http) with context path ''
+time=2019-04-30T16:35:49.781+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Started Graduation1Application in 37.171 seconds (JVM running for 44.826)
+time=2019-04-30T16:35:51.638+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Starting without optional epoll library
+time=2019-04-30T16:35:51.642+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Starting without optional kqueue library
+time=2019-04-30T16:37:40.433+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Starting Graduation1Application on DESKTOP-Q8HC681 with PID 4488 (F:\idea\graduation1\target\classes started by pcdn in F:\idea\graduation1)
+time=2019-04-30T16:37:40.447+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=The following profiles are active: dev
+time=2019-04-30T16:37:40.684+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@4c37b5b: startup date [Tue Apr 30 16:37:40 CST 2019]; root of context hierarchy
+time=2019-04-30T16:37:44.159+0800`appName=oms`hostName=docker-20`logLevel= WARN`msg=No MyBatis mapper was found in '[com.zy.project.mapper]' package. Please check your configuration.
+time=2019-04-30T16:37:47.088+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Tomcat initialized with port(s): 8083 (http)
+time=2019-04-30T16:37:48.261+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Servlet dispatcherServlet mapped to [/]
+time=2019-04-30T16:37:48.272+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Mapping filter: 'characterEncodingFilter' to: [/*]
+time=2019-04-30T16:37:48.273+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+time=2019-04-30T16:37:48.273+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Mapping filter: 'httpPutFormContentFilter' to: [/*]
+time=2019-04-30T16:37:48.273+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Mapping filter: 'requestContextFilter' to: [/*]
+time=2019-04-30T16:37:49.199+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=HikariPool-1 - Starting...
+time=2019-04-30T16:37:49.578+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=HikariPool-1 - Start completed.
+time=2019-04-30T16:37:55.739+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Tomcat started on port(s): 8083 (http) with context path ''
+time=2019-04-30T16:37:55.748+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Started Graduation1Application in 16.329 seconds (JVM running for 21.451)
+time=2019-04-30T16:38:08.973+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Starting without optional epoll library
+time=2019-04-30T16:38:08.978+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Starting without optional kqueue library
+time=2019-04-30T16:39:54.296+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Starting Graduation1Application on DESKTOP-Q8HC681 with PID 15192 (F:\idea\graduation1\target\classes started by pcdn in F:\idea\graduation1)
+time=2019-04-30T16:39:54.308+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=The following profiles are active: dev
+time=2019-04-30T16:39:54.657+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@3f363cf5: startup date [Tue Apr 30 16:39:54 CST 2019]; root of context hierarchy
+time=2019-04-30T16:39:57.866+0800`appName=oms`hostName=docker-20`logLevel= WARN`msg=No MyBatis mapper was found in '[com.zy.project.mapper]' package. Please check your configuration.
+time=2019-04-30T16:40:00.091+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Tomcat initialized with port(s): 8083 (http)
+time=2019-04-30T16:40:01.235+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Servlet dispatcherServlet mapped to [/]
+time=2019-04-30T16:40:01.254+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Mapping filter: 'characterEncodingFilter' to: [/*]
+time=2019-04-30T16:40:01.256+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+time=2019-04-30T16:40:01.256+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Mapping filter: 'httpPutFormContentFilter' to: [/*]
+time=2019-04-30T16:40:01.256+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Mapping filter: 'requestContextFilter' to: [/*]
+time=2019-04-30T16:40:02.425+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=HikariPool-1 - Starting...
+time=2019-04-30T16:40:02.877+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=HikariPool-1 - Start completed.
+time=2019-04-30T16:40:12.327+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Tomcat started on port(s): 8083 (http) with context path ''
+time=2019-04-30T16:40:12.339+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Started Graduation1Application in 19.2 seconds (JVM running for 25.213)
+time=2019-04-30T16:40:27.637+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Starting without optional epoll library
+time=2019-04-30T16:40:27.643+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Starting without optional kqueue library
+time=2019-04-30T16:45:51.676+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Starting Graduation1Application on DESKTOP-Q8HC681 with PID 6488 (F:\idea\graduation1\target\classes started by pcdn in F:\idea\graduation1)
+time=2019-04-30T16:45:51.709+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=The following profiles are active: dev
+time=2019-04-30T16:45:52.032+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@505a9d7c: startup date [Tue Apr 30 16:45:52 CST 2019]; root of context hierarchy
+time=2019-04-30T16:45:55.736+0800`appName=oms`hostName=docker-20`logLevel= WARN`msg=No MyBatis mapper was found in '[com.zy.project.mapper]' package. Please check your configuration.
+time=2019-04-30T16:45:58.883+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Tomcat initialized with port(s): 8083 (http)
+time=2019-04-30T16:45:59.973+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Servlet dispatcherServlet mapped to [/]
+time=2019-04-30T16:45:59.984+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Mapping filter: 'characterEncodingFilter' to: [/*]
+time=2019-04-30T16:45:59.985+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+time=2019-04-30T16:45:59.985+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Mapping filter: 'httpPutFormContentFilter' to: [/*]
+time=2019-04-30T16:45:59.985+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Mapping filter: 'requestContextFilter' to: [/*]
+time=2019-04-30T16:46:01.040+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=HikariPool-1 - Starting...
+time=2019-04-30T16:46:01.431+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=HikariPool-1 - Start completed.
+time=2019-04-30T16:46:08.765+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Tomcat started on port(s): 8083 (http) with context path ''
+time=2019-04-30T16:46:08.775+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Started Graduation1Application in 19.523 seconds (JVM running for 26.316)
+time=2019-04-30T16:46:13.898+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Starting without optional epoll library
+time=2019-04-30T16:46:13.904+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Starting without optional kqueue library
+time=2019-04-30T16:49:28.033+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Starting Graduation1Application on DESKTOP-Q8HC681 with PID 8036 (F:\idea\graduation1\target\classes started by pcdn in F:\idea\graduation1)
+time=2019-04-30T16:49:28.091+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=The following profiles are active: dev
+time=2019-04-30T16:49:29.707+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@60d1a32f: startup date [Tue Apr 30 16:49:28 CST 2019]; root of context hierarchy
+time=2019-04-30T16:49:38.919+0800`appName=oms`hostName=docker-20`logLevel= WARN`msg=No MyBatis mapper was found in '[com.zy.project.mapper]' package. Please check your configuration.
+time=2019-04-30T16:49:44.080+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Tomcat initialized with port(s): 8083 (http)
+time=2019-04-30T16:49:45.731+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Servlet dispatcherServlet mapped to [/]
+time=2019-04-30T16:49:45.745+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Mapping filter: 'characterEncodingFilter' to: [/*]
+time=2019-04-30T16:49:45.746+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+time=2019-04-30T16:49:45.746+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Mapping filter: 'httpPutFormContentFilter' to: [/*]
+time=2019-04-30T16:49:45.746+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Mapping filter: 'requestContextFilter' to: [/*]
+time=2019-04-30T16:49:46.926+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=HikariPool-1 - Starting...
+time=2019-04-30T16:49:47.365+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=HikariPool-1 - Start completed.
+time=2019-04-30T16:49:56.412+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Tomcat started on port(s): 8083 (http) with context path ''
+time=2019-04-30T16:49:56.433+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Started Graduation1Application in 29.644 seconds (JVM running for 41.076)
+time=2019-04-30T16:49:57.210+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Starting without optional epoll library
+time=2019-04-30T16:49:57.215+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Starting without optional kqueue library
+time=2019-04-30T16:51:43.682+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Starting Graduation1Application on DESKTOP-Q8HC681 with PID 11608 (F:\idea\graduation1\target\classes started by pcdn in F:\idea\graduation1)
+time=2019-04-30T16:51:43.705+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=The following profiles are active: dev
+time=2019-04-30T16:51:44.029+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@40499e4f: startup date [Tue Apr 30 16:51:44 CST 2019]; root of context hierarchy
+time=2019-04-30T16:51:48.032+0800`appName=oms`hostName=docker-20`logLevel= WARN`msg=No MyBatis mapper was found in '[com.zy.project.mapper]' package. Please check your configuration.
+time=2019-04-30T16:51:51.531+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Tomcat initialized with port(s): 8083 (http)
+time=2019-04-30T16:51:52.975+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Servlet dispatcherServlet mapped to [/]
+time=2019-04-30T16:51:52.988+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Mapping filter: 'characterEncodingFilter' to: [/*]
+time=2019-04-30T16:51:52.989+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+time=2019-04-30T16:51:52.989+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Mapping filter: 'httpPutFormContentFilter' to: [/*]
+time=2019-04-30T16:51:52.989+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Mapping filter: 'requestContextFilter' to: [/*]
+time=2019-04-30T16:51:54.351+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=HikariPool-1 - Starting...
+time=2019-04-30T16:51:54.744+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=HikariPool-1 - Start completed.
+time=2019-04-30T16:52:02.285+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Tomcat started on port(s): 8083 (http) with context path ''
+time=2019-04-30T16:52:02.301+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Started Graduation1Application in 19.979 seconds (JVM running for 27.866)
+time=2019-04-30T16:52:13.572+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Starting without optional epoll library
+time=2019-04-30T16:52:13.578+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Starting without optional kqueue library
+time=2019-04-30T16:53:43.759+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Starting Graduation1Application on DESKTOP-Q8HC681 with PID 4516 (F:\idea\graduation1\target\classes started by pcdn in F:\idea\graduation1)
+time=2019-04-30T16:53:43.773+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=The following profiles are active: dev
+time=2019-04-30T16:53:44.013+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@4b3c354a: startup date [Tue Apr 30 16:53:44 CST 2019]; root of context hierarchy
+time=2019-04-30T16:53:47.605+0800`appName=oms`hostName=docker-20`logLevel= WARN`msg=No MyBatis mapper was found in '[com.zy.project.mapper]' package. Please check your configuration.
+time=2019-04-30T16:53:50.442+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Tomcat initialized with port(s): 8083 (http)
+time=2019-04-30T16:53:51.693+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Servlet dispatcherServlet mapped to [/]
+time=2019-04-30T16:53:51.704+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Mapping filter: 'characterEncodingFilter' to: [/*]
+time=2019-04-30T16:53:51.705+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+time=2019-04-30T16:53:51.705+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Mapping filter: 'httpPutFormContentFilter' to: [/*]
+time=2019-04-30T16:53:51.705+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Mapping filter: 'requestContextFilter' to: [/*]
+time=2019-04-30T16:53:52.572+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=HikariPool-1 - Starting...
+time=2019-04-30T16:53:52.912+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=HikariPool-1 - Start completed.
+time=2019-04-30T16:54:00.127+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Tomcat started on port(s): 8083 (http) with context path ''
+time=2019-04-30T16:54:00.138+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Started Graduation1Application in 18.567 seconds (JVM running for 24.268)
+time=2019-04-30T16:54:08.383+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Starting without optional epoll library
+time=2019-04-30T16:54:08.388+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Starting without optional kqueue library
+time=2019-04-30T16:59:22.329+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Starting Graduation1Application on DESKTOP-Q8HC681 with PID 13408 (F:\idea\graduation1\target\classes started by pcdn in F:\idea\graduation1)
+time=2019-04-30T16:59:22.441+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=The following profiles are active: dev
+time=2019-04-30T16:59:22.867+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@68b6f0d6: startup date [Tue Apr 30 16:59:22 CST 2019]; root of context hierarchy
+time=2019-04-30T16:59:26.822+0800`appName=oms`hostName=docker-20`logLevel= WARN`msg=No MyBatis mapper was found in '[com.zy.project.mapper]' package. Please check your configuration.
+time=2019-04-30T16:59:30.350+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Tomcat initialized with port(s): 8083 (http)
+time=2019-04-30T16:59:31.276+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Servlet dispatcherServlet mapped to [/]
+time=2019-04-30T16:59:31.289+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Mapping filter: 'characterEncodingFilter' to: [/*]
+time=2019-04-30T16:59:31.290+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+time=2019-04-30T16:59:31.291+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Mapping filter: 'httpPutFormContentFilter' to: [/*]
+time=2019-04-30T16:59:31.292+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Mapping filter: 'requestContextFilter' to: [/*]
+time=2019-04-30T16:59:32.489+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=HikariPool-1 - Starting...
+time=2019-04-30T16:59:32.850+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=HikariPool-1 - Start completed.
+time=2019-04-30T16:59:39.911+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Tomcat started on port(s): 8083 (http) with context path ''
+time=2019-04-30T16:59:39.921+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Started Graduation1Application in 18.902 seconds (JVM running for 28.219)
+time=2019-04-30T16:59:52.150+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Starting without optional epoll library
+time=2019-04-30T16:59:52.156+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Starting without optional kqueue library
+time=2019-04-30T17:03:33.647+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Starting Graduation1Application on DESKTOP-Q8HC681 with PID 7368 (F:\idea\graduation1\target\classes started by pcdn in F:\idea\graduation1)
+time=2019-04-30T17:03:33.662+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=The following profiles are active: dev
+time=2019-04-30T17:03:33.899+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@3f28bd56: startup date [Tue Apr 30 17:03:33 CST 2019]; root of context hierarchy
+time=2019-04-30T17:03:37.346+0800`appName=oms`hostName=docker-20`logLevel= WARN`msg=No MyBatis mapper was found in '[com.zy.project.mapper]' package. Please check your configuration.
+time=2019-04-30T17:03:40.353+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Tomcat initialized with port(s): 8083 (http)
+time=2019-04-30T17:03:41.260+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Servlet dispatcherServlet mapped to [/]
+time=2019-04-30T17:03:41.271+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Mapping filter: 'characterEncodingFilter' to: [/*]
+time=2019-04-30T17:03:41.272+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+time=2019-04-30T17:03:41.273+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Mapping filter: 'httpPutFormContentFilter' to: [/*]
+time=2019-04-30T17:03:41.273+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Mapping filter: 'requestContextFilter' to: [/*]
+time=2019-04-30T17:03:42.191+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=HikariPool-1 - Starting...
+time=2019-04-30T17:03:42.553+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=HikariPool-1 - Start completed.
+time=2019-04-30T17:03:49.223+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Tomcat started on port(s): 8083 (http) with context path ''
+time=2019-04-30T17:03:49.232+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Started Graduation1Application in 16.797 seconds (JVM running for 24.498)
+time=2019-04-30T17:03:59.138+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Starting without optional epoll library
+time=2019-04-30T17:03:59.144+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Starting without optional kqueue library
+time=2019-04-30T17:05:00.772+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Starting Graduation1Application on DESKTOP-Q8HC681 with PID 13028 (F:\idea\graduation1\target\classes started by pcdn in F:\idea\graduation1)
+time=2019-04-30T17:05:00.812+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=The following profiles are active: dev
+time=2019-04-30T17:05:01.025+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@1992eaf4: startup date [Tue Apr 30 17:05:01 CST 2019]; root of context hierarchy
+time=2019-04-30T17:05:04.097+0800`appName=oms`hostName=docker-20`logLevel= WARN`msg=No MyBatis mapper was found in '[com.zy.project.mapper]' package. Please check your configuration.
+time=2019-04-30T17:05:06.475+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Tomcat initialized with port(s): 8083 (http)
+time=2019-04-30T17:05:07.423+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Servlet dispatcherServlet mapped to [/]
+time=2019-04-30T17:05:07.436+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Mapping filter: 'characterEncodingFilter' to: [/*]
+time=2019-04-30T17:05:07.437+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+time=2019-04-30T17:05:07.437+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Mapping filter: 'httpPutFormContentFilter' to: [/*]
+time=2019-04-30T17:05:07.438+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Mapping filter: 'requestContextFilter' to: [/*]
+time=2019-04-30T17:05:08.236+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=HikariPool-1 - Starting...
+time=2019-04-30T17:05:08.625+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=HikariPool-1 - Start completed.
+time=2019-04-30T17:05:15.598+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Tomcat started on port(s): 8083 (http) with context path ''
+time=2019-04-30T17:05:15.615+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Started Graduation1Application in 16.448 seconds (JVM running for 23.152)
+time=2019-04-30T17:05:17.881+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Starting without optional epoll library
+time=2019-04-30T17:05:17.884+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Starting without optional kqueue library
+time=2019-04-30T17:14:26.762+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Starting Graduation1Application on DESKTOP-Q8HC681 with PID 1204 (F:\idea\graduation1\target\classes started by pcdn in F:\idea\graduation1)
+time=2019-04-30T17:14:26.801+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=The following profiles are active: dev
+time=2019-04-30T17:14:27.172+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@50fe837a: startup date [Tue Apr 30 17:14:27 CST 2019]; root of context hierarchy
+time=2019-04-30T17:14:31.189+0800`appName=oms`hostName=docker-20`logLevel= WARN`msg=No MyBatis mapper was found in '[com.zy.project.mapper]' package. Please check your configuration.
+time=2019-04-30T17:14:33.823+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Tomcat initialized with port(s): 8083 (http)
+time=2019-04-30T17:14:38.271+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Servlet dispatcherServlet mapped to [/]
+time=2019-04-30T17:14:38.306+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Mapping filter: 'characterEncodingFilter' to: [/*]
+time=2019-04-30T17:14:38.307+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+time=2019-04-30T17:14:38.307+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Mapping filter: 'httpPutFormContentFilter' to: [/*]
+time=2019-04-30T17:14:38.308+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Mapping filter: 'requestContextFilter' to: [/*]
+time=2019-04-30T17:14:42.518+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=HikariPool-1 - Starting...
+time=2019-04-30T17:14:43.260+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=HikariPool-1 - Start completed.
+time=2019-04-30T17:14:53.746+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Tomcat started on port(s): 8083 (http) with context path ''
+time=2019-04-30T17:14:53.844+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Started Graduation1Application in 28.574 seconds (JVM running for 36.211)
+time=2019-04-30T17:14:54.755+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Starting without optional epoll library
+time=2019-04-30T17:14:54.764+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Starting without optional kqueue library
+time=2019-04-30T17:17:48.360+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Starting Graduation1Application on DESKTOP-Q8HC681 with PID 10804 (F:\idea\graduation1\target\classes started by pcdn in F:\idea\graduation1)
+time=2019-04-30T17:17:48.418+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=The following profiles are active: dev
+time=2019-04-30T17:17:48.803+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@4a335fa8: startup date [Tue Apr 30 17:17:48 CST 2019]; root of context hierarchy
+time=2019-04-30T17:17:52.004+0800`appName=oms`hostName=docker-20`logLevel= WARN`msg=No MyBatis mapper was found in '[com.zy.project.mapper]' package. Please check your configuration.
+time=2019-04-30T17:17:54.421+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Tomcat initialized with port(s): 8083 (http)
+time=2019-04-30T17:17:55.860+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Servlet dispatcherServlet mapped to [/]
+time=2019-04-30T17:17:55.871+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Mapping filter: 'characterEncodingFilter' to: [/*]
+time=2019-04-30T17:17:55.872+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+time=2019-04-30T17:17:55.872+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Mapping filter: 'httpPutFormContentFilter' to: [/*]
+time=2019-04-30T17:17:55.873+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Mapping filter: 'requestContextFilter' to: [/*]
+time=2019-04-30T17:17:56.930+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=HikariPool-1 - Starting...
+time=2019-04-30T17:17:57.488+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=HikariPool-1 - Start completed.
+time=2019-04-30T17:18:04.204+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Tomcat started on port(s): 8083 (http) with context path ''
+time=2019-04-30T17:18:04.216+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Started Graduation1Application in 17.391 seconds (JVM running for 24.349)
+time=2019-04-30T17:18:35.288+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Starting without optional epoll library
+time=2019-04-30T17:18:35.546+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Starting without optional kqueue library
+time=2019-04-30T17:20:13.005+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Starting Graduation1Application on DESKTOP-Q8HC681 with PID 12584 (F:\idea\graduation1\target\classes started by pcdn in F:\idea\graduation1)
+time=2019-04-30T17:20:13.025+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=The following profiles are active: dev
+time=2019-04-30T17:20:13.252+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@5357c287: startup date [Tue Apr 30 17:20:13 CST 2019]; root of context hierarchy
+time=2019-04-30T17:20:18.221+0800`appName=oms`hostName=docker-20`logLevel= WARN`msg=No MyBatis mapper was found in '[com.zy.project.mapper]' package. Please check your configuration.
+time=2019-04-30T17:20:21.037+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Tomcat initialized with port(s): 8083 (http)
+time=2019-04-30T17:20:21.985+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Servlet dispatcherServlet mapped to [/]
+time=2019-04-30T17:20:21.998+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Mapping filter: 'characterEncodingFilter' to: [/*]
+time=2019-04-30T17:20:21.998+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+time=2019-04-30T17:20:21.999+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Mapping filter: 'httpPutFormContentFilter' to: [/*]
+time=2019-04-30T17:20:21.999+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Mapping filter: 'requestContextFilter' to: [/*]
+time=2019-04-30T17:20:23.879+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=HikariPool-1 - Starting...
+time=2019-04-30T17:20:24.440+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=HikariPool-1 - Start completed.
+time=2019-04-30T17:20:35.754+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Tomcat started on port(s): 8083 (http) with context path ''
+time=2019-04-30T17:20:35.770+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Started Graduation1Application in 23.851 seconds (JVM running for 35.966)
+time=2019-04-30T17:20:38.747+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Starting without optional epoll library
+time=2019-04-30T17:20:38.753+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Starting without optional kqueue library
+time=2019-04-30T17:24:14.972+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Starting Graduation1Application on DESKTOP-Q8HC681 with PID 16456 (F:\idea\graduation1\target\classes started by pcdn in F:\idea\graduation1)
+time=2019-04-30T17:24:14.986+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=The following profiles are active: dev
+time=2019-04-30T17:24:15.208+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@71984c3: startup date [Tue Apr 30 17:24:15 CST 2019]; root of context hierarchy
+time=2019-04-30T17:24:18.841+0800`appName=oms`hostName=docker-20`logLevel= WARN`msg=No MyBatis mapper was found in '[com.zy.project.mapper]' package. Please check your configuration.
+time=2019-04-30T17:24:21.053+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Tomcat initialized with port(s): 8083 (http)
+time=2019-04-30T17:24:22.098+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Servlet dispatcherServlet mapped to [/]
+time=2019-04-30T17:24:22.110+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Mapping filter: 'characterEncodingFilter' to: [/*]
+time=2019-04-30T17:24:22.111+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+time=2019-04-30T17:24:22.111+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Mapping filter: 'httpPutFormContentFilter' to: [/*]
+time=2019-04-30T17:24:22.111+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Mapping filter: 'requestContextFilter' to: [/*]
+time=2019-04-30T17:24:23.219+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=HikariPool-1 - Starting...
+time=2019-04-30T17:24:23.708+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=HikariPool-1 - Start completed.
+time=2019-04-30T17:24:31.161+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Tomcat started on port(s): 8083 (http) with context path ''
+time=2019-04-30T17:24:31.174+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Started Graduation1Application in 18.225 seconds (JVM running for 24.798)
+time=2019-04-30T17:24:41.801+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Starting without optional epoll library
+time=2019-04-30T17:24:41.805+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Starting without optional kqueue library
+time=2019-04-30T17:26:16.634+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Starting Graduation1Application on DESKTOP-Q8HC681 with PID 15808 (F:\idea\graduation1\target\classes started by pcdn in F:\idea\graduation1)
+time=2019-04-30T17:26:16.648+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=The following profiles are active: dev
+time=2019-04-30T17:26:16.938+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@73db4768: startup date [Tue Apr 30 17:26:16 CST 2019]; root of context hierarchy
+time=2019-04-30T17:26:20.804+0800`appName=oms`hostName=docker-20`logLevel= WARN`msg=No MyBatis mapper was found in '[com.zy.project.mapper]' package. Please check your configuration.
+time=2019-04-30T17:26:24.155+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Tomcat initialized with port(s): 8083 (http)
+time=2019-04-30T17:26:25.111+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Servlet dispatcherServlet mapped to [/]
+time=2019-04-30T17:26:25.123+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Mapping filter: 'characterEncodingFilter' to: [/*]
+time=2019-04-30T17:26:25.124+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+time=2019-04-30T17:26:25.124+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Mapping filter: 'httpPutFormContentFilter' to: [/*]
+time=2019-04-30T17:26:25.124+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Mapping filter: 'requestContextFilter' to: [/*]
+time=2019-04-30T17:26:26.253+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=HikariPool-1 - Starting...
+time=2019-04-30T17:26:26.708+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=HikariPool-1 - Start completed.
+time=2019-04-30T17:26:36.995+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Tomcat started on port(s): 8083 (http) with context path ''
+time=2019-04-30T17:26:37.009+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Started Graduation1Application in 21.516 seconds (JVM running for 27.804)
+time=2019-04-30T17:26:40.582+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Starting without optional epoll library
+time=2019-04-30T17:26:40.597+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Starting without optional kqueue library
+time=2019-04-30T17:36:35.636+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Starting Graduation1Application on DESKTOP-Q8HC681 with PID 4356 (F:\idea\graduation1\target\classes started by pcdn in F:\idea\graduation1)
+time=2019-04-30T17:36:35.683+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=The following profiles are active: dev
+time=2019-04-30T17:36:35.960+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@14c01636: startup date [Tue Apr 30 17:36:35 CST 2019]; root of context hierarchy
+time=2019-04-30T17:36:40.186+0800`appName=oms`hostName=docker-20`logLevel= WARN`msg=No MyBatis mapper was found in '[com.zy.project.mapper]' package. Please check your configuration.
+time=2019-04-30T17:36:43.595+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Tomcat initialized with port(s): 8083 (http)
+time=2019-04-30T17:36:44.897+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Servlet dispatcherServlet mapped to [/]
+time=2019-04-30T17:36:44.910+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Mapping filter: 'characterEncodingFilter' to: [/*]
+time=2019-04-30T17:36:44.911+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+time=2019-04-30T17:36:44.911+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Mapping filter: 'httpPutFormContentFilter' to: [/*]
+time=2019-04-30T17:36:44.911+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Mapping filter: 'requestContextFilter' to: [/*]
+time=2019-04-30T17:36:46.224+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=HikariPool-1 - Starting...
+time=2019-04-30T17:36:46.661+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=HikariPool-1 - Start completed.
+time=2019-04-30T17:36:54.510+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Tomcat started on port(s): 8083 (http) with context path ''
+time=2019-04-30T17:36:54.519+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Started Graduation1Application in 20.3 seconds (JVM running for 27.011)
+time=2019-04-30T17:37:01.571+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Starting without optional epoll library
+time=2019-04-30T17:37:01.581+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Starting without optional kqueue library
+time=2019-04-30T17:38:54.116+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Starting Graduation1Application on DESKTOP-Q8HC681 with PID 8884 (F:\idea\graduation1\target\classes started by pcdn in F:\idea\graduation1)
+time=2019-04-30T17:38:54.142+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=The following profiles are active: dev
+time=2019-04-30T17:38:54.271+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@4de41af9: startup date [Tue Apr 30 17:38:54 CST 2019]; root of context hierarchy
+time=2019-04-30T17:38:57.361+0800`appName=oms`hostName=docker-20`logLevel= WARN`msg=No MyBatis mapper was found in '[com.zy.project.mapper]' package. Please check your configuration.
+time=2019-04-30T17:38:59.855+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Tomcat initialized with port(s): 8083 (http)
+time=2019-04-30T17:39:00.849+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Servlet dispatcherServlet mapped to [/]
+time=2019-04-30T17:39:00.867+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Mapping filter: 'characterEncodingFilter' to: [/*]
+time=2019-04-30T17:39:00.868+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+time=2019-04-30T17:39:00.869+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Mapping filter: 'httpPutFormContentFilter' to: [/*]
+time=2019-04-30T17:39:00.869+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Mapping filter: 'requestContextFilter' to: [/*]
+time=2019-04-30T17:39:02.081+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=HikariPool-1 - Starting...
+time=2019-04-30T17:39:02.551+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=HikariPool-1 - Start completed.
+time=2019-04-30T17:39:10.465+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Tomcat started on port(s): 8083 (http) with context path ''
+time=2019-04-30T17:39:10.474+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Started Graduation1Application in 17.526 seconds (JVM running for 23.305)
+time=2019-04-30T17:39:13.947+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Starting without optional epoll library
+time=2019-04-30T17:39:13.952+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Starting without optional kqueue library
+time=2019-04-30T17:41:29.204+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Starting Graduation1Application on DESKTOP-Q8HC681 with PID 15848 (F:\idea\graduation1\target\classes started by pcdn in F:\idea\graduation1)
+time=2019-04-30T17:41:29.216+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=The following profiles are active: dev
+time=2019-04-30T17:41:29.447+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@29e6eb25: startup date [Tue Apr 30 17:41:29 CST 2019]; root of context hierarchy
+time=2019-04-30T17:41:32.851+0800`appName=oms`hostName=docker-20`logLevel= WARN`msg=No MyBatis mapper was found in '[com.zy.project.mapper]' package. Please check your configuration.
+time=2019-04-30T17:41:35.140+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Tomcat initialized with port(s): 8083 (http)
+time=2019-04-30T17:41:36.009+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Servlet dispatcherServlet mapped to [/]
+time=2019-04-30T17:41:36.021+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Mapping filter: 'characterEncodingFilter' to: [/*]
+time=2019-04-30T17:41:36.021+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+time=2019-04-30T17:41:36.021+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Mapping filter: 'httpPutFormContentFilter' to: [/*]
+time=2019-04-30T17:41:36.023+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Mapping filter: 'requestContextFilter' to: [/*]
+time=2019-04-30T17:41:36.864+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=HikariPool-1 - Starting...
+time=2019-04-30T17:41:37.207+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=HikariPool-1 - Start completed.
+time=2019-04-30T17:41:44.456+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Tomcat started on port(s): 8083 (http) with context path ''
+time=2019-04-30T17:41:44.467+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Started Graduation1Application in 16.212 seconds (JVM running for 24.449)
+time=2019-04-30T17:41:55.441+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Starting without optional epoll library
+time=2019-04-30T17:41:55.445+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Starting without optional kqueue library
+time=2019-04-30T20:25:55.958+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Starting Graduation1Application on DESKTOP-Q8HC681 with PID 13580 (F:\idea\graduation1\target\classes started by pcdn in F:\idea\graduation1)
+time=2019-04-30T20:25:56.004+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=The following profiles are active: dev
+time=2019-04-30T20:25:56.247+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@485a3466: startup date [Tue Apr 30 20:25:56 CST 2019]; root of context hierarchy
+time=2019-04-30T20:26:00.079+0800`appName=oms`hostName=docker-20`logLevel= WARN`msg=No MyBatis mapper was found in '[com.zy.project.mapper]' package. Please check your configuration.
+time=2019-04-30T20:26:02.655+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Tomcat initialized with port(s): 8083 (http)
+time=2019-04-30T20:26:03.519+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Servlet dispatcherServlet mapped to [/]
+time=2019-04-30T20:26:03.531+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Mapping filter: 'characterEncodingFilter' to: [/*]
+time=2019-04-30T20:26:03.532+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+time=2019-04-30T20:26:03.532+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Mapping filter: 'httpPutFormContentFilter' to: [/*]
+time=2019-04-30T20:26:03.532+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Mapping filter: 'requestContextFilter' to: [/*]
+time=2019-04-30T20:26:04.425+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=HikariPool-1 - Starting...
+time=2019-04-30T20:26:04.801+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=HikariPool-1 - Start completed.
+time=2019-04-30T20:26:11.407+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Tomcat started on port(s): 8083 (http) with context path ''
+time=2019-04-30T20:26:11.421+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Started Graduation1Application in 16.641 seconds (JVM running for 25.337)
+time=2019-04-30T20:26:23.335+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Starting without optional epoll library
+time=2019-04-30T20:26:23.414+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Starting without optional kqueue library
+time=2019-04-30T20:26:27.489+0800`appName=oms`hostName=docker-20`logLevel=ERROR`msg=Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.springframework.data.redis.connection.PoolException: Could not get a resource from the pool; nested exception is io.lettuce.core.RedisConnectionException: Unable to connect to localhost:6379] with root cause java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at io.netty.channel.socket.nio.NioSocketChannel.doFinishConnect(NioSocketChannel.java:325)
+	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:340)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:635)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:582)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:499)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:461)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:884)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.lang.Thread.run(Thread.java:745)
+
+time=2019-04-30T20:26:32.007+0800`appName=oms`hostName=docker-20`logLevel=ERROR`msg=Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.springframework.data.redis.connection.PoolException: Could not get a resource from the pool; nested exception is io.lettuce.core.RedisConnectionException: Unable to connect to localhost:6379] with root cause java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at io.netty.channel.socket.nio.NioSocketChannel.doFinishConnect(NioSocketChannel.java:325)
+	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:340)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:635)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:582)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:499)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:461)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:884)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.lang.Thread.run(Thread.java:745)
+
+time=2019-04-30T20:26:33.026+0800`appName=oms`hostName=docker-20`logLevel=ERROR`msg=Servlet.service() for servlet [dispatcherServlet] threw exception java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at io.netty.channel.socket.nio.NioSocketChannel.doFinishConnect(NioSocketChannel.java:325)
+	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:340)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:635)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:582)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:499)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:461)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:884)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.lang.Thread.run(Thread.java:745)
+
+time=2019-04-30T20:26:33.028+0800`appName=oms`hostName=docker-20`logLevel=ERROR`msg=Exception Processing ErrorPage[errorCode=0, location=/error] org.springframework.web.util.NestedServletException: Request processing failed; nested exception is org.springframework.data.redis.connection.PoolException: Could not get a resource from the pool; nested exception is io.lettuce.core.RedisConnectionException: Unable to connect to localhost:6379
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:982)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:866)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:635)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:851)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:728)
+	at org.apache.catalina.core.ApplicationDispatcher.processRequest(ApplicationDispatcher.java:472)
+	at org.apache.catalina.core.ApplicationDispatcher.doForward(ApplicationDispatcher.java:395)
+	at org.apache.catalina.core.ApplicationDispatcher.forward(ApplicationDispatcher.java:316)
+	at org.apache.catalina.core.StandardHostValve.custom(StandardHostValve.java:395)
+	at org.apache.catalina.core.StandardHostValve.status(StandardHostValve.java:254)
+	at org.apache.catalina.core.StandardHostValve.throwable(StandardHostValve.java:349)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:175)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:803)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:790)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1468)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.springframework.data.redis.connection.PoolException: Could not get a resource from the pool; nested exception is io.lettuce.core.RedisConnectionException: Unable to connect to localhost:6379
+	at org.springframework.data.redis.connection.lettuce.LettucePoolingConnectionProvider.getConnection(LettucePoolingConnectionProvider.java:86)
+	at org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory$SharedConnection.getNativeConnection(LettuceConnectionFactory.java:959)
+	at org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory$SharedConnection.getConnection(LettuceConnectionFactory.java:934)
+	at org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory.getSharedConnection(LettuceConnectionFactory.java:786)
+	at org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory.getConnection(LettuceConnectionFactory.java:300)
+	at org.springframework.data.redis.core.RedisConnectionUtils.doGetConnection(RedisConnectionUtils.java:132)
+	at org.springframework.data.redis.core.RedisConnectionUtils.getConnection(RedisConnectionUtils.java:95)
+	at org.springframework.data.redis.core.RedisConnectionUtils.getConnection(RedisConnectionUtils.java:82)
+	at org.springframework.data.redis.core.RedisTemplate.execute(RedisTemplate.java:211)
+	at org.springframework.data.redis.core.RedisTemplate.execute(RedisTemplate.java:184)
+	at org.springframework.data.redis.core.AbstractOperations.execute(AbstractOperations.java:95)
+	at org.springframework.data.redis.core.DefaultValueOperations.get(DefaultValueOperations.java:48)
+	at com.zy.graduation1.interceptor.IdentifyInterceptor.identify(IdentifyInterceptor.java:36)
+	at com.zy.graduation1.interceptor.IdentifyInterceptor.preHandle(IdentifyInterceptor.java:21)
+	at org.springframework.web.servlet.HandlerExecutionChain.applyPreHandle(HandlerExecutionChain.java:136)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:986)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:925)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:974)
+	... 26 more
+Caused by: io.lettuce.core.RedisConnectionException: Unable to connect to localhost:6379
+	at io.lettuce.core.RedisConnectionException.create(RedisConnectionException.java:56)
+	at io.lettuce.core.AbstractRedisClient.getConnection(AbstractRedisClient.java:233)
+	at io.lettuce.core.RedisClient.connectStandalone(RedisClient.java:253)
+	at io.lettuce.core.RedisClient.connect(RedisClient.java:202)
+	at org.springframework.data.redis.connection.lettuce.StandaloneConnectionProvider.getConnection(StandaloneConnectionProvider.java:56)
+	at org.springframework.data.redis.connection.lettuce.LettucePoolingConnectionProvider.lambda$null$0(LettucePoolingConnectionProvider.java:74)
+	at io.lettuce.core.support.ConnectionPoolSupport$RedisPooledObjectFactory.create(ConnectionPoolSupport.java:225)
+	at io.lettuce.core.support.ConnectionPoolSupport$RedisPooledObjectFactory.create(ConnectionPoolSupport.java:215)
+	at org.apache.commons.pool2.BasePooledObjectFactory.makeObject(BasePooledObjectFactory.java:58)
+	at org.apache.commons.pool2.impl.GenericObjectPool.create(GenericObjectPool.java:889)
+	at org.apache.commons.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:433)
+	at org.apache.commons.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:362)
+	at io.lettuce.core.support.ConnectionPoolSupport$1.borrowObject(ConnectionPoolSupport.java:124)
+	at io.lettuce.core.support.ConnectionPoolSupport$1.borrowObject(ConnectionPoolSupport.java:120)
+	at org.springframework.data.redis.connection.lettuce.LettucePoolingConnectionProvider.getConnection(LettucePoolingConnectionProvider.java:80)
+	... 43 more
+Caused by: io.netty.channel.AbstractChannel$AnnotatedConnectException: Connection refused: no further information: localhost/127.0.0.1:6379
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at io.netty.channel.socket.nio.NioSocketChannel.doFinishConnect(NioSocketChannel.java:325)
+	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:340)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:635)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:582)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:499)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:461)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:884)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	... 1 more
+Caused by: java.net.ConnectException: Connection refused: no further information
+	... 11 more
+
+time=2019-04-30T20:28:03.075+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Starting Graduation1Application on DESKTOP-Q8HC681 with PID 10656 (F:\idea\graduation1\target\classes started by pcdn in F:\idea\graduation1)
+time=2019-04-30T20:28:03.090+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=The following profiles are active: dev
+time=2019-04-30T20:28:03.334+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@7a8fa663: startup date [Tue Apr 30 20:28:03 CST 2019]; root of context hierarchy
+time=2019-04-30T20:28:06.261+0800`appName=oms`hostName=docker-20`logLevel= WARN`msg=No MyBatis mapper was found in '[com.zy.project.mapper]' package. Please check your configuration.
+time=2019-04-30T20:28:08.174+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Tomcat initialized with port(s): 8083 (http)
+time=2019-04-30T20:28:08.892+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Servlet dispatcherServlet mapped to [/]
+time=2019-04-30T20:28:08.903+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Mapping filter: 'characterEncodingFilter' to: [/*]
+time=2019-04-30T20:28:08.903+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+time=2019-04-30T20:28:08.904+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Mapping filter: 'httpPutFormContentFilter' to: [/*]
+time=2019-04-30T20:28:08.904+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Mapping filter: 'requestContextFilter' to: [/*]
+time=2019-04-30T20:28:09.597+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=HikariPool-1 - Starting...
+time=2019-04-30T20:28:09.897+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=HikariPool-1 - Start completed.
+time=2019-04-30T20:28:15.620+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Tomcat started on port(s): 8083 (http) with context path ''
+time=2019-04-30T20:28:15.627+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Started Graduation1Application in 13.619 seconds (JVM running for 21.247)
+time=2019-04-30T20:28:26.878+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Starting without optional epoll library
+time=2019-04-30T20:28:26.885+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Starting without optional kqueue library
+time=2019-04-30T20:29:32.422+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Starting Graduation1Application on DESKTOP-Q8HC681 with PID 15840 (F:\idea\graduation1\target\classes started by pcdn in F:\idea\graduation1)
+time=2019-04-30T20:29:32.453+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=The following profiles are active: dev
+time=2019-04-30T20:29:33.004+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@165b2f7f: startup date [Tue Apr 30 20:29:32 CST 2019]; root of context hierarchy
+time=2019-04-30T20:29:36.106+0800`appName=oms`hostName=docker-20`logLevel= WARN`msg=No MyBatis mapper was found in '[com.zy.project.mapper]' package. Please check your configuration.
+time=2019-04-30T20:29:38.315+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Tomcat initialized with port(s): 8083 (http)
+time=2019-04-30T20:29:39.234+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Servlet dispatcherServlet mapped to [/]
+time=2019-04-30T20:29:39.248+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Mapping filter: 'characterEncodingFilter' to: [/*]
+time=2019-04-30T20:29:39.248+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+time=2019-04-30T20:29:39.249+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Mapping filter: 'httpPutFormContentFilter' to: [/*]
+time=2019-04-30T20:29:39.249+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Mapping filter: 'requestContextFilter' to: [/*]
+time=2019-04-30T20:29:40.054+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=HikariPool-1 - Starting...
+time=2019-04-30T20:29:40.370+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=HikariPool-1 - Start completed.
+time=2019-04-30T20:29:48.080+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Tomcat started on port(s): 8083 (http) with context path ''
+time=2019-04-30T20:29:48.117+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Started Graduation1Application in 16.586 seconds (JVM running for 21.701)
+time=2019-04-30T20:29:49.314+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Starting without optional epoll library
+time=2019-04-30T20:29:49.319+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Starting without optional kqueue library
+time=2019-04-30T20:40:07.078+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Starting Graduation1Application on DESKTOP-Q8HC681 with PID 11860 (F:\idea\graduation1\target\classes started by pcdn in F:\idea\graduation1)
+time=2019-04-30T20:40:07.099+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=The following profiles are active: dev
+time=2019-04-30T20:40:07.391+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@71b3bc45: startup date [Tue Apr 30 20:40:07 CST 2019]; root of context hierarchy
+time=2019-04-30T20:40:10.826+0800`appName=oms`hostName=docker-20`logLevel= WARN`msg=No MyBatis mapper was found in '[com.zy.project.mapper]' package. Please check your configuration.
+time=2019-04-30T20:40:13.964+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Tomcat initialized with port(s): 8083 (http)
+time=2019-04-30T20:40:15.544+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Servlet dispatcherServlet mapped to [/]
+time=2019-04-30T20:40:15.579+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Mapping filter: 'characterEncodingFilter' to: [/*]
+time=2019-04-30T20:40:15.579+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+time=2019-04-30T20:40:15.580+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Mapping filter: 'httpPutFormContentFilter' to: [/*]
+time=2019-04-30T20:40:15.580+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Mapping filter: 'requestContextFilter' to: [/*]
+time=2019-04-30T20:40:17.359+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=HikariPool-1 - Starting...
+time=2019-04-30T20:40:17.823+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=HikariPool-1 - Start completed.
+time=2019-04-30T20:40:27.588+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Tomcat started on port(s): 8083 (http) with context path ''
+time=2019-04-30T20:40:27.600+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Started Graduation1Application in 21.919 seconds (JVM running for 27.832)
+time=2019-04-30T20:40:50.741+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Starting without optional epoll library
+time=2019-04-30T20:40:50.749+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Starting without optional kqueue library
+time=2019-04-30T20:47:55.169+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Starting Graduation1Application on DESKTOP-Q8HC681 with PID 3336 (F:\idea\graduation1\target\classes started by pcdn in F:\idea\graduation1)
+time=2019-04-30T20:47:55.184+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=The following profiles are active: dev
+time=2019-04-30T20:47:55.423+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@556d0826: startup date [Tue Apr 30 20:47:55 CST 2019]; root of context hierarchy
+time=2019-04-30T20:47:58.644+0800`appName=oms`hostName=docker-20`logLevel= WARN`msg=No MyBatis mapper was found in '[com.zy.project.mapper]' package. Please check your configuration.
+time=2019-04-30T20:48:09.066+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Tomcat initialized with port(s): 8083 (http)
+time=2019-04-30T20:48:11.084+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Servlet dispatcherServlet mapped to [/]
+time=2019-04-30T20:48:11.099+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Mapping filter: 'characterEncodingFilter' to: [/*]
+time=2019-04-30T20:48:11.099+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+time=2019-04-30T20:48:11.099+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Mapping filter: 'httpPutFormContentFilter' to: [/*]
+time=2019-04-30T20:48:11.099+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Mapping filter: 'requestContextFilter' to: [/*]
+time=2019-04-30T20:48:25.438+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=HikariPool-1 - Starting...
+time=2019-04-30T20:48:25.775+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=HikariPool-1 - Start completed.
+time=2019-04-30T20:48:31.389+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Tomcat started on port(s): 8083 (http) with context path ''
+time=2019-04-30T20:48:31.398+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Started Graduation1Application in 37.192 seconds (JVM running for 41.845)
+time=2019-04-30T20:48:42.384+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Starting without optional epoll library
+time=2019-04-30T20:48:42.388+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Starting without optional kqueue library
+time=2019-04-30T20:51:03.282+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Starting Graduation1Application on DESKTOP-Q8HC681 with PID 7012 (F:\idea\graduation1\target\classes started by pcdn in F:\idea\graduation1)
+time=2019-04-30T20:51:03.299+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=The following profiles are active: dev
+time=2019-04-30T20:51:03.542+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@4f071df8: startup date [Tue Apr 30 20:51:03 CST 2019]; root of context hierarchy
+time=2019-04-30T20:51:06.703+0800`appName=oms`hostName=docker-20`logLevel= WARN`msg=No MyBatis mapper was found in '[com.zy.project.mapper]' package. Please check your configuration.
+time=2019-04-30T20:51:09.031+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Tomcat initialized with port(s): 8083 (http)
+time=2019-04-30T20:51:10.004+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Servlet dispatcherServlet mapped to [/]
+time=2019-04-30T20:51:10.016+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Mapping filter: 'characterEncodingFilter' to: [/*]
+time=2019-04-30T20:51:10.016+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+time=2019-04-30T20:51:10.017+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Mapping filter: 'httpPutFormContentFilter' to: [/*]
+time=2019-04-30T20:51:10.017+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Mapping filter: 'requestContextFilter' to: [/*]
+time=2019-04-30T20:51:10.838+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=HikariPool-1 - Starting...
+time=2019-04-30T20:51:11.189+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=HikariPool-1 - Start completed.
+time=2019-04-30T20:51:18.981+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Tomcat started on port(s): 8083 (http) with context path ''
+time=2019-04-30T20:51:18.989+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Started Graduation1Application in 17.066 seconds (JVM running for 22.066)
+time=2019-04-30T20:51:19.932+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Starting without optional epoll library
+time=2019-04-30T20:51:19.937+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Starting without optional kqueue library
+time=2019-04-30T20:53:04.709+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Starting Graduation1Application on DESKTOP-Q8HC681 with PID 15392 (F:\idea\graduation1\target\classes started by pcdn in F:\idea\graduation1)
+time=2019-04-30T20:53:04.726+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=The following profiles are active: dev
+time=2019-04-30T20:53:04.942+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@7e38a7fe: startup date [Tue Apr 30 20:53:04 CST 2019]; root of context hierarchy
+time=2019-04-30T20:53:08.084+0800`appName=oms`hostName=docker-20`logLevel= WARN`msg=No MyBatis mapper was found in '[com.zy.project.mapper]' package. Please check your configuration.
+time=2019-04-30T20:53:10.121+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Tomcat initialized with port(s): 8083 (http)
+time=2019-04-30T20:53:11.073+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Servlet dispatcherServlet mapped to [/]
+time=2019-04-30T20:53:11.085+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Mapping filter: 'characterEncodingFilter' to: [/*]
+time=2019-04-30T20:53:11.086+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+time=2019-04-30T20:53:11.086+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Mapping filter: 'httpPutFormContentFilter' to: [/*]
+time=2019-04-30T20:53:11.086+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Mapping filter: 'requestContextFilter' to: [/*]
+time=2019-04-30T20:53:11.966+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=HikariPool-1 - Starting...
+time=2019-04-30T20:53:12.289+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=HikariPool-1 - Start completed.
+time=2019-04-30T20:53:17.879+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Tomcat started on port(s): 8083 (http) with context path ''
+time=2019-04-30T20:53:17.887+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Started Graduation1Application in 14.256 seconds (JVM running for 22.459)
+time=2019-04-30T20:53:30.933+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Starting without optional epoll library
+time=2019-04-30T20:53:30.938+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Starting without optional kqueue library
+time=2019-04-30T20:55:36.555+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Starting Graduation1Application on DESKTOP-Q8HC681 with PID 16728 (F:\idea\graduation1\target\classes started by pcdn in F:\idea\graduation1)
+time=2019-04-30T20:55:36.583+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=The following profiles are active: dev
+time=2019-04-30T20:55:36.812+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@f74e835: startup date [Tue Apr 30 20:55:36 CST 2019]; root of context hierarchy
+time=2019-04-30T20:55:39.870+0800`appName=oms`hostName=docker-20`logLevel= WARN`msg=No MyBatis mapper was found in '[com.zy.project.mapper]' package. Please check your configuration.
+time=2019-04-30T20:55:42.179+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Tomcat initialized with port(s): 8083 (http)
+time=2019-04-30T20:55:43.085+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Servlet dispatcherServlet mapped to [/]
+time=2019-04-30T20:55:43.095+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Mapping filter: 'characterEncodingFilter' to: [/*]
+time=2019-04-30T20:55:43.096+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+time=2019-04-30T20:55:43.096+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Mapping filter: 'httpPutFormContentFilter' to: [/*]
+time=2019-04-30T20:55:43.096+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Mapping filter: 'requestContextFilter' to: [/*]
+time=2019-04-30T20:55:43.938+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=HikariPool-1 - Starting...
+time=2019-04-30T20:55:44.294+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=HikariPool-1 - Start completed.
+time=2019-04-30T20:55:52.748+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Tomcat started on port(s): 8083 (http) with context path ''
+time=2019-04-30T20:55:52.758+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Started Graduation1Application in 17.137 seconds (JVM running for 22.065)
+time=2019-04-30T20:55:55.708+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Starting without optional epoll library
+time=2019-04-30T20:55:55.714+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Starting without optional kqueue library
+time=2019-04-30T20:57:04.957+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Starting Graduation1Application on DESKTOP-Q8HC681 with PID 11456 (F:\idea\graduation1\target\classes started by pcdn in F:\idea\graduation1)
+time=2019-04-30T20:57:05.040+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=The following profiles are active: dev
+time=2019-04-30T20:57:05.179+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@6bb75258: startup date [Tue Apr 30 20:57:05 CST 2019]; root of context hierarchy
+time=2019-04-30T20:57:08.219+0800`appName=oms`hostName=docker-20`logLevel= WARN`msg=No MyBatis mapper was found in '[com.zy.project.mapper]' package. Please check your configuration.
+time=2019-04-30T20:57:10.265+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Tomcat initialized with port(s): 8083 (http)
+time=2019-04-30T20:57:11.158+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Servlet dispatcherServlet mapped to [/]
+time=2019-04-30T20:57:11.169+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Mapping filter: 'characterEncodingFilter' to: [/*]
+time=2019-04-30T20:57:11.169+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+time=2019-04-30T20:57:11.170+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Mapping filter: 'httpPutFormContentFilter' to: [/*]
+time=2019-04-30T20:57:11.170+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Mapping filter: 'requestContextFilter' to: [/*]
+time=2019-04-30T20:57:12.079+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=HikariPool-1 - Starting...
+time=2019-04-30T20:57:12.454+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=HikariPool-1 - Start completed.
+time=2019-04-30T20:57:21.712+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Tomcat started on port(s): 8083 (http) with context path ''
+time=2019-04-30T20:57:21.721+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Started Graduation1Application in 17.796 seconds (JVM running for 22.412)
+time=2019-04-30T20:57:26.823+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Starting without optional epoll library
+time=2019-04-30T20:57:26.829+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Starting without optional kqueue library
+time=2019-04-30T20:57:54.201+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Starting Graduation1Application on DESKTOP-Q8HC681 with PID 14152 (F:\idea\graduation1\target\classes started by pcdn in F:\idea\graduation1)
+time=2019-04-30T20:57:54.230+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=The following profiles are active: dev
+time=2019-04-30T20:57:54.455+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@61884cb1: startup date [Tue Apr 30 20:57:54 CST 2019]; root of context hierarchy
+time=2019-04-30T20:57:56.279+0800`appName=oms`hostName=docker-20`logLevel= WARN`msg=No MyBatis mapper was found in '[com.zy.project.mapper]' package. Please check your configuration.
+time=2019-04-30T20:57:58.408+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Tomcat initialized with port(s): 8083 (http)
+time=2019-04-30T20:57:59.138+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Servlet dispatcherServlet mapped to [/]
+time=2019-04-30T20:57:59.149+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Mapping filter: 'characterEncodingFilter' to: [/*]
+time=2019-04-30T20:57:59.150+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+time=2019-04-30T20:57:59.150+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Mapping filter: 'httpPutFormContentFilter' to: [/*]
+time=2019-04-30T20:57:59.150+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Mapping filter: 'requestContextFilter' to: [/*]
+time=2019-04-30T20:57:59.915+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=HikariPool-1 - Starting...
+time=2019-04-30T20:58:00.235+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=HikariPool-1 - Start completed.
+time=2019-04-30T20:58:05.716+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Tomcat started on port(s): 8083 (http) with context path ''
+time=2019-04-30T20:58:05.725+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Started Graduation1Application in 12.299 seconds (JVM running for 16.746)
+time=2019-04-30T20:58:10.517+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Starting without optional epoll library
+time=2019-04-30T20:58:10.521+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Starting without optional kqueue library
+time=2019-04-30T20:58:41.151+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Starting Graduation1Application on DESKTOP-Q8HC681 with PID 13020 (F:\idea\graduation1\target\classes started by pcdn in F:\idea\graduation1)
+time=2019-04-30T20:58:41.167+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=The following profiles are active: dev
+time=2019-04-30T20:58:41.490+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@45cff11c: startup date [Tue Apr 30 20:58:41 CST 2019]; root of context hierarchy
+time=2019-04-30T20:58:43.434+0800`appName=oms`hostName=docker-20`logLevel= WARN`msg=No MyBatis mapper was found in '[com.zy.project.mapper]' package. Please check your configuration.
+time=2019-04-30T20:58:46.679+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Tomcat initialized with port(s): 8083 (http)
+time=2019-04-30T20:58:47.837+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Servlet dispatcherServlet mapped to [/]
+time=2019-04-30T20:58:48.105+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Mapping filter: 'characterEncodingFilter' to: [/*]
+time=2019-04-30T20:58:48.106+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+time=2019-04-30T20:58:48.106+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Mapping filter: 'httpPutFormContentFilter' to: [/*]
+time=2019-04-30T20:58:48.106+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Mapping filter: 'requestContextFilter' to: [/*]
+time=2019-04-30T20:58:49.355+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=HikariPool-1 - Starting...
+time=2019-04-30T20:58:49.892+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=HikariPool-1 - Start completed.
+time=2019-04-30T20:58:55.853+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Tomcat started on port(s): 8083 (http) with context path ''
+time=2019-04-30T20:58:55.861+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Started Graduation1Application in 15.864 seconds (JVM running for 21.676)
+time=2019-04-30T20:59:30.764+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Starting without optional epoll library
+time=2019-04-30T20:59:30.771+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Starting without optional kqueue library
+time=2019-04-30T21:05:33.411+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Starting Graduation1Application on DESKTOP-Q8HC681 with PID 932 (F:\idea\graduation1\target\classes started by pcdn in F:\idea\graduation1)
+time=2019-04-30T21:05:33.426+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=The following profiles are active: dev
+time=2019-04-30T21:05:33.749+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@2783717b: startup date [Tue Apr 30 21:05:33 CST 2019]; root of context hierarchy
+time=2019-04-30T21:05:38.508+0800`appName=oms`hostName=docker-20`logLevel= WARN`msg=No MyBatis mapper was found in '[com.zy.project.mapper]' package. Please check your configuration.
+time=2019-04-30T21:05:41.720+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Tomcat initialized with port(s): 8083 (http)
+time=2019-04-30T21:05:42.796+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Servlet dispatcherServlet mapped to [/]
+time=2019-04-30T21:05:42.840+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Mapping filter: 'characterEncodingFilter' to: [/*]
+time=2019-04-30T21:05:42.844+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+time=2019-04-30T21:05:42.845+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Mapping filter: 'httpPutFormContentFilter' to: [/*]
+time=2019-04-30T21:05:42.847+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Mapping filter: 'requestContextFilter' to: [/*]
+time=2019-04-30T21:05:43.774+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=HikariPool-1 - Starting...
+time=2019-04-30T21:05:44.135+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=HikariPool-1 - Start completed.
+time=2019-04-30T21:05:55.586+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Tomcat started on port(s): 8083 (http) with context path ''
+time=2019-04-30T21:05:55.615+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Started Graduation1Application in 23.46 seconds (JVM running for 31.219)
+time=2019-04-30T21:31:53.998+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Starting Graduation1Application on DESKTOP-Q8HC681 with PID 1172 (F:\idea\graduation1\target\classes started by pcdn in F:\idea\graduation1)
+time=2019-04-30T21:31:54.046+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=The following profiles are active: dev
+time=2019-04-30T21:31:54.269+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@26a4842b: startup date [Tue Apr 30 21:31:54 CST 2019]; root of context hierarchy
+time=2019-04-30T21:31:57.604+0800`appName=oms`hostName=docker-20`logLevel= WARN`msg=No MyBatis mapper was found in '[com.zy.project.mapper]' package. Please check your configuration.
+time=2019-04-30T21:31:59.896+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Tomcat initialized with port(s): 8083 (http)
+time=2019-04-30T21:32:00.640+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Servlet dispatcherServlet mapped to [/]
+time=2019-04-30T21:32:00.651+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Mapping filter: 'characterEncodingFilter' to: [/*]
+time=2019-04-30T21:32:00.652+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+time=2019-04-30T21:32:00.652+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Mapping filter: 'httpPutFormContentFilter' to: [/*]
+time=2019-04-30T21:32:00.652+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Mapping filter: 'requestContextFilter' to: [/*]
+time=2019-04-30T21:32:01.431+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=HikariPool-1 - Starting...
+time=2019-04-30T21:32:01.752+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=HikariPool-1 - Start completed.
+time=2019-04-30T21:32:07.531+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Tomcat started on port(s): 8083 (http) with context path ''
+time=2019-04-30T21:32:07.541+0800`appName=oms`hostName=docker-20`logLevel= INFO`msg=Started Graduation1Application in 14.606 seconds (JVM running for 23.605)

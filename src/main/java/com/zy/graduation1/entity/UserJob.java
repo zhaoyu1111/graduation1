@@ -28,7 +28,7 @@ import java.io.Serializable;
 @EqualsAndHashCode(callSuper = true)
 @Accessors(chain = true)
 @TableName("user_job")
-public class UserJob extends SuperEntity<UserJob> {
+public class UserJob extends SuperEntity<UserJob> implements Serializable {
 
     private static final long serialVersionUID = 1L;
 

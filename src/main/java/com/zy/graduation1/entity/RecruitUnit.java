@@ -29,7 +29,7 @@ import java.io.Serializable;
 @EqualsAndHashCode(callSuper = true)
 @Accessors(chain = true)
 @TableName("recruit_unit")
-public class RecruitUnit extends SuperEntity<RecruitUnit> {
+public class RecruitUnit extends SuperEntity<RecruitUnit> implements Serializable {
 
     private static final long serialVersionUID = 1L;
 
